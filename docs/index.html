@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Albert Y. Kim" />
+
+
+<title>SDS/MTH 220: Intro to Probability and Statistics</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SDS220</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://2018-fall-sds-albert.slack.com/">
+    <span class="fa fa-slack fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://rstudio.smith.edu/auth-sign-in">
+    <span class="fa fa-registered"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://moderndive.netlify.com/">ModernDive</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="term_project.html">Term Project</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
+<h4 class="author"><em>Albert Y. Kim</em></h4>
+<h4 class="date"><em>Last updated on 2018-08-23</em></h4>
+
+</div>
+
+
+<style>
+h1{font-weight: 400;}
+</style>
+<style>
+h1{font-weight: 400;}
+</style>
+<hr />
+<div id="schedule" class="section level1">
+<h1>Schedule</h1>
+<p>The lectures are numbered according to the following rough topic outline:</p>
+<ol style="list-style-type: decimal">
+<li>Getting started (orange): R, RStudio, R packages</li>
+<li>Data science (pink): Data visualization via <code>ggplot2</code>, “tidy” data format, and data wrangling via <code>dplyr</code></li>
+<li>Data modeling (blue): Correlation, basic regression, and multiple regression</li>
+<li>Statistical background (green): Random assignment for causal inference, random sampling for statistical inference, sampling distributions, and standard errors.</li>
+<li>Statistical inference (yellow): confidence intervals, hypothesis testing, inference for regression, other inferential methods</li>
+</ol>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="810">
+</iframe>
+<hr />
+</div>
+<div id="lec-1.1" class="section level1">
+<h1>Lec 1.1</h1>
+<!--
+
+
+# Lec 5.11 + Final Exam Notes
+
+## Final Exam
+
+**Dates/times**: 
+
+* Time/place listed [here](https://www.amherst.edu/system/files/media/Spring%25202018%2520Final%2520Exam%2520by%2520Course_1.pdf). 
+* Midterm review Wed 5/2 7:30pm in Merrill 4.
+    a) Go over [practice exam](static/Midterm-III.pdf). Note:
+          + No solutions will be posted as I do not have a digital copy. 
+          + This was a non-cummulative "third midterm" and not a cummulative final exam; expect your final to be longer.
+    b) Go over past problem sets.
+    c) Any questions you may have; if possible Slack them to me in advance.
+* Office hours in SMudd 208
+    a) Reading week: Thurs 5/3 2:30pm-5:30pm
+    a) Finals week: Mon 5/7 1pm-5pm 
+* Study center drop-in hours in Merrill 300B.
+    a) Reading week:
+        1. Sun 4/29 8pm-9pm
+        1. Mon 4/30 7pm-9pm
+        1. Tues 5/1 7pm-9pm
+        1. Wed 5/2 7pm-9pm
+        1. Thurs 5/3 8pm-9pm
+    a) Finals week:
+        1. Sun 5/6 7pm-9pm
+        1. Mon 5/7 7pm-9pm
+
+
+**Topics**:
+
+* Please bring:
+    a) A calculator (cell phone calculators not allowed). If you do not have access to one please Slack me. 
+    a) (Optional) A single 3 x 5 inch double-sided index card "cheatsheet" with your name on it. You'll be submitting these with your final exam.
+* Cummulative:
+    + All lectures: Lec 1.1 thru Lec 5.11
+    + All problem sets, both R and written components, including PS13 posted below.
+* Use your class notes as your roadmap:
+    a) They summarize what’s been covered in ModernDive + SDM and emphasize tricky ideas.
+    b) They point to extra material on course webpage. 
+* Questions involving basic pseudocode as seen in Lec 2.9 below on available seat miles may be asked.
+
+
+## A/B Testing as a two-sample test
+
+Recall the [results](static/africa/africa.html) of the "How many countries are there in Africa?" A/B test from Lec 4.3 where we randomly primed 
+
+* Roughly half the students with "Are there less than 14 countries in Africa?"
+* Roughly half the students with "Are there more than 94 countries in Africa?"
+
+
+```r
+africa <- read_csv("https://rudeboybert.github.io/STAT135/static/africa/africa.csv") %>% 
+  select(group, number_of_countries)
+head(africa)
+ggplot(africa, aes(x = group, y = number_of_countries)) +
+  geom_boxplot() +
+  labs(x = "Priming statement", y = "Guessed number of countries in Africa",
+       title = "Effects of priming on guessed number of countries in Africa")
+```
+
+**Analysis approach 1: Regression**
+
+
+```r
+africa_regression <- lm(number_of_countries ~ group, data = africa)
+get_regression_table(africa_regression)
+```
+
+
+**Analysis approach 2: Two-sample t-test**
+
+
+```r
+t.test(number_of_countries ~ group, data = africa)
+```
+
+
+
+
+***
+
+
+
+# Problem set 13 {#PS13}
+
+## Overview
+
+* Assigned Tuesday 4/25, **but you will not submit it**. Solutions to be posted during reading week.
+* Only written component
+* Learning goals:
+    1. Inference for means: confidence intervals and hypothesis testing
+    1. ANOVA
+    1. Two-sample inference
+    
+## 1. Written component {#PS13_written}
+
+1. Exercise 20.7 on home sales (page 540). For part a), assume all conditions are met since the sample size $n=36$ is "large enough."
+1. Exercise 20.24 on parking
+1. Exercise 20.38 on saving gas. Assume since the sample size $n=50$ is large, we can use the standard normal $z$-curve to compute $p$-values and not the $t$-distribution.
+1. Exercise 26.1 on popcorn (page 774). Skip part ~~c)~~ b) and d); do parts a) and c) where the p-value is 0.00037. 
+1. Exercise 26.5 on baking yeast. Skip part c)
+1. Exercise 22.28 on graduation (page 618). Skip part a)
+
+
+## 1. Written component solutions {#PS13_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS13_written_solutions.pdf">`PS13_written_solutions.pdf`</a>
+
+
+***
+
+
+
+# Lec 5.10
+
+## Previous basic regression
+
+Recall from ModernDive Chapter 6.2.2 we saw simple regression with one categorical explanatory variable:
+
+* $y$: Life expectancy
+* $x$: Continent (categorical with Africa set as baseline)
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(gapminder)
+library(moderndive)
+
+# Wrangle data:
+gapminder2007 <- gapminder %>%
+  filter(year == 2007) %>% 
+  select(country, continent, lifeExp, gdpPercap)
+
+# Exploratory data analysis:
+ggplot(gapminder2007, aes(x = continent, y = lifeExp)) +
+  geom_boxplot() +
+  labs(x = "Continent", y = "Life expectancy", title = "Fig 1: Life expectancy by continent") 
+
+# Fit regression
+lifeExp_model <- lm(lifeExp ~ continent, data = gapminder2007)
+get_regression_table(lifeExp_model)
+```
+
+For Americas, Asia, Europe, and Oceania, since all four 95% confidence intervals for the "bump" in the intercept relative to the baseline group Africa **do not** contain 0, this is suggestive that all four continents have significantly higher life expectancies than Africa. 
+
+## Goal of ANOVA
+
+Look at the above boxplot. Keeping in mind that while the solid black lines inside the boxes represent medians and not means, what ANOVA answers is: are the mean life expectancies of the 5 continents the same or is at least one of them different?
+
+## ANOVA table
+
+Here we have $k=5$ groups (each being a continent) and $n = 142$ observations (each being a country in 2007). Let's generate the ANOVA table by applying the `anova()` function to our saved model in `lifeExp_model`.
+
+
+```r
+anova(lifeExp_model)
+```
+
+
+|term      |  df|     sumsq|    meansq| statistic| p.value|
+|:---------|---:|---------:|---------:|---------:|-------:|
+|continent |   4| 13060.676| 3265.1691|    59.714|       0|
+|Residuals | 137|  7491.177|   54.6801|          |        |
+
+The "null distribution" is the $F$ distribution with degrees of freedom
+
+* $df_1 = k-1 = 5-1 = 4$
+* $df_2 = n-k-1 = 142-4-1 = 137$
+
+
+
+You can create a similar plot using `xpf()` (similarly to the `xpnorm()` function we used before when the null distribution is normal):
+
+
+```r
+library(mosaic)
+xpf(59.714, df1 = 4, df2 = 137)
+```
+
+
+
+***
+
+
+
+# Lec 5.8
+
+On using p-values vs confidence intervals
+
+* [Psychology journal bans papers containing p-values](https://www.nature.com/news/psychology-journal-bans-p-values-1.17001) "because the statistics were too often used to support lower-quality research."
+* The [American Statistical Association](https://www.nature.com/news/statisticians-issue-warning-over-misuse-of-p-values-1.19503) put out a statement advising researchers to "avoid drawing scientific conclusions or making policy decisions based on p-values alone."
+
+
+
+***
+
+
+# Problem set 12 {#PS12}
+
+## Overview
+
+* Assigned Wednesday 4/18, due Tuesday 4/24.
+* Only written component
+* Learning goals: Practice inference for regression
+
+
+## 1. Written component {#PS12_written}
+
+1. Exercise 19.24 (page 515) on educated mothers. You can skip part b)
+1. Exercise 25.1 (page 718) on graduation
+1. ~~Exercise 25.3 on graduation~~ Skip.
+1. Exercise 25.7 on graduation
+1. Exercise 25.11 on graduation
+1. Exercise 25.13 on graduation
+1. Exercise 25.17 on graduation
+1. Exercise 25.22 on house prices. Skip part c)
+1. Exercise 25.24 on second home
+1. Part VI Review Exercises 42 (page 742) on Old Faithful. Skip parts e) and f)
+1. Revisit the solutions to PS08 R Markdown component <a target="_blank" class="page-link" href="static/PS/PS08_solutions.html">`PS08_solutions.html`</a>
+    a) Recompute by hand the 95% confidence interval for the population slope for `log10_sqft_living` [0.399, 0.980] as we did in Lec 5.7
+    a) Using $\alpha=0.01$ conduct a hypothesis test for the "condition 5" row. State your conclusion using both statistical and non-statistical language.
+
+
+## 1. Written component solutions {#PS12_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS12_written_solutions.pdf">`PS12_written_solutions.pdf`</a>
+
+
+***
+
+
+
+
+# Problem set 11 {#PS11}
+
+## Overview
+
+* Assigned Wednesday 4/11, due Tuesday 4/17.
+* Two components:
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+    1. Central Limit Theorem quiz component. You'll have a quiz at the start of lecture on Tuesday 4/17. 
+
+
+
+## 1. Written component {#PS11_written}
+
+Note SDM is the textbook Stats: Data and Models 4th edition. 
+
+1. SDM Exercise 18.15 on confidence intervals (p.490)
+1. SDM Exercise 18.16 on confidence intervals
+1. SDM Exercise 19.2 on being psychic (p.512)
+1. SDM Exercise 19.4 on being psychic
+1. SDM Exercise 19.7 on being psychic
+1. SDM Exercise 19.9 on bad medicine
+
+
+## 1. Written component solutions {#PS11_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS11_written_solutions.pdf">`PS11_written_solutions.pdf`</a>
+
+
+## 2. Quiz component
+
+<center>
+<iframe width="533" height="300" src="https://www.youtube.com/embed/jvoxEYmQHNM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</center>
+
+<br>
+
+Watch the above video on the Central Limit Theorem before lecture on Tuesday 4/17. At the start of lecture, you will have a brief quiz worth one tenth of your engagement grade (thus 1% overall).
+
+## 2. Quiz component solutions
+
+
+**Question 1**: The Central Limit Theorem guarantees what?
+
+
+
+* **The averages of samples have approximately normal distributions**. In other words, the sampling distribution of $\overline{x}$ is Normal
+* **As sample size gets bigger, the distribution of averages get more normal and narrower**. In other words, as $n \longrightarrow\infty$ the sampling distribution of $\overline{x}$ will more and more ressemble a perfect normal curve AND it gets narrower i.e. the spread shrinks i.e. the standard error gets smaller. 
+
+<center>
+<img src="static/images/CLT.png" alt="Drawing" style="height: 300px;"/>
+</center>
+
+<br>
+
+**Question 2** For the Central Limit Theorem to "work," the population distribution from which you extract the samples to compute the sample averages should be normal as well.
+    + a) TRUE or FALSE
+    + b) What example is used in the video? Be specific about the nature of the distribution.
+
+FALSE. For example, say we draw samples of size $n$ from the population distribution of dragon wing-spans, which everyone knows is bimodal. Even if this population distribution of individual dragon wing-spans isn't normal, the sampling distribution of $\overline{x}$ based on samples of size $n$ will still be normal.
+
+<center>
+<img src="static/images/dragon.png" alt="Drawing" style="height: 300px;"/>
+</center>
+
+<br>
+
+
+***
+
+
+
+
+
+# Lec 5.4
+
+"Replicable" random values. Copy the following into a scratchpad and run the following code portions individually:
+
+
+```r
+# Run this
+sample(1:10)
+
+# Then this
+sample(1:10)
+
+# Then this
+sample(1:10)
+
+# Note how the results are different, due randomness. Now run this:
+set.seed(76)
+sample(1:10)
+
+# Then this:
+set.seed(76)
+sample(1:10)
+
+# Then this. Because the seed is different, the results are different:
+set.seed(79)
+sample(1:10)
+```
+
+We see that if we set the seed value, we get "replicable" randomness. Pick any number you like as the seed value. For example, [76 is a favorite number of mine](http://www.macleans.ca/wp-content/uploads/2014/05/MAC21_SUBBAN_CAROUSEL.jpg). 
+
+
+
+
+
+
+***
+
+
+
+
+
+
+# Problem set 10 {#PS10}
+
+## Overview
+
+* Assigned Friday 4/6, due Tuesday 4/10.
+* Two components:
+    1. R Markdown component: Submit both your `PS10_FirstName_LastName.Rmd` and `PS10_FirstName_LastName.html` files on [DropBox](https://www.dropbox.com/request/1pkgPo0nUdwSC00C1l1s) by 9am.
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+* Learning goals:
+    1. Inferring about an unknown population proportion $p$ using a confidence interval centered around the sample proportion: $\widehat{p} \pm \text{MoE}$:
+    1. Generalizing the in-class "simulation of the sampling distribution"
+        + From what we did in class: Estimating the population proportion red $p$ in the sampling bowl using the sample proportion $\widehat{p}$ based on a sample from the shovel with $n=50$ slots (both tactile and virtual samples).
+        + To a new scenario: Estimating the population mean age $\mu$ in a sack of pennies using the sample mean $\overline{x}$ based on a sampled handful of $n=50$ pennies (only virtual samples).
+
+<center>
+<img src="static/images/sampling2.jpg" alt="Drawing" style="height: 200px;"/>
+<img src="static/images/left_arrow.png" alt="Drawing" style="width: 50px;"/> 
+<img src="static/images/sack_of_pennies.jpg" alt="Drawing" style="height: 200px;"/>
+</center>
+
+<br>
+
+## 1. R Markdown component {#PS10_code}
+
+1. **Hints**:
+    1. Knit the problem set once before starting and read over the HTML file first.
+    1. I *highly* recommend `View()`ing all data frames in your console as you go, but remember that you cannot include `View()` code in your `.Rmd` file.
+1. Download the following R Markdown template file, upload it to RStudio Server and rename it to reflect your name: <a href="static/PS/PS10_FirstName_LastName.Rmd" download>`PS10_FirstName_LastName.Rmd`</a>
+1. Complete the problems in the `.Rmd` file and make sure your file knits.
+1. Export the **both** these files and submit using this [DropBox](https://www.dropbox.com/request/1pkgPo0nUdwSC00C1l1s) link
+    + `PS10_FirstName_LastName.Rmd`
+    + `PS10_FirstName_LastName.html`
+
+
+## 1. R Markdown component solutions {#PS10_code_solutions}
+
+* HTML file of solutions <a target="_blank" class="page-link" href="static/PS/PS10_solutions.html">`PS10_solutions.html`</a>
+* `.Rmd` R Markdown source file of solutions <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a>
+
+
+## 2. Written component {#PS10_written}
+
+Note SDM is the textbook Stats: Data and Models 4th edition. 
+
+
+1. SDM Exercise 17.11 on market research (p.464).
+1. SDM Exercise 17.20 on M&M parts b) and c) only
+1. SDM Exercise 18.2 on "How's life?" (p.488)
+1. SDM Exercise 18.6 on "How's life?". Hint:
+
+
+```eval
+library(mosaic)
+xqnorm(0.975, mean = 0, sd = 1)
+```
+
+
+## 1. Written component solutions {#PS10_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS10_written_solutions.pdf">`PS10_written_solutions.pdf`</a>
+
+
+
+
+
+***
+
+
+
+
+# Lec 5.1 + Midterm II Notes
+
+## Midterm II
+
+**Admin**: 
+
+* Extra office hours this Wednesday 4/4 3:30pm-5:15pm in SMudd 208.
+* If you require special accommodations, please fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScaOVK9tlj4RvIffCxsjU6Dbo48teh3bhXwudeqlqsgE695eQ/viewform) by Tuesday at 5pm. 
+* Midterm review tomorrow Tue 4/3 7pm-8pm in Merrill Science 4.
+    a) Go over [practice midterm](static/Midterm-II.pdf). Note:
+          + No solutions will be posted as I do not have a digital copy. 
+          + The midterm last semester only covered modeling, there were no questions on statistical background (the green topics in the spreadsheet above.)
+    b) Go over past problem sets
+    c) Any questions you may have; if possible Slack them to me in advance.
+
+**Topics**:
+
+* Midterm covers
+    + Lectures 3.1-4.6 (blue and green topics in schedule)
+    + PS06-PS09.
+* Use your class notes as your roadmap:
+    a) They summarize what’s been covered in ModernDive + SDM and emphasize tricky ideas.
+    b) They point to extra material on course webpage. 
+* While you might need to understand given code, you will not be asked to directly write fully-functioning code. I might however ask you to write pseudocode as seen in Lec 2.9 on available seat miles.
+
+
+
+
+
+
+***
+
+
+
+
+# Lec 4.6
+
+Recall:
+
+* **Accuracy** relates to "how on target are we?" In other words, is the sampling distribution for the 1000 values of $\widehat{p}$ centered at the true population proportion $p$? 
+* **Precision** relates to "how consistent are we?" or "how much do our estimates vary?" In other words, what is the spread of the sampling distribution for the 1000 values of $\widehat{p}$ as quantified by the standard deviation, which in this special case is called the standard error?  
+
+<center>
+<img src="static/images/accuracy_vs_precision.png" alt="Drawing" style="width: 500px;"/>
+</center>
+
+
+
+
+
+
+***
+
+
+
+
+
+# Problem set 9 {#PS09}
+
+## Overview
+
+* Assigned Wed 3/28, due Tuesday 4/3
+* Only one component:
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+* Learning goals:
+    1. Think about bias, random sampling, observational studies and random assignment for designed experiments. 
+    1. Study the normal distribution
+
+## 1. Written component {#PS09_written}
+
+Note SDM is the textbook Stats: Data and Models 4th edition.
+
+1. SDM Exercise 11.8 on Satisfactory satisfaction samples (p.314)
+1. SDM Exercise 11.18 on social life. Questions are listed at the end of Exercise 11.16; do parts a), b), d), e), f), g)
+1. SDM Exercise 12.2 on E-commerce (p.336)
+1. SDM Exercise 12.20 on honesty
+1. SDM Exercise 12.22 on vitamin B12. Questions are listed just before Exercise 12.21.
+1. SDM Exercise 12.24 on insomnia. Questions are listed just before Exercise 12.21.
+1. SDM Exercise 12.30 on greyhounds. Questions are listed just before Exercise 12.21.
+1. SDM Exercise 5.2 on Mensa (p.134)
+1. SDM Exercise 5.8 on IQ
+    + Part a) is asking you to draw the normal curve and fill in the areas like on p.122
+    + Hint: You can use the `xpnorm()` function from the `mosaic` package we saw in Lec 4.4 to verify your answers.
+1. SDM Exercise 5.18 on Checkup
+1. SDM Exercise 5.42 on Customer database
+1. SDM Exercise 5.46 on IQ. Hint: In the `mosaic` package:
+    + `xpnorm()` takes as input an `x` value and returns the proportion of the area of the normal curve on either side of `x`
+    + `xqnorm()` does the reverse. It takes as input as desired proportion of the area of the normal curve and returns the `x` value
+
+
+## 1. Written component solutions {#PS09_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS09_written_solutions.pdf">`PS09_written_solutions.pdf`</a>
+
+
+
+***
+
+
+
+# Lec 4.4
+
+Interactive [Shiny app](https://www.datacamp.com/courses/building-web-applications-in-r-with-shiny) on Normal Distributions, in particular sliders to vary the orange normal curve's
+
+1. mean $\mu$ i.e. center
+1. standard deviation $\sigma$ i.e. spread
+
+<center>
+<a target="_blank" href="https://beta.rstudioconnect.com/connect/#/apps/3408/"><img src="static/images/normal_distribution.png" title="Normal distribution" width="600"/></a>
+</center>
+
+
+
+
+
+***
+
+
+# Lec 4.3
+
+* "Number of countries in Africa" results to be posted [here](static/africa/africa.html)
+* [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfiA4RBXFupeaKs6cZ0yQDCGqkC4EsHR9jSvC7QyMpar-Mgew/viewform) to enter in sampling exercise data from today. 
+
+
+
+
+
+
+***
+
+
+
+
+# Lec 4.2
+
+How Facebook makes [$100 million a day](http://www.adweek.com/digital/facebook-raked-in-9-16-billion-in-ad-revenue-in-the-second-quarter-of-2017/) (based on 2017 2nd quarter results):
+
+1. [Split testing](https://www.facebook.com/business/help/1738164643098669), in particular the:
+    + The video
+    + "How split testing works" bullet points
+1. From this [additional page](https://www.facebook.com/business/news/optimize-your-ads-with-split-testing), consider this image:
+
+<center>
+<img src="https://scontent.fbed1-2.fna.fbcdn.net/v/t39.2365-6/16781172_1889071008003422_7487644975081979904_n.gif?_nc_cat=0&oh=766bdf6ed3179016603380781a2e1d25&oe=5B31AA0B" alt="Drawing" style="width: 600px;"/>
+</center>
+
+
+
+
+
+***
+
+
+
+
+
+
+# Problem set 8 {#PS08}
+
+## Overview
+
+* Assigned Tuesday 3/20, due Tuesday 3/27
+* ~~Three~~ Two components: 
+    1. R Markdown component: Submit **both** your `PS08_FirstName_LastName.Rmd` and `PS08_FirstName_LastName.html` files on [DropBox](https://www.dropbox.com/request/MzWcOGVIArEMCLpAZSgp) by 9am.
+    1. Netflix "Black Mirror" quiz component. You'll have a quiz at the start of lecture on Tuesday 3/27. 
+    1. ~~Written component~~ No written component this week. 
+* Learning goals: Wrap up multiple regression.
+
+
+
+## 1. R Markdown component {#PS08_code}
+
+1. **Do this first!** Run the following line of code in your console to update 
+the moderndive package to the latest [development version](https://github.com/moderndive/moderndive): `devtools::install_github("moderndive/moderndive")`
+1. Download the following R Markdown template file, upload it to RStudio Server and rename it to reflect your name: <a href="static/PS/PS08_FirstName_LastName.Rmd" download>`PS08_FirstName_LastName.Rmd`</a>
+1. **Do this first before editing the `.Rmd` file!**: Knit the file once and read over the questions first.
+1. Complete the problems in the `.Rmd` file and make sure your file knits. If you are having trouble "knitting" your document, before asking for help, see if one of these [6 fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/) work. In my experience, these fixes cover 90% of "knitting" errors.
+1. Export the **both** these files and submit using this [DropBox](https://www.dropbox.com/request/MzWcOGVIArEMCLpAZSgp) link
+    + `PS08_FirstName_LastName.Rmd`
+    + `PS08_FirstName_LastName.html`
+
+
+## 1. R Markdown component solutions {#PS08_code_solutions}
+
+* HTML file of solutions <a target="_blank" class="page-link" href="static/PS/PS08_solutions.html">`PS08_solutions.html`</a>
+* `.Rmd` R Markdown source file of solutions <a href="static/PS/PS08_solutions.Rmd" download>`PS08_solutions.Rmd`</a>
+
+
+## 2. Quiz component
+
+<center>
+<img src="static/images/hang_the_dj.png" alt="Drawing" style="width: 400px;"/>
+</center>
+
+<br>
+
+Watch Netflix -> Black Mirror -> Season 4 -> Episode 4 "Hang the DJ" (about 51 minutes) before lecture on Tuesday 3/27. At the start of lecture, you will have a brief quiz worth one tenth of your engagement grade (thus 1% overall). Note, if you are uncomfortable watching sexually explicit scenes and would rather skip them, they occur at:
+
+1. 15:10 - 16:32
+1. 22:02 - 22:29
+1. 24:46 - 24:53
+1. 42:19 - 43:09
+
+I encourage you to watch with your classmates! If you do not have access to Netflix please complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdjU-zorD6vvl8IG0v-cKgGyfPfLCx3gNu_H0ZK9Ip2OE-SXw/viewform) by Thursday March 3/22 5pm. 
+
+
+
+
+***
+
+
+
+
+# Lec 4.1
+
+**First scenario**: A doctor goes over medical records and finds that individuals who sleep with their shoes on tend to wake up with headaches. Does sleeping with your shoes on cause you to get a headache?
+
+<center>
+<img src="static/images/shoes.jpg" alt="Drawing" style="width: 300px;"/> 
+<img src="static/images/left_arrow.png" alt="Drawing" style="width: 50px;"/> 
+<img src="static/images/headache.jpg" alt="Drawing" style="width: 300px;"/>
+</center>
+
+<br>
+
+**Other scenarios**:
+
+1. You look at income data and find that individuals with more years of
+education, in particular a college degree, tend to also have higher earnings.
+Does college cause indivivuals to have higher earnings?
+1. You look at the annual income of all Middlebury College faculty and find that
+those faculty who identify as female tend to earn less than those who identify
+as male. Does being female cause faculty to earn less than males at Middlebury?
+1. You look at health records data and find that those individuals who take
+multivitamins daily tend to be in better health. Do multivitamins cause better
+health?
+
+
+
+***
+
+
+
+
+
+# Problem set 7 {#PS07}
+
+## Overview
+
+* Assigned Wednesday 3/7, due Tuesday 3/20 (after break)
+* Three components: Two required and one optional
+    1. R Markdown component: Submit **both** your `PS07_FirstName_LastName.Rmd` and `PS07_FirstName_LastName.html` files on [DropBox](https://www.dropbox.com/request/sZ1Nr8nrB1hocMchWVKG) by 9am.
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+    1. **Optional**: DataCamp component.
+* Learning goals:
+    1. Basic regression with a categorical explanatory variable
+    1. Starting multiple regression questions
+    1. Unpacking hate crime occurrence in the US; extending on [Problem Set 02](#PS02)
+* Hints:
+    1. If you are having trouble "knitting" your document, before asking for help, see if one of these [6 fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/) work. In my experience, these fixes cover 90% of "knitting" errors.
+
+
+
+## 1. R Markdown component {#PS07_code}
+
+1. Download the following R Markdown template file, upload it to RStudio Server and rename it to reflect your name: <a href="static/PS/PS07_FirstName_LastName.Rmd" download>`PS07_FirstName_LastName.Rmd`</a>
+1. Complete the problems in the `.Rmd` file and make sure your file knits.
+1. Export the **both** these files and submit using this [DropBox](https://www.dropbox.com/request/sZ1Nr8nrB1hocMchWVKG) link
+    + `PS07_FirstName_LastName.Rmd`
+    + `PS07_FirstName_LastName.html`
+1. You should see the following confirmation screen:
+<center>
+<img src="static/images/confirmation.png" alt="Drawing" style="width: 400px;"/>
+</center>
+
+
+
+## 1. R Markdown component solutions {#PS07_code_solutions}
+
+* HTML file of solutions <a target="_blank" class="page-link" href="static/PS/PS07_solutions.html">`PS07_solutions.html`</a>
+* `.Rmd` R Markdown source file of solutions <a href="static/PS/PS07_solutions.Rmd" download>`PS07_solutions.Rmd`</a>
+
+
+
+## 2. Written component {#PS07_written}
+
+Note SDM is the textbook Stats: Data and Models 4th edition.
+
+1. SDM Exercise 28.2 on candy sales (p.838)
+1. SDM Exercise 28.4 on movie profits
+1. SDM Exercise 28.12 more interpretations
+1. SDM Exercise 28.14 parts a) and c) on Scottish hill races
+1. SDM Exercise 28.20 parts a) and b) on GPA and SAT's
+
+
+## 2. Written component solutions {#PS07_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS07_written_solutions.pdf">`PS07_written_solutions.pdf`</a>
+
+
+## 3. Optional: DataCamp component
+
+This week's DataCamp course [Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) is **optional**. If you would like:
+
+1. Another perspective on the same material we are learning, I recommend you in particular watch the videos.
+1. More practice coding, I recommend you in particular go over the coding exercises.
+
+Login to DataCamp, in the top navbar click Groups -> STAT/MATH 135 ... -> My Assignments -> 3 newly listed chapters:
+
+1. Parallel slopes
+1. Evaluating and extending parallel slopes model
+1. Multiple Regression
+
+
+
+***
+
+
+
+# Lec 3.7
+
+In ModernDive 7.2, we'll be modeling
+
+* $y$ outcome variable teaching score
+* Explantory variables:
+    + $x_1$: numerical variable age
+    + $x_2$: categorical (in this case binary) variable gender
+
+but using two approaches:
+
+1. ModernDive 7.2.2: Parallel slopes model
+1. ModernDive 7.2.3: Interaction model
+
+
+
+
+
+
+***
+
+
+
+# Lec 3.6
+
+**Midterm I Question 4.b)** Both the following plots show the relationship between life expectancy and GDP per
+capita in 2007 in the `gapminder` data, but the right one has GDP per capita (USD) on the x-axis on a $\log10$-scale using `scale_x_log10()`. Thus:
+
+* Left plot: the white grid lines on the x-axis denote **additive** differences of $+10000$ 
+* Right plot: the white grid lines on the x-axis denote **multiplicative** differences of $\times 10$
+
+
+
+
+**Midterm I Question 5.f)** Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:
+
+
+
+| Dataset    |   |   |  |   |   |   |   |   |   |   |  |    |    |
+|:-----|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|
+|Data 1 | 16| 17| **32** | 33| 54| **60**| 61| 62| | | **100**| 110| 115|
+|Data 2 | 16| 17| **32** | 33| 54| **60**| | | 98| 99| **100**| 110| 115|
+
+
+
+***
+
+
+
+# Problem set 6 {#PS06}
+
+## Overview
+
+* Assigned Wednesday 2/28, due Tuesday 3/6
+* Three components: Two required and one optional
+    1. R Markdown component: Submit **both** your `PS06_FirstName_LastName.Rmd` and `PS06_FirstName_LastName.html` files on [DropBox](https://www.dropbox.com/request/DBiehQ87zY8GQrdrxYRh) by 9am.
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+    1. **Optional**: DataCamp component.
+* Learning goals:
+    1. Baby's first regression in R.
+    1. Interpreting regression.
+* Hints:
+    1. It's best to knit your `.Rmd` file early and knit often, so that you can catch errors early.
+    1. If you are having trouble "knitting" your document, before asking for help, see if one of these [6 fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/) work. In my experience, these fixes cover 90% of "knitting" errors.
+
+
+
+## 1. R Markdown component {#PS06_code}
+
+1. Download the following R Markdown template file, upload it to RStudio Server and rename it to reflect your name: <a href="static/PS/PS06_FirstName_LastName.Rmd" download>`PS06_FirstName_LastName.Rmd`</a>
+1. Complete the problems in the `.Rmd` file and make sure your file knits.
+1. Export the **both** these files and submit using this [DropBox](https://www.dropbox.com/request/DBiehQ87zY8GQrdrxYRh) link
+    + `PS06_FirstName_LastName.Rmd`
+    + `PS06_FirstName_LastName.html`
+1. You should see the following confirmation screen:
+<center>
+<img src="static/images/confirmation.png" alt="Drawing" style="width: 400px;"/>
+</center>
+
+
+## 1. R Markdown component solutions {#PS06_code_solutions}
+
+* HTML file of solutions <a target="_blank" class="page-link" href="static/PS/PS06_solutions.html">`PS06_solutions.html`</a>
+* `.Rmd` R Markdown source file of solutions <a href="static/PS/PS06_solutions.Rmd" download>`PS06_solutions.Rmd`</a>
+
+
+## 2. Written component {#PS06_written}
+
+Note SDM is the textbook Stats: Data and Models 4th edition.
+
+1. Read ModernDive 6.3.3 and answer this question: the "best-fitting" regression line is "best" in that it minimizes what?
+1. SDM Exercise 7.16 on engine size (p.207)
+1. SDM Exercise 7.18 on engine size
+1. SDM Exercise 7.20 on engine size
+1. SDM Exercise 7.42 on roller coasters
+1. SDM Exercise 7.58 parts b) and c) on wildfires
+1. SDM Exercise 8.12 on cell phones (p.238)
+1. SDM Exercise 8.36 on marriage age parts b)-d)
+
+
+## 2. Written component solutions {#PS06_written_solutions}
+
+Solutions <a target="_blank" class="page-link" href="static/PS/PS06_written_solutions.pdf">`PS06_written_solutions.pdf`</a>
+
+
+## 3. Optional: DataCamp component
+
+This week's DataCamp course [Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) is **optional**. If you would like:
+
+1. Another perspective on the same material we are learning, I recommend you in particular watch the videos.
+1. More practice coding, I recommend you in particular go over the coding exercises.
+
+Login to DataCamp, in the top navbar click Groups -> STAT/MATH 135 ... -> My Assignments -> 4 newly listed chapters:
+
+1. Correlation and Regression: Visualizing two variables
+1. Correlation and Regression: Correlation
+1. Correlation and Regression: Simple linear regression
+1. Correlation and Regression: Interpreting regression models
+
+
+
+
+
+***
+
+
+
+# Problem set 5 {#PS05}
+
+## Overview
+
+* Assigned Tuesday 2/20, due Tuesday 2/27
+* Two components:
+    1. Google Form component: Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSc_Hlq6V3vVet6kadmQTaKGvi-BafuXC2rqbx_qu5JzPihnFA/viewform) with what you thought were the 2-3 most salient differences between the male and female StitchFix "style guide" quizzes. 
+    1. R Markdown component: Submit your `PS05_FirstName_LastName.Rmd` file (not the `PS05_FirstName_LastName.html` file) on [DropBox](https://www.dropbox.com/request/K99L914qvbBW6b6kOey3) by 9am; no submissions will be accepted after 9am. In the outside chance there is a problem with the DropBox link, Slack direct message me your problem set before 9am. 
+* Learning goals:
+    1. Shorter problem set for you to get used to working in RMarkdown.
+    1. More practice data wrangling.
+    1. Start thinking of modeling an outcome variable in terms of "input" explanatory/predictor variables.
+* Hints:
+    1. For any data wrangling exercises, I highly suggest you write out the *pseudocode* first, as we did in Lec 2.9 in the "available seat miles" exercise.
+    1. It's best to knit your `.Rmd` file early and knit often, so that you can catch errors early.
+    1. If you are having trouble "knitting" your document, before asking for help, see if one of these [6 fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/) work. In my experience, these fixes cover 90% of "knitting" errors.
+    1. Do not spin your wheels! I **highly** recommend you allow yourself enough time to come to office hours and/or drop-in center hours on Monday in case you get stuck not being able to Knit. 
+
+
+## 1. Google Form component
+
+1. Read the following article on [StitchFix](https://fashionista.com/2018/01/katrina-lake-stitch-fix)
+1. Watch the following video:  
+<center><a href="http://abcnews.go.com/Lifestyle/clothing-box-services-stitch-fix-wantable-dia/story?id=49794347">
+<img border="0" alt="GMA" src="static/images/GMA.png" width="600">
+</a>
+</center>   
+1. Go to [StitchFix](https://www.stitchfix.com/) -> Select your (binary) gender -> Complete the "style guide" quiz. If you would rather not use your own email, copy and paste a temporary email from <https://www.tempmailaddress.com/>.
+1. Logout of StitchFix, create a new account using a different email, and repeat the above steps but for the *opposite gender* than the one you selected.
+1. In this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSc_Hlq6V3vVet6kadmQTaKGvi-BafuXC2rqbx_qu5JzPihnFA/viewform), note what you feel are the 2-3 most salient differences between the "style guide" quiz for men and for women. 
+
+
+## 2. R Markdown component {#PS05_code}
+
+1. Download the following R Markdown template file, upload it to RStudio Server and rename it to reflect your name: <a href="static/PS/PS05_FirstName_LastName.Rmd" download>`PS05_FirstName_LastName.Rmd`</a>
+1. Complete the problems in the `.Rmd` file and make sure your file knits.
+1. Export the file `PS05_FirstName_LastName.Rmd` to your computer (not the `PS05_FirstName_LastName.html` file) and submit it using this [DropBox](https://www.dropbox.com/request/K99L914qvbBW6b6kOey3) link.
+
+
+## 2. R Markdown component solutions {#PS05_code_solutions}
+
+* HTML file of solutions <a target="_blank" class="page-link" href="static/PS/PS05_solutions.html">`PS05_solutions.html`</a>
+* `.Rmd` R Markdown source file of solutions <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a>
+
+
+
+***
+
+
+
+# Lec 3.1 + Midterm I Notes
+
+## Midterm I
+
+**Admin**: 
+
+* Extra office hours this Wednesday 2/21 in SMudd 208 4:30-6:30.
+* If you require special accommodations, please fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdqbXFb25j_FUFK95sC6sHyBbyxqQKmA2nRHO35L34rYE-q7g/viewform) by Tuesday at 5pm. 
+* Midterm review tomorrow 7pm Merrill Science 4
+    a) Go over [practice midterm](static/Midterm-I.pdf). Skip Q3.
+    b) Any questions you may have; if possible Slack them to me in advance.
+
+**Topics**:
+
+* Midterm covers Lectures 1.1-2.9 (Orange and pink topics in schedule) & PS01-PS04.
+* Use your class notes as your roadmap:
+    a) They summarize what’s been covered in ModernDive and emphasize tricky ideas.
+    b) They point to extra material on course webpage below. 
+* While you might need to understand given code, you will not be asked to directly write fully-functioning code. I might however ask you to write pseudocode as seen in Lec 2.9 on available seat miles.
+
+## R Markdown
+
+1. First, change RStudio default configurations:
+    a) Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    a) Uncheck box next to "Show output inline for all R Markdown Documents"
+1. Second, create a new R Markdown `.Rmd` file and "Knit" it.
+    a) Go to RStudio menu bar -> File -> New File -> R Markdown -> Set Title to "testing". A file `testing.Rmd` should show up.
+    a) Click the arrow next to "Knit" -> "Knit to HTML" -> Save as "testing". An HTML (webpage) should pop up; you may need to disable your browser's pop-up blocker.
+
+
+***
+
+
+# Lec 2.9
+
+## In-class data wrangling exercise
+
+**Note**: This is a bit harder than what will be expected of you in this course,
+but it is a nice all-encompassing and real example.
+
+1. Run the starter code below to view the data frame of interest for today. (Note `joins` are not a required topic in this class; if you're still interested in learning how to join two datasets, read the optional [ModernDive Section 5.8](https://moderndive.github.io/moderndive_book/5-wrangling.html#joins).)
+1. In groups of 2-3 sketch out the steps on the board to wrangle out a data frame of the [available seat miles](https://en.wikipedia.org/wiki/Available_seat_miles) for each airline in 2013 in descending order. Available seat miles is a measure of airline capacity.
+
+**Hints**:
+
+1. Take a close look at the data at your disposal in `View(flights_plus)`.
+1. Sketch out what your end goal is roughly going to look like and then fill in all steps in between. This way you won't confuse *what* you are trying to do (the algorithm) with *how* you are going to do it (writing code). 
+1. Recall the 5 main verbs (5MV) for data wrangling we've seen so far:
+    a) `filter()` rows
+    a) `summarize()` many values to one using a summary statistic function like `mean()`, `median()`, etc.
+    a) `group_by()` to add grouping meta-data
+    a) `mutate()` existing variables to create new ones
+    a) `arrange()` the rows of a data frame in order of one of the variables
+    a) Extra: `select()` specific columns (i.e. variables) of your dataset.
+
+**Starter Code**:
+
+
+```r
+library(dplyr)
+library(nycflights13)
+# Don't worry if you don't fully understand what's going on here.
+flights_plus <- flights %>% 
+  left_join(planes, by = "tailnum") %>% 
+  rename(year = year.x, year_manufactured = year.y) %>% 
+  left_join(airlines, by = "carrier") %>% 
+  filter(!is.na(seats))
+View(flights_plus)
+```
+
+## Quick Solutions
+
+Based on the pseudocode we wrote in class:
+
+
+```r
+flights_plus %>% 
+  filter(year == 2013) %>% 
+  select(name, seats, distance) %>% 
+  mutate(flight_ASM = seats * distance) %>% 
+  group_by(name) %>% 
+  summarize(total_ASM = sum(flight_ASM)) %>% 
+  arrange(desc(total_ASM))
+```
+
+
+## Detailed Solutions
+
+First, let's keep only the rows and variables we're interested in. This allows us to spend less mental energy looking at the data since we've eliminated all rows and columns we don't need. Note however since we only had 2013 flights to begin with, the `filter(year == 2013)` was not actually necessary.
+
+
+```r
+flights_plus %>%
+  filter(year == 2013) %>%
+  select(name, seats, distance)
+```
+
+
+Let's calculate on each individual flight's available seat miles and save this in a variable `flight_ASM`. Notice how there are still `nrow(flights_plus) %>% comma()` rows in the resulting data frame, one for each flight:
+
+
+```r
+flights_plus %>%
+  filter(year == 2013) %>%
+  select(name, seats, distance) %>%
+  mutate(flight_ASM = seats * distance)
+```
+
+
+
+Now let's add grouping structure "meta-data". Note the `Groups: name [16]` meta-data at the top of the data frame output indicating that the rows are grouped by `name` of which there are 16 possible values (one for each carrier). Also note that the data has not changed, we still have `nrow(flights_plus) %>% comma()` rows: 
+
+
+```r
+flights_plus %>%
+  filter(year == 2013) %>%
+  select(name, seats, distance) %>%
+  mutate(flight_ASM = seats * distance) %>%
+  group_by(name)
+```
+
+
+Let's now `summarize()` each group by using the `sum()` function. We now only have 16 rows, one for each carrier: 
+
+
+```r
+flights_plus %>%
+  filter(year == 2013) %>%
+  select(name, seats, distance) %>%
+  mutate(flight_ASM = seats * distance) %>%
+  group_by(name) %>%
+  summarize(total_ASM = sum(flight_ASM))
+```
+
+
+And finally, `arrange()` in `desc`ending order of `total_ASM`:
+
+
+```r
+flights_plus %>%
+  filter(year == 2013) %>%
+  select(name, seats, distance) %>%
+  mutate(flight_ASM = seats * distance) %>%
+  group_by(name) %>%
+  summarize(total_ASM = sum(flight_ASM)) %>%
+  arrange(desc(total_ASM))
+```
+
+
+***
+
+# Lec 2.8
+
+Baby names trend analysis:
+
+<center><a target="_blank" href="https://beta.rstudioconnect.com/connect/#/apps/3275/"><img src="static/images/babynames.png" title="Baby names trend analysis" width="600"/></a></center>
+
+
+***
+
+
+# Problem set 4 {#PS04}
+
+## Overview
+
+* Assigned Tuesday 2/13, due Tuesday 2/20
+* Three components:
+    1. DataCamp: Due at 9am. Two chapters and a feedback survey.
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+    1. Code component: Due on [DropBox](https://www.dropbox.com/request/ExSvsgvFXpzT5uVyQnGw) at 9am; no submissions will be accepted after 9am. In the outside chance there is a problem with the DropBox link, Slack direct message me your problem set before 9am. 
+* Learning goals:
+    1. Practice, practice, practice data wrangling.
+* Hints:
+    1. Coding component: Read Chapter 5 in ModernDive and complete the DataCamp portion first, then do the coding component. In particular the new Subsection 5.5.1 on `group_by()` more than one variable. 
+    1. Coding component: Sketch out your "algorithm" on paper first and only then start coding, just as we did in the in-class exercise for Lec 2.9 involving available seat miles. 
+    1. DataCamp: We've seen one way to add a title is to add a `labs(title = "TITLE TEXT")` layer to a plot. A second way to add a `+ ggtitle("TITLE TEXT")` layer to a plot
+
+## 1. DataCamp
+
+1. Login to DataCamp, in the top navbar click Groups -> STAT/MATH 135 ... -> My Assignments -> Complete the 2 newly listed chapters:
+    a) Introduction to the Tidyverse: Grouping and summarizing (do this one first)
+    b) Introduction to the Tidyverse: Types of visualizations
+2. After you're done the above, fill out this [Feedback Survey](https://docs.google.com/forms/d/e/1FAIpQLSc2mJ7ByrRQdZHbRvcFZ2C19LJsFQOH2Z-pLwMu-WQpxyboAw/viewform) on the "Introduction to the Tidyverse" DataCamp courses from PS03 and PS04, comparing them to the "Intro to R" and "Intermediate R" DataCamp courses from PS01 and PS02.
+
+
+## 2. Written component {#PS04_written}
+
+First, read the following links to get an idea of the context of the datasets you'll work with in the code component.
+
+* FiveThirtyEight: [The Most Common Unisex Names In America: Is Yours One Of Them?](https://fivethirtyeight.com/features/there-are-922-unisex-names-in-america-is-yours-one-of-them/)
+* FiveThirtyEight: [How to Tell Someone’s Age When All You Know Is Her Name](https://fivethirtyeight.com/features/how-to-tell-someones-age-when-all-you-know-is-her-name/)
+
+Then answer the following questions, some of which will require you to complete the coding component below:
+
+* Question 1: Babynames
+    a) What makes a name "unisex" according to 538's definition?
+    a) In the "How to Tell Someone’s Age When All You Know Is Her Name" article, the Figure "Median Ages for Males with the 25 Most Common Names" involves 25 instances of a) <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u> (a graphic we've seen in class) but each without the b) <u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>. What are a) and b)?
+    a) In the "How to Tell Someone’s Age When All You Know Is Her Name" article, consider the names in the Figure "Youngest Male Names". Which name has the largest spread (i.e. variation) in age? Compute by hand a previously seen *summary statistic* of this spread based on based on the values in this figure. In other words, you don't need to use the `babynames` dataset, rather just read off approximate values from graphics.  
+    a) Repeat the above for the names in the Figure "Youngest Female Names" 
+
+
+## 2. Written component solutions {#PS04_written_solutions}
+
+* Question 1: Babynames
+    a) If at least one third of babies with that name were female and at least one third of babies with that name were male. 
+    a) These were 25 instances of a) boxplots without the b) whiskers.
+    a) "Oliver" has the largest gap between the 25th and 75th percentile of about 2.5 years and 35 years respectively. In other words, 25% of Olivers are younger than about 2.5 years while 25% of Olivers are older than about 35 years old. A measure of spread we've seen based on these two values is the *interquartile range*, or the difference of the 3rd and 1st quartile, of 35-2.5=32.5 years. **What does this all mean?** You'll encounter a lot of both really young, and a lot of older Olivers. On the other hand, Jaydens will tend to be of similar age. 
+    a) "Ella" has the largest gap between the 25th and 75th percentile of about 5 years and 55 years respectively. In other words, 25% of Ellas are younger than 5 years while 25% of Ellas are older than about 55 years old. The *interquartile range* is 55 - 5 = 50 years, a much larger spread than the Olivers! **What does this all mean?** There is even more variation, or differences, in ages in Ellas than Olivers!
+
+## 3. Code component {#PS04_code}
+
+* Follow the same procedure as in the [PS02 code component](#PS02_code) to create, save, and submit a `PS04_YourFirstName_YourLastName.R` scratch pad. 
+* Submit using this [DropBox](https://www.dropbox.com/request/ExSvsgvFXpzT5uVyQnGw) link.
+* Please note that all questions in the coding component can be answered by copying/pasting/tweaking exisiting code in ModernDive:
+    + Find something similar to what you want in ModernDive.
+    + Copy and paste the code that made this plot in `PS04_YourFirstName_YourLastName.R`.
+    + Tweak the code to match what you want.
+
+
+
+```r
+# Name: WRITE YOUR NAME HERE
+# Collaboration: INDICATE WHO YOU COLLABORATED WITH FOR THIS PROBLEM SET
+
+# Load all necessary packages:
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+library(babynames)
+
+# Question 1 --------------------------------------------------------------
+# Let's load the evals data from PS03 and View() it
+load(url("http://www.openintro.org/stat/data/evals.RData"))
+evals <- as_data_frame(evals)
+View(evals)
+
+# a) In PS03 -> Coding Component -> Q1.c), you created a boxplot comparing
+# teaching scores between men and women. Copy/paste/tweak a data wrangling
+# example in ModernDive Chapter 5 to compute the two medians in these plots
+# exactly.
+
+
+# b) In PS03 -> Coding Component -> Q1.d), you created a boxplot comparing
+# teaching scores between men and women but this time faceted by ethnicity.
+# Copy/paste/tweak a data wrangling example in ModernDive Chapter 5 to compute
+# these four medians exactly in these plots exactly and arrange them in
+# descending order.
+
+
+
+# Question 2 --------------------------------------------------------------
+# Let's View() the bechdel dataset from PS03 from the fivethirtyeight package
+View(bechdel)
+
+# a) In PS03 -> Coding Component -> Q2 you created a visualization that shows
+# the distribution of the variable clean_test, which is the result of the
+# bechdel test for each movie. Copy/paste/tweak a data wrangling example in
+# ModernDive Chapter 5 to output a data frame showing the counts of movies for
+# each of the 5 levels i.e. outcomes of the bechdel test.
+
+
+
+# Question 3 --------------------------------------------------------------
+# Let's View() the babynames dataset from the babynames package
+View(babynames)
+
+# Read the help file associated with this dataset to get a sense of the
+# variables included:
+?babynames
+
+# a) Create a time series plot comparing the number (not percentage for now) of
+# male babies born with the name from PS04 -> Written Component -> Q1.c). You'll
+# need to copy/paste/tweak code from both ModernDive Chapter 3 (data
+# visualization) and 5 (data wrangling) to achieve this.
+
+# b) Create a time series plot comparing the number of female babies born with
+# the name from PS04 -> Written Component -> Q1.d). You'll need to
+# copy/paste/tweak code from both ModernDive Chapter 3 (data visualization) and
+# 5 (data wrangling) to achieve this.
+
+# c) Create a time series plot comparing the number of babies born with one of
+# the "unisex" names from the fivethirtyeight articles for each year but making
+# sure to distinguish between the sexes. There is more than one way to do this.
+# You'll need to copy/paste/tweak code from both ModernDive Chapter 3 (data
+# visualization) and 5 (data wrangling) to achieve this.
+```
+
+
+## 3. Code component solutions {#PS04_code_solutions}
+
+Load all necessary packages:
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+library(babynames)
+```
+
+### Question 1
+
+**a) Compute median teaching scores exactly**
+
+
+```r
+# Load evals data
+load(url("http://www.openintro.org/stat/data/evals.RData"))
+evals <- as_data_frame(evals)
+
+evals %>%
+  group_by(gender) %>% 
+  summarize(median = median(score))
+
+evals %>%
+  group_by(gender, ethnicity) %>% 
+  summarize(median = median(score)) %>% 
+  arrange(desc(median))
+```
+
+These values are the values of the solid horizontal lines of the boxplots from PS03 -> coding component -> Q1.c) and d):
+
+
+
+
+
+### Question 2
+
+**a) Showing the counts of movies for each of the 5 levels i.e. outcomes of the bechdel test.**
+
+All we are doing here is explicitly computing the height of the bars of the following barplot from PS03 -> coding component -> Q2:
+
+
+
+
+```r
+bechdel %>% 
+  group_by(clean_test) %>% 
+  summarize(count = n())
+```
+
+
+### Question 3
+
+**a) Time series plot of males named "Oliver"** 
+
+
+```r
+olivers <- babynames %>% 
+  filter(sex == "M", name == "Oliver")
+
+ggplot(data = olivers, mapping = aes(x = year, y = n)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of births", title = "Number of male Olivers born in the US")
+```
+
+Some notes:
+
+* After a bump in the 1920's, Oliver is back in style and trending! Keep in mind we are only showing counts and thus the US population size is not incorporated in this plot. 
+* We're only interested in the males, so we need to `filter`. If we left the females in, the plot would have a weird zig-zaggy shape because of all the small counts of females named Oliver. Could these be data entry errors?
+* In the filter below we could've also done `filter(sex == "M" & name == "Oliver")`, or also `filter(sex == "M") %>% filter(name == "Oliver")`
+
+
+**b) Time series plot of females named "Ella"**
+
+
+```r
+ellas <- babynames %>% 
+  filter(sex == "F", name == "Ella")
+
+ggplot(data = ellas, mapping = aes(x = year, y = n)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of births", title = "Number of female Ellas born in the US")
+```
+
+* After a bump in the 1920's, Ella was trending up until about 2010, but now is on the decline! Keep in mind we are only showing counts and thus the US population size is not incorporated in this plot. 
+* We're only interested in the females, so we need to `filter`. If we left the males in, the plot would have a weird zig-zaggy shape because of all the small counts of males named Ella. Could these be data entry errors?
+
+
+**c) Time series plot of a unisex names distinguishing between sexes.** Let's focus on Rileys. Here are two ways: one with the color aesthetic the other with facets. Which do you prefer?
+
+
+```r
+rileys <- babynames %>% 
+  filter(name == "Riley")
+
+ggplot(data = rileys, mapping = aes(x = year, y = n, color = sex)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of births", title = "Number of Rileys born in the US (using color)")
+
+ggplot(data = rileys, mapping = aes(x = year, y = n)) +
+  geom_line() +
+  labs(x = "Year", y = "Number of births", title = "Number of Rileys born in the US (using facets)") +
+  facet_wrap(~sex)
+```
+
+Note this approach is preferred to creating to entirely separate plots based on two separate `ggplot()` functions, as the above two plots ensure that both the x and y axes are on the same scale. See below: the y-axis range is different, making it harder to compare the two time series plots.
+
+
+
+
+
+
+*** 
+
+
+
+# Lec 2.7
+
+Baby's first R Markdown report exercise. More on Tuesday 2/20. 
+
+1. Download `Term_Project_Proposal.Rmd` from Course Webpage -> Term Project -> Section 2.3
+1. Upload to RStudio Server
+1. Click the "Knit" button. A webpage should pop-up. If not, you may need to disable your pop-up blocker in your browser.
+1. Click on the blue "Publish" button
+1. Create a new account on RPubs.com
+1. Set the page's:
+    + Title: testing
+    + Description: testing
+    + Slug (i.e. webpage URL address): testing
+1. A webpage that you can share should show in your browser
+
+
+***
+
+
+
+# Lec 2.6
+
+How to import an Excel file into R:
+
+* Download this Excel [file](static/substrate_inhibition.xlsx)
+* If you are using RStudio Server (Cloud version): upload
+* In the Files panel -> click on the file -> Import dataset...
+* Click on Import (bottom right)
+
+
+***
+
+
+
+# Problem set 3 {#PS03}
+
+## Overview
+
+* Assigned Wednesday 2/7, due Tuesday 2/13
+* Three components:
+    1. DataCamp: Due at 9am. Your completion of the courses will be logged automatically by DataCamp.
+    1. Written component: To be handed in on paper at the start of lecture; no email submissions will be accepted.
+    1. Code component: Due on [DropBox](https://www.dropbox.com/request/kIBCruttXQbqrCu0VhzO) at 9am; no submissions will be accepted after 9am. In the outside chance there is a problem with the DropBox link, Slack direct message me your problem set before 9am. 
+* Learning goals:
+    1. DataCamp: Gentle introduction to topics from Chapter 5 on "data wrangling", a less sinister sounding term for "data manipulation".
+    1. More practice with data visualization. In particular histograms, boxplots, and barplots.
+
+
+## 1. DataCamp
+
+Login to DataCamp, in the top navbar click Groups -> STAT/MATH 135 ... -> My Assignments -> Complete the 2 newly listed chapters in this order:
+  
+1. Introduction to the Tidyverse: Data wrangling (do this one first)
+1. Introduction to the Tidyverse: Data visualization
+
+
+## 2. Written component {#PS03_written}
+
+First, read the following links to get an idea of the context of the datasets you'll work with in the code component. After all: *numbers are numbers, but data has context.*
+
+* [Teacher evaluations at the University of Texas Austin](https://www.openintro.org/stat/data/index.php?data=evals)
+* FiveThirtyEight: [The Dollar-And-Cents Case Against Hollywood’s Exclusion of Women](https://fivethirtyeight.com/features/the-dollar-and-cents-case-against-hollywoods-exclusion-of-women/)
+* FiveThirtyEight: [Dear Mona Followup: Where Do People Drink The Most Beer, Wine And Spirits?](https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/)
+
+Then answer the following questions:
+
+* Question 1: Teacher evaluations
+    a) What does the variable `bty_avg` in the `evals` data set represent and how is it computed?
+    a) Assuming men and women are of equal teaching ability, based on your visualizations below give an approximate numerical value of a "gender penalty" that women instructors pay on their teaching evaluation scores. This values doesn't have to be precise; just eye-ball it.
+    a) Say we have four demographic groups of professors: female minorities, male minorities, female non-minorities, and male non-minorities. Rank them from lowest to highest in terms of their median teaching scores.
+* Question 2: Bechdel test
+    a) What is the purpose of the Bechdel test?
+    a) What are the five possible outcomes of the Bechdel test?
+    a) Based on your visualization, about what proportion of the $n$ = 1794 movies included in the dataset "passed" the bechdel test?
+* Question 3: Drinks
+    a) What is the source of the drinks data?
+    a) What proportion of US alcohol servings consumption is beer?
+    a) Among these three countries, what proportion of wine servings are consumed by the French?
+    a) **Bonus**: Based on your visualization below, you should see a relationship between the categorical variables country and alcohol type: for each alcohol type, different countries consume them at different levels. Or put differently, for each alcohol type, the relative amount consumed depends on which country we are considering. Now say instead hypothetically that consumption was *independent* of country. Sketch out by hand what the barplot below would now look like. 
+
+
+## 2. Written component solutions {#PS03_written_solutions}
+
+* Question 1: Teacher evaluations
+    a) It is the average beauty rating of an instructor based on a panel of 6 students' evaluations saved in the variables `bty_f1lower`, `bty_f1upper`, `bty_f2upper`, `bty_m1lower`, `bty_m1upper`, `bty_m2upper` in the `evals` data frame.
+    a) Using the figure from Q1.c) from the coding component below, one example of a numerical "gender penalty" would be the difference in medians of about 4.3-4.1 = 0.2 points out of 5.
+    a) Using the figure from Q1.d) from the coding component belows and the "eyeball test", from lowest to highest: female minorities, male minorities, and the male and female non-minorities are about the same. 
+* Question 2: Bechdel test
+    a) A rough metric to evaluate female representation in a movie.
+    a) The outcomes form a hierarchy from lowest to highest:
+        + There are at least two named women.
+        + They talk to each other.
+        + They talk to each other about something other than a male character.
+        + Some end of difficult to classify; these are lumped in as "dubious".
+    a) If you leave out the "dubious" counts, then 800/1794 = 0.4459 = 44.59%. For such a non-strict test of female representation, a little less than half!
+* Question 3: Drinks
+    a) World Health Organization
+    a) 249/(249+158+84) = 0.507 = 50.7%, the highest of these three countries.
+    a) 370/(370+195+84) = 0.570 = 57.0%, very much as one would expect.
+    a) **Bonus**: 
+
+Let's compute the total consumed for each alcohol type and then the average across the 3 countries:
+
+
+
+
+## 3. Code component {#PS03_code}
+
+* Follow the same procedure as in the [PS02 code component](#PS02_code) to create, save, and submit a `PS03_YourFirstName_YourLastName.R` scratch pad. 
+* Submit using this [DropBox](https://www.dropbox.com/request/kIBCruttXQbqrCu0VhzO) link.
+* Please note that all questions in the coding component can be answered by copying/pasting/tweaking exisiting code in ModernDive:
+    + Find a similar looking plot to the one you want in ModernDive.
+    + Copy and paste the code that made this plot in `PS03_YourFirstName_YourLastName.R`.
+    + Tweak the code to match what you want.
+
+
+
+```r
+# Name: WRITE YOUR NAME HERE
+# Collaboration: INDICATE WHO YOU COLLABORATED WITH FOR THIS PROBLEM SET
+
+# Load all necessary packages:
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+
+# Question 1 --------------------------------------------------------------
+# Let's load the evals data from the web and View() it
+load(url("http://www.openintro.org/stat/data/evals.RData"))
+evals <- as_data_frame(evals)
+View(evals)
+
+# a) Visualize the distribution of the numerical variable score, which is the
+# teaching score. Have the bin widths be 0.25 teaching score units.
+# Do this below:
+
+# b) Now show the same histogram as above, but for men and women separately.
+# Do this below:
+
+# c) Now compare teaching scores between men and women using a boxplot.
+# Do this below:
+
+# d) Now facet the above boxplot by teacher ethnicity.
+# Do this below:
+
+
+# Question 2 --------------------------------------------------------------
+# Let's View() the bechdel dataset from the fivethirtyeight package
+View(bechdel)
+
+# Read the help file associated with this dataset to get a sense of the
+# variables included:
+?bechdel
+
+# Create a visualization that shows the distribution of the variable clean_test,
+# which is the result of the bechdel test for each movie.
+# Do this below:
+
+
+# Question 3 --------------------------------------------------------------
+# Let's View() the drinks dataset from the fivethirtyeight package
+View(drinks)
+
+# Read the help file associated with this dataset to get a sense of the
+# variables included:
+?drinks
+
+# We're going to consider a slightly modified and simplied version of this data
+# in the drinks_subset data frame. Let's load the drinks_subset data from the
+# web and View() it
+load(url("https://rudeboybert.github.io/STAT135/static/PS/drinks_subset.RData"))
+View(drinks_subset)
+
+# Create "dodged" barplot that visualizes the distribution of the categorical
+# variables type and country at the same time, where the bar colors
+# represent the country.
+# Do this below:
+```
+
+**Hint**: your visulization for Question 3 should look something like this, but with
+the heights of the bars reflecting the true serving counts in `drinks_subset`. Here all the
+heights are set to fake values of 100.
+
+
+
+***
+
+
+
+
+## 3. Code component solutions {#PS03_code_solutions}
+
+
+Load all necessary packages:
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+```
+
+### Question 1
+
+**a) Visualize the distribution of the numerical variable score, which is the
+teaching score. Have the bin widths be 0.25 teaching score units.**
+
+
+```r
+# Load evals data
+load(url("http://www.openintro.org/stat/data/evals.RData"))
+evals <- as_data_frame(evals)
+
+ggplot(data = evals, mapping = aes(x = score)) +
+  geom_histogram(binwidth = 0.25) +
+  labs(x = "Teaching score", y = "Count", title = "Teaching scores at UT Austin")
+```
+
+We say this distribution is *left-skewed*: left because there is a tail to the
+left and skewed because its not symmetric. Using the eye-ball test, it seems a
+typical evaluation is around 4.2 out of 5. Some got 5/5, where as a few even got
+around 2/5! Yikes!
+
+**b) Now show the same histogram as above, but for men and women separately.** Easy, just add a `facet_wrap(~gender)` layer and update the title.
+
+
+```r
+ggplot(data = evals, mapping = aes(x = score)) +
+  geom_histogram(binwidth = 0.25) +
+  labs(x = "Teaching score", y = "Count", title = "Teaching scores at UT Austin by gender") +
+  facet_wrap(~gender)
+```
+
+We observe that there are more male instructors, but are their teaching scores higher? It's hard to say just looking at this plot.
+
+**c) Now compare teaching scores between men and women using a boxplot.**
+
+
+```r
+ggplot(data = evals, mapping = aes(x = gender, y = score)) +
+  labs(x = "Gender", y = "Teaching score", title = "Teaching scores at UT Austin by gender") +
+  geom_boxplot()
+```
+
+Ah! The comparison is much easier! Men had a higher median teaching evaluation score of around 4.3 whereas women had a median teaching evaluation score of 4.1. The spread (length of the boxes) seems about similar, indicating similar spread.
+
+**d) Now facet the above boxplot by teacher ethnicity.** Easy, just add a `facet_wrap(~ethnicity)` layer and update the title:
+
+
+```r
+ggplot(data = evals, mapping = aes(x = gender, y = score)) +
+  labs(x = "Gender", y = "Teaching score", title = "Teaching scores at UT Austin by gender and ethnicity") +
+  geom_boxplot() +
+  facet_wrap(~ethnicity)
+```
+
+
+### Question 2
+
+**Create a visualization that shows the distribution of the variable
+`clean_test`, which is the result of the bechdel test for each movie.** Since
+`clean_test` is categorical, a barplot best shows its distribution. Also,
+`bechdel` is NOT pre-counted, in other words it's like [Table
+3.3](https://moderndive.github.io/moderndive_book/3-viz.html#geombar) in
+ModernDive and not Table 3.4, and thus we need to use `geom_bar()`
+
+
+```r
+ggplot(data = bechdel, mapping = aes(x = clean_test)) +
+  geom_bar() +
+  labs(x = "Bechdel test result", y = "Count", title = "Bechdel test results")
+```
+
+### Question 3
+
+**Create a "dodged" barplot that visualizes the distribution of the categorical variables type and country at the same time, where the bar colors represent the country.** [Figure 3.24](https://moderndive.github.io/moderndive_book/3-viz.html#using-barplots-to-compare-two-categorical-variables) is most similar to what we need. Let's set
+
+* The categorical variable `type` be on the x-axis
+* The categorical variable `country` by the fill of the bars
+* The numerical variable `servings` on the y-axis
+* We use `geom_col(position = "dodge")` since the counts are pre-counted and we want a "dodged" barplot i.e a side-by-side barplot. 
+
+
+```r
+# Load data
+load(url("https://rudeboybert.github.io/STAT135/static/PS/drinks_subset.RData"))
+
+ggplot(data = drinks_subset, mapping = aes(x=type, y=servings, fill=country)) +
+  geom_col(position = "dodge") +
+  labs(x = "Alcohol type", y = "Number of servings", title = "Alcohol consumption in USA, France, and UK")
+```
+
+
+
+
+
+*** 
+# Lec 2.5
+
+Say the following piecharts represent results of an election poll at time points A, B, then C. At
+each time point we present the proportion of the poll respondents who say they will support one of
+5 candidates: 1 through 5. Based on these 3 piecharts, answer the following questions:
+
+1. At time point A, is candidate 5 doing better than candidate 4?
+1. Did candidate 3 do better at time point B or time point C?
+1. Who gained more support between time point A and time point B, candidate 2 or candidate 4?
+
+
+
+Now answer these questions using barplots. Much easier as you can compare the 5 *levels* of 
+the categorical variable "candidate" (1 through 5) using imaginary horizontal lines:
+
+
+
+1. At time point A, is candidate 5 did better than candidate 4.
+1. Did candidate 3 (green) did better at time point C.
+1. Between time point A and time point B, candidate 2 (blue) increased where as candidate 4 (green) decreased.
+
+
+
+***
+
+
+
+# Lec 2.4
+
+
+
+Say we want to plot a boxplot of the following  values which are pre-sorted: 
+
+> `example %>% pull(values)`
+
+They have the following *summary statistics*:
+
+
+Min. | 1st Qu. | Median  | 3rd Qu.  |  Max. 
+---- | ------- | ------  |  ------- | --- 
+`min(example$values)`  |  `quantile(example$values, probs=0.25, type = 2)` |  `median(example$values)`  |  `quantile(example$values, probs=0.75, type=2)`  | `max(example$values)`
+
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+
+
+
+
+***
+
+
+
+# Problem set 2 {#PS02}
+
+## Overview
+
+* Assigned Wednesday 1/31, due Tuesday 2/6
+* Three components:
+    1. DataCamp: Due at 9am. Your completion of these 3 courses will be logged automatically by DataCamp.
+    1. Written component: To be handed in on paper at the start of lecture.
+    1. Code component: Due at 9am. To be submitted electronically via this DropBox [link](https://www.dropbox.com/request/yuUnkKkcabmD0ptVrM3x); this link will close promptly just after 9am. 
+* Learning goals:
+    1. Baby's first data analyses!
+    1. Get used to problem set workflow for the semester.
+
+
+## 1. DataCamp
+
+Login to DataCamp, in the top navbar click Groups -> STAT/MATH 135 ... -> My Assignments -> Complete the 3 newly listed courses in this order:
+  
+1. Intermediate R: Conditionals and Control Flow
+1. Intermediate R: Loops. We won't be seeing loops that much in this class, so it's ok if you feel your understanding of this chapter is less complete.
+1. Intermediate R: Functions
+
+
+
+## 2. Written component {#PS02_written}
+
+First, read the following two articles on FiveThirtyEight.com to get an idea of the context of the datasets you'll work with in the code component. After all: *numbers are numbers, but data has context.*
+
+* [Some People Are Too Superstitious To Have A Baby On Friday The 13th](https://fivethirtyeight.com/features/some-people-are-too-superstitious-to-have-a-baby-on-friday-the-13th/)
+* [Higher Rates Of Hate Crimes Are Tied To Income Inequality](https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/)
+
+Then answer the following questions:
+
+* Question 1: Hate crimes
+    a) What value of the Gini index indicates perfect income equality? What value of the Gini index indicates perfect income inequality?
+    a) Why are the two hate crime variables based on counts per 100,000 individuals and not based on just the count? 
+    a) Name some differences on how and when the FBI reports-based and the Southern Poverty Law Center-based rates of hate crime were collected, and how this could impact any analyses. 
+    a) Based on the plot you'll generate in the coding component below, answer this question: Describe in one sentence the *relationship* between the two variables income inequality and the incident of hate crimes in the days following the 2016 election as reported by the Southern Poverty Law Center. 
+    a) When created this plot, you'll get a warning message: `Removed 4 rows containing missing values (geom_point).` Why is R returning this message? 
+* Question 2: US Births
+    a) Based on the plot you'll generate in the coding component below, answer this question: why is there a [seasonal pattern](https://robjhyndman.com/hyndsight/cyclicts/) to the resulting time series plot of the number of births in the US in 1999? 
+    a) Based on the plot you'll generate in the coding component below, answer this question: There is a clear spike in births (over 14,000) for one day in 1999. Identify this date using `View()`. What possible explanations are there for this anomalous spike? 
+    
+## 2. Written component solutions {#PS02_written_solutions}
+
+* Question 1: Hate crimes
+    a) A quick Google search will yield that a Gini index is a scale between 0 and 1 in some cases, and between 0 and 100 in others. They are the same, kind of like percentages. 0 indicates perfect income equality, whereas 1 (or 100) indicates perfect inequality. In the case of our data, they use the 0 to 1 scale.
+    a) Comparisons of counts between large population states (California, New York, Texas) and small states (Vermont, Montana, Delaware) would not be fair otherwise.
+    a) The FBI data is voluntarily submitted, thus could suffer from volunteer bias, and only focuses on incidents that are *prosecutable*. The SPLC data focuses on any incident, which is a broader and at the same time more subjective definition IMO. Furthermore, the SPLC counts are based on media accounts, which could suffer from different forms of bias.
+    a) Whereas the article stated there is a positive relationship, just by eyeballing the scatterplot below, it isn't immediately apparent. Also what is the effect of that single outlier point on the top right? We'll study methods for explicitly quantifying relationships between variables in Chapters 6 and 7 of ModernDive: [Data Modeling with Regression](https://moderndive.github.io/moderndive_book/6-regression.html).
+    a) Because four states did not have values for the variable `hate_crimes_per_100k_splc`: Hawaii, North and South Dakota, and Wyoming. So this plot only has 51-4 = 47 points. Could there be a systematic reason these four states in particular had missing values? Or was it a coincidence?
+    a) Run `View(hate_crimes)` in the console, click on `hate_crimes_per_100k_splc` twice to sort this variable in descending order, and you'll see this outlier was the District of Columbia. I spoke to the author of this article [Maia Majumder](https://twitter.com/maiamajumder) who said DC is a very special case: it is very small geographically and it has among the most accurate data collection of such incidents of all jurisdictions in the US. So is DC an outlier because hate crimes and inequality are really that high? Or is it because they suffer the least from *underreporting* of hate crimes? Hard to say...
+* Question 2: US Births
+    a) Seasonal pattern means there is a cycle that follow some fixed time interval that is not necessarily a "season" like winter -> spring -> summer -> fall. For example, electricity consumption follows a *daily* pattern, since consumption tends to peak in the evening then drop at night. Cough medicine sales follow a *yearly* pattern since they peak in winter and then drop for the rest of the year. In this case, the fixed time interval is *weekly*: births tend to be high on weekdays, then drop on the weekends. As suggeted by the article, this is most likely due to there being a lower number of induced births on the weekend.
+    a) Run `View(US_births_1999)` in the console, click on `births` twice to sort this variable in descending order, and you'll find the day in question is September 9, 1999, which in two-digit year format is written 9/9/99. While I have no proof of this theory, it could be because parents deliberately wanted their kids to have their birthdate only involve the number 9!
+
+
+## 3. Code component {#PS02_code}
+
+* Create a new "scratchpad" `.R` file as seen in class and save it as `PS02_YourFirstName_YourLastName.R`. So for example in my case the file name would be `PS02_Albert_Kim.R`.
+* Copy and paste the code below into your `PS02_YourFirstName_YourLastName.R` file
+* Once you've completed your work, go over all the code you've copied/pasted/tweaked and make sure it runs. 
+* Download this file: Go to the Files Panel of RStudio -> Click the checkbox next to `PS02_YourFirstName_YourLastName.R` -> Click "More" -> "Export".
+* Submit this file electronically via this DropBox [link](https://www.dropbox.com/request/yuUnkKkcabmD0ptVrM3x)
+
+
+
+```r
+# Name: WRITE YOUR NAME HERE
+# Collaboration: INDICATE WHO YOU COLLABORATED WITH FOR THIS PROBLEM SET
+
+# Load all necessary packages:
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+
+# Question 1 --------------------------------------------------------------
+# Let's consider the hate_crimes data frame that's included in the
+# fivethirtyeight package:
+View(hate_crimes)
+
+# Read the help file associated with this dataset to get a sense of the
+# variables included:
+?hate_crimes
+
+# Copy/paste/tweak code that will create a scatterplot with
+# -y-axis: # of hate crimes per 100K, Southern Poverty Law Center, Nov 9-18 2016
+# -x-axis: Gini index (measure of inequality).
+# Do this below:
+
+
+# Question 2 --------------------------------------------------------------
+# Let's look the US_births_1994_2003 data frame that's included in the
+# fivethirtyeight package:
+View(US_births_1994_2003)
+
+# Read the help file associated with this dataset to get a sense of the
+# variables included:
+?US_births_1994_2003
+
+# Let's not consider all years between 1994 and 2003, but rather only 1999.
+# Let's filter for only rows where year equals 1999.
+# Don't worry if you don't understand the two lines of code below; we'll see
+# this in Chapter 5 of ModernDive: Data Wrangling
+US_births_1999 <- US_births_1994_2003 %>%
+  filter(year == 1999)
+View(US_births_1999)
+
+# Copy/paste/tweak code below that will create a "time series" plot of the
+# number of births for each day in 1999:
+```
+
+## 3. Code component solutions {#PS02_code_solutions}
+
+Load all necessary packages:
+
+
+```r
+library(ggplot2)
+library(dplyr)
+library(fivethirtyeight)
+```
+
+### Question 1
+
+Note I added a `labs` for labels layer to the plot to have informative axes labels and titles. While not required for now, as
+the semester progresses these will be stressed, as they give the points *context*. Remember: numbers are numbers, but data has context. 
+
+
+```r
+ggplot(data = hate_crimes, mapping = aes(x = gini_index, y = hate_crimes_per_100k_splc)) +
+  geom_point() +
+  labs(x = "Gini index", y = "Hate crimes per 100K (Nov 9-18 2016)",
+       title = "Hate crime incidence vs income inequality")
+```
+
+In a more intermediate class, you'll learn how to replace points with in this case the state abbreviations using `geom_text()`. What states have the highest incidence of hate crimes in the days after the election? DC, Oregon, Washington, Maine, Minnesota, and Massachusetts. What states had the lowest? Mississippi and Arkansas. Interesting...
+
+
+
+
+### Question 2
+
+
+```r
+US_births_1999 <- US_births_1994_2003 %>%
+  filter(year == 1999)
+
+ggplot(data = US_births_1999, mapping = aes(x = date, y = births)) +
+  geom_line() +
+  labs(x = "Date", y = "Number of births", title = "Daily 1999 US births")
+```
+
+Note:
+
+* The peaks and valleys corresponding to weekdays vs weekends. This is best seen by running `View(US_births_1999)`.
+* The overall dip at the end of November, most likely due to US Thanksgiving.
+
+***
+
+
+
+# Problem set 1
+
+*Assigned: Monday 1/22. Due: Tuesday 1/30 9am.*
+
+1. Slack setup (25%)
+    + Watch this 2m36s [video](https://www.youtube.com/watch?v=9RJZMSsH7-g) on Slack
+    + Change your Slack [profile picture](https://get.slack.help/hc/en-us/articles/115005506003) to a recent photo of you 
+    + Turn on [Slack email notifications](https://get.slack.help/hc/en-us/articles/201649273-Email-notifications)
+1. Administrative stuff (25%):
+    + Complete this [intro survey](https://docs.google.com/forms/d/e/1FAIpQLSeEIII9ezLwRtw6Y5m0LQXz_7F9XLDVAZRnrtwq7egjUzIztw/viewform) on Google Forms
+    + Print, sign, date, and staple a copy of the syllabus available [here](static/syllabus_printed.pdf)
+1. DataCamp assignment (50%):
+    + Click this [link](https://www.datacamp.com/groups/8fac9a13c9dd90501d7e2b72efac4973c47097e9/invite) to create a free DataCamp account using your Amherst email. If this link won't let you join the group, then Slack me a note along with your Amherst email. 
+    + In the navbar on top, click Groups -> STAT/MATH 135 ... -> My Assignments -> Complete the 5 listed courses in order starting with "Intro to basics" and ending with "Data frames".
+    + Your completion of these 5 courses will be logged automatically by DataCamp. Don't worry if feel like things don't stick at first; we're focused on short-term introduction and not long-term retention for now. 
+    
+    
+    
+***
+
+
+
+# Lec 1.1
+
+* If you want to be put on the waitlist for this course, please fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdYNgvspIs95FB1zuPVdQCEzC6OtW3CHq_inUM1Phl2ZKi6Sw/viewform)
+* [Syllabus slides](https://rudeboybert.github.io/STAT135/static/syllabus_slides.html#1)
+
+
+
+-->
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

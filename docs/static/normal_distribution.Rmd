@@ -1,0 +1,37 @@
+---
+title: "Normal Distribution"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+author: "Albert Y. Kim"
+output: html_document
+runtime: shiny
+---
+
+```{r, include=FALSE}
+# Note we load all necessary packages in a separate R code block
+library(ggplot2)
+```
+
+We have two normal curves:
+
+1. Black: The standard normal curve AKA the Z-curve with mean = 0 and SD = 1
+1. Orange: A normal curve whose mean and SD you can set with the sliders
+
+```{r, echo=FALSE}
+inputPanel(
+  sliderInput(inputId = "mu", label = "Mean", value = 5, min = -9, max = 11, step = 0.01),
+  sliderInput(inputId = "sigma", label = "Standard deviation", value = 2, min = 0, max = 6, step = 0.01)
+)
+
+renderPlot({
+  mu <- input$mu
+  sigma <- input$sigma
+  
+  ggplot(data = data.frame(x = c(-10, 12)), aes(x)) +
+    stat_function(fun = dnorm, n = 500, args = list(mean = 0, sd = 1)) + 
+    stat_function(fun = dnorm, n = 500, args = list(mean = mu, sd = sigma), col = "orange") +
+    coord_cartesian(xlim = c(-10, 12), ylim = c(0, 0.8)) +
+    geom_vline(xintercept = mu, col = "orange", linetype = "dashed") +
+    labs(x = "", y = "")
+  
+}, width=1600, height=900, res=200)
+```

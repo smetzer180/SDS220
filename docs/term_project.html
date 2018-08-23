@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Term Project</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SDS220</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://2018-fall-sds-albert.slack.com/">
+    <span class="fa fa-slack fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://rstudio.smith.edu/auth-sign-in">
+    <span class="fa fa-registered"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://moderndive.netlify.com/">ModernDive</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="term_project.html">Term Project</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Term Project</h1>
+
+</div>
+
+
+<style>
+h1{font-weight: 400;}
+</style>
+<p>Everything in this course builds up to the term group project, where there is only one learning goal: <em>Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.</em></p>
+<center>
+<img src="static/images/pipeline.png" alt="Drawing" style="width: 600px;" border="10"/>
+</center>
+<!--
+# Due dates/milestones {-}
+
+1. ~~Groups: Mon 2/19~~
+1. Proposal: Thu 3/8 5pm
+1. Initial submission: Thu 3/29 5pm
+1. Resubmission: Thu 4/26 5pm
+-->
+<hr />
+<div id="groups" class="section level1">
+<h1>1. Groups</h1>
+<p><strong>To do:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Form groups of 2-3 students and pick a group name.</li>
+<li>Designate a group leader who will:
+<ol style="list-style-type: lower-alpha">
+<li>Slack message your group name in a Direct Message that includes
+<ul>
+<li>All group members</li>
+<li>Myself</li>
+<li>Your sections’ TA: 02 Leonard Yoon, 03 Will Zaubler, 04 Ray Nzaba and David Green</li>
+</ul></li>
+<li>Complete the following <a href="https://docs.google.com/forms/d/15BTxusgh59zWsqszum44jcSZ0O9tohfwUww71CxW2IM/edit">Google Form</a></li>
+</ol></li>
+</ol>
+<p><strong>Notes</strong>:</p>
+<ul>
+<li>If you need a group to join please Slack me.</li>
+<li>All groups members are expected to contribute and a system will be put in place to hold all group members accountable for their work.</li>
+</ul>
+</div>
+<div id="proposal---thu-38-5pm" class="section level1">
+<h1>2. Proposal - Thu 3/8 5pm</h1>
+<p><strong>To do:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Find a dataset</li>
+<li>Visit drop-in tutoring center</li>
+<li>Setup your group’s RStudio Server Shared Project</li>
+<li>Submit your group proposal</li>
+</ol>
+<div id="find-a-dataset" class="section level2">
+<h2>Find a dataset</h2>
+<ol style="list-style-type: decimal">
+<li>Requirements:
+<ul>
+<li>The data should be stored in a <em>single</em> Excel spreadsheet or CSV file.</li>
+<li>The data should be in “tidy” data format (read ModernDive 4.1 for details).</li>
+<li>Columns/Variables. You dataset should have the following variables that will be the focus of your analysis. Read ModernDive Chapter 6 to the end of Section 6.1 for what these terms mean.
+<ol style="list-style-type: decimal">
+<li>One numerical variable to be used as your <em>outcome variable</em>.</li>
+<li>One categorical <em>explanatory/predictor</em> variable with no more than 5 levels.</li>
+<li>One numerical <em>explanatory/predictor</em> variable.</li>
+<li>Any <em>identification variables</em> (read ModernDive 4.2.2 for a distinction of identification vs measurement variables)</li>
+</ol></li>
+<li>Rows/Observations: At least 50 observations.</li>
+</ul></li>
+<li>If you need help getting data:
+<ul>
+<li>Schedule an appointment with Amherst Science Librarian Kristen Greenland <a href="mailto:kgreenland@amherst.edu">kgreenland@amherst.edu</a>.</li>
+<li><a target="_blank" class="page-link"
+href="https://data.world/"><code>data.world</code></a> has lots of datasets.</li>
+</ul></li>
+</ol>
+</div>
+<div id="visit-drop-in-tutoring-center" class="section level2">
+<h2>Visit drop-in tutoring center</h2>
+<p>If you need help working with your dataset, cleaning it, or converting it to “tidy” data format, etc, please visit the drop-in tutoring center: Sunday thru Thursday 7pm-9pm in Merrill Science Center 300B. Keep in mind there are approximately 75 students in 31 groups taking this class, so expect less attention if you visit the study center in the few days before the proposal is due.</p>
+</div>
+<div id="setup" class="section level2">
+<h2>Setup</h2>
+<ul>
+<li>Login to RStudio Server -&gt; Top right -&gt; Click on “Project” -&gt; “Shared with me” -&gt; Your group name. This should open a new <a href="https://support.rstudio.com/hc/en-us/articles/211659737-Sharing-Projects-in-RStudio-Server-Pro"><em>RStudio Server Shared Project</em></a> that all group members have joint access to where you can perform collaborative editing like Google Docs. Albert and your section’s TA will have access as well.</li>
+<li>Group leader: Create a new <code>scratchpad.R</code></li>
+<li>Setup colloborative editing: Click on the colored initials of your teammates on the top right of the screen and click “Follow cursor”. Play around with this.</li>
+<li>Group leader: Upload the <a href="static/term_project/Term_Project_Proposal.Rmd"
+download><code>Term_Project_Proposal.Rmd</code></a> R Markdown template file file to the Shared Project so that all group members have access.</li>
+<li>To return to your personal folder with your problem sets: RStudio Server -&gt; Top right -&gt; Click on “Project” -&gt; “Close project”</li>
+</ul>
+</div>
+<div id="submit-your-group-proposal" class="section level2">
+<h2>Submit your group proposal</h2>
+<p>Once your proposal is ready, the group leader will:</p>
+<ol style="list-style-type: decimal">
+<li>Knit <code>Term_Project_Proposal.Rmd</code> one final time.</li>
+<li>Publish to Rpubs.com by clicking the blue “Publish” button on top right of the HTML document. Copy the URL of the resulting webpage.</li>
+<li>Complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSf_MFKFv65DviSyk7EYuPfPAqq_ZI3nHrXw_LuUZLia8KJtgQ/viewform">Google Form</a>. No need to submit any files on DropBox, as the TA’s and I can login into your Shared Projects and look at your work there.</li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="initial-submission---thu-329-5pm" class="section level1">
+<h1>3. Initial submission - Thu 3/29 5pm</h1>
+<p><strong>To do</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Group leader: Upload the <a href="static/term_project/Term_Project.Rmd"
+download><code>Term_Project.Rmd</code></a> R Markdown template file to the Shared Project so that all group members have access.</li>
+<li>Read the evaluation criteria below and then complete Sections “1. Introduction”, “2. EDA”, “3. Multiple regression”, and “6. Citations” of <code>Term_Project.Rmd</code>.</li>
+<li>Group leader: Once the initial submission is complete
+<ul>
+<li>Knit <code>Term_Project.Rmd</code> one final time.</li>
+<li>Publish to Rpubs.com</li>
+<li>Complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSf4Sc9GkO_QNp-FvB1_Fw_C-Va-kcW1FbvYT0hJT0HJIzal_A/viewform">Google Form</a>.</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+<div id="resubmission---thu-426-5pm" class="section level1">
+<h1>4. Resubmission - Thu 4/26 5pm</h1>
+<p><strong>To do</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Revise your work based on feedback the TA’s and I will deliver (see below).</li>
+<li>Complete Sections “4. Inference for multiple regression” and “5. Conclusion” of <code>Term_Project.Rmd</code>.
+<ul>
+<li>While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.<br />
+</li>
+<li>Also perform a residual analysis.</li>
+</ul></li>
+<li>Group leader: Once the resubmission is complete
+<ul>
+<li>Knit <code>Term_Project.Rmd</code> one final time.</li>
+<li>Republish to Rpubs.com</li>
+</ul></li>
+</ol>
+<div id="a-overall-feedback-from-initial-submissions" class="section level2">
+<h2>4.a) Overall feedback from initial submissions</h2>
+<p><strong>Everyone should read these</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Jarring hyperlink/code output:
+<ul>
+<li><code>summary()</code> outputs are a little jarring to read.</li>
+<li>In EDA, show a preview of first 6 rows of data using <code>head()</code>; this is better than using <code>glimpse()</code> as computer code output is jarring to read.</li>
+<li>Correlations code output is ok, since they don’t take up a lot of space</li>
+<li>Raw hyperlinks in the body of text or citation section should be converted to text links. See RStudio Menu Bar -&gt; Help -&gt; Markdown Quick Reference -&gt; Links.</li>
+</ul></li>
+<li>EDA
+<ul>
+<li>Make sure you are explicit about what your observational unit is. In other words:
+<ol style="list-style-type: lower-alpha">
+<li>what each row in your dataset represents</li>
+<li>what each point in your scatterplots represent</li>
+</ol></li>
+<li>Minimize redundancy: Many had a colored scatterplot in Section 2 EDA, then the same plot with fitted lines in Section 3. Put only the latter in Section 2.</li>
+<li>Main visualization: toy around with using facets like in <a href="https://rudeboybert.github.io/STAT135/static/PS/PS08_solutions.html#question_3:_eyeballing_the_relationship_between_outcome_and_explanatory_variables">PS08 R Markdown Q3</a>. Pick what you think is best and own it.</li>
+</ul></li>
+<li>Formatting. Once finished writing your project:
+<ul>
+<li>Remove any instructions text. Ex: “Discuss the research question you will be addressing with your multiple regression model.”</li>
+<li>Fix typos using the ABC-check button in R Markdown panel (next to magnifying glass buttom).</li>
+</ul></li>
+<li>Statistical comments
+<ul>
+<li>Look at histogram of your numerical variables, in particular the outcome variable. Are they really right skewed? Is a log base 10 (or log base e) transformation worth considering (like in <a href="https://rudeboybert.github.io/STAT135/static/PS/PS08_solutions.html#question_1:_exploratory_data_analysis">PS08 R Markdown Q1 and Q2/Midterm II</a>)</li>
+<li>In all your conclusions, watch out for making statements that too strongly suggest causation (unless you are sure the data was collected in a way that allows for this). Recall that we should set tone to only more conservatively suggest associations.</li>
+</ul></li>
+<li>Non-statistical interpretation:
+<ul>
+<li>Meant for a non-technical audience</li>
+<li>Think of this as the overall executive summary, the take-home message meant for a broad audience.</li>
+</ul></li>
+<li>Interpretations. Say your categorical explanatory variable has <span class="math inline">\(k\)</span> levels:
+<ul>
+<li>Instead of intrepreting all intercept/slope coefficients individually, write out fitted regression line equations for <span class="math inline">\(\widehat{y}\)</span> for all <span class="math inline">\(k\)</span> possible levels. Example: if using x = <code>gender</code> from evals, write out one equation for male and another for female. See <a href="https://rudeboybert.github.io/STAT135/index.html#1_r_markdown_component_solutions26"><code>PS08_solutions.Rmd</code></a> Q4 for examples on how to write these equations in math format.</li>
+<li><del>Then of your <span class="math inline">\(k\)</span> fitted regression line equations, interpret just the slope coefficient for 2-3 of the resulting equations</del> <strong>Clarifications</strong>: Then of all the rows in your regression table, for 2-3 of them interpret the coefficient estimate and its inferential significance. Try to pick a slope or interaction effect coefficient, since these speak to the relationship between your outcome and explanatory variable. Use your judgement as to which to choose (most interesting, most relevant).</li>
+</ul></li>
+</ol>
+<!--
+TODO: Some of the groups don’t know whether or not to include interaction
+Come up with consistent approach for how to do this
+What to include
+-->
+</div>
+<div id="b-evaluation-criteria" class="section level2">
+<h2>4.b) Evaluation criteria</h2>
+<p>You will be evaluated on the following criteria, which not only emphasizes the data, statistics, and modeling, but also the <strong>communication</strong>, an often neglected criteria:</p>
+<ol style="list-style-type: decimal">
+<li>The honor code
+<ul>
+<li>Your project must adhere to the Amherst College Student Code of Conduct’s statement on <a href="https://www.amherst.edu/offices/student-affairs/community-standards/intellectual-responsibility-and-plagiarism">intellectual responsibility and plagiarism</a>. In particular all external sources must be cited in your submissions.</li>
+</ul></li>
+<li>The report
+<ul>
+<li>Is the grammar correct and are there no misspellings? (Click the ABC spell-check button to the left of the “Knit” button)</li>
+<li>Is the writing crisp and concise or is it unnecessarily verbose and wordy? Is the writing clear or is it sloppy?</li>
+<li>Did you make use of Markdown formatting tools to format the document (bold, italics, url links, etc)?<br />
+See RStudio Menu Bar -&gt; Help -&gt; Markdown Quick Reference for all formatting options.</li>
+<li>Is the final project document clean and easy to read?</li>
+</ul></li>
+<li>The science and the data
+<ul>
+<li>Is the data’s context/source clearly discussed/given? Recall: <em>Numbers are numbers, but data has context.</em></li>
+<li>Are all limitations and issues with the data addressed?</li>
+<li>Is the research question of interest clearly stated?<br />
+</li>
+<li>Are the plots/tables polished? Titles, axes labels, legends?</li>
+<li>Are the plots/tables truly informative or are they included merely for their own sake?</li>
+</ul></li>
+<li>The statistics and the analysis
+<ul>
+<li>Are all statistical/modeling and analyses interpretations valid?</li>
+<li>Are limitations of the analysis (if any) clearly stated?</li>
+<li>Are the non-statistical interpretations accessible to an audience not well-versed in statistics?</li>
+</ul></li>
+<li>The code
+<ul>
+<li>Is your code legible and understandable to someone not in your group? Could someone else look at the code in your <code>.Rmd</code> file, understand it, and use it for themselves? In other words, is the research easily <a href="https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">reproducible</a>?</li>
+<li>Is your code cleanly formatted? Are you using indentations, spaces, and line breaks effectively?</li>
+<li>Some examples of good coding style can be found here: <a href="http://style.tidyverse.org/" class="uri">http://style.tidyverse.org/</a></li>
+</ul></li>
+<li>The rest
+<ul>
+<li><a href="https://www.urbandictionary.com/define.php?term=wow%20factor">“Wow factor”</a></li>
+<li>Did you demonstrate effort and engagement during the semester long process?</li>
+</ul></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="exit-survey---wed-52-5pm" class="section level1">
+<h1>5. Exit survey - Wed 5/2 5pm</h1>
+<p>Complete this Google Forms exit survey <a href="https://goo.gl/tR2FDj" class="uri">https://goo.gl/tR2FDj</a> by <del>Friday May 4th</del> Wednesday May 2nd 5pm. 5% of your term project grade is based on completion of this survey.</p>
+<hr />
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

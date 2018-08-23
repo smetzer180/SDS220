@@ -1,0 +1,66 @@
+---
+title: "US Baby Name Popularity"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+author: "Albert Y. Kim"
+output: html_document
+runtime: shiny
+---
+
+```{r, include=FALSE}
+# Note we load all necessary packages in a separate R code block
+library(ggplot2)
+library(dplyr)
+library(babynames)
+library(scales)
+```
+
+**Note**: Only names used at least 5 times in a year are considered as described [here](https://github.com/hadley/babynames).
+
+```{r, echo=FALSE}
+inputPanel(
+  textInput(inputId = "name", label = "Name:", value = "Virginia"),
+  selectInput(inputId = "sex", label = "Sex:", choices = c("F", "M"), selected = "F"),  
+  numericInput(inputId = "start_year", label = "Start Year:", value = 1880),
+  numericInput(inputId = "end_year", label = "End Year:", value = 2013)
+)
+
+renderPlot({
+  # Assign all inputs to their own variables so that we don't need to type 
+  # "input$..." constantly
+  selected_name <- input$name
+  selected_sex <- input$sex
+  start_year <- input$start_year
+  end_year <- input$end_year
+  
+  # You can test the code below using:
+  # names <- "Albert Julie Liam Rachel Eleanor Benjamin"
+  # start_year <- 1880
+  # end_year <- 2013
+  
+  # Get counts of names for each year in range
+  counts <- 
+    babynames %>% 
+    filter(name == selected_name & sex == selected_sex) %>%
+    filter(year >= start_year, year <= end_year) %>%
+    group_by(year) %>%
+    summarise(count=sum(n)) 
+  
+  # Get total number of births for each year in range
+  totals <-
+    babynames %>% 
+    filter(year >= start_year, year <= end_year) %>%
+    group_by(year) %>% 
+    summarise(n=sum(n))
+  
+  # Join the data frames and get proportions
+  counts <- inner_join(counts, totals, by="year") %>%
+    mutate(prop=count/n)
+  
+  ggplot(counts, aes(x=year, y=prop)) + 
+    geom_line(size=1) +
+    labs(x = "Year", y = "Percent", title = paste("Percent of ", selected_sex, " babies each year named ", selected_name, sep="")) +
+    scale_y_continuous(labels = scales::percent) +
+    coord_cartesian(xlim=c(start_year, end_year))
+  
+}, width=1600, height=900, res=200)
+```

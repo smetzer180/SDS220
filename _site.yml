@@ -1,0 +1,27 @@
+name: sds220
+output_dir: docs
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    toc_depth: 2
+    theme: cosmo
+    highlight: tango
+    df_print: paged
+    lib_dir: site_libs
+    self_contained: no
+navbar:
+  title: SDS220
+  left:
+  - icon: fa-slack fa-lg
+    href: https://2018-fall-sds-albert.slack.com/
+  - icon: fa-registered
+    href: https://rstudio.smith.edu/auth-sign-in
+  - text: ModernDive
+    href: https://moderndive.netlify.com/
+  right:
+  - text: Term Project
+    href: term_project.html
+  - text: Syllabus
+    href: syllabus.html
+

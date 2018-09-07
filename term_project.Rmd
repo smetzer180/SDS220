@@ -17,23 +17,14 @@ only one learning goal: *Engage in the data/science research pipeline in as
 faithful a manner as possible while maintaining a level suitable for novices.*
 
 <center>
-<img src="static/images/pipeline.png" alt="Drawing" style="width: 600px;" border="10"/>
+![](static/images/pipeline.png){ width=600px }
 </center>
 
-
-<!--
-# Due dates/milestones {-}
-
-1. ~~Groups: Mon 2/19~~
-1. Proposal: Thu 3/8 5pm
-1. Initial submission: Thu 3/29 5pm
-1. Resubmission: Thu 4/26 5pm
--->
 
 
 ***
 
-# 1. Groups 
+# 1. Groups - Fri 9/21 5pm
 
 **To do:**
 
@@ -42,27 +33,26 @@ faithful a manner as possible while maintaining a level suitable for novices.*
     a) Slack message your group name in a Direct Message that includes
         + All group members
         + Myself
-        + Your sections' TA: 02 Leonard Yoon, 03 Will Zaubler, 04 Ray Nzaba and David Green
-    a) Complete the following [Google Form](https://docs.google.com/forms/d/15BTxusgh59zWsqszum44jcSZ0O9tohfwUww71CxW2IM/edit)  
+    a) Complete the following [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehYx8pNGxS6P7KF8y2f-A2RgnhbvKmDW77TijoeOanpV2DHQ/viewform){target="_blank"}
 
 
 **Notes**:
 
 * If you need a group to join please Slack me.
-* All groups members are expected to contribute and a system will be put in place
-to hold all group members accountable for their work.
+* All groups members are expected to contribute and a system will be put in
+place to hold all group members accountable for their work.
 
 
 
 
 
-# 2. Proposal - Thu 3/8 5pm
+# 2. Proposal - Fri 10/19 5pm
 
 **To do:**
 
 1. Find a dataset
-1. Visit drop-in tutoring center
-1. Setup your group's RStudio Server Shared Project
+1. Consult the Spinelli Quantitative Learning Center [Data Research and Statistical Support](https://www.smith.edu/qlc/tutoring.html) specialist if necessary.
+<!--1. Setup your group's RStudio Server Shared Project-->
 1. Submit your group proposal
 
 
@@ -77,10 +67,17 @@ to hold all group members accountable for their work.
         1. One numerical *explanatory/predictor* variable.
         1. Any *identification variables* (read ModernDive 4.2.2 for a distinction of identification vs measurement variables)
     + Rows/Observations: At least 50 observations.
+
+**More details coming soon!**
+
+
+<!-- 
+
 1. If you need help getting data:
     + Schedule an appointment with Amherst Science Librarian Kristen Greenland <kgreenland@amherst.edu>.
     + <a target="_blank" class="page-link"
     href="https://data.world/">`data.world`</a> has lots of datasets.
+
 
 
 ## Visit drop-in tutoring center
@@ -111,16 +108,21 @@ Once your proposal is ready, the group leader will:
 
 1. Knit `Term_Project_Proposal.Rmd` one final time.
 1. Publish to Rpubs.com by clicking the blue "Publish" button on top right of the HTML document. Copy the URL of the resulting webpage.
-1. Complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf_MFKFv65DviSyk7EYuPfPAqq_ZI3nHrXw_LuUZLia8KJtgQ/viewform). No need to submit any files on DropBox, as the TA's and I can login into your Shared Projects and look at your work there.
+1. Complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf_MFKFv65DviSyk7EYuPfPAqq_ZI3nHrXw_LuUZLia8KJtgQ/viewform){target="_blank"}. No need to submit any files on DropBox, as the TA's and I can login into your Shared Projects and look at your work there.
 
-
+-->
 
 
 ***
 
 
 
-# 3. Initial submission - Thu 3/29 5pm
+# 3. Initial submission - Fri 11/9 5pm
+
+**More details coming soon!**
+
+
+<!--
 
 **To do**:
 
@@ -130,28 +132,13 @@ download>`Term_Project.Rmd`</a> R Markdown template file to the Shared Project s
 1. Group leader: Once the initial submission is complete
     + Knit `Term_Project.Rmd` one final time.
     + Publish to Rpubs.com
-    + Complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf4Sc9GkO_QNp-FvB1_Fw_C-Va-kcW1FbvYT0hJT0HJIzal_A/viewform).
+    + Complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf4Sc9GkO_QNp-FvB1_Fw_C-Va-kcW1FbvYT0hJT0HJIzal_A/viewform){target="_blank"}.
 
+TODO: Some of the groups don’t know whether or not to include interaction
+Come up with consistent approach for how to do this
+What to include
 
-
-***
-
-
-
-# 4. Resubmission - Thu 4/26 5pm
-
-**To do**:
-
-1. Revise your work based on feedback the TA's and I will deliver (see below). 
-1. Complete Sections "4. Inference for multiple regression" and "5. Conclusion" of `Term_Project.Rmd`.
-    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.  
-    + Also perform a residual analysis.
-1. Group leader: Once the resubmission is complete
-    + Knit `Term_Project.Rmd` one final time.
-    + Republish to Rpubs.com
-
-
-## 4.a) Overall feedback from initial submissions
+## 3.a) Overall feedback from initial submissions
 
 **Everyone should read these**:
 
@@ -176,27 +163,54 @@ download>`Term_Project.Rmd`</a> R Markdown template file to the Shared Project s
     + Meant for a non-technical audience
     + Think of this as the overall executive summary, the take-home message meant for a broad audience.
 1. Interpretations. Say your categorical explanatory variable has $k$ levels:
-    + Instead of intrepreting all intercept/slope coefficients individually, write out fitted regression line equations for $\widehat{y}$ for all $k$ possible levels. Example: if using x = `gender` from evals, write out one equation for male and another for female. See [`PS08_solutions.Rmd`](https://rudeboybert.github.io/STAT135/index.html#1_r_markdown_component_solutions26) Q4 for examples on how to write these equations in math format.
+    + Instead of intrepreting all intercept/slope coefficients individually, write out fitted regression line equations for $\widehat{y}$ for all $k$ possible levels. Example: if using x = `gender` from evals, write out one equation for male and another for female.
     + ~~Then of your $k$ fitted regression line equations, interpret just the slope coefficient for 2-3 of the resulting equations~~ **Clarifications**: Then of all the rows in your regression table, for 2-3 of them interpret the coefficient estimate and its inferential significance. Try to pick a slope or interaction effect coefficient, since these speak to the relationship between your outcome and explanatory variable. Use your judgement as to which to choose (most interesting, most relevant).
 
-<!--
-TODO: Some of the groups don’t know whether or not to include interaction
-Come up with consistent approach for how to do this
-What to include
 -->
 
 
-## 4.b) Evaluation criteria
+
+***
+
+
+
+# 4. Presentations - Mon 12/10 in-class
+
+**More details coming soon!**
+
+
+***
+
+
+
+# 5. Resubmission - Fri 12/21 5pm
+
+1. Revise your work based on delivered feedback. 
+1. Complete remaining sections.
+<!--
+1. Complete "Inference for multiple regression" and "Conclusion" sections.
+
+    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.  
+    + Also perform a residual analysis.
+1. Group leader: Once the resubmission is complete
+    + Knit `Term_Project.Rmd` one final time.
+    + Republish to Rpubs.com
+-->
+1. Complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
+
+
+
+## Evaluation criteria
 
 You will be evaluated on the following criteria, which not only emphasizes the data, statistics, and modeling, but also the **communication**, an often neglected criteria:
 
 1. The honor code
-    + Your project must adhere to the Amherst College Student Code of Conduct's statement on
-[intellectual responsibility and
-plagiarism](https://www.amherst.edu/offices/student-affairs/community-standards/intellectual-responsibility-and-plagiarism).
-In particular all external sources must be cited in your submissions.
+    + Your project must adhere to the Smith College Academic Honor Code
+    Statement. In particular all external sources must be cited in your
+    submissions.
 1. The report
-    + Is the grammar correct and are there no misspellings? (Click the ABC spell-check button to the left of the "Knit" button)
+    + Is the grammar correct and are there no misspellings? (Click the ABC
+    spell-check button to the left of the "Knit" button)
     + Is the writing crisp and concise or is it unnecessarily verbose and wordy? Is the writing clear or is it sloppy?
     + Did you make use of Markdown formatting tools to format the document (bold, italics, url links, etc)?  
     See RStudio Menu Bar -> Help -> Markdown Quick Reference for all formatting options.
@@ -213,24 +227,8 @@ In particular all external sources must be cited in your submissions.
     + Are limitations of the analysis (if any) clearly stated?
     + Are the non-statistical interpretations accessible to an audience not well-versed in statistics?
 1. The code
-    + Is your code legible and understandable to someone not in your group? Could someone else look at the code in your `.Rmd` file, understand it, and use it for themselves? In other words, is the research easily [reproducible](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970)?
+    + Is your code legible and understandable to someone not in your group? Could someone else look at the code in your `.Rmd` file, understand it, and use it for themselves? In other words, is the research easily [reproducible](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970){target="_blank"}?
     + Is your code cleanly formatted? Are you using indentations, spaces, and line breaks effectively?
-    + Some examples of good coding style can be found here: <http://style.tidyverse.org/>
+    + Some examples of good coding style can be found [here](http://style.tidyverse.org/){target="_blank"}
 1. The rest
-    + ["Wow factor"](https://www.urbandictionary.com/define.php?term=wow%20factor)
     + Did you demonstrate effort and engagement during the semester long process?
-
-
-
-***
-
-
-
-# 5. Exit survey - Wed 5/2 5pm
-
-Complete this Google Forms exit survey <https://goo.gl/tR2FDj> by ~~Friday May 4th~~ Wednesday May 2nd 5pm. 5% of your term project grade is based on completion of this survey. 
-
-
-***
-
-

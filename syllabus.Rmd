@@ -16,16 +16,20 @@ h1{font-weight: 400;}
 
 * **Course title:** SDS/MTH 220: Introduction to Probability and Statistics
 * **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/) - Assistant Professor of Statistical & Data Sciences
-* **~~Email:~~ Slack team**: <a target="_blank" class="page-link"
-href="https://2018-fall-sds-albert.slack.com/">2018-fall-sds-albert.slack.com</a> (or click hashtag icon in navbar)
+* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop app](https://slack.com/downloads/){target="_blank"}.
+    + I will respond to Slack messages within 24h, but not during weekends.
+    + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person.
 * **Meeting locations/times:** 
     + **Lectures**: Sec 03: MWF 1:10-2:30 - Sabin-Reed 301
     + **Labs**: Held by Dr. Jenny Smetzer
         + Sec 05: Tu 9:00-10:20 - Sabin-Reed 301
-        + Sec 06: 9:00-10:20 - Sabin-Reed 301
-    + **Outside help**:
-        + Albert's office hours: TBD or by appointment - McConnell Hall 215
-        + Jenny's office hours: W 9:30-12:00 and 1:00-4:00 - Bass 403
+        + Sec 06: Th 9:00-10:20 - Sabin-Reed 301
+* **Outside help**:
+    + Albert's office hours: TBD or by appointment - McConnell Hall 215
+    + Jenny's office hours: W 9:30-12:00 and 1:00-4:00 - Bass 403
+    + [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/tutoring.html){target="_blank"}
+        1. Tutoring (click "Stats TAs"): Sunday thru Thursday 7-9pm - Seelye Hall 207.
+        1. Raul Zelada Aprili, Data Research and Statistics Counselor (click "Data Research and Statistical Support") - By appointment
 
 
 
@@ -36,7 +40,7 @@ href="https://2018-fall-sds-albert.slack.com/">2018-fall-sds-albert.slack.com</a
 # Course Description & Objectives
 
 * **Official course description**: On [Smith College
-Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2018&dept=Statistical+and+Data+Sciences&instr=Albert+Y.+Kim&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-OC3F-1rKiNL2VHGYEeJilR2yF8CIBNfqghT5Uz-zjKI&form_id=campus_course_search_basic_search_form).
+Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2018&dept=Statistical+and+Data+Sciences&instr=Albert+Y.+Kim&credits=&course_numb=220&course_keywd=&op=Submit&form_build_id=form-aR3I9kjnzv-y9YC5iG9EZdxZg_0shLeVcJPIoLE9ABM&form_id=campus_course_search_basic_search_form){target="_blank"}.
 * **Objectives** (<a target="_blank" class="page-link" href="static/syllabus_slides.html">slides</a>): This semester you will
     1. Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.
     1. Develop the toolbox necessary to "think with data":  data science, data modeling, and statistical inference.
@@ -51,23 +55,18 @@ Course Search](https://www.smith.edu/academics/academic-program/curriculum/cours
 
 # Materials
 
-We will draw on three chief sources:
+We will draw from the following sources:
 
-1. "ModernDive: An Introduction to Statistical and Data Sciences via R" by Ismay and Kim (link in the navigational bar above).
-1. "OpenIntro: Introductory Statistics with Randomization and Simulation" by Diez, Barr and Çetinkaya-Rundel, 1st edition. 
-1. DataCamp: an online interactive environment for learning data science currently via R and Python. On top of the DataCamp courses we'll cover this semester, you have free access to [all their courses](https://www.datacamp.com/courses). 
-
-<center>
-<a href="https://moderndive.netlify.com/" target="_blank" class="page-link"><img src="static/images/wide_format.png" width=300/></a> &emsp; 
-<a href="https://www.datacamp.com/" target="_blank" class="page-link"><img src="static/images/datacamp.png" width=300/> </a>
-</center>
+1. ["ModernDive: An Introduction to Statistical and Data Sciences via R"](https://moderndive.netlify.com/){target="_blank"} by Ismay and Kim (click link in menubar above).
+1. ["OpenIntro: Introductory Statistics with Randomization and Simulation"](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
+1. DataCamp: an online interactive environment for learning data science currently via R and Python. On top of the DataCamp courses we'll cover this semester, you have free access to [all their courses](https://www.datacamp.com/courses/all){target="_blank"} for 6 months. 
 
 
 
 ***  
 
 
-
+<!--
 # Expectations
 
 As a student in this class:
@@ -109,7 +108,7 @@ Student Conduct and Social Responsibility's Academic Honor Code.
    
     
 ***
-
+--> 
 
 
 # Evaluation
@@ -117,10 +116,12 @@ Student Conduct and Social Responsibility's Academic Honor Code.
 
 ## Weekly Problem Sets 10%
 
-The problem sets in this class should be viewed as low-stakes opportunities to
+* The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
+* Assigned/due on Wednesdays.
+* **More details coming when PS01 is assigned**
 
-* Assigned/due on Tuesdays.
+<!--
 * No extensions for problem sets will be granted.
 * Assignments will be graded on the following qualitative scale:
     1. `r set.seed(79);emo::ji("check")`-: You unfortunately struggled on this problem set and
@@ -128,6 +129,17 @@ practice, instead of evaluative tools used by the instructor to assign grades.
     1. `r set.seed(79);emo::ji("check")`: This is typically the most common grade. You did everything mostly well and there are no red flags. However,
     you should still compare your work to the posted solutions.
 * Each `r set.seed(79);emo::ji("check")` is worth 1% up to 10%, with the lowest two scores dropped.
+-->
+
+## DataCamp Assignments 10%
+
+* Assigned/due on Wednesdays.
+* **More details coming when first DataCamp assignment is assigned.**
+
+## Quizzes 5%
+
+There will be 2-3 quizzes assigned during the course of the semester. They will always be announced the lecture before. 
+
 
 
 ## Term Project 25% {#termproject}
@@ -135,10 +147,12 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 See [Term Project](term_project.html) page.
 
 
-## Three Exams: 60%
+## Three Midterms: 45%
 
-* Breakdown: 15% for each midterm and 25% for the final
-* All exams are cummulative.
+* There will be three self-scheduled midterms in the library. They are closed-book:
+    1. Open on Friday 9/28 at 5pm, ends on Sunday 9/30 evening (Time TBD)
+    2. Open on Friday 10/26 at 5pm, ends on Sunday 10/28 evening (Time TBD)
+    3. Open on Friday 11/30 at 5pm, ends on Sunday 12/2 evening (Time TBD)
 * There will be no extra-credit work to improve exam scores after the fact.
 
 
@@ -149,7 +163,6 @@ instead I present the following rough principle I will follow: *you'll only get
 out of this class as much as you put in*. Some examples of behavior counter to
 this principle:
 
-* 2-3 quizzes
 * Not participating in in-class exercises.
 * Engaging so little with me, either in class or during office hours, that I
 don't know what your voice sounds like.
@@ -160,11 +173,13 @@ don't know what your voice sounds like.
 
 
 
-# Inclusion and Accessibility
+# Accommodations
  
+Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
 
 
 
+***
 
 
 # Code of Conduct
@@ -187,8 +202,7 @@ who do not follow the Code of Conduct may be reprimanded for such behavior.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the instructor.
 
-This Code of Conduct is based off [this
-one](https://github.com/tidyverse/dplyr/edit/master/CONDUCT.md), which was
-adapted from the Contributor Covenant (http://contributor-covenant.org), version
-1.0.0, available at http://contributor-covenant.org/version/1/0/0/.
-
+This Code of Conduct is adapted from the [Contributor
+Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
+available at
+[here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.

@@ -57,6 +57,29 @@ h1{font-weight: 400;}
 
 ***
 
+# Problem set 1 {#PS01}
+
+*Due Wednesday 9/19 at 1pm*
+
+1. Complete the following chapters from the "Introduction to R" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:
+    * Chapter 1: "Intro to basics"
+    * Chapter 2: "Vectors"
+    * Chapter 4: "Factors"
+    * Chapter 5: "Data Frames"
+1. More to be announced on Wednesday 9/12
+
+**Expectations**:
+
+* **DataCamp**
+    1. DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
+    1. Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
+    1. I *expect* most people to take no more than 4 hours. If you anticipate taking a lot more than this, please do not hesitate to reach out to me!
+    1. Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction. 
+
+
+
+***
+
 
 
 # Lec 2
@@ -70,7 +93,7 @@ h1{font-weight: 400;}
         + You don't need to watch the videos for now
         + If you are using RStudio Server, you don't need to install packages. However, you will need to load them.
         + Learning checks: These are practice problems to reinforce your learning. You do not need to submit today's learning checks.
-1. **Lab tomorrow/Thursday**: DataCamp. 
+1. **Lab Tuesday/Thursday** Start the DataCamp portion of [Problem set 1](#PS01). Jenny will help you get used to the DataCamp interface. 
 
 
 

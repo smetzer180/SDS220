@@ -70,7 +70,7 @@ h1{font-weight: 400;}
         + You don't need to watch the videos for now
         + If you are using RStudio Server, you don't need to install packages. However, you will need to load them.
         + Learning checks: These are practice problems to reinforce your learning. You do not need to submit today's learning checks.
-1. **Lab tomorrow**: DataCamp. 
+1. **Lab tomorrow/Thursday**: DataCamp. 
 
 
 

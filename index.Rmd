@@ -54,6 +54,14 @@ h1{font-weight: 400;}
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
 
+<!--
+* Syllabus discussion:
+    + Basic information
+
+
+-->
+
+
 
 ***
 
@@ -68,7 +76,6 @@ h1{font-weight: 400;}
     + Added full topic schedule
     + Added office hours
     + Added *expectations* to following sections:
-        1. Basic Course Information
         1. Topic Schedule and Readings
         1. Evaluation
         1. Accommodations

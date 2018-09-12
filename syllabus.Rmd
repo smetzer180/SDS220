@@ -31,6 +31,18 @@ h1{font-weight: 400;}
         1. [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
         1. [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
 
+## Expectations
+
+* **Slack**:
+    + You are expected to stay on top of announcements and
+direct messages in Slack. For strategies that suit you and your work style (ex: turning on email notifications), please don't hesistate to ask me for suggestions!
+    + I will respond to Slack messages within 24h, but will respond to weekend messages (Friday afternoon to Monday morning) at my discretion.
+    + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person. 
+* **Lectures**:
+    + You do not need to inform me of *occasional* absenses.
+However, you are responsible for asking your peers for what you missed. For
+example, makeup lectures will not be held during office hours.
+    + You are expected to bring your fully charged laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
 
 
 ***

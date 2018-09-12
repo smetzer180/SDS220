@@ -80,6 +80,7 @@ h1{font-weight: 400;}
         1. Evaluation
         1. Accommodations
         1. Code of Conduct
+* Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215
 
 ## Today's Activity       
         

@@ -25,7 +25,7 @@ h1{font-weight: 400;}
         + Sec 05: Tu 9:00-10:20 - Sabin-Reed 301
         + Sec 06: Th 9:00-10:20 - Sabin-Reed 301
 * **Outside help**:
-    + Albert's office hours: TBD or by appointment - McConnell Hall 215
+    + Albert's office hours: M & Tu 3-6pm or by appointment - McConnell Hall 215
     + Jenny's office hours: W 9:30-12:00 and 1:00-4:00 - Bass 403
     + [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/){target="_blank"}
         1. [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
@@ -58,6 +58,8 @@ We will draw from the following sources:
 
 1. ["ModernDive: An Introduction to Statistical and Data Sciences via R"](https://moderndive.netlify.com/){target="_blank"} by Ismay and Kim (click link in menubar above).
 1. ["OpenIntro: Introductory Statistics with Randomization and Simulation"](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
+    + Free [PDF](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}
+    + Hardcopy. Available for $8.49 on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
 1. DataCamp: an online interactive environment for learning data science currently via R and Python. On top of the DataCamp courses we'll cover this semester, you have free access to [all their courses](https://www.datacamp.com/courses/all){target="_blank"} for 6 months. 
 
 
@@ -99,20 +101,16 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 * Assigned/due on Wednesdays.
 * **More details coming when PS01 is assigned**
 
-<!--
-* No extensions for problem sets will be granted.
-* Assignments will be graded on the following qualitative scale:
-    1. `r set.seed(79);emo::ji("check")`-: You unfortunately struggled on this problem set and
-    should go to office hours or to the tutoring center.
-    1. `r set.seed(79);emo::ji("check")`: This is typically the most common grade. You did everything mostly well and there are no red flags. However,
-    you should still compare your work to the posted solutions.
-* Each `r set.seed(79);emo::ji("check")` is worth 1% up to 10%, with the lowest two scores dropped.
--->
 
-## DataCamp Assignments 10%
+## DataCamp Assignments 10% {#datacamp}
 
 * Assigned/due on Wednesdays.
-* **More details coming when first DataCamp assignment is assigned.**
+* Expectations:
+    1. DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
+    1. Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
+    1. I *expect* most people to take no more than 4 hours.
+    1. Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction. 
+
 
 ## Quizzes 5%
 
@@ -126,7 +124,7 @@ See [Term Project](term_project.html) page.
 
 * There will be three self-scheduled midterms in the library. They are closed-book:
     1. Open on Friday 9/28 at 5pm, ends on Sunday 9/30 evening (Time TBD)
-    2. Open on Friday 10/26 at 5pm, ends on Sunday 10/28 evening (Time TBD)
+    2. Open on Friday 11/2 at 5pm, ends on Sunday 11/4 evening (Time TBD)
     3. Open on Friday 11/30 at 5pm, ends on Sunday 12/2 evening (Time TBD)
 
 ## Engagement 5% {#engagement}

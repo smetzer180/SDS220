@@ -49,7 +49,9 @@ h1{font-weight: 400;}
     1. Data modeling (blue): Correlation, basic regression, and multiple regression
     1. Statistical background (green): Random assignment for causal inference, random sampling for statistical inference, sampling distributions, and standard errors. 
     1. Statistical inference (yellow): confidence intervals, hypothesis testing, inference for regression, other inference methods
-* **Readings + Optional Readings**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
+* **Readings + Extra**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
+* **DataCamp Course**: To be assigned in problem sets.
+* **Important Date**: All deadlines posted in this column.
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
@@ -58,7 +60,7 @@ h1{font-weight: 400;}
 ***
 
 
-<!--
+
 # Lec 3
 
 * **Please** complete the Intro Survey posted in [Lec 1](#Lec1TODO) if you haven't already.
@@ -67,11 +69,7 @@ h1{font-weight: 400;}
 
 
 
-
-
 ***
-
--->
 
 
 
@@ -89,8 +87,8 @@ h1{font-weight: 400;}
 1. **Administrative stuff**: To receive full credit for this portion simply ensure
     * Slack:
         1. Your full name is listed: full name = how you would like to be addressed in class & last name.  
-        Hint: Google "How do I change my name and profile picture on Slack?"
         1. You have added a profile picture with your face visible. This will help me learn your names.
+        1. Hint: Start relying on Google! "How do I change my name and profile picture on Slack?"
         1. You are a member of the `#moderndive_typoes`, `#r_questions`, and `random` channels.
     * DataCamp: Your full name is listed in your [profile](https://www.datacamp.com/profile/account_settings){target="_blank"}; the rest is optional.
 
@@ -138,5 +136,5 @@ h1{font-weight: 400;}
         1. Have turned on [email notifications](https://get.slack.help/hc/en-us/articles/201355156-Guide-to-Slack-notifications-#email-notifications){target="_blank"}
     + You have received an invitation email to DataCamp and are a member of the [group](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics){target="_blank"}. Do not create an account separately on datacamp.com, but rather use the link in the email you received.
     + You've completed the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"}
-* **Need help with any of the above?** Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehdLkV7PPj2_ghaHROdqb4fRCdJDv0ksDLoMw95WpPnfxzqQ/viewform){target="_blank"}.
+* **Need help with any of the above?** ~~Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehdLkV7PPj2_ghaHROdqb4fRCdJDv0ksDLoMw95WpPnfxzqQ/viewform){target="_blank"}~~ Slack me!
 

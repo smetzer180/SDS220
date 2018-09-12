@@ -3,7 +3,7 @@ title: "Syllabus"
 output:
   html_document:
     toc: yes
-    toc_depth: 2
+    toc_depth: 1
     toc_float:
       collapsed: no
 ---

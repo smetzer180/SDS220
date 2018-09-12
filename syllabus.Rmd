@@ -26,7 +26,7 @@ h1{font-weight: 400;}
         + Sec 06: Th 9:00-10:20 - Sabin-Reed 301
 * **Outside help**:
     + Albert's office hours: M & Tu 3-6pm or by appointment - McConnell Hall 215
-    + Jenny's office hours: W 9:30-12:00 and 1:00-4:00 - Bass 403
+    + Jenny's office hours: [Book here](Sabin-Reed 301){target="_blank"} - Bass 403
     + [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/){target="_blank"}
         1. [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
         1. [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
@@ -52,44 +52,32 @@ Course Search](https://www.smith.edu/academics/academic-program/curriculum/cours
 
 
 
-# Materials
+# Topic Schedule and Readings
 
-We will draw from the following sources:
+A rough topic schedule and corresponding readings are posted below and on the [main](index.html) page. We will draw from the following sources:
 
-1. ["ModernDive: An Introduction to Statistical and Data Sciences via R"](https://moderndive.netlify.com/){target="_blank"} by Ismay and Kim (click link in menubar above).
-1. ["OpenIntro: Introductory Statistics with Randomization and Simulation"](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
+1. ["ModernDive: An Introduction to Statistical and Data Sciences via R (MD)"](https://moderndive.netlify.com/){target="_blank"} by Ismay and Kim (click link in menubar above).
+1. ["OpenIntro: Introductory Statistics with Randomization and Simulation (OI)"](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
     + Free [PDF](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}
     + Hardcopy. Available for $8.49 on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
 1. DataCamp: an online interactive environment for learning data science currently via R and Python. On top of the DataCamp courses we'll cover this semester, you have free access to [all their courses](https://www.datacamp.com/courses/all){target="_blank"} for 6 months. 
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="300"></iframe>
+
+## Expectations
+
+* **Topics**: Note the topic schedule may shift depending on class progress. That being said, I will try to keep the schedule up-to-date for at least the upcoming two lectures.
+* **Readings**:
+    + You are not required to cover readings for any given lecture beforehand as you'll be given class time to do so in the presence of your peers. However, if you feel you would benefit from reading beforehand, please feel free!
+    + You are however responsible for finishing the readings before the start of the next lecture.
+* **Reference**: These are optional reference readings if you would like a second perspective on the readings. For example, say you would like a second persepective on "histograms" on top of what we covered in ModernDive, I suggest reading any sections related to "histograms" in Open Inro Chapter 3 as needed, not the entire chapter.
+* **DataCamp**: You do not need to cover the listed courses beforehand; they will be assigned as lab work (see [Quizzes and Labs](#labs) below).
+* **Important Events**: Please be sure to frequently check the far-right column for important deadlines and events.
 
 
 
 ***  
 
-
-
-# Expectations
-
-As a student in this class:
-
-1. **Communication**: You are expected to stay on top of announcements and
-direct messages in Slack.
-1. **Attendance**: You are not required to inform the instructor of *occasional* absenses.
-However, you are resposible for asking your peers, and not the instructor, for
-what you missed.
-1. **Collaboration**: While I encourage you to work with your peers for problem
-sets and labs, you must submit your own answers and not simple rewordings of
-another's work. Furthermore, all collaborations must be explicitly acknowledged
-in your submissions.
-1. **Honor Code**: All your work must follow the [Smith College Academic Honor
-Code
-Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
-in particular all external sources must be cited in your submissions.
-
-   
-    
-***
- 
 
 
 # Evaluation
@@ -99,7 +87,6 @@ in particular all external sources must be cited in your submissions.
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
 * Assigned/due on Wednesdays.
-* **More details coming when PS01 is assigned**
 
 
 ## DataCamp Assignments 10% {#datacamp}
@@ -142,6 +129,18 @@ don't know what your voice sounds like.
 * Doing the bare minimum to get by. 
 
 
+## Expectations {#evaluation-expectations}
+
+1. **Collaboration**: While I encourage you to work with your peers for problem
+sets and labs, you must submit your own answers and not simple rewordings of
+another's work. Furthermore, all collaborations must be explicitly acknowledged
+in your submissions.
+1. **Honor Code**: All your work must follow the [Smith College Academic Honor
+Code
+Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
+in particular all external sources must be cited in your submissions.
+
+
 
 ***
 
@@ -150,6 +149,11 @@ don't know what your voice sounds like.
 # Accommodations
  
 Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
+
+## Expectations
+
+If you require accommodations, please provide me with documentation
+and advance notice for when you think you will need them.
 
 
 
@@ -163,21 +167,23 @@ As the instructor and assistants for this course, we are committed to making
 participation in this course a harassment-free experience for everyone,
 regardless of level of experience, gender, gender identity and expression,
 sexual orientation, disability, personal appearance, body size, race, ethnicity,
-age, or religion.
-
-Examples of unacceptable behavior by participants in this course include the use
-of sexual language or imagery, derogatory comments or personal attacks,
-trolling, public or private harassment, insults, or other unprofessional
-conduct.
+age, or religion. Examples of unacceptable behavior by participants in this
+course include the use of sexual language or imagery, derogatory comments or
+personal attacks, trolling, public or private harassment, insults, or other
+unprofessional conduct.
 
 As the instructor and assistants we have the right and responsibility to point
 out and stop behavior that is not aligned to this Code of Conduct. Participants
 who do not follow the Code of Conduct may be reprimanded for such behavior.
-
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the instructor.
 
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
-available at
-[here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
+available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
+
+## Expectations
+
+All students, the instructor, and all assistants are expected to adhere to this
+Code of Conduct in all settings: lectures, office hours, during tutoring hours,
+and over Slack.

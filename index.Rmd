@@ -49,9 +49,7 @@ h1{font-weight: 400;}
     1. Data modeling (blue): Correlation, basic regression, and multiple regression
     1. Statistical background (green): Random assignment for causal inference, random sampling for statistical inference, sampling distributions, and standard errors. 
     1. Statistical inference (yellow): confidence intervals, hypothesis testing, inference for regression, other inference methods
-* **Readings + Extra**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
-* **DataCamp Course**: To be assigned in problem sets.
-* **Important Date**: All deadlines posted in this column.
+* **Readings + Reference**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
@@ -63,9 +61,41 @@ h1{font-weight: 400;}
 
 # Lec 3
 
-* **Please** complete the Intro Survey posted in [Lec 1](#Lec1TODO) if you haven't already.
+* Go over previous Slack `#general_announcements`
+* If you haven't already, **please** complete the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"} from Lec 1.
 * Self-scheduled Midterm II has been moved from Fri 10/26 thru Sun 10/28 to Fri 11/2 thru Sun 11/4 because of family weekend. 
-* Office hours are now posted on [syllabus](syllabus.html)
+* Syllabus discussion:
+    + Added full topic schedule
+    + Added office hours
+    + Added *expectations* to following sections:
+        1. Basic Course Information
+        1. Topic Schedule and Readings
+        1. Evaluation
+        1. Accommodations
+        1. Code of Conduct
+
+## Today's Activity       
+        
+1. Go over ModernDive Chapter 2. Note:
+    + You can skip all videos and linked DataCamp courses.
+    + "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
+
+## Getting help
+
+A big part of learning data science tools is learning how to get help effectively. For example, in this course:
+
+**In class**:
+
+1. Ask yourself "Is this something I can Google?" Learning to use Google effectively is an important tool in a data scientist's toolbox.
+1. Ask the people sitting next to you. 
+1. Raise your hand to ask the data assistant or myself.
+
+**Outside of class**:
+
+1. Ask yourself "Is this something I can Google?" Learning to use Google effectively is an important tool in a data scientist's toolbox.
+1. Ask yourself "Are there people I work with in class that I can Slack?"
+1. If you all don't know, post a question on Slack in the `#r_questions` channel.
+1. Visit the Spinelli Center for tutoring Sunday-Thursday 7-9pm (see [syllabus](syllabus.html#basicinfo) for more info).
 
 
 

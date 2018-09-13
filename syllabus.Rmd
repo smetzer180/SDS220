@@ -26,7 +26,7 @@ h1{font-weight: 400;}
         + Sec 06: Th 9:00-10:20 - Sabin-Reed 301
 * **Outside help**:
     + Albert's office hours: M & Tu 3-6pm or by appointment - McConnell Hall 215
-    + Jenny's office hours: [Book here](Sabin-Reed 301){target="_blank"} - Bass 403
+    + Jenny's office hours: [Book here](https://jennysmetzer.youcanbook.me/{target="_blank"} - Bass 403
     + [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/){target="_blank"}
         1. [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
         1. [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.

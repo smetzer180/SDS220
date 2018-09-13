@@ -67,6 +67,22 @@ h1{font-weight: 400;}
 
 
 
+# Lec 4
+
+* **Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215**
+* For those of you with interests in Biology: Reed College's Prof Derek Applewhite ["The Spatial and Temporal Regulation of Non-muscle Myosin II Contractility"](https://twitter.com/rudeboybert/status/1040272556991959041){target="_blank"} talk on Monday afternoon.
+* Syllabus: Added *expectations* to "basic information" section.
+* "Should I be copy/paste/tweeking code directly in the console?" Topic for today: `.R` script files AKA "scratchpads"
+
+## Today's Activity
+
+The Grammar of Graphics
+
+
+***
+
+
+
 # Lec 3
 
 * Go over previous Slack `#general_announcements`

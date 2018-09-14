@@ -83,7 +83,7 @@ A rough topic schedule and corresponding readings are posted below and on the [m
     + You are not required to cover readings for any given lecture beforehand as you'll be given class time to do so in the presence of your peers. However, if you feel you would benefit from reading beforehand, please feel free!
     + You are however responsible for finishing the readings before the start of the next lecture.
 * **Reference**: These are optional reference readings if you would like a second perspective on the readings. For example, say you would like a second persepective on "histograms" on top of what we covered in ModernDive, I suggest reading any sections related to "histograms" in Open Inro Chapter 3 as needed, not the entire chapter.
-* **DataCamp**: You do not need to cover the listed courses beforehand; they will be assigned as lab work (see [Quizzes and Labs](#labs) below).
+* **DataCamp**: See [DataCamp Assignments](#datacamp) below.
 * **Important Events**: Please be sure to frequently check the far-right column for important deadlines and events.
 
 
@@ -109,7 +109,7 @@ practice, instead of evaluative tools used by the instructor to assign grades.
     1. Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
     1. I *expect* most people to take no more than 4 hours per DataCamp assignment.
     1. Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction.
-    1. You do not need to do any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them. 
+    1. You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them. 
 
 
 ## Quizzes 5%

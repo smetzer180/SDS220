@@ -54,14 +54,6 @@ h1{font-weight: 400;}
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
 
-<!--
-* Syllabus discussion:
-    + Basic information
-
-
--->
-
-
 
 ***
 
@@ -69,19 +61,46 @@ h1{font-weight: 400;}
 
 # Lec 4
 
+## Announcements
+
 * **Extra office hours today 3:30-5pm in McConnell 215**
 * For those of you with interests in Biology: Reed College's Prof Derek Applewhite ["The Spatial and Temporal Regulation of Non-muscle Myosin II Contractility"](https://twitter.com/rudeboybert/status/1040272556991959041){target="_blank"} talk on Monday afternoon.
 * Syllabus:
-    + Added "Expectations" to [Basic Information](syllabus.html#basicinfo) section.
-    + Added note about when to do [DataCamp](syllabus.html#datacamp) courses.
+    + Added expectations to [Basic Information](syllabus.html#basicinfo) section.
+    + Added note about when to do DataCamp courses to [syllabus](syllabus.html#datacamp): *You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them.*
+* Solutions to previous lecture's learning checks will be posted directly underneith question. Ex: Look at [LC2.1 Solutions](https://moderndive.netlify.com/2-getting-started.html#exploredataframes){target="_blank"} I just posted.
 
-## Today's Activity
 
-<!--
-1. "Should I be copying/pasting/tweeking code directly in the console?" Creating `.R` script files AKA "scratchpads"
-1. Chalk Talk: The Grammar of Graphics
-1. Go over ModernDive Chapters 
--->
+## Today's Topics/Activities       
+
+### 1. Chalk Talk
+
+The Grammar of Graphics: the theoretical underpinnings of statistical graphics.
+
+### 2. In-class exercise 1: R code scratchpads
+
+**Question**: Should I be copying/pasting/tweeking code directly in the console window?  
+**Answer**: You can, but it makes saving work difficult. Instead, create a "scratchpad":
+
+1. Create a new `.R` script: In RStudio Menu Bar -> File -> New File -> R Script. 
+1. Save this as `scratchpad.R`
+1. Copy/paste/tweak any code in your scratchpad, not in console window. For example, for this exercise write: `1+1`
+1. To "run" code in the console (in other words tell R to "do this"), you can do one of the following:
+    1. Copy it from scratchpad, then paste it in console, then hit enter.
+    1. Highlight the code you want to run, then click on "Run"
+    1. Highlight the code you want to run, then press control+enter on Windows/Unix/Chromebook or ⌘+enter on macOS.
+
+### 3. In-class exercise 2
+
+As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).
+
+* Do not ignore the "Needed Packages" section at the beginning. Recall:
+    + The phone vs app analogy described in ModernDive 2.3.
+    + If you are using RStudio Server in your browser, these packages come pre-installed.
+    + If you are using RStudio Desktop installed on your computer, you'll have to ensure these packages are installed.
+* Please skip the "Introduction to the Tidyverse" DataCamp course mentioned at the beginning of Chapter 3 for now.
+* "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
+* **Note**: In this class, of the "Five Named Graphs" described in ModernDive 3.2, we'll only cover scatterplots, histographs, and boxplots; we'll be skipping linegraphs and barplots. 
 
 
 
@@ -90,6 +109,8 @@ h1{font-weight: 400;}
 
 
 # Lec 3
+
+## Announcements
 
 * Go over previous Slack `#general_announcements`
 * If you haven't already, **please** complete the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"} from Lec 1.
@@ -100,7 +121,7 @@ h1{font-weight: 400;}
     + Added "Expectations" to following sections: [Topic Schedule and Readings](syllabus.html#topicschedule), [Evaluation](syllabus.html#topicschedule), [Accommodations](syllabus.html#accommodations), [Code of Conduct](syllabus.html#codeofconduct)
 * **Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215**
 
-## Today's Activity       
+## Today's Topics/Activities       
         
 1. Go over ModernDive Chapter 2. Note:
     + You can skip all videos and linked DataCamp courses.

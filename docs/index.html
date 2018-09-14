@@ -299,7 +299,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2018-09-13</em></h4>
+<h4 class="date"><em>Last updated on 2018-09-14</em></h4>
 
 </div>
 
@@ -326,37 +326,67 @@ h1{font-weight: 400;}
 </ul>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="830">
 </iframe>
-<!--
-* Syllabus discussion:
-    + Basic information
-
-
--->
 <hr />
 </div>
 <div id="lec-4" class="section level1">
 <h1>Lec 4</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
 <ul>
 <li><strong>Extra office hours today 3:30-5pm in McConnell 215</strong></li>
 <li>For those of you with interests in Biology: Reed College’s Prof Derek Applewhite <a href="https://twitter.com/rudeboybert/status/1040272556991959041" target="_blank">“The Spatial and Temporal Regulation of Non-muscle Myosin II Contractility”</a> talk on Monday afternoon.</li>
 <li>Syllabus:
 <ul>
-<li>Added “Expectations” to <a href="syllabus.html#basicinfo">Basic Information</a> section.</li>
-<li>Added note about when to do <a href="syllabus.html#datacamp">DataCamp</a> courses.</li>
+<li>Added expectations to <a href="syllabus.html#basicinfo">Basic Information</a> section.</li>
+<li>Added note about when to do DataCamp courses to <a href="syllabus.html#datacamp">syllabus</a>: <em>You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them.</em></li>
 </ul></li>
+<li>Solutions to previous lecture’s learning checks will be posted directly underneith question. Ex: Look at <a href="https://moderndive.netlify.com/2-getting-started.html#exploredataframes" target="_blank">LC2.1 Solutions</a> I just posted.</li>
 </ul>
-<div id="todays-activity" class="section level2">
-<h2>Today’s Activity</h2>
-<!--
-1. "Should I be copying/pasting/tweeking code directly in the console?" Creating `.R` script files AKA "scratchpads"
-1. Chalk Talk: The Grammar of Graphics
-1. Go over ModernDive Chapters 
--->
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk Talk</h3>
+<p>The Grammar of Graphics: the theoretical underpinnings of statistical graphics.</p>
+</div>
+<div id="in-class-exercise-1-r-code-scratchpads" class="section level3">
+<h3>2. In-class exercise 1: R code scratchpads</h3>
+<p><strong>Question</strong>: Should I be copying/pasting/tweeking code directly in the console window?<br />
+<strong>Answer</strong>: You can, but it makes saving work difficult. Instead, create a “scratchpad”:</p>
+<ol style="list-style-type: decimal">
+<li>Create a new <code>.R</code> script: In RStudio Menu Bar -&gt; File -&gt; New File -&gt; R Script.</li>
+<li>Save this as <code>scratchpad.R</code></li>
+<li>Copy/paste/tweak any code in your scratchpad, not in console window. For example, for this exercise write: <code>1+1</code></li>
+<li>To “run” code in the console (in other words tell R to “do this”), you can do one of the following:
+<ol style="list-style-type: decimal">
+<li>Copy it from scratchpad, then paste it in console, then hit enter.</li>
+<li>Highlight the code you want to run, then click on “Run”</li>
+<li>Highlight the code you want to run, then press control+enter on Windows/Unix/Chromebook or ⌘+enter on macOS.</li>
+</ol></li>
+</ol>
+</div>
+<div id="in-class-exercise-2" class="section level3">
+<h3>3. In-class exercise 2</h3>
+<p>As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).</p>
+<ul>
+<li>Do not ignore the “Needed Packages” section at the beginning. Recall:
+<ul>
+<li>The phone vs app analogy described in ModernDive 2.3.</li>
+<li>If you are using RStudio Server in your browser, these packages come pre-installed.</li>
+<li>If you are using RStudio Desktop installed on your computer, you’ll have to ensure these packages are installed.</li>
+</ul></li>
+<li>Please skip the “Introduction to the Tidyverse” DataCamp course mentioned at the beginning of Chapter 3 for now.</li>
+<li>“Learning checks”: These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!</li>
+<li><strong>Note</strong>: In this class, of the “Five Named Graphs” described in ModernDive 3.2, we’ll only cover scatterplots, histographs, and boxplots; we’ll be skipping linegraphs and barplots.</li>
+</ul>
 <hr />
+</div>
 </div>
 </div>
 <div id="lec-3" class="section level1">
 <h1>Lec 3</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
 <ul>
 <li>Go over previous Slack <code>#general_announcements</code></li>
 <li>If you haven’t already, <strong>please</strong> complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform" target="_blank">Intro Survey</a> from Lec 1.</li>
@@ -369,8 +399,9 @@ h1{font-weight: 400;}
 </ul></li>
 <li><strong>Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215</strong></li>
 </ul>
-<div id="todays-activity-1" class="section level2">
-<h2>Today’s Activity</h2>
+</div>
+<div id="todays-topicsactivities-1" class="section level2">
+<h2>Today’s Topics/Activities</h2>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive Chapter 2. Note:
 <ul>
@@ -455,9 +486,11 @@ h1{font-weight: 400;}
 <ul>
 <li>What is inference demo.</li>
 <li>From the ModernDive <a href="https://moderndive.netlify.com/index.html#sec:intro-for-students" target="_blank">Introduction for Students</a>: <img src="https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.002.png" width="600" /></li>
-<li>It all builds up to the <code>infer</code> package for “tidy” statistical inference. Only if you’re curious:</li>
+<li>It all builds up to the <code>infer</code> package for “tidy” statistical inference. Only if you’re curious:
+<ul>
 <li><a href="http://infer.netlify.com/" target="_blank">Package homepage</a></li>
 <li><a href="https://www.rstudio.com/resources/videos/infer-a-package-for-tidy-statistical-inference/" target="_blank">High-level talk of package</a>.</li>
+</ul></li>
 </ul>
 <div id="Lec1TODO" class="section level2">
 <h2>TODO’s</h2>

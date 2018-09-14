@@ -89,6 +89,8 @@ The Grammar of Graphics: the theoretical underpinnings of statistical graphics.
     1. Copy it from scratchpad, then paste it in console, then hit enter.
     1. Highlight the code you want to run, then click on "Run"
     1. Highlight the code you want to run, then press control+enter on Windows/Unix/Chromebook or ⌘+enter on macOS.
+1. Save and close the file.
+1. In the Files panel, click on `scratchpad.R` to reopen your previously saved work.
 
 ### 3. In-class exercise 2
 

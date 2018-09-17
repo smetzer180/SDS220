@@ -114,7 +114,7 @@ As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
 
 ## 1. DataCamp
 
-* Complete the "Introduction to the Tidyverse" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:
+* Complete the "Introduction to the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/introduction-to-the-tidyverse){target="_blank"}.
 * Note: DataCamp does things in a slightly order, data wrangling first then data visualization. ModernDive however does data visualization first in Chapter 3 then data wrangling in Chapter 5. Reading ModernDive Chapter 5 is not a pre-requisite for completing this problem set.
 * See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
 * If you have already completed the "Introduction to the Tidyverse" DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.

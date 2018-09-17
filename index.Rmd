@@ -65,7 +65,9 @@ h1{font-weight: 400;}
 
 Experimenting with [RStudio Cloud](https://www.causeweb.org/cause/sites/default/files/eCOTS%202018%20-%20Frictionless%20onboarding%20to%20data%20science%20with%20RStudio%20Cloud.pdf){target="_blank"} (on RStudio's servers) instead of RStudio Server (on Smith College's Servers).
 
-* Click [here](https://rstudio.cloud/spaces/4441/join?access_code=KMu7j8TpEMdb1XCXB9Dbj%2B8%2F79dQaS1nchX2PCtO){target="_blank"} to join RStudio Cloud. Use any email address you like. 
+* Click [here](https://rstudio.cloud/spaces/4441/join?access_code=KMu7j8TpEMdb1XCXB9Dbj%2B8%2F79dQaS1nchX2PCtO){target="_blank"} to join RStudio Cloud.
+* Create an account by clicking the "Login with Google" button and use your Smith email.
+* Give yourself whatever login name.
 * In the "2018-09 SDS 220" space you should see a "coursework" project. Click on "Copy".
 * Click where it says "coursework" and rename it "Firstname Lastname". For example in my case "Albert Kim".
 

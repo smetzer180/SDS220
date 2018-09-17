@@ -59,6 +59,74 @@ h1{font-weight: 400;}
 
 
 
+# Lec 5
+
+## Experimenting with RStudio Cloud
+
+Experimenting with [RStudio Cloud](https://www.causeweb.org/cause/sites/default/files/eCOTS%202018%20-%20Frictionless%20onboarding%20to%20data%20science%20with%20RStudio%20Cloud.pdf){target="_blank"} (on RStudio's servers) instead of RStudio Server (on Smith College's Servers).
+
+* Click [here](https://rstudio.cloud/spaces/4441/join?access_code=KMu7j8TpEMdb1XCXB9Dbj%2B8%2F79dQaS1nchX2PCtO){target="_blank"} to join RStudio Cloud. Use any email address you like. 
+* In the "2018-09 SDS 220" space you should see a "coursework" project. Click on "Copy".
+* Click where it says "coursework" and rename it "Firstname Lastname". For example in my case "Albert Kim".
+
+
+## Announcements
+
+* Lab section Tuesday/Thursday: Start Problem set 2 [below](#PS02)
+* What my `scratchpad.R` looks like after Lec4. Yours shouldn't be *exactly* the same, but close.  
+Note because I saved my work, `scratchpad.R` is written in black. If I had unsaved work, this would be written in red.  
+![alt text](static/images/Lec4_scratchpad.png){ width=500px }
+
+## Today's Topics/Activities       
+
+### 1. Chalk Talk
+
+* Histograms visualize the *(empirical) distribution* of a numerical variable
+* Facets + Histograms: Allow you to visualize *the conditional distribution* of a numerical variable
+
+### 2. In-class exercise: Comment lines
+
+In the screen shot of my `scratchpad.R` above, any line that starts with a `#` are called *comment lines*. They are ignored by R when you run them in the console. Run both these lines in the console separately:
+
+```{r, eval=FALSE, echo=TRUE}
+this is a comment line that R ignores that helps readers (including you!) understand code
+
+# this is a comment line that R ignores that helps readers (including you!) understand code
+```
+
+Why does one line return an `Error` whereas the other doesn't?
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
+
+
+
+***
+
+
+
+# Problem set 2 {#PS02}
+
+*Assigned Wednesday 9/19, due Wednesday 9/26 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+* Complete the "Introduction to the Tidyverse" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:
+* Note: DataCamp does things in a slightly order, data wrangling first then data visualization. ModernDive however does data visualization first in Chapter 3 then data wrangling in Chapter 5. Reading ModernDive Chapter 5 is not a pre-requisite for completing this problem set.
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+* If you have already completed the "Introduction to the Tidyverse" DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.
+
+## 2. R component
+
+To be posted before Tuesday 9/18 at 9am
+
+
+
+***
+
+
+
 # Lec 4
 
 ## Announcements
@@ -77,7 +145,7 @@ h1{font-weight: 400;}
 
 The Grammar of Graphics: the theoretical underpinnings of statistical graphics.
 
-### 2. In-class exercise 1: R code scratchpads
+### 2. In-class exercise: R code scratchpads
 
 **Question**: Should I be copying/pasting/tweeking code directly in the console window?  
 **Answer**: You can, but it makes saving work difficult. Instead, create a "scratchpad":
@@ -92,7 +160,7 @@ The Grammar of Graphics: the theoretical underpinnings of statistical graphics.
 1. Save and close the file.
 1. In the Files panel, click on `scratchpad.R` to reopen your previously saved work.
 
-### 3. In-class exercise 2
+### 3. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).
 
@@ -154,7 +222,7 @@ A big part of learning data science tools is learning how to get help effectivel
 
 # Problem set 1 {#PS01}
 
-*Assigned Wednesday 9/12, due Wednesday 9/19 at 1pm*
+*Assigned Wednesday 9/12, due Wednesday 9/19 at 1pm Eastern Time*
 
 1. **DataCamp**
     * Complete the following chapters from the "Introduction to R" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:

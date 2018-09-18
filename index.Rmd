@@ -74,7 +74,9 @@ Experimenting with [RStudio Cloud](https://www.causeweb.org/cause/sites/default/
 
 ## Announcements
 
-* Lab section Tuesday/Thursday: Start Problem set 2 [below](#PS02)
+* Lab section Tuesday/Thursday:
+    + Install R + RStudio on your computer
+    + Start Problem set 2 [below](#PS02)
 * What my `scratchpad.R` looks like after Lec4. Yours shouldn't be *exactly* the same, but close.  
 Note because I saved my work, `scratchpad.R` is written in black. If I had unsaved work, this would be written in red.  
 ![alt text](static/images/Lec4_scratchpad.png){ width=500px }
@@ -121,7 +123,7 @@ As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
 
 ## 2. R component
 
-To be posted before Tuesday 9/18 at 9am
+To be posted ~~before Tuesday 9/18 at 9am~~ by Wednesday's lecture.
 
 
 

@@ -92,9 +92,9 @@ Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5
 ```{r, eval=FALSE, echo=TRUE}
 library(ggplot2)
 library(nycflights13)
-# Code to generate Fig 3.10
+# Code to generate Fig 3.10 with bar border color white
 ggplot(data = weather, mapping = aes(x = temp)) +
-  geom_histogram()
+  geom_histogram(color = "white")
 # Code to generate Fig 3.11
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
@@ -105,7 +105,7 @@ library(nycflights13)
 library(patchwork)
 # Code to generate Fig 3.10
 p1 <- ggplot(data = weather, mapping = aes(x = temp)) +
-  geom_histogram() +
+  geom_histogram(color = "white") +
   labs(title = "Fig 3.10: 30 bins")
 # Code to generate Fig 3.11
 p2 <- ggplot(data = weather, mapping = aes(x = temp)) +
@@ -259,7 +259,7 @@ Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income I
     + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
     + Go to the Files panel of RStudio and re-open `PS02_lastname_firstname.R`.
     + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
-* **Submission**: "Download" this file on to your compter by going to RStudio -> Files panel -> More -> Export. Then submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=29919){target="_blank"}. 
+* **Submission**: "Download" this file on to your compter by going to RStudio -> Files panel -> More -> Export. Then submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
 
 **Hints**:

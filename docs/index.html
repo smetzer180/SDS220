@@ -430,9 +430,9 @@ h1{font-weight: 400;}
 <p>Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10</span></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10 with bar border color white</span></a>
 <a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>()</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a>
 <a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co"># Code to generate Fig 3.11</span></a>
 <a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb1-8" data-line-number="8"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
@@ -568,7 +568,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>Go to the Files panel of RStudio and re-open <code>PS02_lastname_firstname.R</code>.</li>
 <li>Run all your code as described in <a href="#Lec04">Lec4</a> and make sure that you can replicate the scatterplot.</li>
 </ul></li>
-<li><strong>Submission</strong>: “Download” this file on to your compter by going to RStudio -&gt; Files panel -&gt; More -&gt; Export. Then submit this on <a href="https://moodle.smith.edu/course/view.php?id=29919" target="_blank">Moodle</a>.</li>
+<li><strong>Submission</strong>: “Download” this file on to your compter by going to RStudio -&gt; Files panel -&gt; More -&gt; Export. Then submit this on <a href="https://moodle.smith.edu/course/view.php?id=30498" target="_blank">Moodle</a>.</li>
 <li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
 </ul>
 <p><strong>Hints</strong>:</p>

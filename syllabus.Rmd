@@ -144,6 +144,8 @@ don't know what your voice sounds like.
 
 ## Expectations {#evaluation-expectations}
 
+In particular for R components of problem sets:
+
 1. **Collaboration**: While I encourage you to work with your peers for problem
 sets and labs, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged

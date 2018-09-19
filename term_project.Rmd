@@ -24,7 +24,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ***
 
-# 1. Groups - Fri 9/21 5pm
+# 1. Groups - Fri 9/21 5pm {#groups}
 
 **To do:**
 

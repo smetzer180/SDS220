@@ -11,7 +11,7 @@
 
 
 
-<title>README.utf8.md</title>
+<title>Other notes</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +25,9 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
 
@@ -173,7 +176,7 @@ $(document).ready(function ()  {
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
     };
-    options.showAndHide = true;
+    options.showAndHide = false;
     options.smoothScroll = true;
 
     // tocify
@@ -236,6 +239,12 @@ div.tocify {
   border-radius: 0px;
 }
 
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
 
 </style>
 
@@ -295,41 +304,22 @@ div.tocify {
 
 
 
+<h1 class="title toc-ignore">Other notes</h1>
 
 </div>
 
 
-<div id="sdsmth-220" class="section level1">
-<h1>SDS/MTH 220</h1>
-<p>Homepage source code for 2018-09 Fall Smith College SDS/MATH 220: Intro to Probability and Statistics <a href="https://rudeboybert.github.io/SDS220/" class="uri">https://rudeboybert.github.io/SDS220/</a>. Most of the content is in either:</p>
+<div id="server_cloud" class="section level2">
+<h2>RStudio Server &amp; RStudio Cloud</h2>
+<p><strong>RStudio Server</strong>:</p>
+<p>For those of you who would prefer to use RStudio Server, here is an update from <a href="http://www.science.smith.edu/cats/" target="_blank">Computing and Technical Services</a>. They’ve added 4 additional processors to RStudio Server so things should run smoother! Some requests from Suzanne Palmer:</p>
 <ul>
-<li><code>index.Rmd</code>: a single Moodle-style page that lists all announcements, lectures notes, and problem sets/homeworks in chronological order.</li>
-<li><code>syllabus.Rmd</code></li>
+<li>“Please do not install packages.” Recall: If you are using RStudio Server, there is no need to <em>install</em> packages, only to <em>load/open</em> them using the <code>library()</code> command. For example <code>library(nycflights13)</code>.</li>
+<li>“Please ask students to limit their number of concurrent sessions.” In other words, when you are done working in RStudio Server, please close your browser window so that it frees up shared computing resources for other people.</li>
+<li>If you would like to do your own work that involves “big data”, for example for a thesis project, please Slack me and we’ll set up a separate account.</li>
 </ul>
-<div id="how-to-build-this-webpage" class="section level2">
-<h2>How to build this webpage</h2>
-<p>This webpage is built/compiled using <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">R Markdown websites</a>. To compile this webpage for yourself, do the following:</p>
-<ol style="list-style-type: decimal">
-<li>Get the contents of this directory/repository:
-<ul>
-<li>If you are not familiar with GitHub, click the green “Clone or download” button on the top-right -&gt; Download ZIP -&gt; Unzip <code>SDS220-master.zip</code>.</li>
-<li>If you are familiar with GitHub, clone this repository.</li>
-</ul></li>
-<li>Double-click the <code>SDS220.Rproj</code> to open RStudio.</li>
-<li>If you haven’t already, install the R Markdown package by typing <code>install.packages(&quot;rmarkdown&quot;)</code> in the console.</li>
-<li>Go to the “Build” pane of RStudio -&gt; More -&gt; Configure Build Tools… -&gt; Ensure that “Project build tools” is set to “Webpage”.</li>
-<li>Click “Build Website”. You may need to install some additional R pacakges listed at the top of <code>index.Rmd</code>.</li>
-<li>The website will display in the Viewer pane. The resulting <code>index.html</code> file and all other files for the webpage will be saved in the <code>docs/</code> folder.</li>
-</ol>
-</div>
-<div id="how-to-publish-this-webpage" class="section level2">
-<h2>How to publish this webpage</h2>
-<p>To publish/deploy this webpage and make it viewable on the web, you need to either:</p>
-<ol style="list-style-type: decimal">
-<li>Copy the contents of the <code>docs/</code> folder to your personal webpage or whatever domain hosting service you use.</li>
-<li>Use <a href="https://pages.github.com/">GitHub pages</a> as I do. RStudio’s R Markdown Websites page gives <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html#publishing_websites">instructions</a> on how.</li>
-</ol>
-</div>
+<p><strong>RStudio Cloud</strong></p>
+<p>Recall: RStudio Cloud is just like RStudio Server, but where the “cloud” is on RStudio servers and not Smith College servers. While we tested this in Lec5 and things seem to work fine, this product is not quite ready for “primetime”</p>
 </div>
 
 

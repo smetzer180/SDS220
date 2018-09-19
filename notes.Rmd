@@ -1,0 +1,24 @@
+---
+title: "Other notes"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: no
+---
+
+
+## RStudio Server & RStudio Cloud {#server_cloud}
+
+**RStudio Server**:
+
+For those of you who would prefer to use RStudio Server, here is an update from [Computing and Technical Services](http://www.science.smith.edu/cats/){target="_blank"}. They've added 4 additional processors to RStudio Server so things should run smoother! Some requests from Suzanne Palmer:
+
+* "Please do not install packages." Recall: If you are using RStudio Server, there is no need to *install* packages, only to *load/open* them using the `library()` command. For example `library(nycflights13)`.
+* "Please ask students to limit their number of concurrent sessions." In other words, when you are done working in RStudio Server, please close your browser window so that it frees up shared computing resources for other people.
+* If you would like to do your own work that involves "big data", for example for a thesis project, please Slack me and we'll set up a separate account.
+
+**RStudio Cloud**
+
+Recall: RStudio Cloud is just like RStudio Server, but where the "cloud" is on RStudio servers and not Smith College servers. While we tested this in Lec5 and things seem to work fine, this product is not quite ready for "primetime"

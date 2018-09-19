@@ -31,41 +31,68 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-pre, code { background-color: #f8f8f8; }
-code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code > span.dt { color: #204a87; } /* DataType */
-code > span.dv { color: #0000cf; } /* DecVal */
-code > span.bn { color: #0000cf; } /* BaseN */
-code > span.fl { color: #0000cf; } /* Float */
-code > span.ch { color: #4e9a06; } /* Char */
-code > span.st { color: #4e9a06; } /* String */
-code > span.co { color: #8f5902; font-style: italic; } /* Comment */
-code > span.ot { color: #8f5902; } /* Other */
-code > span.al { color: #ef2929; } /* Alert */
-code > span.fu { color: #000000; } /* Function */
-code > span.er { color: #a40000; font-weight: bold; } /* Error */
-code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #000000; } /* Constant */
-code > span.sc { color: #000000; } /* SpecialChar */
-code > span.vs { color: #4e9a06; } /* VerbatimString */
-code > span.ss { color: #4e9a06; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #000000; } /* Variable */
-code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code > span.ex { } /* Extension */
-code > span.at { color: #c4a000; } /* Attribute */
-code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 <style type="text/css">
   pre:not([class]) {
@@ -342,7 +369,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2018-09-18</em></h4>
+<h4 class="date"><em>Last updated on 2018-09-19</em></h4>
 
 </div>
 
@@ -371,6 +398,100 @@ h1{font-weight: 400;}
 </iframe>
 <hr />
 </div>
+<div id="lec-6" class="section level1">
+<h1>Lec 6</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Curious about a career in data science? Then come for Emily Dodwell (class of 2011)’s talk “The Nuts and Bolts of a Data Science Career” on Monday 9/24; stay for the 🍕 lunch! Click <a href="static/dodwell_talk.pdf" target="_blank">here</a> for flyer.</li>
+<li>Problem set 2 posted <a href="#PS02">below</a>.</li>
+<li>Upcoming “Important dates” in schedule above:
+<ul>
+<li><a href="term_project.html#groups">Project groups</a> by this Friday 9/21</li>
+<li>Self-scheduled Midterm I weekend of Friday 9/28</li>
+</ul></li>
+<li>Learning check solutions by Friday, I promise!</li>
+<li>Slack poll on <code>scratchpad.R</code></li>
+</ul>
+</div>
+<div id="rstudio-desktop" class="section level2">
+<h2>RStudio Desktop</h2>
+<p>In this week’s lab sections you’ll get help installing R + RStudio on your computers; the instructions are in ModernDive 2.1.1. <strong>Starting on Friday I will assume you are all using the desktop version of RStudio.</strong> If you’re still curious about RStudio Server &amp; RStudio Cloud, check out these <a href="notes.html#server_cloud">notes</a>.</p>
+<p>So after Friday you’ll be responsible for installing R Packages as described in ModernDive 2.3. In other words, to use a package for the first time:</p>
+<ol style="list-style-type: decimal">
+<li>You’ll need to install it once.</li>
+<li><em>Load/open</em> it using <code>library()</code> command. Ex: <code>library(nycflights13)</code></li>
+</ol>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-histograms-binning-structure" class="section level3">
+<h3>1. Chalk Talk: Histograms “binning” structure</h3>
+<p>Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>()</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="co"># Code to generate Fig 3.11</span></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+</div>
+<div id="chalk-talk-boxplots" class="section level3">
+<h3>2. Chalk Talk: Boxplots</h3>
+<p>Say we want to plot a boxplot of the following 12 values which are pre-sorted:</p>
+<blockquote>
+<p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
+</blockquote>
+<p>They have the following <em>summary statistics</em>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Min.</th>
+<th>1st Qu.</th>
+<th>Median</th>
+<th>3rd Qu.</th>
+<th>Max.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>5.5</td>
+<td>8.5</td>
+<td>13.5</td>
+<td>30</td>
+</tr>
+</tbody>
+</table>
+<!--
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+
+
+-->
+</div>
+<div id="in-class-exercise-moderndive" class="section level3">
+<h3>3. In-class exercise: ModernDive</h3>
+<p>As marked in the Schedule at the top of this page, read ModernDive 3.7.</p>
+</div>
+<div id="tweet-of-the-day" class="section level3">
+<h3>4. Tweet of the day</h3>
+<p>On <em>imposter syndrome</em> is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a “fraud”. Click below to read full thread.</p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Let's talk about imposter syndrome in tech – specifically, ways we can combat it better, both individually and as a community (a thread) 👇
+</p>
+— Caitlin Hudon👩🏼 💻 (<span class="citation">@beeonaposy</span>) <a href="https://twitter.com/beeonaposy/status/1042161720771395585?ref_src=twsrc%5Etfw">September 18, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>Interesting results from my SDS 192 course earlier today:</p>
+<p><img src="static/images/imposter_syndrome.png" width="500" /></p>
+<hr />
+</div>
+</div>
+</div>
 <div id="lec-5" class="section level1">
 <h1>Lec 5</h1>
 <div id="experimenting-with-rstudio-cloud" class="section level2">
@@ -384,7 +505,7 @@ h1{font-weight: 400;}
 <li>Click where it says “coursework” and rename it “Firstname Lastname”. For example in my case “Albert Kim”.</li>
 </ul>
 </div>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Lab section Tuesday/Thursday:
@@ -397,7 +518,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <img src="static/images/Lec4_scratchpad.png" alt="alt text" width="500" /></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -409,12 +530,12 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <div id="in-class-exercise-comment-lines" class="section level3">
 <h3>2. In-class exercise: Comment lines</h3>
 <p>In the screen shot of my <code>scratchpad.R</code> above, any line that starts with a <code>#</code> are called <em>comment lines</em>. They are ignored by R when you run them in the console. Run both these lines in the console separately:</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">this is a comment line that R ignores that helps <span class="kw">readers</span> (including you<span class="op">!</span>) understand code
-
-<span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">this is a comment line that R ignores that helps <span class="kw">readers</span> (including you<span class="op">!</span>) understand code</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></a></code></pre></div>
 <p>Why does one line return an <code>Error</code> whereas the other doesn’t?</p>
 </div>
-<div id="in-class-exercise-moderndive" class="section level3">
+<div id="in-class-exercise-moderndive-1" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.</p>
 <hr />
@@ -433,15 +554,34 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>If you have already completed the “Introduction to the Tidyverse” DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.</li>
 </ul>
 </div>
-<div id="r-component" class="section level2">
+<div id="PS02_R" class="section level2">
 <h2>2. R component</h2>
-<p>To be posted <del>before Tuesday 9/18 at 9am</del> by Wednesday’s lecture.</p>
+<p>Read the following 538 article <a href="https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/" target="_blank">Higher Rates Of Hate Crimes Are Tied To Income Inequality</a>. You’ll be analyzing the same data used to write this article. The data is in the <code>hate_crimes</code> dataframe, which is included in the <code>fivethirtyeight</code> R package. A larger goal of this problem set is to start practicing the “data analysis” workflow.</p>
+<ul>
+<li>Download the following R scratchpad: <a href="static/PS/PS02_lastname_firstname.R" download><code>PS02_lastname_firstname.R</code></a> and rename it so that it matches your name. For example in my case: <code>PS02_Kim_Albert.R</code>.</li>
+<li>“Upload” this file to RStudio Server by going to RStudio -&gt; Files panel -&gt; Upload.</li>
+<li>Open <code>PS02_lastname_firstname.R</code> and follow the indicated steps. I <em>highly</em> recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.</li>
+<li>When you are finished, check that your code is <em>reproducible and replicable</em>. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+<ul>
+<li>Save your work and close <code>PS02_lastname_firstname.R</code>.</li>
+<li>Restart R: RStudio menu bar -&gt; Session -&gt; Restart R. This “reboots R” by deleting all previously saved data frames and shuts down all loaded packages.</li>
+<li>Go to the Files panel of RStudio and re-open <code>PS02_lastname_firstname.R</code>.</li>
+<li>Run all your code as described in <a href="#Lec04">Lec4</a> and make sure that you can replicate the scatterplot.</li>
+</ul></li>
+<li><strong>Submission</strong>: “Download” this file on to your compter by going to RStudio -&gt; Files panel -&gt; More -&gt; Export. Then submit this on <a href="https://moodle.smith.edu/course/view.php?id=29919" target="_blank">Moodle</a>.</li>
+<li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
+</ul>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.</li>
+<li>While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders’ and my goal in grading the problem sets is to identify both your <strong>strengths and weaknesses</strong> in preparation for the projects. Don’t forget the lowest two problem set scores are dropped!</li>
+</ul>
 <hr />
 </div>
 </div>
 <div id="lec-4" class="section level1">
 <h1>Lec 4</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><strong>Extra office hours today 3:30-5pm in McConnell 215</strong></li>
@@ -454,7 +594,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>Solutions to previous lecture’s learning checks will be posted directly underneith question. Ex: Look at <a href="https://moderndive.netlify.com/2-getting-started.html#exploredataframes" target="_blank">LC2.1 Solutions</a> I just posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -478,7 +618,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>In the Files panel, click on <code>scratchpad.R</code> to reopen your previously saved work.</li>
 </ol>
 </div>
-<div id="in-class-exercise-moderndive-1" class="section level3">
+<div id="in-class-exercise-moderndive-2" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).</p>
 <ul>
@@ -498,7 +638,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 </div>
 <div id="lec-3" class="section level1">
 <h1>Lec 3</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over previous Slack <code>#general_announcements</code></li>
@@ -513,7 +653,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li><strong>Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215</strong></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive Chapter 2. Note:
@@ -599,9 +739,11 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <ul>
 <li>What is inference demo.</li>
 <li>From the ModernDive <a href="https://moderndive.netlify.com/index.html#sec:intro-for-students" target="_blank">Introduction for Students</a>: <img src="https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.002.png" width="600" /></li>
-<li>It all builds up to the <code>infer</code> package for “tidy” statistical inference. Only if you’re curious:</li>
+<li>It all builds up to the <code>infer</code> package for “tidy” statistical inference. Only if you’re curious:
+<ul>
 <li><a href="http://infer.netlify.com/" target="_blank">Package homepage</a></li>
 <li><a href="https://www.rstudio.com/resources/videos/infer-a-package-for-tidy-statistical-inference/" target="_blank">High-level talk of package</a>.</li>
+</ul></li>
 </ul>
 <div id="Lec1TODO" class="section level2">
 <h2>TODO’s</h2>

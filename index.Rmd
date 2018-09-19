@@ -59,6 +59,132 @@ h1{font-weight: 400;}
 
 
 
+# Lec 6
+
+## Announcements
+
+* Curious about a career in data science? Then come for Emily Dodwell (class of 2011)'s talk "The Nuts and Bolts of a Data Science Career" on Monday 9/24; stay for the `r emo::ji("pizza")` lunch! Click [here](static/dodwell_talk.pdf){target="_blank"} for flyer.
+* Problem set 2 posted [below](#PS02).
+* Upcoming "Important dates" in schedule above:
+    + [Project groups](term_project.html#groups) by this Friday 9/21
+    + Self-scheduled Midterm I weekend of Friday 9/28
+* Learning check solutions by Friday, I promise!
+* Slack poll on `scratchpad.R`
+
+
+## RStudio Desktop
+
+In this week's lab sections you’ll get help installing R + RStudio on your computers; the instructions are in ModernDive 2.1.1. **Starting on Friday I will assume you are all using the desktop version of RStudio.** If you're still curious about RStudio Server & RStudio Cloud, check out these [notes](notes.html#server_cloud).
+
+So after Friday you'll be responsible for installing R Packages as described in ModernDive 2.3. In other words, to use a package for the first time:
+
+1. You'll need to install it once.
+1. *Load/open* it using `library()` command. Ex: `library(nycflights13)`
+
+
+
+## Today's Topics/Activities       
+
+### 1. Chalk Talk: Histograms "binning" structure
+
+Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5
+
+```{r, eval=FALSE, echo=TRUE}
+library(ggplot2)
+library(nycflights13)
+# Code to generate Fig 3.10
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram()
+# Code to generate Fig 3.11
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(bins = 60, color = "white")
+```
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+library(nycflights13)
+library(patchwork)
+# Code to generate Fig 3.10
+p1 <- ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram() +
+  labs(title = "Fig 3.10: 30 bins")
+# Code to generate Fig 3.11
+p2 <- ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(bins = 60, color = "white") +
+  labs(title = "Fig 3.11: 60 bins")
+p1 + p2
+```
+
+
+### 2. Chalk Talk: Boxplots
+
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+example <- data_frame(
+  values = c(1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30)
+)
+```
+
+Say we want to plot a boxplot of the following `r nrow(example)` values which are pre-sorted: 
+
+> `r example %>% pull(values)`
+
+They have the following *summary statistics*:
+
+
+Min. | 1st Qu. | Median  | 3rd Qu.  |  Max. 
+---- | ------- | ------  |  ------- | --- 
+`r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)`
+
+<!--
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+```{r, echo=FALSE, eval=FALSE, cache=TRUE}
+plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_point() +
+  labs(title = "Points") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_boxplot() +
+  labs(title = "Boxplot") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+plot1 + plot2
+```
+
+-->
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 3.7.
+
+### 4. Tweet of the day
+
+On *imposter syndrome* is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a "fraud". Click below to read full thread.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Let&#39;s talk about imposter syndrome in tech -- specifically, ways we can combat it better, both individually and as a community (a thread) 👇</p>&mdash; Caitlin Hudon👩🏼
+💻 (@beeonaposy) <a href="https://twitter.com/beeonaposy/status/1042161720771395585?ref_src=twsrc%5Etfw">September 18, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Interesting results from my SDS 192 course earlier today:
+
+![](static/images/imposter_syndrome.png){ width=500px }
+
+
+
+
+***
+
+
+
 # Lec 5
 
 ## Experimenting with RStudio Cloud
@@ -121,9 +247,26 @@ As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
 * See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
 * If you have already completed the "Introduction to the Tidyverse" DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.
 
-## 2. R component
+## 2. R component {#PS02_R}
 
-To be posted ~~before Tuesday 9/18 at 9am~~ by Wednesday's lecture.
+Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income Inequality](https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/){target="_blank"}. You'll be analyzing the same data used to write this article. The data is in the `hate_crimes` dataframe, which is included in the `fivethirtyeight` R package. A larger goal of this problem set is to start practicing the "data analysis" workflow.
+
+* Download the following R scratchpad: <a href="static/PS/PS02_lastname_firstname.R" download>`PS02_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS02_Kim_Albert.R`.
+* "Upload" this file to RStudio Server by going to RStudio -> Files panel -> Upload.
+* Open `PS02_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work and close `PS02_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS02_lastname_firstname.R`.
+    + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
+* **Submission**: "Download" this file on to your compter by going to RStudio -> Files panel -> More -> Export. Then submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=29919){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+**Hints**:
+
+* Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.
+* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders' and my goal in grading the problem sets is to identify both your **strengths and weaknesses** in preparation for the projects. Don't forget the lowest two problem set scores are dropped!
+
 
 
 

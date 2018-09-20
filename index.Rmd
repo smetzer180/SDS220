@@ -259,7 +259,7 @@ Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income I
     + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
     + Go to the Files panel of RStudio and re-open `PS02_lastname_firstname.R`.
     + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
-* **Submission**: "Download" this file on to your compter by going to RStudio -> Files panel -> More -> Export. Then submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* **Submission**: ~~Download this file on to your compter by going to RStudio -> Files panel -> More -> Export.~~  (9/20 10am update: I just crossed out the outdated instructions assuming you were working on RStudio Server. Since we are now assuming RStudio Desktop, the `PS02_lastname_firstname.R` file should exist on your computer) Submit this`PS02_lastname_firstname.R`[Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
 
 **Hints**:

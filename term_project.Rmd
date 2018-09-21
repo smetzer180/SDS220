@@ -80,6 +80,13 @@ place to hold all group members accountable for their work.
 
 I will have the exact submission format ready by Monday 9/24. However, your proposal will **definitely** involve making **exploratory data analysis (EDA)** plots like in ModernDive [Chapter 12.1.1](https://moderndive.netlify.com/12-thinking-with-data.html#seattle-house-prices){target="_blank"}.
 
+<!--
+
+Jenny suggests making explicit expectations. For example, they do not need to make this plot for 
+proposal. 
+
+-->
+
 
 ## Where is this heading?
 

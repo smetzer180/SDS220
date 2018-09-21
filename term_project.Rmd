@@ -67,7 +67,7 @@ place to hold all group members accountable for their work.
         1. One numerical variable to be used as your *outcome variable*. 
         1. One categorical *explanatory/predictor* variable with no more than 5 levels.
         1. One numerical *explanatory/predictor* variable.
-        1. Any *identification variables* (read [ModernDive 4.2.2]](https://moderndive.netlify.com/4-tidy.html#identification-vs-measurement){target="_blank"} for a distinction of identification vs measurement variables)
+        1. Any *identification variables* (read [ModernDive 4.2.2](https://moderndive.netlify.com/4-tidy.html#identification-vs-measurement){target="_blank"} for a distinction of identification vs measurement variables)
     + Rows/Observations: At least 50 observations.
 1. Possible data sources
     1. Consult the Spinelli Quantitative Learning Center [Data Counselor Raul Zelada     Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}

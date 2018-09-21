@@ -24,6 +24,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ***
 
+
 # 1. Groups - Fri 9/21 5pm {#groups}
 
 **To do:**
@@ -44,31 +45,61 @@ place to hold all group members accountable for their work.
 
 
 
+***
 
 
-# 2. Proposal - Fri 10/19 5pm
+
+# 2. Proposal - Fri 10/19 5pm {#proposal}
 
 **To do:**
 
+1. Background reading on data: Read ModernDive Chapters 4.1 - 4.3
 1. Find a dataset
-1. Consult the Spinelli Quantitative Learning Center [Data Research and Statistical Support](https://www.smith.edu/qlc/tutoring.html) specialist if necessary.
-<!--1. Setup your group's RStudio Server Shared Project-->
 1. Submit your group proposal
 
 
 ## Find a dataset
 
 1. Requirements:
-    + The data should be stored in a *single* Excel spreadsheet or CSV file.
-    + The data should be in "tidy" data format (read ModernDive 4.1 for details).
+    + The data should be stored in a *single* Excel spreadsheet or CSV file. Read [ModernDive 4.3](https://moderndive.netlify.com/4-tidy.html#csv){target="_blank"} on how to import a spreadsheet into R.
+    + The data should be in "tidy" data format, which is defined in [ModernDive 4.1](https://moderndive.netlify.com/4-tidy.html#what-is-tidy-data){target="_blank"}. If you need help converting a dataset to tidy format, visit the Spinelli tutoring (Sunday-Thursday 7-9pm) center for help or ask me!
     + Columns/Variables. You dataset should have the following variables that will be the focus of your analysis. Read ModernDive Chapter 6 to the end of Section 6.1 for what these terms mean.
         1. One numerical variable to be used as your *outcome variable*. 
         1. One categorical *explanatory/predictor* variable with no more than 5 levels.
         1. One numerical *explanatory/predictor* variable.
-        1. Any *identification variables* (read ModernDive 4.2.2 for a distinction of identification vs measurement variables)
+        1. Any *identification variables* (read [ModernDive 4.2.2]](https://moderndive.netlify.com/4-tidy.html#identification-vs-measurement){target="_blank"} for a distinction of identification vs measurement variables)
     + Rows/Observations: At least 50 observations.
+1. Possible data sources
+    1. Consult the Spinelli Quantitative Learning Center [Data Counselor Raul Zelada     Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
+    1. [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
+    1. [data.world](https://data.world/){target="_blank"}
+    1. [Kaggle](https://www.kaggle.com/datasets){target="_blank"}
 
-**More details coming soon!**
+
+## Submit your group proposal
+
+I will have the exact submission format ready by Monday 9/24. However, your proposal will **definitely** involve making **exploratory data analysis (EDA)** plots like in ModernDive [Chapter 12.1.1](https://moderndive.netlify.com/12-thinking-with-data.html#seattle-house-prices){target="_blank"}.
+
+
+## Where is this heading?
+
+You'll be making a figure like Figure 12.6 in ModernDive Chapter 12
+
+```{r, echo=FALSE, eval=TRUE}
+library(tidyverse)
+library(moderndive)
+house_prices <- house_prices %>%
+  mutate(
+    log10_price = log10(price),
+    log10_size = log10(sqft_living)
+    )
+ggplot(house_prices, aes(x = log10_size, y = log10_price, col = condition)) +
+  geom_point(alpha = 0.1) +
+  labs(y = "log10 price", x = "log10 size", title = "House prices in Seattle") +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+
 
 
 <!-- 

@@ -59,7 +59,48 @@ h1{font-weight: 400;}
 
 
 
-# Lec 6
+# Lec 7
+
+## Announcements
+
+* Go over questions in `#random` Slack channel
+* Monday is Midterm I review
+* ModernDive Learning Check solutions are ~~directly under question statement~~ now all in [Appendix D](https://moderndive.netlify.com/d-appendixd){target="_blank"} at the back of the book.
+* Lecture on Monday will start at 1:20pm (minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
+* Next step of Term Project: [Project proposal](term_project.html#proposal) due Friday 10/19
+
+<!--
+* **Videoconferencing**: In Slack, in a Direct Message, type `/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF`
+--> 
+
+
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* Finish data visualization. Table in ModernDive Chapter 3.9
+* Ink/information ratio
+* Secret to mastering packages
+
+### 2. Project Time
+
+Start your projects!
+
+### 3. Tweet of the day
+
+ModernDive co-author Chester Ismay [\@old_man_chester](https://twitter.com/old_man_chester){target="_blank"} is Senior Curriculum Lead at DataCamp. If you are curious for a "big picture" view of why we are using DataCamp, read the linked blogpost, in particular look at the image of the "data science pipeline". Remember, you have free access to **all** DataCamp courses for 6 months!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> to learn about our new Tidyverse Fundamentals with R Skill Track! In this track, you’ll learn the skills needed to get you up and running with data science in R using the <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a>. <a href="https://t.co/4fqAdJgoTX">https://t.co/4fqAdJgoTX</a> <a href="https://t.co/RsYxe4Hpm5">pic.twitter.com/RsYxe4Hpm5</a></p>&mdash; DataCamp (@DataCamp) <a href="https://twitter.com/DataCamp/status/1042851042139025409?ref_src=twsrc%5Etfw">September 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+***
+
+
+
+# Lec 6 {#Lec06}
 
 ## Announcements
 

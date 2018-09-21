@@ -68,10 +68,7 @@ h1{font-weight: 400;}
 * ModernDive Learning Check solutions are ~~directly under question statement~~ now all in [Appendix D](https://moderndive.netlify.com/d-appendixd){target="_blank"} at the back of the book.
 * Lecture on Monday will start at 1:20pm (minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
 * Next step of Term Project: [Project proposal](term_project.html#proposal) due Friday 10/19
-
-<!--
 * **Videoconferencing**: In Slack, in a Direct Message, type `/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF`
---> 
 
 
 

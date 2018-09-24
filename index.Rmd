@@ -79,6 +79,7 @@ h1{font-weight: 400;}
     + You will be given 120 mins to complete it, however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
     + Closed-book, no internet, and individually completed.
     + Topics: Lectures 1-7. In other words everything up to and including data visualizations
+    + Please bring colored pens
 * What to study:
     + Before Wednesday's lecture, do the practice midterm questions.
     + Your hand-written course notes first: they are the "executive summaries" of topics.
@@ -107,7 +108,7 @@ h1{font-weight: 400;}
 
 ### 2. In-class exercise: ModernDive
 
-As marked in the Schedule at the top of this page, read ModernDive 5.3
+As marked in the Schedule at the top of this page, read ModernDive 5-5.3
 
 ### 3. Tweet of the day
 

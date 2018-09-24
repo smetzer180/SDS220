@@ -64,13 +64,11 @@ h1{font-weight: 400;}
 
 * Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06).
 * Visitor: [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
-
-<!--
+* Submission format for Term Project Proposal on Wednesday.
 * Lab tomorrow/Thursday
     + Jenny will go over a [data viz recap lab](static/data_vis_lab/lab4_source_JS_SDS220b.html){target="_blank"} which will be helpful for Midterm I studying.
     + After that you can work on Problem Sets.
     + However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in [DataCamp Practice Mode](https://www.datacamp.com/community/blog/introducing-daily-practice-mode){target="_blank"} to reinforce what you've already learned!
-* Submission format for Term Project Proposal on Wednesday.
         
         
 ## Midterm I
@@ -110,7 +108,6 @@ h1{font-weight: 400;}
 ### 2. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 5.3
--->
 
 
 

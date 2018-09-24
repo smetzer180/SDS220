@@ -58,7 +58,67 @@ h1{font-weight: 400;}
 ***
 
 
+# Lec 8
 
+## Announcements
+
+* Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06).
+* Visitor: [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
+
+<!--
+* Lab tomorrow/Thursday
+    + Jenny will go over a [data viz recap lab](static/data_vis_lab/lab4_source_JS_SDS220b.html){target="_blank"} which will be helpful for Midterm I studying.
+    + After that you can work on Problem Sets.
+    + However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in [DataCamp Practice Mode](https://www.datacamp.com/community/blog/introducing-daily-practice-mode){target="_blank"} to reinforce what you've already learned!
+* Submission format for Term Project Proposal on Wednesday.
+        
+        
+## Midterm I
+
+* Administrative:
+    + If you have never taken a Self-Scheduled exam, please read the instructions [here](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}
+    + Available Friday 9/29 5pm through Sunday 9/30 9pm.
+    + You will be given 120 mins to complete it, however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + Closed-book, no internet, and individually completed.
+    + Topics: Lectures 1-7. In other words everything up to and including data visualizations
+* What to study:
+    + Before Wednesday's lecture, do the practice midterm questions.
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
+    + The material on the course webpage chronologically, in particular the ModernDive readings.
+    + You will not write code for the midterm, but you may need to understand code.
+    + No questions from DataCamp will be asked.
+* Practice midterm questions [PDF](static/exams/Midterm-I_practice.pdf){target="_blank"}. I **do not** have a PDF of solutions, we'll cover these in class on Wednesday. Note this is a compilation of a few midterms, so its length is longer than what you can expect on the midterm. Do the following questions:
+    + Q1 Short Answer - Part b)
+    + Q4 Gapminder - All parts. Hint for Part b): Read ModernDive Chapter 12.1.2 on log10-transformations
+    + Q5 Family income by city - All parts.
+    + Q1 America Runs on Starbucks: Parts a) and c)
+* Extra help:
+    + Jenny office hours, still lots of Wednesday slots! [Book here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
+    + Albert extra office hours Thursday 2-4pm in McConnell 215.
+
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* Coding functions: arguments as inputs
+* `%>%` is the "pipe" operator, pronouned "then"
+* First data wrangling "verb": `filter()` to subset rows:
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/filter.png){ width=600px }
+
+### 2. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5.3
+-->
+
+
+
+***
+
+
+
+<!--
 
 # Problem set 3 {#PS03}
 
@@ -83,9 +143,15 @@ No DataCamp component this week.
 
 
 
-
-
 ***
+
+
+
+-->
+
+
+
+
 
 
 
@@ -97,7 +163,7 @@ No DataCamp component this week.
 * Go over questions in `#random` Slack channel
 * Monday is Midterm I review
 * ModernDive Learning Check solutions are ~~directly under question statement~~ now all in [Appendix D](https://moderndive.netlify.com/d-appendixd){target="_blank"} at the back of the book.
-* Lecture on Monday will start at 1:20pm (minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
+* Lecture on Monday will start at 1:20pm (10 minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
 * Next step of Term Project: [Project proposal](term_project.html#proposal) due Friday 10/19
 * **Videoconferencing**: In Slack, in a Direct Message, type `/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF`
 
@@ -205,10 +271,10 @@ Min. | 1st Qu. | Median  | 3rd Qu.  |  Max.
 ---- | ------- | ------  |  ------- | --- 
 `r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)`
 
-<!--
+
 Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-```{r, echo=FALSE, eval=FALSE, cache=TRUE}
+```{r, echo=FALSE, eval=TRUE, cache=TRUE}
 plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
   geom_point() +
   labs(title = "Points") +
@@ -229,7 +295,7 @@ plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
 plot1 + plot2
 ```
 
--->
+
 
 ### 3. In-class exercise: ModernDive
 

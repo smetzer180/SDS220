@@ -59,6 +59,37 @@ h1{font-weight: 400;}
 
 
 
+
+# Problem set 3 {#PS03}
+
+*Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+No DataCamp component this week.
+
+## 2. R component {#PS03_R}
+
+* Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download>`PS03_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS03_Kim_Albert.R`.
+* "Upload" this file to RStudio Server by going to RStudio -> Files panel -> Upload.
+* Open `PS03_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work and close `PS03_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS03_lastname_firstname.R`.
+    + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
+* **Submission**: Submit `PS03_lastname_firstname.R` on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+
+
+
+***
+
+
+
+
 # Lec 7
 
 ## Announcements

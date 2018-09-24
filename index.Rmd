@@ -109,9 +109,15 @@ h1{font-weight: 400;}
 
 As marked in the Schedule at the top of this page, read ModernDive 5.3
 
+### 3. Tweet of the day
+
+While networking may come naturally to some, it doesn't to most. It takes work, courage, and practice! For example, start small & low risk! A simple tweet can be the beginning of a meaningful relationship!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It was great finally meeting you IRL too after all this time of virtual acquaintance! It&#39;s nice knowing you are real person and not just a sequence of 0&#39;s and 1&#39;s 🤖🤖🤖</p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1044007729172545542?ref_src=twsrc%5Etfw">September 23, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-***
+
 
 
 

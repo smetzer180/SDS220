@@ -75,8 +75,8 @@ View(evals)
 
 
 # c) Now recreate the plot from part a) so that we can also consider the
-# relationship between the teaching evaluation score and age separately. Note
-# there is more than one way to do this!
+# relationship between the teaching evaluation score and age for men and women
+# separately. Note there is more than one way to do this!
 #
 # Copy/paste/tweak the code below:
 

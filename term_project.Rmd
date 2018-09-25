@@ -22,28 +22,6 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 
 
-***
-
-
-# 1. Groups - Fri 9/21 5pm {#groups}
-
-**To do:**
-
-1. Form groups of 2-3 students and pick a group name.
-1. Designate a group leader who will:
-    a) Slack message your group name in a Direct Message that includes
-        + All group members
-        + Myself
-    a) Complete the following [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehYx8pNGxS6P7KF8y2f-A2RgnhbvKmDW77TijoeOanpV2DHQ/viewform){target="_blank"}
-
-
-**Notes**:
-
-* If you need a group to join please Slack me.
-* All groups members are expected to contribute and a system will be put in
-place to hold all group members accountable for their work.
-
-
 
 ***
 
@@ -75,22 +53,22 @@ place to hold all group members accountable for their work.
     1. [data.world](https://data.world/){target="_blank"}
     1. [Kaggle](https://www.kaggle.com/datasets){target="_blank"}
 
+**Hint**: On cleaning variable names.
 
-## Submit your group proposal
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">janitor::clean_names() is 💵💲💰! But wait, there&#39;s more! <a href="https://t.co/Rk1aZRZWq0">https://t.co/Rk1aZRZWq0</a> Thanks <a href="https://twitter.com/samfirke?ref_src=twsrc%5Etfw">@samfirke</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/H9Bvde8roy">pic.twitter.com/H9Bvde8roy</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/963504925744488450?ref_src=twsrc%5Etfw">February 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-I will have the exact submission format ready by Monday 9/24. However, your proposal will **definitely** involve making **exploratory data analysis (EDA)** plots like in ModernDive [Chapter 12.1.1](https://moderndive.netlify.com/12-thinking-with-data.html#seattle-house-prices){target="_blank"}.
 
-<!--
 
-Jenny suggests making explicit expectations. For example, they do not need to make this plot for 
-proposal. 
 
--->
+## Submission Format
+
+Follow the <a href="static/term_project/project_proposal.R" download>`project_proposal.R`</a> template file and submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"} by Friday 10/19 5pm. In this template file, I've included an example based on the **exploratory data analysis** of the Seattle House Prices data in ModernDive [Chapter 12.1.1](https://moderndive.netlify.com/12-thinking-with-data.html#seattle-house-prices){target="_blank"}.
 
 
 ## Where is this heading?
 
-You'll be making a figure like Figure 12.6 in ModernDive Chapter 12
+For the Phase 3 of the project "Initial Submission", due Friday 11/9, you'll be making a figure like Figure 12.6 in ModernDive Chapter 12
 
 ```{r, echo=FALSE, eval=TRUE}
 library(tidyverse)
@@ -111,21 +89,7 @@ ggplot(house_prices, aes(x = log10_size, y = log10_price, col = condition)) +
 
 <!-- 
 
-1. If you need help getting data:
-    + Schedule an appointment with Amherst Science Librarian Kristen Greenland <kgreenland@amherst.edu>.
-    + <a target="_blank" class="page-link"
-    href="https://data.world/">`data.world`</a> has lots of datasets.
 
-
-
-## Visit drop-in tutoring center
-
-If you need help working with your dataset, cleaning it, or converting it to
-"tidy" data format, etc, please visit the drop-in tutoring center: Sunday thru
-Thursday 7pm-9pm in Merrill Science Center 300B. Keep in mind there are
-approximately 75 students in 31 groups taking this class, so expect less
-attention if you visit the study center in the few days before the proposal is
-due.
 
 
 
@@ -270,3 +234,27 @@ You will be evaluated on the following criteria, which not only emphasizes the d
     + Some examples of good coding style can be found [here](http://style.tidyverse.org/){target="_blank"}
 1. The rest
     + Did you demonstrate effort and engagement during the semester long process?
+
+
+
+
+***
+
+
+# DONE: 1. Groups - Fri 9/21 5pm {#groups}
+
+**To do:**
+
+1. Form groups of 2-3 students and pick a group name.
+1. Designate a group leader who will:
+    a) Slack message your group name in a Direct Message that includes
+        + All group members
+        + Myself
+    a) Complete the following [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehYx8pNGxS6P7KF8y2f-A2RgnhbvKmDW77TijoeOanpV2DHQ/viewform){target="_blank"}
+
+
+**Notes**:
+
+* If you need a group to join please Slack me.
+* All groups members are expected to contribute and a system will be put in
+place to hold all group members accountable for their work.

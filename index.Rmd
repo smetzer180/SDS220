@@ -58,6 +58,66 @@ h1{font-weight: 400;}
 ***
 
 
+
+
+# Lec 9
+
+* Go over practice midterm questions
+* Albert extra office hours Thursday 2-4pm in McConnell 215.
+* Project proposal submission format added.
+
+
+
+
+***
+
+
+
+# Problem set 3 {#PS03}
+
+*Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+No DataCamp this week.
+
+
+## 2. R component {#PS03_R}
+
+Read the following Chance Magazine article [Looking Good on Course Evaluations](http://chance.amstat.org/2013/04/looking-good/){target="_blank"} up to and including Table 1. In particular, note the introductory paragraph:
+
+> At the end of each semester, students provide feedback on their courses via anonymous course evaluations. However, use of student evaluations as indicators of quality of the course and teaching effectiveness is often criticized since these measures may be reflecting biases in favor of nonteaching-related characteristics, such as the physical appearance of the instructor.
+
+You'll be analyzing the same data used in this study. The data is in the `evals` data frame, which is included in the `moderndive` R package. A larger goal of this problem set is to start practicing answering questions with data visualizations
+
+* Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download>`PS03_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS03_Kim_Albert.R`.
+* Open `PS03_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work. The filename `PS03_lastname_firstname.R` should change from red to black.
+    + Close `PS03_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS03_lastname_firstname.R`.
+    + Re-run all your code to make sure that you can replicate all images.
+* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+**Hints**:
+
+* Everything you need to know for this problem set are based on Lectures 1-7 in particular the ModernDive readings.
+* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project
+
+
+
+***
+
+
+
+
+
+
+
+
 # Lec 8
 
 ## Announcements
@@ -116,44 +176,6 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It was great finally meeting you IRL too after all this time of virtual acquaintance! It&#39;s nice knowing you are real person and not just a sequence of 0&#39;s and 1&#39;s 🤖🤖🤖</p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1044007729172545542?ref_src=twsrc%5Etfw">September 23, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-
-
-<!--
-
-# Problem set 3 {#PS03}
-
-*Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time*
-
-## 1. DataCamp
-
-No DataCamp component this week.
-
-## 2. R component {#PS03_R}
-
-* Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download>`PS03_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS03_Kim_Albert.R`.
-* "Upload" this file to RStudio Server by going to RStudio -> Files panel -> Upload.
-* Open `PS03_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
-* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
-    + Save your work and close `PS03_lastname_firstname.R`.
-    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
-    + Go to the Files panel of RStudio and re-open `PS03_lastname_firstname.R`.
-    + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
-* **Submission**: Submit `PS03_lastname_firstname.R` on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
-* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-
-
-
-***
-
-
-
--->
-
-
 
 
 

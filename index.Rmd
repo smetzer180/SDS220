@@ -55,6 +55,30 @@ h1{font-weight: 400;}
 
 
 
+
+<!--
+### 4. Tweet of the day
+
+How quickly clean variable names. This might be useful for your projects. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">janitor::clean_names() is 💵💲💰! But wait, there&#39;s more! <a href="https://t.co/Rk1aZRZWq0">https://t.co/Rk1aZRZWq0</a> Thanks <a href="https://twitter.com/samfirke?ref_src=twsrc%5Etfw">@samfirke</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/H9Bvde8roy">pic.twitter.com/H9Bvde8roy</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/963504925744488450?ref_src=twsrc%5Etfw">February 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Test this function on `example_data_frame` below
+
+
+```{r, eval=FALSE}
+library(dplyr)
+example_data_frame <- data_frame(
+  `WEIRD !@$^&*() Variable.name` = c(1, 2, 3),
+  `more  WEIRDNESS    %` = c("pamplemousse", "cran-raspberry", "tangerine")
+)
+example_data_frame
+```
+
+-->
+
+
 ***
 
 
@@ -62,9 +86,78 @@ h1{font-weight: 400;}
 
 # Lec 9
 
-* Go over practice midterm questions
 * Albert extra office hours Thursday 2-4pm in McConnell 215.
-* Project proposal submission format added.
+* Project proposal [submission format](term_project.html#submission_format) added. Just follow along and replace my example with your work!
+* Solutions to PS02 [posted](#PS02_R_solutions)
+    + Please download the `PS02_solutions.R` file to your computer and open them in RStudio for a brief in-class discussion.
+    + To guarantee the `PS02_solutions.R` file opens in the RStudio app (AKA a car's dashboard) and not the regular R app (AKA a car's engine), don't double-click the `PS02_solutions.R` file directly, but rather go to Files panel of RStudio and find/click/open the file from there.
+
+    
+## Today's Topics/Activities  
+
+### 1. Midterm I Practice Questions Discussion
+
+**Note about Question 4.b)** Both the following plots show the relationship between life expectancy and GDP per capita in 2007 in the `gapminder` data, but the right one has GDP per capita (USD) on the x-axis on a $\log10$-scale using `scale_x_log10()`. Thus:
+
+* Left plot: the white grid lines on the x-axis denote **additive** differences of $+10000$ 
+* Right plot: the white grid lines on the x-axis denote **multiplicative** differences of $\times 10$
+
+```{r, echo = FALSE, fig.height = 7/2, eval =TRUE, cache = TRUE}
+gapminder2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# Simple plot -------------------------------------------------------------
+base <- ggplot(gapminder2007, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) + 
+  geom_point() + 
+  labs(
+    y = "Life expectancy (years)", 
+    color = "Continent", size = "Population"
+  ) +
+  theme(legend.position="none", panel.grid.minor = element_blank())
+  
+p1 <- base +
+  labs(x = "GDP per capita", title = "Regular scale x-axis") +
+  scale_x_continuous(labels = scales::dollar_format())
+p2 <- base +
+  labs(x = "GDP per capita (log10-scale)", title = "log10 scale x-axis") + 
+  scale_x_log10(breaks = c(100, 1000, 10000, 100000), limits = c(NA, 10^5), labels = scales::dollar_format())
+p1 + p2
+```
+
+
+**Note about Question 5.f)** Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:
+
+```{r, echo = FALSE, eval = FALSE}
+data_frame(
+  data1 = c(16, 17, 32, 33, 54, 60, 61, 62, NA, NA, 100, 110, 115),
+  data2 = c(16, 17, 32, 33, 54, 60, NA, NA, 98, 99, 100, 110, 115)
+) %>% 
+  t() %>% kable()
+```
+
+| Dataset    |   |   |  |   |   |   |   |   |   |   |  |    |    |
+|:-----|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|
+|Data 1 | 16| 17| **32** | 33| 54| **60**| 61| 62| | | **100**| 110| 115|
+|Data 2 | 16| 17| **32** | 33| 54| **60**| | | 98| 99| **100**| 110| 115|
+
+
+### 2. Chalk Talk
+
+**a) Summarizing**: Note "summarise" is the British English spelling of the American English "summarize". Both `summarise()` and `summarize()` work in R. 
+
+| Use any summary function | To `summarize()` data
+|:-------------------------|:-------------------------
+| ![](https://github.com/moderndive/moderndive_book/raw/master/images/summary.png){ width=400px } | ![](https://github.com/moderndive/moderndive_book/raw/master/images/summarize1.png){ width=400px }
+
+
+**b) Grouping then summarizing**: First `group_by()` to group rows together (the grey, blue, green color assignment) then `summarize()` to get group-by-group summaries (a summary statistic for each color).
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/group_summary.png){ width=600px }
+
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
 
 
 
@@ -428,6 +521,10 @@ Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income I
 * Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.
 * While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders' and my goal in grading the problem sets is to identify both your **strengths and weaknesses** in preparation for the projects. Don't forget the lowest two problem set scores are dropped!
 
+
+## 3. R component solutions {#PS02_R_solutions}
+
+<a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>
 
 
 

@@ -53,10 +53,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
     1. [data.world](https://data.world/){target="_blank"}
     1. [Kaggle](https://www.kaggle.com/datasets){target="_blank"}
 
-**Hint**: On cleaning variable names.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">janitor::clean_names() is 💵💲💰! But wait, there&#39;s more! <a href="https://t.co/Rk1aZRZWq0">https://t.co/Rk1aZRZWq0</a> Thanks <a href="https://twitter.com/samfirke?ref_src=twsrc%5Etfw">@samfirke</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/H9Bvde8roy">pic.twitter.com/H9Bvde8roy</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/963504925744488450?ref_src=twsrc%5Etfw">February 13, 2018</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 

@@ -277,8 +277,8 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 
 * Administrative:
     + If you have never taken a Self-Scheduled exam, please read the instructions [here](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}
-    + Available Friday 9/29 5pm through Sunday 9/30 ~9p55pm.
-   You must submit your midterm by 11:55pm on Sunday.  + You will be given 120 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+    + Available Friday 9/29 5pm through Sunday 9/30 11:55pm. You must submit your midterm by 11:55pm on Sunday.
+    + You will be given 120 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
     + Closed-book, no internet, and individually completed.
     + Topics: Lectures 1-7. In other words everything up to and including data visualizations
     + Please bring colored pens

@@ -79,12 +79,61 @@ example_data_frame
 -->
 
 
+
+
+***
+
+# Lec 10
+
+## Announcements
+
+* Office hours today 3-4pm
+* Read cover page for midterm:
+
+![](static/images/midterm_cover_page.png){ width=600px }
+
+    
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+<!--
+![](static/images/group_summary.png){ width=600px }
+![](static/images/mutate.png){ width=600px }
+![](static/images/select.png){ width=600px }
+-->
+
+* From last time: Grouping then summarizing: First `group_by()` to group rows together (the grey, blue, green color assignment) then `summarize()` to get group-by-group summaries (a summary statistic for each color).
+* Create new variables using `mutate()`
+* Arrange rows using `arrange()` or `arrange(desc())`
+* Subset columns with `select()`
+
+### 2. ModernDive Roadmap Update
+
+We just completed "just enough data science" (data visualization and data wrangling) to do the rest of ModernDive. In particular
+
+* Data modeling with the `moderndive` package (top right blue box)
+* Statistical inference with the `infer` package (bottom right blue box)
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.004.png){ width=600px }
+
+For more advanced data visualization and data wrangling, take [SDS 192: Intro to Data Science](https://rudeboybert.github.io/SDS192/#today%E2%80%99s_topicsactivities){target="_blank"}. 
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.1
+
+
+
+
 ***
 
 
 
 
 # Lec 9
+
+## Announcements
 
 * Albert extra office hours Thursday 2-4pm in McConnell 215.
 * Project proposal [submission format](term_project.html#submission_format) added. Just follow along and replace my example with your work!

@@ -369,7 +369,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2018-09-26</em></h4>
+<h4 class="date"><em>Last updated on 2018-09-28</em></h4>
 
 </div>
 
@@ -420,8 +420,53 @@ example_data_frame
 -->
 <hr />
 </div>
+<div id="lec-10" class="section level1">
+<h1>Lec 10</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Office hours today 3-4pm</li>
+<li>Read cover page for midterm:</li>
+</ul>
+<p><img src="static/images/midterm_cover_page.png" width="600" /></p>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk Talk</h3>
+<!--
+![](static/images/group_summary.png){ width=600px }
+![](static/images/mutate.png){ width=600px }
+![](static/images/select.png){ width=600px }
+-->
+<ul>
+<li>From last time: Grouping then summarizing: First <code>group_by()</code> to group rows together (the grey, blue, green color assignment) then <code>summarize()</code> to get group-by-group summaries (a summary statistic for each color).</li>
+<li>Create new variables using <code>mutate()</code></li>
+<li>Arrange rows using <code>arrange()</code> or <code>arrange(desc())</code></li>
+<li>Subset columns with <code>select()</code></li>
+</ul>
+</div>
+<div id="moderndive-roadmap-update" class="section level3">
+<h3>2. ModernDive Roadmap Update</h3>
+<p>We just completed “just enough data science” (data visualization and data wrangling) to do the rest of ModernDive. In particular</p>
+<ul>
+<li>Data modeling with the <code>moderndive</code> package (top right blue box)</li>
+<li>Statistical inference with the <code>infer</code> package (bottom right blue box)</li>
+</ul>
+<p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.004.png" width="600" /></p>
+<p>For more advanced data visualization and data wrangling, take <a href="https://rudeboybert.github.io/SDS192/#today%E2%80%99s_topicsactivities" target="_blank">SDS 192: Intro to Data Science</a>.</p>
+</div>
+<div id="in-class-exercise-moderndive" class="section level3">
+<h3>3. In-class exercise: ModernDive</h3>
+<p>As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.1</p>
+<hr />
+</div>
+</div>
+</div>
 <div id="lec-9" class="section level1">
 <h1>Lec 9</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
 <ul>
 <li>Albert extra office hours Thursday 2-4pm in McConnell 215.</li>
 <li>Project proposal <a href="term_project.html#submission_format">submission format</a> added. Just follow along and replace my example with your work!</li>
@@ -431,7 +476,8 @@ example_data_frame
 <li>To guarantee the <code>PS02_solutions.R</code> file opens in the RStudio app (AKA a car’s dashboard) and not the regular R app (AKA a car’s engine), don’t double-click the <code>PS02_solutions.R</code> file directly, but rather go to Files panel of RStudio and find/click/open the file from there.</li>
 </ul></li>
 </ul>
-<div id="todays-topicsactivities" class="section level2">
+</div>
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="midterm-i-practice-questions-discussion" class="section level3">
 <h3>1. Midterm I Practice Questions Discussion</h3>
@@ -497,7 +543,7 @@ example_data_frame
 </tbody>
 </table>
 </div>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>2. Chalk Talk</h3>
 <p><strong>a) Summarizing</strong>: Note “summarise” is the British English spelling of the American English “summarize”. Both <code>summarise()</code> and <code>summarize()</code> work in R.</p>
 <table>
@@ -517,7 +563,7 @@ example_data_frame
 <p><strong>b) Grouping then summarizing</strong>: First <code>group_by()</code> to group rows together (the grey, blue, green color assignment) then <code>summarize()</code> to get group-by-group summaries (a summary statistic for each color).</p>
 <p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/group_summary.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-moderndive" class="section level3">
+<div id="in-class-exercise-moderndive-1" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5</p>
 <hr />
@@ -562,7 +608,7 @@ example_data_frame
 </div>
 <div id="lec-8" class="section level1">
 <h1>Lec 8</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell’s talk listed in <a href="#Lec06">Lec06</a>.</li>
@@ -610,9 +656,9 @@ example_data_frame
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Coding functions: arguments as inputs</li>
@@ -621,7 +667,7 @@ example_data_frame
 </ul>
 <p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/filter.png" width="600" /></p>
 </div>
-<div id="in-class-exercise-moderndive-1" class="section level3">
+<div id="in-class-exercise-moderndive-2" class="section level3">
 <h3>2. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 5-5.3</p>
 </div>
@@ -640,7 +686,7 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 </div>
 <div id="lec-7" class="section level1">
 <h1>Lec 7</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over questions in <code>#random</code> Slack channel</li>
@@ -651,9 +697,9 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 <li><strong>Videoconferencing</strong>: In Slack, in a Direct Message, type <code>/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Finish data visualization. Table in ModernDive Chapter 3.9</li>
@@ -681,7 +727,7 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 6</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Curious about a career in data science? Then come for Emily Dodwell (class of 2011)’s talk “The Nuts and Bolts of a Data Science Career” on Monday 9/24; stay for the 🍕 lunch! Click <a href="static/dodwell_talk.pdf" target="_blank">here</a> for flyer.</li>
@@ -704,7 +750,7 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 <li><em>Load/open</em> it using <code>library()</code> command. Ex: <code>library(nycflights13)</code></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk-histograms-binning-structure" class="section level3">
 <h3>1. Chalk Talk: Histograms “binning” structure</h3>
@@ -749,7 +795,7 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
 <p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-moderndive-2" class="section level3">
+<div id="in-class-exercise-moderndive-3" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3.7.</p>
 </div>
@@ -782,7 +828,7 @@ Let's talk about imposter syndrome in tech – specifically, ways we can combat 
 <li>Click where it says “coursework” and rename it “Firstname Lastname”. For example in my case “Albert Kim”.</li>
 </ul>
 </div>
-<div id="announcements-3" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Lab section Tuesday/Thursday:
@@ -795,9 +841,9 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <img src="static/images/Lec4_scratchpad.png" alt="alt text" width="500" /></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Histograms visualize the <em>(empirical) distribution</em> of a numerical variable</li>
@@ -812,7 +858,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <a class="sourceLine" id="cb2-3" data-line-number="3"><span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></a></code></pre></div>
 <p>Why does one line return an <code>Error</code> whereas the other doesn’t?</p>
 </div>
-<div id="in-class-exercise-moderndive-3" class="section level3">
+<div id="in-class-exercise-moderndive-4" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.</p>
 <hr />
@@ -862,7 +908,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 </div>
 <div id="lec-4" class="section level1">
 <h1>Lec 4</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><strong>Extra office hours today 3:30-5pm in McConnell 215</strong></li>
@@ -875,9 +921,9 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>Solutions to previous lecture’s learning checks will be posted directly underneith question. Ex: Look at <a href="https://moderndive.netlify.com/2-getting-started.html#exploredataframes" target="_blank">LC2.1 Solutions</a> I just posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk Talk</h3>
 <p>The Grammar of Graphics: the theoretical underpinnings of statistical graphics.</p>
 </div>
@@ -899,7 +945,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>In the Files panel, click on <code>scratchpad.R</code> to reopen your previously saved work.</li>
 </ol>
 </div>
-<div id="in-class-exercise-moderndive-4" class="section level3">
+<div id="in-class-exercise-moderndive-5" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).</p>
 <ul>
@@ -919,7 +965,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 </div>
 <div id="lec-3" class="section level1">
 <h1>Lec 3</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over previous Slack <code>#general_announcements</code></li>
@@ -934,7 +980,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li><strong>Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215</strong></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive Chapter 2. Note:

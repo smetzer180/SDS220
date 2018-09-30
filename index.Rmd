@@ -83,6 +83,26 @@ example_data_frame
 
 ***
 
+
+
+# Lec 11
+
+## Announcements
+
+* Office hours this week. Please Slack me if this disrupts your plans.
+    + Monday 10/1: ~~3-6pm~~ 2:30-4:30pm
+    + Tuesday 10/2: ~~3-6pm~~ 2-4:30pm
+
+
+
+
+
+
+
+***
+
+
+
 # Lec 10
 
 ## Announcements

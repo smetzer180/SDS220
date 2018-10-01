@@ -68,7 +68,7 @@ h1{font-weight: 400;}
 
 
 
-# Lec 11
+# Lec 11: Mon 10/1
 
 ## Announcements
 
@@ -76,18 +76,72 @@ h1{font-weight: 400;}
     + Monday 10/1: ~~3-6pm~~ 2:30-4:30pm
     + Tuesday 10/2: ~~3-6pm~~ 2-4:30pm
 
+
     
 ## Today's Topics/Activities  
 
+
 ### 1. Chalk Talk
 
-* 
+* What is modeling?
+* What is R Markdown?
+
+```{r, eval=TRUE}
+library(ggplot2)
+library(moderndive)
+
+# Teaching evaluation score
+?evals
+ggplot(evals, aes(x = score)) +
+  geom_histogram(binwidth = 0.25) +
+  labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
+
+# Seattle house prices (x-axis in original scale)
+?house_prices
+ggplot(house_prices, aes(x = price)) +
+  geom_histogram() +
+  labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
+```
 
 
-### 2. In-class exercise: ModernDive
+
+### 2. In-class exercise: R Markdown
+
+At a couple of steps in this process, you may be asked to install packages. Say yes to all of them. 
+
+1. **Fiddle with RStudio settings**:
+    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    + Uncheck box next to "Show output inline for all R Markdown Documents"
+1. **Create new R Markdown `.Rmd` file**:
+    + Go to RStudio menu bar -> File -> New File -> R Markdown 
+    + Set "Title" to "My first R Markdown report" and "Author" as your name.
+1. **"Knit" a report**:
+    + Click on the disk icon and save this file as `firstname_lastname` somewhere on your computer. This will create a file called `firstname_lastname.Rmd`
+    + Click the arrow next to "Knit" -> "Knit to HTML". An HTML webpage should pop up.
+1. **Publish this report on web**:
+    + Click on blue "Publish" button on top right
+    + Click on "Publish" button
+    + If you haven't previously, create an account on Rpubs.com. If you have previously, login.
+    + Set "Title" to "My first R Markdown report" and "Slug" to "testing"
+    + You should end up with a webpage that looks like this [one](http://rpubs.com/rudeboybert/testing){target="_blank"}.
+    + Share the URL (webpage link) to your report to your project groupmates in a Slack DM.
+1. **Update your report on web**:
+    + Make some trivial change to your `testing.Rmd` file.
+    + "Re-knit" your report and make sure your trivial change is reflected.
+    + The blue "Publish" button should now read "Republish"
+    + Click "Update existing"
+    + Share the link to your updated report with your groupmates on Slack!
 
 
-### 3. Tweet of the day
+### 3. In-class exercise: ModernDive
+
+* Read ModernDive from the beginning of Chapter 6 up to and including 6.1.1. Note:
+    + Make sure to install all the new packages listed in "Needed Packages".
+    + You can skip the DataCamp course for now; this will be assigned later.
+* **Learning how to learn**: See if you can figure out how to use the `clean_names()` function referenced below. Ask your seatmates, me or the data assistant for help.
+
+
+### 4. Tweet of the day
 
 How quickly clean variable names; this might be useful for your projects. 
 

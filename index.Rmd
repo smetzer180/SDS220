@@ -120,7 +120,6 @@ At a couple of steps in this process, you may be asked to install packages. Say 
     + Click the arrow next to "Knit" -> "Knit to HTML". An HTML webpage should pop up.
 1. **Publish this report on web**:
     + Click on blue "Publish" button on top right
-    + Click on "Publish" button
     + If you haven't previously, create an account on Rpubs.com. If you have previously, login.
     + Set "Title" to "My first R Markdown report" and "Slug" to "testing"
     + You should end up with a webpage that looks like this [one](http://rpubs.com/rudeboybert/testing){target="_blank"}.

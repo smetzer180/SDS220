@@ -24,6 +24,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
 <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
 <script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
@@ -369,7 +371,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2018-10-01</em></h4>
+<h4 class="date"><em>Last updated on 2018-10-03</em></h4>
 
 </div>
 
@@ -396,15 +398,114 @@ h1{font-weight: 400;}
 </ul>
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="830">
 </iframe>
-<!--
-
-
--->
 <hr />
+</div>
+<div id="lec-12-wed-103" class="section level1">
+<h1>Lec 12: Wed 10/3</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>ModernDive learning check solutions for Chapter 4 + 5 now posted in Appendix D.</li>
+<li>Talk on Friday 10/12 5:30pm in Seelye Hall 106.</li>
+</ul>
+<center>
+<img src="static/images/Craigie_Poster_Wide.png" width="800" />
+</center>
+<p><br></p>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk Talk</h3>
+<ul>
+<li>Correlation coefficient: ModernDive Fig. 6.18</li>
+<li>Fitted regression line: ModernDive Fig. 6.6</li>
+<li>Pseudocode (also see tweet of the day below)</li>
+</ul>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>Turn your computer’s volume up to the maximum and play <a href="http://guessthecorrelation.com/" target="_blank">Guess the Correlation</a></li>
+<li>Read ModernDive Chapters 6.3.1 and 6.1.2.</li>
+<li>Look at solutions below to “cleaning variable names” exercise from Lec11. What do I do if my data frame has horrible variable/column names? Copy and paste this code into your <code>scratchpad.R</code> and run all 4 steps individually. This will help for your projects.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Step 1: Manually create a data frame with ugly names</span></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">example_data_frame &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="st">`</span><span class="dt">WEIRD !@$^&amp;*() Variable.name</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="st">`</span><span class="dt">more  WEIRDNESS    %</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;pamplemousse&quot;</span>, <span class="st">&quot;cran-raspberry&quot;</span>, <span class="st">&quot;tangerine&quot;</span>)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co"># Look at these awful names!</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9">example_data_frame</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co"># Step 2: The janitor package to the rescue!</span></a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">library</span>(janitor)</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"></a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># Step 3: Use the clean_names() function in the janitor package to create a new</span></a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co"># data frame with cleaner names</span></a>
+<a class="sourceLine" id="cb1-16" data-line-number="16">data_frame_with_cleaner_names &lt;-<span class="st"> </span>example_data_frame <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">clean_names</span>()</a>
+<a class="sourceLine" id="cb1-18" data-line-number="18"></a>
+<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co"># Step 4: Compare these column names with the ones from above. Much cleaner!</span></a>
+<a class="sourceLine" id="cb1-20" data-line-number="20">data_frame_with_cleaner_names</a></code></pre></div>
+</div>
+<div id="tweet-of-the-day" class="section level3">
+<h3>3. Tweet of the day</h3>
+<p>On writing “pseudocode”: a rough outline that is “sort of” like code that outlines the steps of what your code will do. You can think of pseudocode as a “blueprint” of your “building”; before you build your building, you need a plan! Here are examples of “pseudocode” for the data wrangling exercise from Learning Check 5.19 in ModernDive on taking the data in <code>nycflights13</code> and computing <a href="https://en.wikipedia.org/wiki/Available_seat_miles" target="_blank">Available Seat Miles</a></p>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a> pseudocode to compute “Available Seat Miles” (✈️ measure of capacity) using <a href="https://twitter.com/hashtag/nycflights13?src=hash&amp;ref_src=twsrc%5Etfw">#nycflights13</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package. Not only was most pseudocode good, but many were able to code it up on day 3 of data wrangling! 😮😮😮 <a href="https://t.co/BHozXZWjU0">https://t.co/BHozXZWjU0</a> <a href="https://twitter.com/hashtag/chalktalk?src=hash&amp;ref_src=twsrc%5Etfw">#chalktalk</a> <a href="https://t.co/0mzTYalGXa">pic.twitter.com/0mzTYalGXa</a>
+</p>
+— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/964181298691629056?ref_src=twsrc%5Etfw">February 15, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<hr />
+</div>
+</div>
+</div>
+<div id="PS04" class="section level1">
+<h1>Problem set 4</h1>
+<p><em>Assigned Wednesday 10/3, due Wednesday 10/10 at 1pm Eastern Time</em></p>
+<div id="datacamp" class="section level2">
+<h2>1. DataCamp</h2>
+<ul>
+<li>Complete the following two chapters from the “Modeling with Data in the Tidyverse” course, which you should see <a href="https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse" target="_blank">here</a>.
+<ul>
+<li>Chapter 1: Introduction to Modeling</li>
+<li>Chapter 2: Modeling with Basic Regression</li>
+</ul></li>
+<li>See the <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on DataCamp assignments.</li>
+</ul>
+</div>
+<div id="PS04_R" class="section level2">
+<h2>2. R component</h2>
+<p>You’ll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.</p>
+<ul>
+<li>Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download><code>PS04_lastname_firstname.R</code></a> and rename it so that it matches your name. For example in my case: <code>PS04_Kim_Albert.R</code>.</li>
+<li>Open <code>PS04_lastname_firstname.R</code> and follow the indicated steps. I <em>highly</em> recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.</li>
+<li>When you are finished, check that your code is <em>reproducible and replicable</em>. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+<ul>
+<li>Save your work. The filename <code>PS04_lastname_firstname.R</code> should change from red to black.</li>
+<li>Close <code>PS04_lastname_firstname.R</code>.</li>
+<li>Restart R: RStudio menu bar -&gt; Session -&gt; Restart R. This “reboots R” by deleting all previously saved data frames and shuts down all loaded packages.</li>
+<li>Go to the Files panel of RStudio and re-open <code>PS04_lastname_firstname.R</code>.</li>
+<li>Re-run all your code to make sure that you can replicate all results.</li>
+</ul></li>
+<li><strong>Submission</strong>: Submit this on <a href="https://moodle.smith.edu/course/view.php?id=30498" target="_blank">Moodle</a>.</li>
+<li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
+</ul>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>Write out “pseudocode” of your data wrangling steps <strong>first</strong> and then start coding (See Tweet of the day for Lec12). This will help you from confusing <em>what</em> you are trying to do and <em>how</em> am I going to code it.</li>
+</ul>
+<hr />
+</div>
 </div>
 <div id="lec-11-mon-101" class="section level1">
 <h1>Lec 11: Mon 10/1</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office hours this week. Please Slack me if this disrupts your plans.
@@ -414,29 +515,29 @@ h1{font-weight: 400;}
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>What is modeling?</li>
 <li>What is R Markdown?</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># Teaching evaluation score</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">?evals</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">ggplot</span>(evals, <span class="kw">aes</span>(<span class="dt">x =</span> score)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">0.25</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Teaching score&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 1: Teaching evaluation scores at UT Austin&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Seattle house prices (x-axis in original scale)</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">?house_prices</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">ggplot</span>(house_prices, <span class="kw">aes</span>(<span class="dt">x =</span> price)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Price USD&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 2.a): Seattle House Prices&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" width="768" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># Teaching evaluation score</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">?evals</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="kw">ggplot</span>(evals, <span class="kw">aes</span>(<span class="dt">x =</span> score)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">0.25</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Teaching score&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 1: Teaching evaluation scores at UT Austin&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Seattle house prices (x-axis in original scale)</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">?house_prices</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">ggplot</span>(house_prices, <span class="kw">aes</span>(<span class="dt">x =</span> price)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Price USD&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 2.a): Seattle House Prices&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-2-2.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-r-markdown" class="section level3">
 <h3>2. In-class exercise: R Markdown</h3>
@@ -486,7 +587,7 @@ h1{font-weight: 400;}
 <li><strong>Learning how to learn</strong>: See if you can figure out how to use the <code>clean_names()</code> function referenced below. Ask your seatmates, me or the data assistant for help.</li>
 </ul>
 </div>
-<div id="tweet-of-the-day" class="section level3">
+<div id="tweet-of-the-day-1" class="section level3">
 <h3>4. Tweet of the day</h3>
 <p>How quickly clean variable names; this might be useful for your projects.</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -497,19 +598,19 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p>Test this function on <code>example_data_frame</code> below:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">example_data_frame &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">  <span class="st">`</span><span class="dt">WEIRD !@$^&amp;*() Variable.name</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="st">`</span><span class="dt">more  WEIRDNESS    %</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;pamplemousse&quot;</span>, <span class="st">&quot;cran-raspberry&quot;</span>, <span class="st">&quot;tangerine&quot;</span>)</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">)</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">example_data_frame</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2">example_data_frame &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="st">`</span><span class="dt">WEIRD !@$^&amp;*() Variable.name</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">  <span class="st">`</span><span class="dt">more  WEIRDNESS    %</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;pamplemousse&quot;</span>, <span class="st">&quot;cran-raspberry&quot;</span>, <span class="st">&quot;tangerine&quot;</span>)</a>
+<a class="sourceLine" id="cb4-5" data-line-number="5">)</a>
+<a class="sourceLine" id="cb4-6" data-line-number="6">example_data_frame</a></code></pre></div>
 <hr />
 </div>
 </div>
 </div>
 <div id="lec-10" class="section level1">
 <h1>Lec 10</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Office hours today 3-4pm</li>
@@ -517,9 +618,9 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </ul>
 <p><img src="static/images/midterm_cover_page.png" width="600" /></p>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk Talk</h3>
 <!--
 ![](static/images/group_summary.png){ width=600px }
@@ -552,7 +653,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </div>
 <div id="lec-9" class="section level1">
 <h1>Lec 9</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Albert extra office hours Thursday 2-4pm in McConnell 215.</li>
@@ -564,7 +665,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="midterm-i-practice-questions-discussion" class="section level3">
 <h3>1. Midterm I Practice Questions Discussion</h3>
@@ -573,7 +674,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 <li>Left plot: the white grid lines on the x-axis denote <strong>additive</strong> differences of <span class="math inline">\(+10000\)</span></li>
 <li>Right plot: the white grid lines on the x-axis denote <strong>multiplicative</strong> differences of <span class="math inline">\(\times 10\)</span></li>
 </ul>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 <p><strong>Note about Question 5.f)</strong> Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:</p>
 <table>
 <thead>
@@ -630,7 +731,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </tbody>
 </table>
 </div>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>2. Chalk Talk</h3>
 <p><strong>a) Summarizing</strong>: Note “summarise” is the British English spelling of the American English “summarize”. Both <code>summarise()</code> and <code>summarize()</code> work in R.</p>
 <table>
@@ -660,7 +761,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 <div id="PS03" class="section level1">
 <h1>Problem set 3</h1>
 <p><em>Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time</em></p>
-<div id="datacamp" class="section level2">
+<div id="datacamp-1" class="section level2">
 <h2>1. DataCamp</h2>
 <p>No DataCamp this week.</p>
 </div>
@@ -695,7 +796,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </div>
 <div id="lec-8" class="section level1">
 <h1>Lec 8</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell’s talk listed in <a href="#Lec06">Lec06</a>.</li>
@@ -743,9 +844,9 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Coding functions: arguments as inputs</li>
@@ -758,7 +859,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 <h3>2. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 5-5.3</p>
 </div>
-<div id="tweet-of-the-day-1" class="section level3">
+<div id="tweet-of-the-day-2" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>While networking may come naturally to some, it doesn’t to most. It takes work, courage, and practice! For example, start small &amp; low risk! A simple tweet can be the beginning of a meaningful relationship!</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -773,7 +874,7 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 </div>
 <div id="lec-7" class="section level1">
 <h1>Lec 7</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over questions in <code>#random</code> Slack channel</li>
@@ -784,9 +885,9 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 <li><strong>Videoconferencing</strong>: In Slack, in a Direct Message, type <code>/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF</code></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Finish data visualization. Table in ModernDive Chapter 3.9</li>
@@ -798,7 +899,7 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 <h3>2. Project Time</h3>
 <p>Start your projects!</p>
 </div>
-<div id="tweet-of-the-day-2" class="section level3">
+<div id="tweet-of-the-day-3" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>ModernDive co-author Chester Ismay <a href="https://twitter.com/old_man_chester" target="_blank">@old_man_chester</a> is Senior Curriculum Lead at DataCamp. If you are curious for a “big picture” view of why we are using DataCamp, read the linked blogpost, in particular look at the image of the “data science pipeline”. Remember, you have free access to <strong>all</strong> DataCamp courses for 6 months!</p>
 <blockquote class="twitter-tweet">
@@ -814,7 +915,7 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 </div>
 <div id="Lec06" class="section level1">
 <h1>Lec 6</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Curious about a career in data science? Then come for Emily Dodwell (class of 2011)’s talk “The Nuts and Bolts of a Data Science Career” on Monday 9/24; stay for the 🍕 lunch! Click <a href="static/dodwell_talk.pdf" target="_blank">here</a> for flyer.</li>
@@ -837,20 +938,20 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 <li><em>Load/open</em> it using <code>library()</code> command. Ex: <code>library(nycflights13)</code></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk-histograms-binning-structure" class="section level3">
 <h3>1. Chalk Talk: Histograms “binning” structure</h3>
 <p>Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10 with bar border color white</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="co"># Code to generate Fig 3.11</span></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">library</span>(nycflights13)</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10 with bar border color white</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a>
+<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co"># Code to generate Fig 3.11</span></a>
+<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 </div>
 <div id="chalk-talk-boxplots" class="section level3">
 <h3>2. Chalk Talk: Boxplots</h3>
@@ -880,13 +981,13 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 </tbody>
 </table>
 <p>Let’s compare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-moderndive-4" class="section level3">
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3.7.</p>
 </div>
-<div id="tweet-of-the-day-3" class="section level3">
+<div id="tweet-of-the-day-4" class="section level3">
 <h3>4. Tweet of the day</h3>
 <p>On <em>imposter syndrome</em> is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a “fraud”. Click below to read full thread.</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -915,7 +1016,7 @@ Let's talk about imposter syndrome in tech – specifically, ways we can combat 
 <li>Click where it says “coursework” and rename it “Firstname Lastname”. For example in my case “Albert Kim”.</li>
 </ul>
 </div>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Lab section Tuesday/Thursday:
@@ -928,9 +1029,9 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <img src="static/images/Lec4_scratchpad.png" alt="alt text" width="500" /></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Histograms visualize the <em>(empirical) distribution</em> of a numerical variable</li>
@@ -940,9 +1041,9 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <div id="in-class-exercise-comment-lines" class="section level3">
 <h3>2. In-class exercise: Comment lines</h3>
 <p>In the screen shot of my <code>scratchpad.R</code> above, any line that starts with a <code>#</code> are called <em>comment lines</em>. They are ignored by R when you run them in the console. Run both these lines in the console separately:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">this is a comment line that R ignores that helps <span class="kw">readers</span> (including you<span class="op">!</span>) understand code</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">this is a comment line that R ignores that helps <span class="kw">readers</span> (including you<span class="op">!</span>) understand code</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></a></code></pre></div>
 <p>Why does one line return an <code>Error</code> whereas the other doesn’t?</p>
 </div>
 <div id="in-class-exercise-moderndive-5" class="section level3">
@@ -955,7 +1056,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <div id="PS02" class="section level1">
 <h1>Problem set 2</h1>
 <p><em>Assigned Wednesday 9/19, due Wednesday 9/26 at 1pm Eastern Time</em></p>
-<div id="datacamp-1" class="section level2">
+<div id="datacamp-2" class="section level2">
 <h2>1. DataCamp</h2>
 <ul>
 <li>Complete the “Introduction to the Tidyverse” course, which you should see <a href="https://www.datacamp.com/courses/introduction-to-the-tidyverse" target="_blank">here</a>.</li>
@@ -995,7 +1096,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 </div>
 <div id="lec-4" class="section level1">
 <h1>Lec 4</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><strong>Extra office hours today 3:30-5pm in McConnell 215</strong></li>
@@ -1008,9 +1109,9 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li>Solutions to previous lecture’s learning checks will be posted directly underneith question. Ex: Look at <a href="https://moderndive.netlify.com/2-getting-started.html#exploredataframes" target="_blank">LC2.1 Solutions</a> I just posted.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk Talk</h3>
 <p>The Grammar of Graphics: the theoretical underpinnings of statistical graphics.</p>
 </div>
@@ -1052,7 +1153,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 </div>
 <div id="lec-3" class="section level1">
 <h1>Lec 3</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Go over previous Slack <code>#general_announcements</code></li>
@@ -1067,7 +1168,7 @@ Note because I saved my work, <code>scratchpad.R</code> is written in black. If 
 <li><strong>Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215</strong></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive Chapter 2. Note:

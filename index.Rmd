@@ -7,7 +7,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-    df_print: kable
+#    df_print: kable
 ---
 
 <style>
@@ -55,12 +55,105 @@ h1{font-weight: 400;}
 
 
 
+***
 
-<!--
 
 
--->
+# Lec 12: Wed 10/3
 
+## Announcements
+
+* ModernDive learning check solutions for Chapter 4 + 5 now posted in Appendix D. 
+* Talk on Friday 10/12 5:30pm in Seelye Hall 106. 
+
+<center>
+![](static/images/Craigie_Poster_Wide.png){ width=800px }
+</center>
+
+<br>
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* Correlation coefficient: ModernDive Fig. 6.18
+* Fitted regression line: ModernDive Fig. 6.6
+* Pseudocode (also see tweet of the day below)
+
+### 2. In-class exercise
+
+* Turn your computer's volume up to the maximum and play [Guess the Correlation](http://guessthecorrelation.com/){target="_blank"}
+* Read ModernDive Chapters 6.3.1 and 6.1.2.
+* Look at solutions below to "cleaning variable names" exercise from Lec11. What do I do if my data frame has horrible variable/column names? Copy and paste this code into your `scratchpad.R` and run all 4 steps individually. This will help for your projects.
+
+```{r, eval=FALSE, paged.print=FALSE}
+# Step 1: Manually create a data frame with ugly names
+library(dplyr)
+example_data_frame <- data_frame(
+  `WEIRD !@$^&*() Variable.name` = c(1, 2, 3),
+  `more  WEIRDNESS    %` = c("pamplemousse", "cran-raspberry", "tangerine")
+)
+
+# Look at these awful names!
+example_data_frame
+
+# Step 2: The janitor package to the rescue!
+library(janitor)
+
+# Step 3: Use the clean_names() function in the janitor package to create a new
+# data frame with cleaner names
+data_frame_with_cleaner_names <- example_data_frame %>% 
+  clean_names()
+
+# Step 4: Compare these column names with the ones from above. Much cleaner!
+data_frame_with_cleaner_names
+```
+
+
+### 3. Tweet of the day
+
+On writing "pseudocode": a rough outline that is "sort of" like code that outlines the steps of what your code will do. You can think of pseudocode as a "blueprint" of your "building"; before you build your building, you need a plan! Here are examples of "pseudocode" for the data wrangling exercise from Learning Check 5.19 in ModernDive on taking the data in `nycflights13` and computing [Available Seat Miles](https://en.wikipedia.org/wiki/Available_seat_miles){target="_blank"}
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a> pseudocode to compute &quot;Available Seat Miles&quot; (✈️ measure of capacity) using <a href="https://twitter.com/hashtag/nycflights13?src=hash&amp;ref_src=twsrc%5Etfw">#nycflights13</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package. Not only was most pseudocode good, but many were able to code it up on day 3 of data wrangling! 😮😮😮 <a href="https://t.co/BHozXZWjU0">https://t.co/BHozXZWjU0</a> <a href="https://twitter.com/hashtag/chalktalk?src=hash&amp;ref_src=twsrc%5Etfw">#chalktalk</a> <a href="https://t.co/0mzTYalGXa">pic.twitter.com/0mzTYalGXa</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/964181298691629056?ref_src=twsrc%5Etfw">February 15, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
+
+
+# Problem set 4 {#PS04}
+
+*Assigned Wednesday 10/3, due Wednesday 10/10 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+* Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
+    + Chapter 1: Introduction to Modeling
+    + Chapter 2: Modeling with Basic Regression
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+
+
+## 2. R component {#PS04_R}
+
+You'll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.
+
+
+* Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download>`PS04_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS04_Kim_Albert.R`.
+* Open `PS04_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work. The filename `PS04_lastname_firstname.R` should change from red to black.
+    + Close `PS04_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS04_lastname_firstname.R`.
+    + Re-run all your code to make sure that you can replicate all results. 
+* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+**Hints**:
+
+* Write out "pseudocode" of your data wrangling steps **first** and then start coding (See Tweet of the day for Lec12). This will help you from confusing *what* you are trying to do and *how* am I going to code it.
 
 
 
@@ -76,10 +169,8 @@ h1{font-weight: 400;}
     + Monday 10/1: ~~3-6pm~~ 2:30-4:30pm
     + Tuesday 10/2: ~~3-6pm~~ 2-4:30pm
 
-
     
 ## Today's Topics/Activities  
-
 
 ### 1. Chalk Talk
 

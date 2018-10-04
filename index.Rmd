@@ -57,14 +57,28 @@ h1{font-weight: 400;}
 
 ***
 
-# Lec 13: Fri 10/4
+# Lec 13: Fri 10/5 {#Lec13}
 
 ## Announcements
 
-* PS04 typo: Question 2.b) should read `b) Survival split by sex` and not `b) Survival split by class`. This has been updated in the `PS04_lastname_first.R` file.
+* PS03 solutions [posted](#PS03_R_solutions)
+* Interested in majoring in SDS? Check out our presentation of the major on Tuesday 10/23 from 12:15-1:05pm in Ford Hall.
+
+<center>
+![](static/images/SDS_major.png){ width=800px }
+</center>  
+
+<br>
 
 
-***
+## Today's Topics/Activities       
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
 
 
 # Lec 12: Wed 10/3

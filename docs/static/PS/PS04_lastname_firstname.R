@@ -88,7 +88,7 @@ View(titanic)
 
 
 
-# b) Survival split by class. Using dplyr commands, output a table that displays
+# b) Survival split by sex. Using dplyr commands, output a table that displays
 # the overall survival & death counts of the disaster split by recorded sex.
 # Your code should print out a table with three columns and four rows of data,
 # along with a "header" row of the variable names.

@@ -57,6 +57,14 @@ h1{font-weight: 400;}
 
 ***
 
+# Lec 13: Fri 10/4
+
+## Announcements
+
+* PS04 typo: Question 2.b) should read `b) Survival split by sex` and not `b) Survival split by class`. This has been updated in the `PS04_lastname_first.R` file.
+
+
+***
 
 
 # Lec 12: Wed 10/3
@@ -138,8 +146,7 @@ On writing "pseudocode": a rough outline that is "sort of" like code that outlin
 
 You'll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.
 
-
-* Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download>`PS04_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS04_Kim_Albert.R`.
+* Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download>`PS04_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS04_Kim_Albert.R`. **Note on 10/4**: Question 2.b) originally read  `b) Survival split by class`. It should read `b) Survival split by sex`. This has been updated in the `PS04_lastname_first.R` file.
 * Open `PS04_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
 * When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
     + Save your work. The filename `PS04_lastname_firstname.R` should change from red to black.
@@ -149,7 +156,6 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
     + Re-run all your code to make sure that you can replicate all results. 
 * **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-
 
 **Hints**:
 

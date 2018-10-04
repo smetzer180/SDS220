@@ -65,9 +65,8 @@ h1{font-weight: 400;}
 * Interested in majoring in SDS? Check out our presentation of the major on Tuesday 10/23 from 12:15-1:05pm in Ford Hall.
 
 <center>
-![](static/images/SDS_major.png){ width=800px }
+![](static/images/SDS_major.png){ width=500px }
 </center>  
-
 <br>
 
 

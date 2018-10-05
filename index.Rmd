@@ -57,11 +57,16 @@ h1{font-weight: 400;}
 
 ***
 
+
+
 # Lec 13: Fri 10/5 {#Lec13}
 
 ## Announcements
 
-* PS03 solutions [posted](#PS03_R_solutions)
+* Two `#polls` today:
+    + Webpage redesign?
+    + Look at tweet of the day below and vote, do you like the building?
+* Labs next week: none Tuesday because of break, Thursday lab will take place given that Mountain Day was a Thursday.
 * Interested in majoring in SDS? Check out our presentation of the major on Tuesday 10/23 from 12:15-1:05pm in Ford Hall.
 
 <center>
@@ -74,9 +79,25 @@ h1{font-weight: 400;}
 
 ### 1. Chalk Talk
 
+* `get_regression_table()` and `get_regression_points()` wrapper functions
+* Looking at ModernDive Figure 6.8
+    + Fitted values
+    + Residuals
 
 ### 2. In-class exercise
 
+Read ModernDive 6.1.3.
+
+### 3. Tweet of the day
+
+Boston University is going to build a new 17-floor "Data Sciences Center" on Commonwealth Avenue, designed to look like a stack of books. `r emo::ji("thumbs up")` or `r emo::ji("thumbs down")`?
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Boston University unveils plans for book-inspired data sciences center on Comm. Ave. <a href="https://t.co/XpnDGATpnE">https://t.co/XpnDGATpnE</a> <a href="https://t.co/A8LMpYoB7K">pic.twitter.com/A8LMpYoB7K</a></p>&mdash; Boston.com (@BostonDotCom) <a href="https://twitter.com/BostonDotCom/status/1047534467257184256?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
 
 
 

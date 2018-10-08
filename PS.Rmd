@@ -33,6 +33,7 @@ h1{font-weight: 400;}
 
 * Download the following Rmd template file: <a href="static/PS/PS05_lastname_firstname.Rmd" download>`PS05_lastname_firstname.Rmd`</a> and rename it appropriately.
 * R Markdown Knitting strategies:
+    + Knit the `PS05_lastname_firstname.Rmd` file once and read all the questions.
     + Knit early, knit often! This will help pinpoint errors as they happen.
     + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experiences.
 * Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 

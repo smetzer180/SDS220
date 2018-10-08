@@ -405,11 +405,11 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
+***
 
 
 
-
-# Lec ***
+# Lec 7
 
 
 
@@ -449,7 +449,7 @@ ModernDive co-author Chester Ismay [\@old_man_chester](https://twitter.com/old_m
 
 
 
-#Lec 6 {#Lec06}
+# Lec 6 {#Lec06}
 
 ## Announcements
 
@@ -505,7 +505,7 @@ p1 + p2
 ```
 
 
-### 2. Calk Talk: Boxplots
+### 2. Chalk Talk: Boxplots
 
 ```{r, eval=TRUE, echo=FALSE, cache=TRUE}
 library(ggplot2)
@@ -552,7 +552,7 @@ plot1 + plot2
 
 
 
-### 3. -class exercise: ModernDive
+### 3. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 3.7.
 
@@ -575,7 +575,7 @@ Interesting results from my SDS 192 course earlier today:
 
 
 
-# Lec5
+# Lec 5
 
 ## Experimenting with RStudio Cloud
 

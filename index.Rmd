@@ -15,8 +15,8 @@ h1{font-weight: 400;}
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, eval=FALSE, 
-                      fig.width = 16/2, fig.height = 9/2)
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE, 
+                      cache=TRUE, fig.width=16/2, fig.height=9/2)
 library(tidyverse)
 library(stringr)
 library(knitr)
@@ -39,7 +39,11 @@ set.seed(76)
 h1{font-weight: 400;}
 </style>
 
+
+
 ***
+
+
 
 # Schedule 
 
@@ -52,6 +56,34 @@ h1{font-weight: 400;}
 * **Readings + Reference**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
 
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
+
+
+
+***
+
+
+
+# Lec 14: Wed 10/10 {#Lec14}
+
+## Announcements
+
+* Problem sets:
+    + Giving personalized feedback to 40 students over approximately 13 problem sets is difficult given that I only have one grader. **It is your responsibility to do a "self-evaluation" after solutions are posted.**
+    + PS02 (imperfect) grading rubric [posted](PS.html#PS02_R_solutions).
+    + PS03 solutions and (imperfect) gradic rubric [posted](PS.html#PS03_R_solutions).
+    + PS04 (imperfect) grading rubric [posted](PS.html#PS04_R_solutions).
+    + Going forward (imperfect) grading rubric will be posted at the same time as problem set.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
+### 3. Tweet of the day
 
 
 
@@ -128,7 +160,7 @@ Boston University is going to build a new 17-floor "Data Sciences Center" on Com
 * Read ModernDive Chapters 6.3.1 and 6.1.2.
 * Look at solutions below to "cleaning variable names" exercise from Lec11. What do I do if my data frame has horrible variable/column names? Copy and paste this code into your `scratchpad.R` and run all 4 steps individually. This will help for your projects.
 
-```{r, eval=FALSE, paged.print=FALSE}
+```{r, eval = FALSE, paged.print = FALSE}
 # Step 1: Manually create a data frame with ugly names
 library(dplyr)
 example_data_frame <- data_frame(
@@ -164,48 +196,6 @@ On writing "pseudocode": a rough outline that is "sort of" like code that outlin
 ***
 
 
-# Problem set 4 {#PS04}
-
-*Assigned Wednesday 10/3, due Wednesday 10/10 at 1pm Eastern Time*
-
-## 1. DataCamp
-
-* Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
-    + Chapter 1: Introduction to Modeling
-    + Chapter 2: Modeling with Basic Regression
-* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
-
-
-## 2. R component {#PS04_R}
-
-You'll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.
-
-* Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download>`PS04_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS04_Kim_Albert.R`. **Note on 10/4**: Question 2.b) originally read  `b) Survival split by class`. It should read `b) Survival split by sex`. This has been updated in the `PS04_lastname_first.R` file.
-* Open `PS04_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
-* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
-    + Save your work. The filename `PS04_lastname_firstname.R` should change from red to black.
-    + Close `PS04_lastname_firstname.R`.
-    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
-    + Go to the Files panel of RStudio and re-open `PS04_lastname_firstname.R`.
-    + Re-run all your code to make sure that you can replicate all results. 
-* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
-* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-
-**Hints**:
-
-* Write out "pseudocode" of your data wrangling steps **first** and then start coding (See Tweet of the day for Lec12). This will help you from confusing *what* you are trying to do and *how* am I going to code it.
-
-<!--
-## 3. R component solutions {#PS04_R_solutions}
-
-<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
--->
-
-
-***
-
-
-
 # Lec 11: Mon 10/1
 
 ## Announcements
@@ -222,7 +212,7 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 * What is modeling?
 * What is R Markdown?
 
-```{r, eval=TRUE}
+```{r, eval=TRUE, cache = TRUE}
 library(ggplot2)
 library(moderndive)
 
@@ -238,8 +228,6 @@ ggplot(house_prices, aes(x = price)) +
   geom_histogram() +
   labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
 ```
-
-
 
 ### 2. In-class exercise: R Markdown
 
@@ -267,14 +255,12 @@ At a couple of steps in this process, you may be asked to install packages. Say 
     + Click "Update existing"
     + Share the link to your updated report with your groupmates on Slack!
 
-
 ### 3. In-class exercise: ModernDive
 
 * Read ModernDive from the beginning of Chapter 6 up to and including 6.1.1. Note:
     + Make sure to install all the new packages listed in "Needed Packages".
     + You can skip the DataCamp course for now; this will be assigned later.
 * **Learning how to learn**: See if you can figure out how to use the `clean_names()` function referenced below. Ask your seatmates, me or the data assistant for help.
-
 
 ### 4. Tweet of the day
 
@@ -305,9 +291,7 @@ example_data_frame
 ## Announcements
 
 * Office hours today 3-4pm
-* Read cover page for midterm:
-
-![](static/images/midterm_cover_page.png){ width=600px }
+* Read cover page for midterm on [midterms](midterms.html#midtermI) page.
 
     
 ## Today's Topics/Activities  
@@ -342,9 +326,7 @@ As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.
 
 
 
-
 ***
-
 
 
 
@@ -357,57 +339,12 @@ As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.
 * Solutions to PS02 [posted](#PS02_R_solutions)
     + Please download the `PS02_solutions.R` file to your computer and open them in RStudio for a brief in-class discussion.
     + To guarantee the `PS02_solutions.R` file opens in the RStudio app (AKA a car's dashboard) and not the regular R app (AKA a car's engine), don't double-click the `PS02_solutions.R` file directly, but rather go to Files panel of RStudio and find/click/open the file from there.
+* Midterm I practice questions discussion. See [midterms](midterms.html#midtermIdiscussion) page.
 
-    
+
 ## Today's Topics/Activities  
 
-### 1. Midterm I Practice Questions Discussion
-
-**Note about Question 4.b)** Both the following plots show the relationship between life expectancy and GDP per capita in 2007 in the `gapminder` data, but the right one has GDP per capita (USD) on the x-axis on a $\log10$-scale using `scale_x_log10()`. Thus:
-
-* Left plot: the white grid lines on the x-axis denote **additive** differences of $+10000$ 
-* Right plot: the white grid lines on the x-axis denote **multiplicative** differences of $\times 10$
-
-```{r, echo = FALSE, fig.height = 7/2, eval =TRUE, cache = TRUE}
-gapminder2007 <- gapminder %>% 
-  filter(year == 2007)
-
-# Simple plot -------------------------------------------------------------
-base <- ggplot(gapminder2007, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) + 
-  geom_point() + 
-  labs(
-    y = "Life expectancy (years)", 
-    color = "Continent", size = "Population"
-  ) +
-  theme(legend.position="none", panel.grid.minor = element_blank())
-  
-p1 <- base +
-  labs(x = "GDP per capita", title = "Regular scale x-axis") +
-  scale_x_continuous(labels = scales::dollar_format())
-p2 <- base +
-  labs(x = "GDP per capita (log10-scale)", title = "log10 scale x-axis") + 
-  scale_x_log10(breaks = c(100, 1000, 10000, 100000), limits = c(NA, 10^5), labels = scales::dollar_format())
-p1 + p2
-```
-
-
-**Note about Question 5.f)** Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:
-
-```{r, echo = FALSE, eval = FALSE}
-data_frame(
-  data1 = c(16, 17, 32, 33, 54, 60, 61, 62, NA, NA, 100, 110, 115),
-  data2 = c(16, 17, 32, 33, 54, 60, NA, NA, 98, 99, 100, 110, 115)
-) %>% 
-  t() %>% kable()
-```
-
-| Dataset    |   |   |  |   |   |   |   |   |   |   |  |    |    |
-|:-----|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|
-|Data 1 | 16| 17| **32** | 33| 54| **60**| 61| 62| | | **100**| 110| 115|
-|Data 2 | 16| 17| **32** | 33| 54| **60**| | | 98| 99| **100**| 110| 115|
-
-
-### 2. Chalk Talk
+### 1. Chalk Talk
 
 **a) Summarizing**: Note "summarise" is the British English spelling of the American English "summarize". Both `summarise()` and `summarize()` work in R. 
 
@@ -421,7 +358,7 @@ data_frame(
 ![](https://github.com/moderndive/moderndive_book/raw/master/images/group_summary.png){ width=600px }
 
 
-### 3. In-class exercise: ModernDive
+### 2. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
 
@@ -431,57 +368,6 @@ As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
 ***
 
 
-
-# Problem set 3 {#PS03}
-
-*Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time*
-
-## 1. DataCamp
-
-No DataCamp this week.
-
-
-## 2. R component {#PS03_R}
-
-Read the following Chance Magazine article [Looking Good on Course Evaluations](http://chance.amstat.org/2013/04/looking-good/){target="_blank"} up to and including Table 1. In particular, note the introductory paragraph:
-
-> At the end of each semester, students provide feedback on their courses via anonymous course evaluations. However, use of student evaluations as indicators of quality of the course and teaching effectiveness is often criticized since these measures may be reflecting biases in favor of nonteaching-related characteristics, such as the physical appearance of the instructor.
-
-You'll be analyzing the same data used in this study. The data is in the `evals` data frame, which is included in the `moderndive` R package. A larger goal of this problem set is to start practicing answering questions with data visualizations
-
-* Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download>`PS03_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS03_Kim_Albert.R`.
-* Open `PS03_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
-* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
-    + Save your work. The filename `PS03_lastname_firstname.R` should change from red to black.
-    + Close `PS03_lastname_firstname.R`.
-    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
-    + Go to the Files panel of RStudio and re-open `PS03_lastname_firstname.R`.
-    + Re-run all your code to make sure that you can replicate all images.
-* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
-* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-
-
-**Hints**:
-
-* Everything you need to know for this problem set are based on Lectures 1-7 in particular the ModernDive readings.
-* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project.
-
-## 3. R component solutions {#PS03_R_solutions}
-
-<a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
-
-
-
-
-***
-
-
-
-
-
-
-
-
 # Lec 8
 
 ## Announcements
@@ -489,38 +375,15 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 * Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06).
 * Visitor: [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
 * Submission format for Term Project Proposal on Wednesday.
+* Discussion on Midterm I. See [Midterms](midterms.html#midtermI) page.
 * Lab tomorrow/Thursday
     + Jenny will go over a [data viz recap lab](static/data_vis_lab/lab4_source_JS_SDS220b.html){target="_blank"} which will be helpful for Midterm I studying.
     + After that you can work on Problem Sets.
     + However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in [DataCamp Practice Mode](https://www.datacamp.com/community/blog/introducing-daily-practice-mode){target="_blank"} to reinforce what you've already learned!
-        
-        
-## Midterm I
-
-* Administrative:
-    + If you have never taken a Self-Scheduled exam, please read the instructions [here](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}
-    + Available Friday 9/29 5pm through Sunday 9/30 11:55pm. You must submit your midterm by 11:55pm on Sunday.
-    + You will be given 120 mins to complete it (including transit time to writing area), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
-    + Closed-book, no internet, and individually completed.
-    + Topics: Lectures 1-7. In other words everything up to and including data visualizations
-    + Please bring colored pens
-* What to study:
-    + Before Wednesday's lecture, do the practice midterm questions.
-    + Your hand-written course notes first: they are the "executive summaries" of topics.
-    + The material on the course webpage chronologically, in particular the ModernDive readings.
-    + You will not write code for the midterm, but you may need to understand code.
-    + No questions from DataCamp will be asked.
-* Practice midterm questions [PDF](static/exams/Midterm-I_practice.pdf){target="_blank"}. I **do not** have a PDF of solutions, we'll cover these in class on Wednesday. Note this is a compilation of a few midterms, so its length is longer than what you can expect on the midterm. Do the following questions:
-    + Q1 Short Answer - Part b)
-    + Q4 Gapminder - All parts. Hint for Part b): Read ModernDive Chapter 12.1.2 on log10-transformations
-    + Q5 Family income by city - All parts.
-    + Q1 America Runs on Starbucks: Parts a) and c)
-* Extra help:
-    + Jenny office hours, still lots of Wednesday slots! [Book here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
-    + Albert extra office hours Thursday 2-4pm in McConnell 215.
 
 
-## Today's Topics/Activities  
+
+## Toay's Topics/Activities  
 
 ### 1. Chalk Talk
 
@@ -546,7 +409,9 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 
 
 
-# Lec 7
+# Lec ***
+
+
 
 ## Announcements
 
@@ -559,7 +424,7 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 
 
 
-## Today's Topics/Activities  
+## Todays Topics/Activities  
 
 ### 1. Chalk Talk
 
@@ -584,7 +449,7 @@ ModernDive co-author Chester Ismay [\@old_man_chester](https://twitter.com/old_m
 
 
 
-# Lec 6 {#Lec06}
+#Lec 6 {#Lec06}
 
 ## Announcements
 
@@ -608,7 +473,7 @@ So after Friday you'll be responsible for installing R Packages as described in 
 
 
 
-## Today's Topics/Activities       
+## Todays Topics/Activities       
 
 ### 1. Chalk Talk: Histograms "binning" structure
 
@@ -624,7 +489,7 @@ ggplot(data = weather, mapping = aes(x = temp)) +
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
 ```
-```{r, eval=TRUE, echo=FALSE}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE}
 library(ggplot2)
 library(nycflights13)
 library(patchwork)
@@ -640,9 +505,9 @@ p1 + p2
 ```
 
 
-### 2. Chalk Talk: Boxplots
+### 2. Calk Talk: Boxplots
 
-```{r, eval=TRUE, echo=FALSE}
+```{r, eval=TRUE, echo=FALSE, cache=TRUE}
 library(ggplot2)
 library(dplyr)
 example <- data_frame(
@@ -657,12 +522,12 @@ Say we want to plot a boxplot of the following `r nrow(example)` values which ar
 They have the following *summary statistics*:
 
 
-Min. | 1st Qu. | Median  | 3rd Qu.  |  Max. 
+Min. | 1t Qu. | Median  | 3rd Qu.  |  Max. 
 ---- | ------- | ------  |  ------- | --- 
 `r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)`
 
 
-Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
 ```{r, echo=FALSE, eval=TRUE, cache=TRUE}
 plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
@@ -687,7 +552,7 @@ plot1 + plot2
 
 
 
-### 3. In-class exercise: ModernDive
+### 3. -class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 3.7.
 
@@ -710,7 +575,7 @@ Interesting results from my SDS 192 course earlier today:
 
 
 
-# Lec 5
+# Lec5
 
 ## Experimenting with RStudio Cloud
 
@@ -722,16 +587,18 @@ Experimenting with [RStudio Cloud](https://www.causeweb.org/cause/sites/default/
 * In the "2018-09 SDS 220" space you should see a "coursework" project. Click on "Copy".
 * Click where it says "coursework" and rename it "Firstname Lastname". For example in my case "Albert Kim".
 
-## Announcements
+## Announceme
+nts
 
 * Lab section Tuesday/Thursday:
     + Install R + RStudio on your computer
-    + Start Problem set 2 [below](#PS02)
+    + Start Problem set 2
 * What my `scratchpad.R` looks like after Lec4. Yours shouldn't be *exactly* the same, but close.  
 Note because I saved my work, `scratchpad.R` is written in black. If I had unsaved work, this would be written in red.  
 ![alt text](static/images/Lec4_scratchpad.png){ width=500px }
 
-## Today's Topics/Activities       
+## Today's To
+pics/Activities       
 
 ### 1. Chalk Talk
 
@@ -753,48 +620,6 @@ Why does one line return an `Error` whereas the other doesn't?
 ### 3. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
-
-
-
-***
-
-
-
-# Problem set 2 {#PS02}
-
-*Assigned Wednesday 9/19, due Wednesday 9/26 at 1pm Eastern Time*
-
-## 1. DataCamp
-
-* Complete the "Introduction to the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/introduction-to-the-tidyverse){target="_blank"}.
-* Note: DataCamp does things in a slightly order, data wrangling first then data visualization. ModernDive however does data visualization first in Chapter 3 then data wrangling in Chapter 5. Reading ModernDive Chapter 5 is not a pre-requisite for completing this problem set.
-* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
-* If you have already completed the "Introduction to the Tidyverse" DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.
-
-## 2. R component {#PS02_R}
-
-Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income Inequality](https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/){target="_blank"}. You'll be analyzing the same data used to write this article. The data is in the `hate_crimes` dataframe, which is included in the `fivethirtyeight` R package. A larger goal of this problem set is to start practicing the "data analysis" workflow.
-
-* Download the following R scratchpad: <a href="static/PS/PS02_lastname_firstname.R" download>`PS02_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS02_Kim_Albert.R`.
-* "Upload" this file to RStudio Server by going to RStudio -> Files panel -> Upload.
-* Open `PS02_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
-* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
-    + Save your work and close `PS02_lastname_firstname.R`.
-    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
-    + Go to the Files panel of RStudio and re-open `PS02_lastname_firstname.R`.
-    + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
-* **Submission**: ~~Download this file on to your compter by going to RStudio -> Files panel -> More -> Export.~~  (9/20 10am update: I just crossed out the outdated instructions assuming you were working on RStudio Server. Since we are now assuming RStudio Desktop, the `PS02_lastname_firstname.R` file should exist on your computer) Submit this`PS02_lastname_firstname.R`[Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
-* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-
-**Hints**:
-
-* Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.
-* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders' and my goal in grading the problem sets is to identify both your **strengths and weaknesses** in preparation for the projects. Don't forget the lowest two problem set scores are dropped!
-
-
-## 3. R component solutions {#PS02_R_solutions}
-
-<a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>
 
 
 
@@ -866,13 +691,15 @@ As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (star
     + Added "Expectations" to following sections: [Topic Schedule and Readings](syllabus.html#topicschedule), [Evaluation](syllabus.html#topicschedule), [Accommodations](syllabus.html#accommodations), [Code of Conduct](syllabus.html#codeofconduct)
 * **Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215**
 
-## Today's Topics/Activities       
+## Today's To
+pics/Activities       
         
 1. Go over ModernDive Chapter 2. Note:
     + You can skip all videos and linked DataCamp courses.
     + "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
 
-## Getting help
+## Getting he
+lp
 
 A big part of learning data science tools is learning how to get help effectively. For example, in this course:
 
@@ -895,31 +722,6 @@ A big part of learning data science tools is learning how to get help effectivel
 
 
 
-# Problem set 1 {#PS01}
-
-*Assigned Wednesday 9/12, due Wednesday 9/19 at 1pm Eastern Time*
-
-1. **DataCamp**
-    * Complete the following chapters from the "Introduction to R" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:
-        * Chapter 1: "Intro to basics"
-        * Chapter 2: "Vectors"
-        * Chapter 4: "Factors"
-        * Chapter 5: "Data Frames"
-    * Expectations about DataCamp assignments have been posted in the [syllabus](syllabus.html#datacamp)
-1. **Administrative stuff**: To receive full credit for this portion simply ensure
-    * Slack:
-        1. Your full name is listed: full name = how you would like to be addressed in class & last name.  
-        1. You have added a profile picture with your face visible. This will help me learn your names.
-        1. Hint: Start relying on Google! "How do I change my name and profile picture on Slack?"
-        1. You are a member of the `#moderndive_typoes`, `#r_questions`, and `random` channels.
-    * DataCamp: Your full name is listed in your [profile](https://www.datacamp.com/profile/account_settings){target="_blank"}; the rest is optional.
-
-
-
-***
-
-
-
 # Lec 2
 
 1. **Slack**
@@ -931,7 +733,7 @@ A big part of learning data science tools is learning how to get help effectivel
         + You don't need to watch the videos for now
         + If you are using RStudio Server, you don't need to install packages. However, you will need to load them.
         + Learning checks: These are practice problems to reinforce your learning. You do not need to submit today's learning checks.
-1. **Lab Tuesday/Thursday** Start the DataCamp portion of [Problem set 1](#PS01). Jenny will help you get used to the DataCamp interface. 
+1. **Lab Tuesday/Thursday** Start the DataCamp portion of Problem set 1. Jenny will help you get used to the DataCamp interface. 
 
 
 

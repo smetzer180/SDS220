@@ -1,0 +1,231 @@
+---
+title: "Problem Sets"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float: true
+---
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+
+
+***
+
+
+
+# Problem set 5 {#PS05}
+
+*Assigned Wednesday 10/10, due Wednesday 10/17 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+* Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
+    + Chapter 3: Modeling with Multiple Regression
+    + Chapter 4: Model Assessment and Selection
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+
+
+## 2. R component {#PS05_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS05_lastname_firstname.Rmd" download>`PS05_lastname_firstname.Rmd`</a> and rename it appropriately.
+* R Markdown Knitting strategies:
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experiences.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
+
+<!--
+<a href="static/PS/PS05_solutions.R" download>`PS05_solutions.R`</a>
+-->
+
+
+**(Imperfect) rubric**:
+
+<!--
+TODO
+-->
+
+
+
+***
+
+
+
+# Problem set 4 {#PS04}
+
+*Assigned Wednesday 10/3, due Wednesday 10/10 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+* Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
+    + Chapter 1: Introduction to Modeling
+    + Chapter 2: Modeling with Basic Regression
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+
+
+## 2. R component {#PS04_R}
+
+You'll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.
+
+* Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download>`PS04_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS04_Kim_Albert.R`. **Note on 10/4**: Question 2.b) originally read  `b) Survival split by class`. It should read `b) Survival split by sex`. This has been updated in the `PS04_lastname_first.R` file.
+* Open `PS04_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work. The filename `PS04_lastname_firstname.R` should change from red to black.
+    + Close `PS04_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS04_lastname_firstname.R`.
+    + Re-run all your code to make sure that you can replicate all results. 
+* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+**Hints**:
+
+* Write out "pseudocode" of your data wrangling steps **first** and then start coding (See Tweet of the day for Lec12). This will help you from confusing *what* you are trying to do and *how* am I going to code it.
+
+
+## 3. R solutions & (imperfect) rubric {#PS04_R_solutions}
+
+<!--
+<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
+-->
+
+**(Imperfect) rubric**:
+
+<!--
+TODO
+-->
+
+
+
+***
+
+
+
+# Problem set 3 {#PS03}
+
+*Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+No DataCamp this week.
+
+
+## 2. R component {#PS03_R}
+
+Read the following Chance Magazine article [Looking Good on Course Evaluations](http://chance.amstat.org/2013/04/looking-good/){target="_blank"} up to and including Table 1. In particular, note the introductory paragraph:
+
+> At the end of each semester, students provide feedback on their courses via anonymous course evaluations. However, use of student evaluations as indicators of quality of the course and teaching effectiveness is often criticized since these measures may be reflecting biases in favor of nonteaching-related characteristics, such as the physical appearance of the instructor.
+
+You'll be analyzing the same data used in this study. The data is in the `evals` data frame, which is included in the `moderndive` R package. A larger goal of this problem set is to start practicing answering questions with data visualizations
+
+* Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download>`PS03_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS03_Kim_Albert.R`.
+* Open `PS03_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work. The filename `PS03_lastname_firstname.R` should change from red to black.
+    + Close `PS03_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS03_lastname_firstname.R`.
+    + Re-run all your code to make sure that you can replicate all images.
+* **Submission**: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+**Hints**:
+
+* Everything you need to know for this problem set are based on Lectures 1-7 in particular the ModernDive readings.
+* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project.
+
+
+## 3. R solutions & (imperfect) rubric {#PS03_R_solutions}
+
+<a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
+
+
+**(Imperfect) rubric**:
+
+<!--
+TODO
+-->
+
+
+
+***
+
+
+
+# Problem set 2 {#PS02}
+
+*Assigned Wednesday 9/19, due Wednesday 9/26 at 1pm Eastern Time*
+
+
+## 1. DataCamp
+
+* Complete the "Introduction to the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/introduction-to-the-tidyverse){target="_blank"}.
+* Note: DataCamp does things in a slightly order, data wrangling first then data visualization. ModernDive however does data visualization first in Chapter 3 then data wrangling in Chapter 5. Reading ModernDive Chapter 5 is not a pre-requisite for completing this problem set.
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+* If you have already completed the "Introduction to the Tidyverse" DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.
+
+
+## 2. R component {#PS02_R}
+
+Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income Inequality](https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/){target="_blank"}. You'll be analyzing the same data used to write this article. The data is in the `hate_crimes` dataframe, which is included in the `fivethirtyeight` R package. A larger goal of this problem set is to start practicing the "data analysis" workflow.
+
+* Download the following R scratchpad: <a href="static/PS/PS02_lastname_firstname.R" download>`PS02_lastname_firstname.R`</a> and rename it so that it matches your name. For example in my case: `PS02_Kim_Albert.R`.
+* "Upload" this file to RStudio Server by going to RStudio -> Files panel -> Upload.
+* Open `PS02_lastname_firstname.R` and follow the indicated steps. I *highly* recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.
+* When you are finished, check that your code is *reproducible and replicable*. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+    + Save your work and close `PS02_lastname_firstname.R`.
+    + Restart R: RStudio menu bar -> Session -> Restart R. This "reboots R" by deleting all previously saved data frames and shuts down all loaded packages.
+    + Go to the Files panel of RStudio and re-open `PS02_lastname_firstname.R`.
+    + Run all your code as described in [Lec4](#Lec04) and make sure that you can replicate the scatterplot.
+* **Submission**: ~~Download this file on to your compter by going to RStudio -> Files panel -> More -> Export.~~  (9/20 10am update: I just crossed out the outdated instructions assuming you were working on RStudio Server. Since we are now assuming RStudio Desktop, the `PS02_lastname_firstname.R` file should exist on your computer) Submit this`PS02_lastname_firstname.R`[Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+**Hints**:
+
+* Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.
+* While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders' and my goal in grading the problem sets is to identify both your **strengths and weaknesses** in preparation for the projects. Don't forget the lowest two problem set scores are dropped!
+
+
+## 3. R solutions & (imperfect) rubric {#PS02_R_solutions}
+
+<a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>
+
+**(Imperfect) rubric**:
+
+* 8/10 or lower: If something didn't work. Example: submitted a blank file or code doesn't run.
+* 9/10: If you did everything as asked. Example: Make a working plot using the correct variable `avg_hatecrimes_per_100k_fbi` on the y-axis. **Most students got 9/10**.
+* 10/10: The extra point was for doing something "extra" or "exceptional". Example: added labels to axes to plot or anything to make it more interpretable.
+* Each point is roughly worth 0.23% of final grade (this is not accounting for fact that lowest two problem set grades are dropped).
+
+
+
+***
+
+
+
+# Problem set 1 {#PS01}
+
+*Assigned Wednesday 9/12, due Wednesday 9/19 at 1pm Eastern Time*
+
+1. **DataCamp**
+    * Complete the following chapters from the "Introduction to R" course, which you should see in the following [link](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments){target="_blank"}:
+        * Chapter 1: "Intro to basics"
+        * Chapter 2: "Vectors"
+        * Chapter 4: "Factors"
+        * Chapter 5: "Data Frames"
+    * Expectations about DataCamp assignments have been posted in the [syllabus](syllabus.html#datacamp)
+1. **Administrative stuff**: To receive full credit for this portion simply ensure
+    * Slack:
+        1. Your full name is listed: full name = how you would like to be addressed in class & last name.  
+        1. You have added a profile picture with your face visible. This will help me learn your names.
+        1. Hint: Start relying on Google! "How do I change my name and profile picture on Slack?"
+        1. You are a member of the `#moderndive_typoes`, `#r_questions`, and `random` channels.
+    * DataCamp: Your full name is listed in your [profile](https://www.datacamp.com/profile/account_settings){target="_blank"}; the rest is optional.
+

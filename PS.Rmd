@@ -21,11 +21,12 @@ h1{font-weight: 400;}
 
 *Assigned Wednesday 10/10, due Wednesday 10/17 at 1pm Eastern Time*
 
+<!--
 ## 1. DataCamp
 
 * Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
     + Chapter 3: Modeling with Multiple Regression
-    + Chapter 4: Model Assessment and Selection
+    + Chapter 4: Model Assessment and Selection. Do not forget the conclusion video.
 * See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
 
 
@@ -43,15 +44,15 @@ h1{font-weight: 400;}
 ## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
 
 <!--
+**(Imperfect) rubric**:
+-->
+
+<!--
 <a href="static/PS/PS05_solutions.R" download>`PS05_solutions.R`</a>
 -->
 
 
-**(Imperfect) rubric**:
 
-<!--
-TODO
--->
 
 
 
@@ -97,10 +98,8 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 <a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
 -->
 
-**(Imperfect) rubric**:
-
 <!--
-TODO
+**(Imperfect) rubric**:
 -->
 
 
@@ -147,11 +146,8 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 
 <a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
 
-
-**(Imperfect) rubric**:
-
 <!--
-TODO
+**(Imperfect) rubric**:
 -->
 
 

@@ -24,7 +24,7 @@ h1{font-weight: 400;}
 
 * **Friday 11/2 5pm through Sunday 11/4 11:55pm**. 
 * Midterm II review on Monday 10/29.
-* Self-scheduled exam [instructors](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}. In particular:
+* Self-scheduled exam [instructions](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 

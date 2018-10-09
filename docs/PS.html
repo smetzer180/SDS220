@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Problem Sets</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SDS220</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://sds-mth-220-fall2018.slack.com/">
+    <span class="fa fa-slack fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://rstudio.smith.edu/auth-sign-in">
+    <span class="fa fa-registered"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://moderndive.github.io/moderndive_book/">ModernDive</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="PS.html">Problem Sets</a>
+</li>
+<li>
+  <a href="midterms.html">Midterms</a>
+</li>
+<li>
+  <a href="term_project.html">Term Project</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Problem Sets</h1>
+
+</div>
+
+
+<style>
+h1{font-weight: 400;}
+</style>
+<hr />
+<div id="PS05" class="section level1">
+<h1>Problem set 5</h1>
+<p><em>Assigned Wednesday 10/10, due Wednesday 10/17 at 1pm Eastern Time</em></p>
+<!--
+## 1. DataCamp
+
+* Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
+    + Chapter 3: Modeling with Multiple Regression
+    + Chapter 4: Model Assessment and Selection. Do not forget the conclusion video.
+* See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
+
+
+## 2. R component {#PS05_R}
+
+* Download the following Rmd template file: <a href="static/PS/PS05_lastname_firstname.Rmd" download>`PS05_lastname_firstname.Rmd`</a> and rename it appropriately.
+* R Markdown Knitting strategies:
+    + Knit the `PS05_lastname_firstname.Rmd` file once and read all the questions.
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experiences.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
+
+<!--
+**(Imperfect) rubric**:
+-->
+<!--
+<a href="static/PS/PS05_solutions.R" download>`PS05_solutions.R`</a>
+-->
+<hr />
+</div>
+<div id="PS04" class="section level1">
+<h1>Problem set 4</h1>
+<p><em>Assigned Wednesday 10/3, due Wednesday 10/10 at 1pm Eastern Time</em></p>
+<div id="datacamp" class="section level2">
+<h2>1. DataCamp</h2>
+<ul>
+<li>Complete the following two chapters from the “Modeling with Data in the Tidyverse” course, which you should see <a href="https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse" target="_blank">here</a>.
+<ul>
+<li>Chapter 1: Introduction to Modeling</li>
+<li>Chapter 2: Modeling with Basic Regression</li>
+</ul></li>
+<li>See the <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on DataCamp assignments.</li>
+</ul>
+</div>
+<div id="PS04_R" class="section level2">
+<h2>2. R component</h2>
+<p>You’ll be analyzing the results of the Africa survey experiment we did in Lecture 2 and data from the Titanic disaster.</p>
+<ul>
+<li>Download the following R scratchpad: <a href="static/PS/PS04_lastname_firstname.R" download><code>PS04_lastname_firstname.R</code></a> and rename it so that it matches your name. For example in my case: <code>PS04_Kim_Albert.R</code>. <strong>Note on 10/4</strong>: Question 2.b) originally read <code>b) Survival split by class</code>. It should read <code>b) Survival split by sex</code>. This has been updated in the <code>PS04_lastname_first.R</code> file.</li>
+<li>Open <code>PS04_lastname_firstname.R</code> and follow the indicated steps. I <em>highly</em> recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.</li>
+<li>When you are finished, check that your code is <em>reproducible and replicable</em>. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+<ul>
+<li>Save your work. The filename <code>PS04_lastname_firstname.R</code> should change from red to black.</li>
+<li>Close <code>PS04_lastname_firstname.R</code>.</li>
+<li>Restart R: RStudio menu bar -&gt; Session -&gt; Restart R. This “reboots R” by deleting all previously saved data frames and shuts down all loaded packages.</li>
+<li>Go to the Files panel of RStudio and re-open <code>PS04_lastname_firstname.R</code>.</li>
+<li>Re-run all your code to make sure that you can replicate all results.</li>
+</ul></li>
+<li><strong>Submission</strong>: Submit this on <a href="https://moodle.smith.edu/course/view.php?id=30498" target="_blank">Moodle</a>.</li>
+<li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
+</ul>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>Write out “pseudocode” of your data wrangling steps <strong>first</strong> and then start coding (See Tweet of the day for Lec12). This will help you from confusing <em>what</em> you are trying to do and <em>how</em> am I going to code it.</li>
+</ul>
+</div>
+<div id="PS04_R_solutions" class="section level2">
+<h2>3. R solutions &amp; (imperfect) rubric</h2>
+<!--
+<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
+-->
+<!--
+**(Imperfect) rubric**:
+-->
+<hr />
+</div>
+</div>
+<div id="PS03" class="section level1">
+<h1>Problem set 3</h1>
+<p><em>Assigned Wednesday 9/26, due Wednesday 10/3 at 1pm Eastern Time</em></p>
+<div id="datacamp-1" class="section level2">
+<h2>1. DataCamp</h2>
+<p>No DataCamp this week.</p>
+</div>
+<div id="PS03_R" class="section level2">
+<h2>2. R component</h2>
+<p>Read the following Chance Magazine article <a href="http://chance.amstat.org/2013/04/looking-good/" target="_blank">Looking Good on Course Evaluations</a> up to and including Table 1. In particular, note the introductory paragraph:</p>
+<blockquote>
+<p>At the end of each semester, students provide feedback on their courses via anonymous course evaluations. However, use of student evaluations as indicators of quality of the course and teaching effectiveness is often criticized since these measures may be reflecting biases in favor of nonteaching-related characteristics, such as the physical appearance of the instructor.</p>
+</blockquote>
+<p>You’ll be analyzing the same data used in this study. The data is in the <code>evals</code> data frame, which is included in the <code>moderndive</code> R package. A larger goal of this problem set is to start practicing answering questions with data visualizations</p>
+<ul>
+<li>Download the following R scratchpad: <a href="static/PS/PS03_lastname_firstname.R" download><code>PS03_lastname_firstname.R</code></a> and rename it so that it matches your name. For example in my case: <code>PS03_Kim_Albert.R</code>.</li>
+<li>Open <code>PS03_lastname_firstname.R</code> and follow the indicated steps. I <em>highly</em> recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.</li>
+<li>When you are finished, check that your code is <em>reproducible and replicable</em>. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+<ul>
+<li>Save your work. The filename <code>PS03_lastname_firstname.R</code> should change from red to black.</li>
+<li>Close <code>PS03_lastname_firstname.R</code>.</li>
+<li>Restart R: RStudio menu bar -&gt; Session -&gt; Restart R. This “reboots R” by deleting all previously saved data frames and shuts down all loaded packages.</li>
+<li>Go to the Files panel of RStudio and re-open <code>PS03_lastname_firstname.R</code>.</li>
+<li>Re-run all your code to make sure that you can replicate all images.</li>
+</ul></li>
+<li><strong>Submission</strong>: Submit this on <a href="https://moodle.smith.edu/course/view.php?id=30498" target="_blank">Moodle</a>.</li>
+<li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
+</ul>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>Everything you need to know for this problem set are based on Lectures 1-7 in particular the ModernDive readings.</li>
+<li>While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project.</li>
+</ul>
+</div>
+<div id="PS03_R_solutions" class="section level2">
+<h2>3. R solutions &amp; (imperfect) rubric</h2>
+<p><a href="static/PS/PS03_solutions.R" download><code>PS03_solutions.R</code></a></p>
+<!--
+**(Imperfect) rubric**:
+-->
+<hr />
+</div>
+</div>
+<div id="PS02" class="section level1">
+<h1>Problem set 2</h1>
+<p><em>Assigned Wednesday 9/19, due Wednesday 9/26 at 1pm Eastern Time</em></p>
+<div id="datacamp-2" class="section level2">
+<h2>1. DataCamp</h2>
+<ul>
+<li>Complete the “Introduction to the Tidyverse” course, which you should see <a href="https://www.datacamp.com/courses/introduction-to-the-tidyverse" target="_blank">here</a>.</li>
+<li>Note: DataCamp does things in a slightly order, data wrangling first then data visualization. ModernDive however does data visualization first in Chapter 3 then data wrangling in Chapter 5. Reading ModernDive Chapter 5 is not a pre-requisite for completing this problem set.</li>
+<li>See the <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on DataCamp assignments.</li>
+<li>If you have already completed the “Introduction to the Tidyverse” DataCamp course previously using a DataCamp account based on your Smith email, you do not need to re-do them; they will show up in my logs as completed.</li>
+</ul>
+</div>
+<div id="PS02_R" class="section level2">
+<h2>2. R component</h2>
+<p>Read the following 538 article <a href="https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-are-tied-to-income-inequality/" target="_blank">Higher Rates Of Hate Crimes Are Tied To Income Inequality</a>. You’ll be analyzing the same data used to write this article. The data is in the <code>hate_crimes</code> dataframe, which is included in the <code>fivethirtyeight</code> R package. A larger goal of this problem set is to start practicing the “data analysis” workflow.</p>
+<ul>
+<li>Download the following R scratchpad: <a href="static/PS/PS02_lastname_firstname.R" download><code>PS02_lastname_firstname.R</code></a> and rename it so that it matches your name. For example in my case: <code>PS02_Kim_Albert.R</code>.</li>
+<li>“Upload” this file to RStudio Server by going to RStudio -&gt; Files panel -&gt; Upload.</li>
+<li>Open <code>PS02_lastname_firstname.R</code> and follow the indicated steps. I <em>highly</em> recommend you copy and paste existing code from ModernDive and then tweak it to achieve your goal.</li>
+<li>When you are finished, check that your code is <em>reproducible and replicable</em>. Meaning if you were to send someone else this file and they ran the code, woult they get the same results as you?
+<ul>
+<li>Save your work and close <code>PS02_lastname_firstname.R</code>.</li>
+<li>Restart R: RStudio menu bar -&gt; Session -&gt; Restart R. This “reboots R” by deleting all previously saved data frames and shuts down all loaded packages.</li>
+<li>Go to the Files panel of RStudio and re-open <code>PS02_lastname_firstname.R</code>.</li>
+<li>Run all your code as described in <a href="#Lec04">Lec4</a> and make sure that you can replicate the scatterplot.</li>
+</ul></li>
+<li><strong>Submission</strong>: <del>Download this file on to your compter by going to RStudio -&gt; Files panel -&gt; More -&gt; Export.</del> (9/20 10am update: I just crossed out the outdated instructions assuming you were working on RStudio Server. Since we are now assuming RStudio Desktop, the <code>PS02_lastname_firstname.R</code> file should exist on your computer) Submit this<code>PS02_lastname_firstname.R</code><a href="https://moodle.smith.edu/course/view.php?id=30498" target="_blank">Moodle</a>.</li>
+<li>See <a href="syllabus.html#evaluation-expectations">syllabus</a> for expectations on R component submissions.</li>
+</ul>
+<p><strong>Hints</strong>:</p>
+<ul>
+<li>Everything you need to know for this problem set are based on Lectures 1-4, in particular the ModernDive readings.</li>
+<li>While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. Part of the graders’ and my goal in grading the problem sets is to identify both your <strong>strengths and weaknesses</strong> in preparation for the projects. Don’t forget the lowest two problem set scores are dropped!</li>
+</ul>
+</div>
+<div id="PS02_R_solutions" class="section level2">
+<h2>3. R solutions &amp; (imperfect) rubric</h2>
+<p><a href="static/PS/PS02_solutions.R" download><code>PS02_solutions.R</code></a></p>
+<p><strong>(Imperfect) rubric</strong>:</p>
+<ul>
+<li>8/10 or lower: If something didn’t work. Example: submitted a blank file or code doesn’t run.</li>
+<li>9/10: If you did everything as asked. Example: Make a working plot using the correct variable <code>avg_hatecrimes_per_100k_fbi</code> on the y-axis. <strong>Most students got 9/10</strong>.</li>
+<li>10/10: The extra point was for doing something “extra” or “exceptional”. Example: added labels to axes to plot or anything to make it more interpretable.</li>
+<li>Each point is roughly worth 0.23% of final grade (this is not accounting for fact that lowest two problem set grades are dropped).</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="PS01" class="section level1">
+<h1>Problem set 1</h1>
+<p><em>Assigned Wednesday 9/12, due Wednesday 9/19 at 1pm Eastern Time</em></p>
+<ol style="list-style-type: decimal">
+<li><strong>DataCamp</strong>
+<ul>
+<li>Complete the following chapters from the “Introduction to R” course, which you should see in the following <a href="https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics/assignments" target="_blank">link</a>:
+<ul>
+<li>Chapter 1: “Intro to basics”</li>
+<li>Chapter 2: “Vectors”</li>
+<li>Chapter 4: “Factors”</li>
+<li>Chapter 5: “Data Frames”</li>
+</ul></li>
+<li>Expectations about DataCamp assignments have been posted in the <a href="syllabus.html#datacamp">syllabus</a></li>
+</ul></li>
+<li><strong>Administrative stuff</strong>: To receive full credit for this portion simply ensure
+<ul>
+<li>Slack:
+<ol style="list-style-type: decimal">
+<li>Your full name is listed: full name = how you would like to be addressed in class &amp; last name.<br />
+</li>
+<li>You have added a profile picture with your face visible. This will help me learn your names.</li>
+<li>Hint: Start relying on Google! “How do I change my name and profile picture on Slack?”</li>
+<li>You are a member of the <code>#moderndive_typoes</code>, <code>#r_questions</code>, and <code>random</code> channels.</li>
+</ol></li>
+<li>DataCamp: Your full name is listed in your <a href="https://www.datacamp.com/profile/account_settings" target="_blank">profile</a>; the rest is optional.</li>
+</ul></li>
+</ol>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

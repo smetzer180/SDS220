@@ -62,11 +62,6 @@ h1{font-weight: 400;}
 ***
 
 
-
-# Lec 14: Wed 10/10 {#Lec14}
-
-## Announcements
-
 <!--
 * Problem sets:
     + Giving personalized feedback to 40 students over approximately 13 problem sets is difficult given that I only have one grader. **It is your responsibility to do a "self-evaluation" after solutions are posted.**
@@ -77,12 +72,25 @@ h1{font-weight: 400;}
 -->
 
 
+# Lec 14: Wed 10/10 {#Lec14}
+
+## Announcements
+
+* Extension on PS04 until 5pm.
+* Returned Midterm I
+* Go over `PS05.Rmd`
+
+
+
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
+Residual analysis.
 
 ### 2. In-class exercise
+
+Read ModernDive Chapter 6.1.4 and 6.3.3.
 
 
 ### 3. Tweet of the day

@@ -21,7 +21,6 @@ h1{font-weight: 400;}
 
 *Assigned Wednesday 10/10, due Wednesday 10/17 at 1pm Eastern Time*
 
-<!--
 ## 1. DataCamp
 
 * Complete the following two chapters from the "Modeling with Data in the Tidyverse" course, which you should see [here](https://www.datacamp.com/courses/modeling-with-data-in-the-tidyverse){target="_blank"}.
@@ -41,13 +40,12 @@ h1{font-weight: 400;}
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
 
 
+<!--
 ## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
 
-<!--
-**(Imperfect) rubric**:
--->
 
-<!--
+**(Imperfect) rubric**:
+
 <a href="static/PS/PS05_solutions.R" download>`PS05_solutions.R`</a>
 -->
 
@@ -92,13 +90,12 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 * Write out "pseudocode" of your data wrangling steps **first** and then start coding (See Tweet of the day for Lec12). This will help you from confusing *what* you are trying to do and *how* am I going to code it.
 
 
+<!--
 ## 3. R solutions & (imperfect) rubric {#PS04_R_solutions}
 
-<!--
-<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
--->
 
-<!--
+<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
+
 **(Imperfect) rubric**:
 -->
 
@@ -142,11 +139,12 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 * While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project.
 
 
+<!--
 ## 3. R solutions & (imperfect) rubric {#PS03_R_solutions}
 
 <a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
 
-<!--
+
 **(Imperfect) rubric**:
 -->
 

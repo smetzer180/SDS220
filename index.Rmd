@@ -80,7 +80,14 @@ h1{font-weight: 400;}
 <!--
 * Where is the final project, and hence the course, heading? Some past final project [examples](term_project.html#past_examples). 
 * Posted rubrics for each problem set.
-* Lecture next week.
+* XXX on Friday 10/19 (next week) as I will be away at the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/){target="_blank"} along with Prof. Miles Ott and five Smith students who will be presenting. 
+* Remember that the project proposal is due on Friday 10/19 at 5pm,  I leave for the conference on Wednesday at 3pm and won't be able to answer your questions, so plan accordingly. 
+* Reminder tonight is: 
+
+<center>
+![](static/images/Craigie_Poster_Wide.png){ width=800px }
+</center>
+<br>
 --> 
 
 

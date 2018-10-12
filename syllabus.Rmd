@@ -99,6 +99,7 @@ A rough topic schedule and corresponding readings are posted below and on the [m
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
 * Assigned/due on Wednesdays.
+* Two lowest scores dropped. 
 
 
 ## DataCamp Assignments 10% {#datacamp}

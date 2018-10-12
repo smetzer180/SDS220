@@ -77,31 +77,43 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-<!--
+* Posted (imperfect) grading rubrics underneath each Problem Set on [Problem Sets](PS.html) page:
+    + I only have one grader in this course who is an undergrad. Giving detailed feedback is hard; so I ask you to compare your solutions to the posted solutions and do a "self-evaluation." However, you will get lots of feedback at every stage of the project!
+    + I need a mechanism for rewarding students who do something "extra" or "exceptional." However this will always be only a small portion of grade. Think of "extra" or "exceptional" this way:
+        1. What is a checklist of criteria for a "great" calculus assignment?
+        1. What is a checklist of criteria for a "great" essay?
+        1. Guess what the term project for this course and hence also all the practice problem sets are more like? A calculus assignment or an essay?
+    + Going forward, however, I will post the (imperfect) grading rubric ahead of time. 
+    + Keep in mind the problem sets are worth 10% of final grade, and two lowest ones are dropped.
+* Added hints to PS05. 
 * Where is the final project, and hence the course, heading? Some past final project [examples](term_project.html#past_examples). 
-* Posted rubrics for each problem set.
-* XXX on Friday 10/19 (next week) as I will be away at the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/){target="_blank"} along with Prof. Miles Ott and five Smith students who will be presenting. 
-* Remember that the project proposal is due on Friday 10/19 at 5pm,  I leave for the conference on Wednesday at 3pm and won't be able to answer your questions, so plan accordingly. 
-* Reminder tonight is: 
+* Please only access ModernDive using the link on the course webpage. Because of webpage problems in the last few weeks, I've had to change where ModernDive was hosted (saved online).
+* Upcoming schedule, so plan accordingly:
+    + Tonite: Reminder of talk below.
+    + Wed 10/17: In-class time to work on projects. Right after lecture I leave for the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/conferenceinfo.cfm/){target="_blank"} along with Prof. Miles Ott and a group of Smithies who will be presenting. **I will be too busy to answer Slack questions until Sunday.**
+    + Thu 10/18 Lab Sec 05: Jenny will be conducting a `dplyr` review session.
+    + Fri 10/19: **No lecture! Project proposal due at 5pm!**.
+    + Tue 10/23 Lab Sec 06: Jenny will be conducting a `dplyr` review session.
 
 <center>
 ![](static/images/Craigie_Poster_Wide.png){ width=800px }
 </center>
 <br>
---> 
+
 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
-Residual analysis.
+* Refresher on `%>%` and data wrangling verbs (look at cheatsheet).
+* Residual analysis.
 
 ### 2. In-class exercise
 
 Read ModernDive Chapter 6.1.4 and 6.3.3.
 
-### 3. Tweet of the day
+
 
 
 

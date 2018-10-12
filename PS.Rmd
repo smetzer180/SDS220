@@ -50,11 +50,17 @@ h1{font-weight: 400;}
 
 ## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
 
-
 **(Imperfect) rubric**:
 
+Total 11 pts.
 
-
+* Question 1: 7 pts
+    + LC 6.1: 1 pt if each code block is correct
+    + LC 6.2: 1 pt if each code block is correct, 1 pt for each interpretation question
+* Question 2: 3 pts
+    + 2 pt for data wrangling
+    + 1 pt for solution
+* Something extra or exceptional: 1pt
 
 
 
@@ -101,7 +107,7 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 
 **(Imperfect) rubric**:
 
-
+Coming soon.
 
 
 ***
@@ -149,8 +155,8 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 **(Imperfect) rubric**:
 
 * 8/10 or lower: If any of the plots were off.
-* 9/10: If all 5 plots work.
-* 10/10: If all 5 plots work something "extra" or "exceptional". 
+* 9/10: If all 5 plots work. **Most students got 9/10**.
+* 10/10: If all 5 plots work something "extra" or "exceptional". For example, in Q2.c), someone did a comparison of the "story" that boxplots vs facetted histograms tell. 
 
 
 
@@ -227,4 +233,5 @@ Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income I
         1. Hint: Start relying on Google! "How do I change my name and profile picture on Slack?"
         1. You are a member of the `#moderndive_typoes`, `#r_questions`, and `random` channels.
     * DataCamp: Your full name is listed in your [profile](https://www.datacamp.com/profile/account_settings){target="_blank"}; the rest is optional.
+
 

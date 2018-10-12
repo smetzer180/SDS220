@@ -74,7 +74,6 @@ two variables.
 
 ```
 
-
 Based on these two outputs, comment on the relationship between teaching score
 and instructor age for these 463 instructors at the University of Texas Austin.
 Do this in three sentences or less below:
@@ -91,6 +90,7 @@ Do the following in the code block below:
 
 ```{r}
 # 1. Fit regression model:
+
 ```
 
 ```{r}

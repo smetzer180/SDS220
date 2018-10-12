@@ -234,6 +234,13 @@ You will be evaluated on the following criteria, which not only emphasizes the d
 
 
 
+## Example past projects {#past_examples}
+
+* [Sweet Home Alabama: Voter Support for Trump and Moore Across Racially-Divided Counties](http://rpubs.com/mbhandari20/374964){target="_blank"}
+* [The World of Dark Chocolate](http://rpubs.com/amemily/383723){target="_blank"}
+* [The Average Yards of an Above-Average Quarterback: Examining Tom Brady’s average yards and scoring](http://rpubs.com/cmacgillivray19/TB12draft1){target="_blank"}
+* [Instagram Followers](http://rpubs.com/dahanjosh/InitialSubmission){target="_blank"}
+
 
 ***
 

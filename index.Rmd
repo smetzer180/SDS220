@@ -80,6 +80,7 @@ h1{font-weight: 400;}
 <!--
 * Where is the final project, and hence the course, heading? Some past final project [examples](term_project.html#past_examples). 
 * Posted rubrics for each problem set.
+* Lecture next week.
 --> 
 
 

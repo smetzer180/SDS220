@@ -48,14 +48,11 @@ h1{font-weight: 400;}
 
 
 
-<!--
 ## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
 
 
 **(Imperfect) rubric**:
 
-<a href="static/PS/PS05_solutions.R" download>`PS05_solutions.R`</a>
--->
 
 
 
@@ -98,14 +95,12 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 * Write out "pseudocode" of your data wrangling steps **first** and then start coding (See Tweet of the day for Lec12). This will help you from confusing *what* you are trying to do and *how* am I going to code it.
 
 
-<!--
 ## 3. R solutions & (imperfect) rubric {#PS04_R_solutions}
-
 
 <a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
 
 **(Imperfect) rubric**:
--->
+
 
 
 

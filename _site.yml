@@ -18,7 +18,7 @@ navbar:
   - icon: fa-registered
     href: https://rstudio.smith.edu/auth-sign-in
   - text: ModernDive
-    href: https://moderndive.github.io/moderndive_book/
+    href: https://moderndive.netlify.com/
   right:
   - text: Problem Sets
     href: PS.html

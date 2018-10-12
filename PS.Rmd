@@ -38,8 +38,15 @@ h1{font-weight: 400;}
     + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experiences.
 * Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
-* **Hints**:
-    + Question 2 on Dunkin Donuts vs Starbucks: Data Wrangling
+* **Hints** on Question 2 on Dunkin Donuts vs Starbucks.
+    + You will need to use `dplyr` "Data Wrangling" verbs to both get the data ready for modeling and to address the "in units of \$10K = \$10,000" question. See the summary table of verbs in ModernDive Chapter 5.10 on Data Wrangling.
+    + This question is a tricky one, however it can be viewed as a "mini practice final project" as it combines many elements of the data/science pipeline to "tell a story with data."
+    
+<center>
+![](static/images/pipeline.png){ width=600px }
+<center>
+
+
 
 <!--
 ## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
@@ -140,14 +147,15 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 * While I encourage you collaborate/help each other out, please make an honest effort to do this problem set. This is practice for the final project.
 
 
-<!--
 ## 3. R solutions & (imperfect) rubric {#PS03_R_solutions}
 
 <a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
 
-
 **(Imperfect) rubric**:
--->
+
+* 8/10 or lower: If any of the plots were off.
+* 9/10: If all 5 plots work.
+* 10/10: If all 5 plots work something "extra" or "exceptional". 
 
 
 

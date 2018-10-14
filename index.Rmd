@@ -63,13 +63,55 @@ h1{font-weight: 400;}
 
 
 <!--
-* Problem sets:
-    + Giving personalized feedback to 40 students over approximately 13 problem sets is difficult given that I only have one grader. **It is your responsibility to do a "self-evaluation" after solutions are posted.**
-    + PS02 (imperfect) grading rubric [posted](PS.html#PS02_R_solutions).
-    + PS03 solutions and (imperfect) gradic rubric [posted](PS.html#PS03_R_solutions).
-    + PS04 (imperfect) grading rubric [posted](PS.html#PS04_R_solutions).
-    + Going forward (imperfect) grading rubric will be posted at the same time as problem set.
+
+# Lec 17: Wed 10/17 {#Lec17}
+
+## Announcements
+
+* **No lecture tomorrow!**
+* Along with PS06 (which is will be shorter than usual), I posted info on Quiz I on Wed 10/24. 
+    
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+### 2. In-class exercise
+
+### 3. Tweet of the day
+
+
+
+
+***
+
+
+
+# Lec 16: Mon 10/15 {#Lec16}
+
+## Announcements
+
+* 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+### 2. In-class exercise
+
+* Go over MD 6.1.4
+* MD 6.3.3 + 6.2
+
+
+### 3. Tweet of the day
+
+
+
+***
 -->
+
 
 
 
@@ -101,7 +143,6 @@ h1{font-weight: 400;}
 <br>
 
 
-
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
@@ -112,8 +153,6 @@ h1{font-weight: 400;}
 ### 2. In-class exercise
 
 Read ModernDive Chapter 6.1.4 and 6.3.3.
-
-
 
 
 

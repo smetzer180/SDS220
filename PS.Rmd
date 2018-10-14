@@ -16,6 +16,57 @@ h1{font-weight: 400;}
 ***
 
 
+<!--
+# Problem set 6 {#PS06}
+
+*Assigned Wednesday 10/17, due Wednesday 10/24 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+None.
+
+
+## 2. Quiz I
+
+<center>
+<img src="static/images/hang_the_dj.png" alt="Drawing" style="width: 400px;"/>
+</center>
+
+<br>
+
+* Watch Netflix -> Black Mirror -> Season 4 -> Episode 4 "Hang the DJ" (51 min). You will need access to Netflix:
+    + If you do not have access to Netflix and you have access to a credit card, you can get a free 1-month trial. Be sure to cancel your account after you watch the episode.
+    + If you do not have access to Netflix and you don't have access to a credit card, please Slack me. 
+* If you are uncomfortable watching sexually explicit scenes and would rather skip them, they occur at:
+    1. 15:10 - 16:32
+    1. 22:02 - 22:29
+    1. 24:46 - 24:53
+    1. 42:19 - 43:09
+* At the end of lecture on Wednesday 10/24 you will be given a 2 question, 5 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch all 51 minutes and pay attention.
+
+
+## 3. R component {#PS06_R}
+
+* Lighter load
+* Download the following Rmd template file: <a href="static/PS/PS06_lastname_firstname.Rmd" download>`PS06_lastname_firstname.Rmd`</a> and rename it appropriately.
+* R Markdown Knitting strategies:
+    + Knit the `PS06_lastname_firstname.Rmd` file once and read all the questions.
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experiences.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+## 4. R solutions & (imperfect) rubric {#PS06_R_solutions}
+
+**(Imperfect) rubric**:
+
+
+
+***
+-->
+
+
 
 # Problem set 5 {#PS05}
 
@@ -29,7 +80,7 @@ h1{font-weight: 400;}
 * See the [syllabus](syllabus.html#evaluation-expectations) for expectations on DataCamp assignments.
 
 
-## 2. R component {#PS05_R}
+## 2. R Markdown component {#PS05_R}
 
 * Download the following Rmd template file: <a href="static/PS/PS05_lastname_firstname.Rmd" download>`PS05_lastname_firstname.Rmd`</a> and rename it appropriately.
 * R Markdown Knitting strategies:
@@ -48,7 +99,7 @@ h1{font-weight: 400;}
 
 
 
-## 3. R solutions & (imperfect) rubric {#PS05_R_solutions}
+## 3. R Markdown solutions & (imperfect) rubric {#PS05_R_solutions}
 
 **(Imperfect) rubric**:
 
@@ -61,7 +112,6 @@ Total 11 pts.
     + 2 pt for data wrangling
     + 1 pt for solution
 * Something extra or exceptional: 1pt
-
 
 
 
@@ -107,7 +157,12 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 
 **(Imperfect) rubric**:
 
-Coming soon.
+Total 10 pts.
+
+* Question 1: 6 pts
+* Question 2: 3 pts
+* Something extra or exceptional: 1pt
+
 
 
 ***

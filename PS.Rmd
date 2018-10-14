@@ -113,6 +113,10 @@ Total 11 pts.
     + 1 pt for solution
 * Something extra or exceptional: 1pt
 
+<!--
+* Link to all code
+[http://bit.ly/modeling_tidyverse](http://bit.ly/modeling_tidyverse){target="_blank"}
+-->
 
 
 ***

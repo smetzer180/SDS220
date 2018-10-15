@@ -145,16 +145,24 @@ don't know what your voice sounds like.
 
 ## Expectations {#evaluation-expectations}
 
-In particular for R components of problem sets:
+## R components of problem sets
 
 1. **Collaboration**: While I encourage you to work with your peers for problem
 sets and labs, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged
 in your submissions.
 1. **Honor Code**: All your work must follow the [Smith College Academic Honor
-Code
-Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
+Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
 in particular all external sources must be cited in your submissions.
+
+## Written components of problem sets
+
+On top of the above notes on **collaboration** and the **honor code**:
+
+1. All problem sets must be handed in at the start of lecture; no extensions will be granted without a dean's note. 
+1. No emailed submissions will be accepted. If you can't make it to class, then ask a classmate to turn it in for you.
+1. All submissions must be stapled with the fringe/perf from any spiral notebook paper removed. 
+1. You must show all your work and explain your reasoning in your solutions. 
 
 
 

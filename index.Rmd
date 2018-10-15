@@ -63,14 +63,22 @@ h1{font-weight: 400;}
 
 
 <!--
+# Lab: Thu 10/18 + Tue 10/23
+
+Materials for Jenny's lab on Data Wrangling are in this [zip file](static/data_wrangling_lab.zip). 
+
+
+
+***
+
 
 # Lec 17: Wed 10/17 {#Lec17}
 
 ## Announcements
 
-* **No lecture tomorrow!**
-* Along with PS06 (which is will be shorter than usual), I posted info on Quiz I on Wed 10/24. 
-    
+* PS06 posted
+* **No lecture on Friday!**
+
 
 
 ## Today's Topics/Activities
@@ -83,9 +91,8 @@ h1{font-weight: 400;}
 
 
 
-
 ***
-
+-->
 
 
 # Lec 16: Mon 10/15 {#Lec16}
@@ -105,13 +112,10 @@ h1{font-weight: 400;}
 * MD 6.3.3 + 6.2
 
 
-### 3. Tweet of the day
 
 
 
 ***
--->
-
 
 
 

@@ -99,17 +99,18 @@ Materials for Jenny's lab on Data Wrangling are in this [zip file](static/data_w
 
 ## Announcements
 
-* 
-
 
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
+* Least squares line
+* Regression with a categorical explanatory variable
+
 ### 2. In-class exercise
 
-* Go over MD 6.1.4
-* MD 6.3.3 + 6.2
+* MD 6.3.3
+* MD 6.2
 
 
 

@@ -1,0 +1,123 @@
+
+---
+title: "dplyr Data Wrangling Review"
+author: "author"
+date: "date"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk!
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, 
+  fig.height = 9/2
+)
+```
+
+
+```{r}
+# Load necessary packages
+library(ggplot2)
+library(dplyr)
+```
+
+
+### The data
+These data are about the housing market in Texas from the years 2000-2015. Be sure to take a look at the variable descriptions using the ? command and take a View() of the data. 
+
+```{r}
+# Load and look at the data 
+data(txhousing)
+glimpse(txhousing)
+```
+
+
+# Question 1: 
+Create a new data frame that does not include the date and inventory variables. We do not need them.  
+
+```{r}
+
+```
+
+
+# Question 2: 
+In January of 2015, what city had the fewest houses listed for sale? 
+
+
+```{r eval = F}
+
+```
+
+
+# Question 3: 
+A. In 2012, was the total value of sales the largest in the same month in which the most houses sold?
+
+
+```{r eval = F}
+
+```
+
+```{r eval = F}
+
+```
+
+B. What could you do to take a look at all the rows in these data that had NA values (missing data) for volume?
+
+```{r eval = F}
+
+```
+
+
+# Question 4:
+Generate a single table that shows the total number of houses sold in Austin and Dallas, in 2013 - 2015. This calculation requires a number of steps, so I suggest you write out **pseudocode**, or roughly written code that sets out a "blueprint" of your chain. 
+
+```{r}
+
+```
+
+
+## Question 5: 
+Add a new column to the data that expresses the volume variable in units of $100000. 
+```{r}
+
+```
+
+
+## Question 6: 
+A. Make a table that shows the mean percentage of listings that were sold in Dallas in 2015 in each month of the year. 
+
+```{r}
+
+```
+
+B. Extra: Run this little code snip, and study what it does. Can you add the round function to your call above to show the mean percentag of listings with only 2 decimal places?
+
+```{r}
+x<- c(0.1234, 0.4795, 0.49736)
+round(x, 2)
+```
+
+
+# Question 7: 
+What does this code do? A short answer will suffice. 
+```{r eval = F}
+txhousing %>% 
+  arrange(city)
+```
+
+
+# Question 8: 
+What does this code do? A short answer will suffice. If the answer is unclear, try changing the city variable to month, or year. 
+```{r eval = F}
+txhousing %>% 
+  distinct(city)
+```
+

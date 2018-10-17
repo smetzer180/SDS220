@@ -65,7 +65,11 @@ h1{font-weight: 400;}
 
 # Lab: Thu 10/18 + Tue 10/23
 
-Materials for Jenny's lab on Data Wrangling are in this [zip file](static/data_wrangling_lab.zip). 
+Materials for Jenny's lab on Data Wrangling are here:
+
+* <a href="static/data_wrangling_lab/verbs_2.pdf" download>PDF slides</a>
+* <a href="static/data_wrangling_lab/dplyr_review_firstname_lastname.Rmd" download>`dplyr_review_firstname_lastname.Rmd`</a>
+
 
 
 

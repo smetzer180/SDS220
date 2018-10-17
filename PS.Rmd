@@ -119,6 +119,8 @@ None.
 
 ## 3. R Markdown solutions & (imperfect) rubric {#PS05_R_solutions}
 
+<a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a>
+
 **(Imperfect) rubric**:
 
 Total 11 pts.

@@ -81,7 +81,10 @@ Materials for Jenny's lab on Data Wrangling are here:
 
 ## Announcements
 
-* **No lecture on Friday!** Follow what me, Prof. Miles Ott, and Smithies have been up to at the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/){target="_blank"} on Twitter at [\@smithcollegesds](https://twitter.com/smithcollegesds){target="_blank"}.
+* **No lecture on Friday!**
+* Follow what's going on at the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/){target="_blank"} on Twitter at:
+    + [\@smithcollegesds](https://twitter.com/smithcollegesds){target="_blank"}
+    + [\@rudeboybert](https://twitter.com/rudeboybert){target="_blank"}
 * PS06 posted.
 * Lab materials for Thu 10/18 (tomorrow) and Tue 10/23 are posted above.
 * In-class time to work on projects.

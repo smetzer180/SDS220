@@ -1,0 +1,124 @@
+
+---
+title: "Problem Set 06"
+author: "WRITE YOUR NAME HERE"
+date: "WRITE DATE HERE"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+    df_print: kable
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk!
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, 
+  fig.height = 9/2
+)
+
+# Load necessary packages
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+```
+
+
+# Collaboration
+
+Please indicate who you collaborated with on this problem set: 
+
+
+
+# Question 1: Residual analysis
+
+Recall from PS05 you used the `evals` dataset with 
+
+* Outcome variable y = teaching score
+* Explanatory variable x = age
+
+In particular you did an "exploratory data analysis (EDA)" to get a qualitative sense of the relationship of teaching score and age. You did this using both a visualization and summary statistics. You then  "fit" a regression model and saved it in `score_model_age`:
+
+```{r}
+# 1. Fit regression model:
+score_model_age <- lm(score ~ age, data = evals)
+```
+
+You then output the regression table, which is an explicit numerical quantification of the relationship between score and age. It contains, in particular, the values of the fitted intercept and slope in the `estimate` column:
+
+```{r}
+# 2. Output regression table:
+get_regression_table(score_model_age)
+```
+
+Now you will do a *residual analysis*. Recall the following. In our case
+
+* A residual is the discrepancy between an observed teaching score $y$ and a predicted/fitted teaching score $\hat{y}$ on the regression line. 
+* Residuals are "left over variation that the regression model does not explain" and can be thought of as "errors".
+* Residual analysis allows us to study any patterns in these "errors" and let's us evaluate how "good" a regression model fits a set of points.
+* Furthermore, we'll see in ModernDive Chapter 11 that an assumption for "statistical inference for regression" to be valid is that the residuals are "normally distributed and centered at 0."
+* There are two methods of doing a visual residual analysis:
+    1. Plotting the relationship of the residuals vs all explanatory variables. In this case, there is only one explanatory variable: `age`.
+    1. Plotting a histogram of the residuals to see their overall *distribution*.
+
+
+## a) Look at all fitted values and residuals
+
+First, let's compute all 463 fitted values $\hat{y} = \hat{score}$ and residuals. In the following code block:
+
+1. Apply the appropriate function to the saved model `score_model_age` to obtain a table that contains the predicted scores (score_hat) and the residuals and save this table as `regression_points`.
+1. Then apply the `head()` function to `regression_points` to print the first 6 rows.
+
+**Solution**:
+
+```{r}
+
+```
+
+## b) How are the fitted/predicted values and residuals computed?
+
+For the first row of values, how are `score_hat` and `residuals` computed?  Meaning, what is the mathematical operation? (i.e. write out a general equation for calculating each) Note there might be some differences due to rounding error. 
+
+**Solution**:
+
+* `score_hat` = 
+* `residual` = 
+
+
+## c) Method 1: Scatterplot of residuals over age
+
+The first method for residual analysis is creating a scatterplot with the residuals on the y axis and the explanatory variable `age` on the x axis. Use the `regression_points` data frame we created earlier to create a scatterplot:
+
+```{r}
+# Scatterplot:
+
+```
+
+## d) Qualitative description of any patterns
+
+Qualitatively describe any salient features of the scatterplot above. For example, are the residuals evenly spread? Are they spread out generally the same at low and high values of age? Are there any extreme values?
+
+**Solution**:
+
+
+
+
+## e) Method 2: Histogram of residuals
+
+The second method for residual analysis is creating a histogram of the residuals to study their distribution. Use the `regression_points` data frame we created earlier to create a histogram. Use a binwidth of ~ 0.25:
+
+```{r}
+
+```
+
+
+## f) Qualitative description of any patterns
+
+Qualitatively describe any salient features of the distribution in histogram above. For example, what is the center, shape, spread, symmetry?
+
+**Solution**:
+

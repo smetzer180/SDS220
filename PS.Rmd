@@ -37,7 +37,7 @@ h1{font-weight: 400;}
 
 
 
-<!--# Problem set 6 {#PS06}
+# Problem set 6 {#PS06}
 
 *Assigned Wednesday 10/17, due Wednesday 10/24 at 1pm Eastern Time*
 
@@ -85,7 +85,6 @@ None.
 ***
 
 
--->
 
 # Problem set 5 {#PS05}
 

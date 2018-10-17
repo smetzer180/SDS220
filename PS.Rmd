@@ -49,7 +49,7 @@ None.
 
 * Before starting PS06:
     + Read ModernDive 6.1.4
-    + Download, knit, and read the `PS05_solutions.Rmd` solutions. 
+    + Download, knit, and read the `PS05_solutions.Rmd` solutions posted below under PS05. 
 * Download the following <a href="static/PS/PS06_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
 * R Markdown Knitting strategies:
     + Knit the `PS06_lastname_firstname.Rmd` file once and read all the questions.
@@ -119,7 +119,8 @@ None.
 
 ## 3. R Markdown solutions & (imperfect) rubric {#PS05_R_solutions}
 
-<a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a>
+* Download <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a>.
+* Link to all code from "Working with Data in the tidyverse" DataCamp course can be found at [http://bit.ly/modeling_tidyverse](http://bit.ly/modeling_tidyverse){target="_blank"}
 
 **(Imperfect) rubric**:
 
@@ -133,10 +134,6 @@ Total 11 pts.
     + 1 pt for solution
 * Something extra or exceptional: 1pt
 
-<!--
-* Link to all code
-[http://bit.ly/modeling_tidyverse](http://bit.ly/modeling_tidyverse){target="_blank"}
--->
 
 
 ***
@@ -177,7 +174,9 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 
 ## 3. R solutions & (imperfect) rubric {#PS04_R_solutions}
 
-<a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>
+<!--
+Download <a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>.
+-->
 
 **(Imperfect) rubric**:
 
@@ -229,7 +228,7 @@ You'll be analyzing the same data used in this study. The data is in the `evals`
 
 ## 3. R solutions & (imperfect) rubric {#PS03_R_solutions}
 
-<a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>
+Download <a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>.
 
 **(Imperfect) rubric**:
 
@@ -279,7 +278,7 @@ Read the following 538 article [Higher Rates Of Hate Crimes Are Tied To Income I
 
 ## 3. R solutions & (imperfect) rubric {#PS02_R_solutions}
 
-<a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>
+Download <a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>.
 
 **(Imperfect) rubric**:
 

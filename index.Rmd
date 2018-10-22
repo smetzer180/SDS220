@@ -62,6 +62,25 @@ h1{font-weight: 400;}
 ***
 
 
+# Lec 18: Mon 10/22 {#Lec18}
+
+## Announcements
+
+* Lesley talk
+* presentation of major tomorrow
+* office hours tomorrow
+
+Explain what Whole Foods is.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A thread on <a href="https://twitter.com/WholeFoods?ref_src=twsrc%5Etfw">@WholeFoods</a> and elections: <a href="https://twitter.com/Redistrict?ref_src=twsrc%5Etfw">@Redistrict</a> recently wrote that Dems will perform the best in areas that are geographically close to Whole Foods (WF). I decided to map/calculate the # of Whole Foods by congressional district to test his theory on WF and elections (1/9) <a href="https://t.co/9fw6qTjOZZ">pic.twitter.com/9fw6qTjOZZ</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044407912194049?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
+
+
+
 
 # Lab: Thu 10/18 + Tue 10/23
 

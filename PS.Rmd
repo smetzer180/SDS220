@@ -36,6 +36,55 @@ h1{font-weight: 400;}
 ***
 
 
+# Problem set 6 {#PS07}
+
+*Assigned Wednesday 10/24, due Wednesday 10/31 at 1pm Eastern Time*
+
+## 1. DataCamp
+
+None.
+
+## 2. R component {#PS07_R}
+
+* Before starting PS07:
+    + Read ModernDive 6.1.4
+    + Download, knit, and read the `PS05_solutions.Rmd` solutions posted below under PS05. 
+* Download the following <a href="static/PS/PS06_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
+* R Markdown Knitting strategies:
+    + Knit the `PS06_lastname_firstname.Rmd` file once and read all the questions.
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+
+
+## 3. Written component
+
+* In [OpenIntro: Intro Stat with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs){target="_blank"} (click on Tablet-friendly PDF):
+    + Look at the plot in Exercise 5.11 on the Coast Starlight on book page 248 (which is on the page number 254 of the PDF).
+    + Do the following portions of Exercise 5.19 on book page 252 (which is on page number 258 of the PDF):
+        a) Skip this. The slope of the regression line is 0.726 whereas the intercept is 51.
+        a) Do this.
+        a) Skip this.
+        a) Do this.
+        a) Do this.
+        a) Do this.
+* **New**: See [syllabus](syllabus.html#evaluation-expectations) for expectations on written component submissions.
+
+
+## 4. R solutions & (imperfect) rubric {#PS07_R_solutions}
+
+**(Imperfect) rubric**: A more straightforward problem set with little to no "story" to tell nor subjectivity. 
+
+* Rmd component: 1 + 2 + 1 + 1 + 1 + 1 = 7 pts. 
+* Written component: 2 + 1 + 2 + 1 = 6 pts
+
+
+
+***
+
+
+
 
 # Problem set 6 {#PS06}
 

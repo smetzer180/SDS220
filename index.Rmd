@@ -58,6 +58,12 @@ h1{font-weight: 400;}
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
 
+<!--
+Explain what Whole Foods is.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A thread on <a href="https://twitter.com/WholeFoods?ref_src=twsrc%5Etfw">@WholeFoods</a> and elections: <a href="https://twitter.com/Redistrict?ref_src=twsrc%5Etfw">@Redistrict</a> recently wrote that Dems will perform the best in areas that are geographically close to Whole Foods (WF). I decided to map/calculate the # of Whole Foods by congressional district to test his theory on WF and elections (1/9) <a href="https://t.co/9fw6qTjOZZ">pic.twitter.com/9fw6qTjOZZ</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044407912194049?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
 
 ***
 
@@ -66,15 +72,58 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-* Lesley talk
-* presentation of major tomorrow
-* office hours tomorrow
+* Office hours this week:
+    + Mon 10/22: 3-3:50pm and 5:10-6pm
+    + Tue 10/23: 3-4:30pm
+* My time at the 2018 Women in Statistics and Data Science conference. See tweets below!
+* **Today**: For those of you with a chemistry/biochemistry slant to your studies, my good friend from Middlebury College, Prof. Lesley-Ann Giddings (Smith Class of '05) will be giving a seminar today ["Engineering Novel N5-Hydroxylases to Access Bioactive"](static/giddings_talk.pdf){target="_blank"} from 4-5pm in Ford Hall 240.
+* **Tomorrow**: Interested in [majoring in SDS](https://www.smith.edu/statistics/major.php){target="_blank"}? Presentation of the major on Tue 10/23 from 12:15-1:05pm in Ford Hall Atrium.
 
-Explain what Whole Foods is.
+<center>
+![](static/images/SDS_major.png){ width=500px }
+</center>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A thread on <a href="https://twitter.com/WholeFoods?ref_src=twsrc%5Etfw">@WholeFoods</a> and elections: <a href="https://twitter.com/Redistrict?ref_src=twsrc%5Etfw">@Redistrict</a> recently wrote that Dems will perform the best in areas that are geographically close to Whole Foods (WF). I decided to map/calculate the # of Whole Foods by congressional district to test his theory on WF and elections (1/9) <a href="https://t.co/9fw6qTjOZZ">pic.twitter.com/9fw6qTjOZZ</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044407912194049?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Finishing regression with one categorical explanatory/predictor variable
+* Starting regression with **two** numerical explanatory/predictor variables
+
+### 2. In-class exercise
+
+* MD 6.2.3 - 6.2.4: Finishing regression with one categorical explanatory/predictor variable
+* MD 7.1.1: Exploratory data analysis of two numerical explanatory/predictor variable:
+    + [3D scatterplot](https://beta.rstudioconnect.com/connect/#/apps/3214/){target="_blank"}
+    + Code to create above scatterplot [here](https://gist.github.com/rudeboybert/9905f44013c18d6add279cf13ab8e398){target="_blank"}
+
+
+### 3. Tweets of the day: Posters!!!
+
+Ok folks, we're doing **posters** for the your final presentation
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> morning poster session in a posh setting: the <a href="https://twitter.com/netherlandplaza?ref_src=twsrc%5Etfw">@netherlandplaza</a> Hall of Mirrors! <a href="https://t.co/PH7BdfzHKX">pic.twitter.com/PH7BdfzHKX</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1053632304281804800?ref_src=twsrc%5Etfw">October 20, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> ugrad <a href="https://twitter.com/nat_laboss?ref_src=twsrc%5Etfw">@nat_laboss</a> explaining the components of her structural equation model of mental health to an extra receptive audience <a href="https://t.co/AKxqtLFhmw">pic.twitter.com/AKxqtLFhmw</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1053615346240966657?ref_src=twsrc%5Etfw">October 20, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is what rocking a poster session looks like <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://twitter.com/hashtag/wsds2018?src=hash&amp;ref_src=twsrc%5Etfw">#wsds2018</a> <a href="https://t.co/A4QxJ8lwkM">pic.twitter.com/A4QxJ8lwkM</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1053076439577309184?ref_src=twsrc%5Etfw">October 19, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Flashback Friday to yesterday when these three <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a>  students presented their research that started as a project in Prof. <a href="https://twitter.com/bencapistrant?ref_src=twsrc%5Etfw">@bencapistrant</a> ‘s Population Health SDS course last spring. <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/AEikQ6N3JT">pic.twitter.com/AEikQ6N3JT</a></p>&mdash; Miles Ott 🏳️
+🌈 (@Miles_Ott) <a href="https://twitter.com/Miles_Ott/status/1053332331174522880?ref_src=twsrc%5Etfw">October 19, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+### 4. More tweets!!! More Smith SDS!!!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Smith College SDS student Emily Daubenspeck presenting joint work with Smithies  <a href="https://twitter.com/CrystalZangZZ?ref_src=twsrc%5Etfw">@CrystalZangZZ</a> and Caterina Baffa on cognitive decline of veterans using BRFSS data <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> students are rocking <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wc8umbmkdM">pic.twitter.com/wc8umbmkdM</a></p>&mdash; Miles Ott 🏳️
+🌈 (@Miles_Ott) <a href="https://twitter.com/Miles_Ott/status/1053000378223091717?ref_src=twsrc%5Etfw">October 18, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw">@smithcollege</a> is in the building! If you see us, say hi! <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://t.co/yvwsD5z0JQ">pic.twitter.com/yvwsD5z0JQ</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1052957495407329281?ref_src=twsrc%5Etfw">October 18, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ***

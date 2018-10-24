@@ -40,21 +40,31 @@ h1{font-weight: 400;}
 
 *Assigned Wednesday 10/24, due Wednesday 10/31 at 1pm Eastern Time*
 
-## 1. DataCamp
+No DataCamp nor written component.
 
-None.
+## 1. R component {#PS07_R}
 
-## 2. R component {#PS07_R}
+* Before starting PS07:
+    + Re-read the `PS02_solutions.R` solutions posted below under PS02. 
+* Download the following <a href="static/PS/PS07_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
+* R Markdown Knitting strategies:
+    + Knit the `PS07_lastname_firstname.Rmd` file once and read all the questions.
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
 
 
+## 2. R solutions & (imperfect) rubric {#PS07_R_solutions}
 
-## 3. Written component
+**(Imperfect) rubric**: 
 
+22 pts total
 
+* Question 1: 12 pts = 2 + 7 + 3
+* Question 2: 9 pts = 1 + 1 + 2 + 3 + 2
+* Something extra or exceptional: 1 pt
 
-## 4. R solutions & (imperfect) rubric {#PS07_R_solutions}
-
-**(Imperfect) rubric**: A more straightforward problem set with little to no "story" to tell nor subjectivity. 
 
 
 ***

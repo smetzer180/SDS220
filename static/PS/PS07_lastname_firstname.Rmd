@@ -33,6 +33,7 @@ Inequality"](https://fivethirtyeight.com/features/higher-rates-of-hate-crimes-ar
 We will use these data in this Problem Set to run regression models with a single categorical predictor (explanatory) variable. 
 
 ## Setup
+
 First load the necessary packages 
 
 ```{r}
@@ -123,6 +124,7 @@ For this exercise, we will model the relationship between
 Using the tools and code examples from above, complete the following tasks:
 
 ## a) data manipulation
+
 1. Make a new **categorical** variable called `unemployment` that has **two** levels, "low" and "high" based on the variable `share_unemp_seas`. 
 
 ```{r}
@@ -130,6 +132,7 @@ Using the tools and code examples from above, complete the following tasks:
 ```
 
 ## b) visual data exploration 
+
 Create a visual model of this data (a graph) that will allow you to conduct an "eyeball test" of the relationship between hate crimes per 100K and unemployment level. Include appropriate axes labels and a title.
 
 ```{r}
@@ -137,6 +140,7 @@ Create a visual model of this data (a graph) that will allow you to conduct an "
 ```
 
 ## c) running the model
+
 Now run a model that examines the relationship between hate crime rates and the unemployment level. Generate a regression table.
 
 ```{r}
@@ -165,8 +169,4 @@ Use the `get_regression_points` function to generate a table showing the predict
 
 Answer the question here: 
 
-
-# Question 3: Extra credit 
-
-What is the regression equation for your unemployment model??????
 

@@ -67,6 +67,40 @@ Explain what Whole Foods is.
 
 ***
 
+# Lec 19: Wed 10/25 {#Lec19}
+
+## Announcements
+
+* `r emo::ji("fire")`**SDS Major Flowchart** `r emo::ji("fire")`: All courses highlighted in red in the flowchart below will be offered in Spring 2019, along with the following core 5 courses (left-most grey block in flowchart):
+    1. SDS 201/220: Intro Stats
+    1. SDS/MTH 291: Multiple Regression
+    1. CSC 111: Intro Programming (in Python)
+    1. SDS 192: Intro to Data Science
+    1. MTH 211: Linear Algebra
+* **Course descriptions**: Check out Smith Course Search for [SDS courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Statistical+and+Data+Sciences&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-FjEA1i8POuiCUrY4KeFdU3um3UTFlX78jICWJ25ggGU&form_id=campus_course_search_basic_search_form){target="_blank"}, [CSC courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Computer+Science&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-wroGqwD8PoEpDGC6bbuWoTDEXmsGKhg_QI-YQHuT_Ug&form_id=campus_course_search_basic_search_form){target="_blank"}, and [MTH courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Mathematics+%26+Statistics&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-LetzAvSraLo4Xpnsuc0eCv32W_Y_V4Uadf0oauMwViU&form_id=campus_course_search_basic_search_form){target="_blank"}.
+    
+
+<center>
+![](static/images/flowchart.png){ width=600px }
+</center>
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
+
+
+
+***
+
+
+
+
 
 # Lec 18: Mon 10/22 {#Lec18}
 

@@ -58,8 +58,7 @@ We will next add a new column to this data set that expresses the Share of 2016 
 
 ```{r}
 hate_crimes <- hate_crimes %>% 
-  mutate(trump_support = cut_number(share_vote_trump, 3, 
-                              labels = c("low", "medium", "high")))
+  mutate(trump_support = cut_number(share_vote_trump, 3, labels = c("low", "medium", "high")))
 ```
 
 The `cut_numbers` function used in the code above sorts the `share_trump_vote` variable from lowest to highest,  cuts it into three groups of roughly 17 states each (51/3). It categorizes all the lowest values as "low", the middle 17 values as "medium", and the top 17 values as "high". We have created a categorical variable! 

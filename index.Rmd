@@ -67,7 +67,33 @@ Explain what Whole Foods is.
 
 ***
 
-# Lec 19: Wed 10/25 {#Lec19}
+# Lec 20: Fri 10/26 {#Lec20}
+
+## Announcements
+
+* From [Smithies in SDS](https://www.facebook.com/SmithiesInSDS/){target="_blank"}. Entirely student-run data science day! Saturday, November 3rd 10am-2pm!
+
+<center>
+![](static/images/DSD_SLIDE.png){ width=600px }
+</center>
+<br>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+
+### 2. In-class exercise
+
+
+
+
+***
+
+
+
+# Lec 19: Wed 10/24 {#Lec19}
 
 ## Announcements
 

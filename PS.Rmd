@@ -50,6 +50,8 @@ None.
 
 ## 3. Written component
 
+
+
 ## 4. R solutions & (imperfect) rubric {#PS07_R_solutions}
 
 **(Imperfect) rubric**: A more straightforward problem set with little to no "story" to tell nor subjectivity. 
@@ -97,6 +99,11 @@ None.
 
 
 ## 4. R solutions & (imperfect) rubric {#PS06_R_solutions}
+
+* <a href="static/PS/PS06_solutions.Rmd" download>`PS06_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS06_solutions.html`](static/PS/PS06_solutions.html){target="_blank"} output.
+* [Written solutions](static/PS/PS06_solutions.png){target="_blank"}
+
 
 **(Imperfect) rubric**: A more straightforward problem set with little to no "story" to tell nor subjectivity. 
 

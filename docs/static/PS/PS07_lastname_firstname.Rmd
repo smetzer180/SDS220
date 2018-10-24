@@ -2,7 +2,7 @@
 ---
 title: "Problem Set 07"
 author: "WRITE YOUR NAME HERE"
-date: "2018-10-##"
+date: "2018-10-31"
 output:
   html_document:
     highlight: tango
@@ -105,10 +105,6 @@ For these questions, showing your work is optional; solve it any way you choose.
 1. Which 5 states had the highest rate of hate crimes? Describe levels of Trump support in these 5 states.
 1. Which 5 states had the lowest rate of hate crimes? Describe levels of Trump support in these 5 states.
 1. Do these results surprise you? There is no right answer to this question
-
-```{r}
-
-```
 
 Write your answers here (if possible in an enumerated list just like above): 
 

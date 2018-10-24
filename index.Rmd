@@ -89,9 +89,13 @@ Explain what Whole Foods is.
 
 ### 1. Chalk Talk
 
+Piggy-backing off of last lecture's ModernDive 7.1.1 "Exploratory Data Analysis", fitting and interpreting multiple regression models!
+
 
 ### 2. In-class exercise
 
+* ModernDive 7.1.2: Multiple regression
+* ModernDive 7.1.3 & 7.1.4: Fitted/observed values and residuals. Very short. The idea is identical as for basic regression!
 
 
 

@@ -1,0 +1,148 @@
+
+---
+title: "dplyr Data Wrangling Solutions"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    df_print: kable
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk!
+knitr::opts_chunk$set(
+  echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, 
+  fig.height = 9/2
+)
+```
+
+
+```{r}
+# Load necessary packages
+library(ggplot2)
+library(dplyr)
+```
+
+
+### The data
+These data are about the housing market in Texas from the years 2000-2015. Be sure to take a look at the variable descriptions using the ? command and take a View() of the data. 
+
+```{r}
+# Load and look at the data 
+data(txhousing)
+glimpse(txhousing)
+```
+
+
+# Question 1: 
+Create a new data frame that does not include the date and inventory variables. We do not need them.  
+
+```{r}
+txhousing <- txhousing %>% 
+  select(-c(date,inventory))
+
+#OR 
+
+#txhousing <- txhousing %>% 
+#  select(-date,-inventory))
+```
+
+
+# Question 2: 
+In January of 2015, what city had the fewest houses listed for sale? 
+**San Marcos**
+
+```{r eval = F}
+txhousing %>% 
+  filter(year == 2015, month == 1) %>%
+  arrange(listings)
+```
+
+
+# Question 3: 
+A. In 2012, was the total value of sales the largest in the same month in which the most houses sold?
+
+**No, the most houses were sold in August, but the most $ was made in June**
+
+```{r eval = F}
+txhousing %>% 
+  filter(year == 2012) %>%
+  group_by(month) %>%
+  summarize(top_s = max(sales, na.rm = T)) %>%
+  arrange(desc(top_s))
+```
+
+```{r eval = F}
+txhousing %>% 
+  filter(year == 2012) %>%
+  group_by(month) %>%
+  summarize(top_v = max(volume, na.rm = T)) %>%
+  arrange(desc(top_v))
+```
+
+B. What could you do to take a look at all the rows in these data that had NA values (missing data) for volume?
+
+```{r eval = F}
+txhousing %>%
+  filter(is.na(volume))
+```
+
+
+# Question 4:
+Generate a single table that shows the total number of houses sold in Austin and Dallas, in 2013 - 2015. This calculation requires a number of steps, so I suggest you write out **pseudocode**, or roughly written code that sets out a "blueprint" of your chain. 
+
+```{r}
+txhousing %>% 
+  filter(city == "Austin"| city == "Dallas") %>%
+  filter(year %in% c(2013:2015)) %>%
+  group_by(city, year) %>%
+  summarize(total_sales = sum(sales))
+```
+
+
+## Question 5: 
+Add a new column to the data that expresses volume in units of $100000. 
+```{r}
+txhousing<- txhousing %>%
+  mutate(vol_100k = volume/100000)
+```
+
+
+## Question 6: 
+A. Make a table that shows the mean percentage of listings that were sold in Dallas in 2015 in each month of the year. 
+
+```{r}
+txhousing %>% 
+  filter(year == 2015, city == "Dallas") %>%
+  mutate(prct_sold = sales/listings *100) %>%
+  group_by(month) %>%
+  summarize(mean_prct = mean(prct_sold), 
+            mean_prct = round(mean_prct, 2))
+```
+
+B. Extra: Run this little code snip, and study what it does. Can you add the round function to your call above to show the mean percentag of listings with only 2 decimal places?
+
+```{r}
+x<- c(0.1234, 0.4795, 0.49736)
+round(x, 2)
+```
+
+
+# Question 7: 
+What does this code do? A short answer will suffice. 
+
+**It arranges the city variable in alphabetical order**
+```{r eval = F}
+txhousing %>% 
+  arrange(city)
+```
+
+
+# Question 8: 
+What does this code do? A short answer will suffice. If the answer is unclear, try changing the city variable to month, or year. 
+
+**It tells us all the unique values for city**
+```{r eval = F}
+txhousing %>% 
+  distinct(city)
+```

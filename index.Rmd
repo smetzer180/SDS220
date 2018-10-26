@@ -65,7 +65,19 @@ Explain what Whole Foods is.
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 -->
 
+
 ***
+
+# Lec 21: Mon 10/29 {#Lec21}
+
+## Announcements
+
+* Solutions to Jenny's [data wrangling lab](index.html#lab1) posted.
+
+
+
+***
+
 
 # Lec 20: Fri 10/26 {#Lec20}
 
@@ -219,13 +231,13 @@ Ok folks, we're doing **posters** for the your final presentation
 
 
 
-# Lab: Thu 10/18 + Tue 10/23
+# Lab: Thu 10/18 + Tue 10/23 {#lab1}
 
 Materials for Jenny's lab on Data Wrangling are here:
 
 * <a href="static/data_wrangling_lab/verbs_2.pdf" download>PDF slides</a>
 * <a href="static/data_wrangling_lab/dplyr_review_firstname_lastname.Rmd" download>`dplyr_review_firstname_lastname.Rmd`</a>
-
+* Solutions: <a href="static/data_wrangling_lab/dplyr_wrangling_review_solutions.Rmd" download>`dplyr_wrangling_review_solutions.Rmd`</a>
 
 
 

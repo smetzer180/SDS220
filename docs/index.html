@@ -377,7 +377,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim</em></h4>
-<h4 class="date"><em>Last updated on 2018-10-24</em></h4>
+<h4 class="date"><em>Last updated on 2018-10-26</em></h4>
 
 </div>
 
@@ -428,9 +428,42 @@ Explain what Whole Foods is.
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
+<ul>
+<li>Last topic needed for term project initial submission.</li>
+<li>Two possible models for regression with one categorical and one numerical <span class="math inline">\(x\)</span> explanatory variable:
+<ul>
+<li>Parallel slopes model: easy to interpret, hard to make a <code>ggplot</code> of.</li>
+<li>Interaction model: harder to interpret, easy to make a <code>ggplot</code> of.</li>
+</ul></li>
+</ul>
 </div>
 <div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
+<p>Read ModernDive Chapter 7.2.1 &amp; 7.2.2.</p>
+</div>
+<div id="tweet-of-the-day" class="section level3">
+<h3>3. Tweet of the day</h3>
+<p>In order for me to be able to recreate/reproduce/replicate your work, I need:</p>
+<ol style="list-style-type: decimal">
+<li>Access to your data! If you only submitted a <code>project_proposal.R</code> file but not the <code>.csv</code>/<code>.xlsx</code> data file, I can’t recreate/reproduce/replicate your graphs!</li>
+<li>If the code that loads your <code>.csv</code>/<code>.xlsx</code> data file looks something like<br />
+<code>read_csv(&quot;~/Desktop/My Smith Work/2018-19/Term Project/my_data.csv&quot;)</code><br />
+When I run this code it won’t load the data since the <code>my_data.csv</code> file will not be in the same folder <strong>on my computer</strong>.</li>
+</ol>
+<p><strong>Suggested approach</strong>: Instead of submitting <code>.csv</code>/<code>.xlsx</code> data files on Moodle, publish your data to the web and load into R from there!</p>
+<ol style="list-style-type: decimal">
+<li>Click on tweet below to see all steps</li>
+<li>Publish your data to the web (only if it is non-sensitive nor non-private)</li>
+<li>Update your project proposal with the <code>read_csv(&quot;WEBLINK TO YOUR DATA&quot;)</code> code that loads the data and test all your code to ensure it all runs.</li>
+<li><strong>Group leader only</strong>: Resubmit your <code>project_proposal.R</code> file in a Slack group DM that has me and all your group members by Saturday 10/27 at 5pm.</li>
+</ol>
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Hey data science ed types! If you don't want to deal w/ teaching relative vs absolute file paths when loading CSV's into <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> at first (I favor punting until later), have your students publish their (non-sensitive data) CSV's to Google Sheets!
+</p>
+— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1055821833512071168?ref_src=twsrc%5Etfw">October 26, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <hr />
 </div>
 </div>
@@ -681,7 +714,7 @@ Smith College SDS student Emily Daubenspeck presenting joint work with Smithies 
 <h3>2. In-class exercise</h3>
 <p><del>Read ModernDive Chapter 6.1.4 and 6.3.3.</del></p>
 </div>
-<div id="tweet-of-the-day" class="section level3">
+<div id="tweet-of-the-day-1" class="section level3">
 <h3>3. Tweet of the day</h3>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
@@ -729,7 +762,7 @@ Hey stats+data science educators! Do your students 😱 when seeing 😡 errors,
 <h3>2. In-class exercise</h3>
 <p>Read ModernDive 6.1.3.</p>
 </div>
-<div id="tweet-of-the-day-1" class="section level3">
+<div id="tweet-of-the-day-2" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>Boston University is going to build a new 17-floor “Data Sciences Center” on Commonwealth Avenue, designed to look like a stack of books. 👍 or 👎?</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -794,7 +827,7 @@ Boston University unveils plans for book-inspired data sciences center on Comm. 
 <a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co"># Step 4: Compare these column names with the ones from above. Much cleaner!</span></a>
 <a class="sourceLine" id="cb1-20" data-line-number="20">data_frame_with_cleaner_names</a></code></pre></div>
 </div>
-<div id="tweet-of-the-day-2" class="section level3">
+<div id="tweet-of-the-day-3" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>On writing “pseudocode”: a rough outline that is “sort of” like code that outlines the steps of what your code will do. You can think of pseudocode as a “blueprint” of your “building”; before you build your building, you need a plan! Here are examples of “pseudocode” for the data wrangling exercise from Learning Check 5.19 in ModernDive on taking the data in <code>nycflights13</code> and computing <a href="https://en.wikipedia.org/wiki/Available_seat_miles" target="_blank">Available Seat Miles</a></p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -892,7 +925,7 @@ Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref
 <li><strong>Learning how to learn</strong>: See if you can figure out how to use the <code>clean_names()</code> function referenced below. Ask your seatmates, me or the data assistant for help.</li>
 </ul>
 </div>
-<div id="tweet-of-the-day-3" class="section level3">
+<div id="tweet-of-the-day-4" class="section level3">
 <h3>4. Tweet of the day</h3>
 <p>How quickly clean variable names; this might be useful for your projects.</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -1031,7 +1064,7 @@ janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https:/
 <h3>2. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 5-5.3</p>
 </div>
-<div id="tweet-of-the-day-4" class="section level3">
+<div id="tweet-of-the-day-5" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>While networking may come naturally to some, it doesn’t to most. It takes work, courage, and practice! For example, start small &amp; low risk! A simple tweet can be the beginning of a meaningful relationship!</p>
 <blockquote class="twitter-tweet" data-lang="en">
@@ -1072,7 +1105,7 @@ It was great finally meeting you IRL too after all this time of virtual acquaint
 <h3>2. Project Time</h3>
 <p>Start your projects!</p>
 </div>
-<div id="tweet-of-the-day-5" class="section level3">
+<div id="tweet-of-the-day-6" class="section level3">
 <h3>3. Tweet of the day</h3>
 <p>ModernDive co-author Chester Ismay <a href="https://twitter.com/old_man_chester" target="_blank">@old_man_chester</a> is Senior Curriculum Lead at DataCamp. If you are curious for a “big picture” view of why we are using DataCamp, read the linked blogpost, in particular look at the image of the “data science pipeline”. Remember, you have free access to <strong>all</strong> DataCamp courses for 6 months!</p>
 <blockquote class="twitter-tweet">
@@ -1160,7 +1193,7 @@ Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsr
 <h3>3. In-class exercise: ModernDive</h3>
 <p>As marked in the Schedule at the top of this page, read ModernDive 3.7.</p>
 </div>
-<div id="tweet-of-the-day-6" class="section level3">
+<div id="tweet-of-the-day-7" class="section level3">
 <h3>4. Tweet of the day</h3>
 <p>On <em>imposter syndrome</em> is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a “fraud”. Click below to read full thread.</p>
 <blockquote class="twitter-tweet" data-lang="en">

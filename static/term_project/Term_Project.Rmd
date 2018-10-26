@@ -1,8 +1,8 @@
 
 ---
 title: "WRITE YOUR PROJECT TITLE HERE"
-author: "WRITE GROUP NAME HERE, NOT GROUP MEMBERS"
-date: "Thursday, March 29, 2018"
+author: "WRITE GROUP NAME HERE, NOT THE GROUP MEMBERS NAME"
+date: "Friday, November 9, 2018"
 output:
   html_document:
     df_print: kable
@@ -60,6 +60,7 @@ bechdel <- bechdel %>%
     1. Compute relevant summary statistics and tables
     1. Display informative well-polished visualizations
 * Perform all "eye-ball tests" and make preliminary/initial observations here:
+
 
 ```{r}
 
@@ -138,7 +139,7 @@ the resubmission.
 
 # Citations and References
 
-
+[Rpubs link](http://rpubs.com/rudeboybert/test1)
 
 
 ***

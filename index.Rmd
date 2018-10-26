@@ -82,10 +82,34 @@ Explain what Whole Foods is.
 
 ### 1. Chalk Talk
 
-
+* Last topic needed for term project initial submission.
+* Two possible models for regression with one categorical and one numerical $x$ explanatory variable:
+    + Parallel slopes model: easy to interpret, hard to make a `ggplot` of.
+    + Interaction model: harder to interpret, easy to make a `ggplot` of.
 
 ### 2. In-class exercise
 
+Read ModernDive Chapter 7.2.1 & 7.2.2. 
+
+
+### 3. Tweet of the day
+
+In order for me to be able to recreate/reproduce/replicate your work, I need:
+
+1. Access to your data! If you only submitted a `project_proposal.R` file but not the `.csv`/`.xlsx` data file, I can't recreate/reproduce/replicate your graphs! 
+1. If the code that loads your `.csv`/`.xlsx` data file looks something like  
+`read_csv("~/Desktop/My Smith Work/2018-19/Term Project/my_data.csv")`  
+When I run this code it won't load the data since the `my_data.csv` file will not be in the same folder **on my computer**.
+
+**Suggested approach**: Instead of submitting `.csv`/`.xlsx` data files on Moodle, publish your data to the web and load into R from there!
+
+1. Click on tweet below to see all steps
+1. Publish your data to the web (only if it is non-sensitive nor non-private)
+1. Update your project proposal with the `read_csv("WEBLINK TO YOUR DATA")` code that loads the data and test all your code to ensure it all runs.
+1. **Group leader only**: Resubmit your `project_proposal.R` file in a Slack group DM that has me and all your group members by Saturday 10/27 at 5pm. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey data science ed types! If you don&#39;t want to deal w/ teaching relative vs absolute file paths when loading CSV&#39;s into <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> at first (I favor punting until later), have your students publish their (non-sensitive data) CSV&#39;s to Google Sheets!</p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1055821833512071168?ref_src=twsrc%5Etfw">October 26, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 

@@ -214,9 +214,7 @@ You'll be analyzing the results of the Africa survey experiment we did in Lectur
 
 ## 3. R solutions & (imperfect) rubric {#PS04_R_solutions}
 
-<!--
 Download <a href="static/PS/PS04_solutions.R" download>`PS04_solutions.R`</a>.
--->
 
 **(Imperfect) rubric**:
 

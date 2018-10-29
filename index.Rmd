@@ -72,7 +72,24 @@ Explain what Whole Foods is.
 
 ## Announcements
 
-* Solutions to Jenny's [data wrangling lab](index.html#lab1) posted.
+* **Joint SDS/Government faculty hiring**: First candidate is coming to campus tomorrow (Tuesday 10/30)! They will be holding a "mock lecture" at 5pm in Sabin-Reed 301 where they will teach a lecture on an intermediate/advanced topic in an way that is accessible to undergrads.
+* Office hours tomorrow: ~~3-6pm~~ 3-5pm.
+* Midterm II [topics](midterms.html#midtermII).
+* Project proposal feedback over Slack tomorrow!
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* **Recall**: There are two possible models for regression with one categorical and one numerical $x$ explanatory variable:
+    + Parallel slopes model: easy to interpret, hard to make a `ggplot` of.
+    + Interaction model: harder to interpret, easy to make a `ggplot` of.
+* **Last Friday**: Parallel slopes model
+* **Today**: Interaction model
+
+### 2. In-class exercise
+
+Read ModernDive Chapter 7.2.3 - 7.2.5. 
 
 
 
@@ -98,6 +115,7 @@ Explain what Whole Foods is.
 * Two possible models for regression with one categorical and one numerical $x$ explanatory variable:
     + Parallel slopes model: easy to interpret, hard to make a `ggplot` of.
     + Interaction model: harder to interpret, easy to make a `ggplot` of.
+* Today: parallel slopes model!
 
 ### 2. In-class exercise
 

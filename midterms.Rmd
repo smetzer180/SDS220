@@ -23,14 +23,46 @@ h1{font-weight: 400;}
 ## Administrative
 
 * **Friday 11/2 5pm through Sunday 11/4 11:55pm**. 
-* Midterm II review on Monday 10/29.
 * Self-scheduled exam [instructions](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Closed-book, no internet, and individually completed.
+* You must take it no more than 120 minutes (including transit time) to complete it and submit it by 11:55pm on Sunday. Timestamps will be verified and any exam with timestamps indicating more than 120 minutes will be docked 50%.
+* Please bring colored pens.
+* Extra help:
+    + Jenny office hours. Book  appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
+    + Albert extra office hours Friday 11/2 2:30-4pm in McConnell 215.
 
+
+## Topics
+
+* Topics:
+    1. Lectures 1-18. Yes it is cummulative in that topics build on top of each other, but focus is on Lec 8-18 on Data Wrangling and Basic Regression with one explanatory variable (no Multiple Regression with more than one explanatory variable).
+    1. The corresponding "chalk talk" notes and ModernDive readings in Chapter 1 through 6.
+* Types of questions:
+    + Before Wednesday, do the practice midterm questions [PDF](static/exams/Midterm-II_practice.pdf){target="_blank"}. I **do not** have a PDF of solutions, we'll cover these in class on Wednesday. Note this is a compilation of a few midterms, so its length is not reflective of what you can expect on the midterm. Do the following questions:
+        1. Question 3 - Life Expectancy: All.
+        1. Question 1 - Short Answer: Parts a) 1-4, b), d), e)
+        1. Question 2 - Teaching Evaluations (optional). If you can do this multiple regression question, you'll be in good shape for understanding basic regression
+    + Go over all problem sets and solutions.
+    + Data Wrangling:
+        1. Be able to understand data wrangling actual code, be able to write data wrangling pseudocode. 
+        1. Jenny's [Data Wrangling Lab](index.html#lab1) on Thu 10/18 + Tue 10/23. Solutions now posted.
+    + Data Modeling: Go over [Modeling with Data in the Tidyverse](https://www.datacamp.com/teach/repositories/1575/branches/master){target="_blank"} Chapters 1 and 2.
+
+
+
+<!--
+## Practice questions discussion {#midtermIdiscussion}
+
+## Midterm I Distribution
+-->
 
 
 ***
+
+
+
 
 
 

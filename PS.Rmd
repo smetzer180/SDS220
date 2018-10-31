@@ -35,6 +35,23 @@ h1{font-weight: 400;}
 
 ***
 
+# Problem set 8 {#PS08}
+
+*Assigned Wednesday 10/31, due Wednesday 11/07 at 1pm Eastern Time*
+
+
+## 1. R component {#PS08_R}
+
+## 2. R solutions & (imperfect) rubric {#PS08_R_solutions}
+
+
+
+
+***
+
+
+
+
 
 # Problem set 7 {#PS07}
 
@@ -56,6 +73,10 @@ No DataCamp nor written component.
 
 
 ## 2. R solutions & (imperfect) rubric {#PS07_R_solutions}
+
+* <a href="static/PS/PS07_solutions.Rmd" download>`PS07_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS07_solutions.html`](static/PS/PS07_solutions.html){target="_blank"} output.
+* [Written solutions](static/PS/PS07_solutions.png){target="_blank"}
 
 **(Imperfect) rubric**: 
 

@@ -68,6 +68,51 @@ Explain what Whole Foods is.
 
 ***
 
+# Lec 22: `r emo::ji("halloween")`Wed 10/31`r emo::ji("halloween")` {#Lec22}
+
+## Announcements
+
+* No lab Tuesday 11/20.
+* Go over practice midterm questions
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Causal Inference
+
+### 2. In-class exercise
+
+* Look at [Spurious Correlations](http://www.tylervigen.com/spurious-correlations){target="_blank"}
+* Read ModernDive 6.3.2
+
+
+### 3. Install development version of moderndive package
+
+We're going to install the development AKA [beta-version](https://en.wiktionary.org/wiki/beta_version){target="_blank"} of the `moderndive` package, which as of this morning includes a new function `gg_parallel_slopes()` allowing you to create a ggplot of the **parallel slopes model**. Note, this function is an inelegant hack but it goes the job done (source code on [GitHub](https://github.com/moderndive/moderndive/blob/geom_parallel_slopes/R/ggplot_parallel_slopes.R){target="_blank"}).
+
+1. Install the `devtools` package as you normally would install a package. Say yes to any prompts.
+2. Run the following line in your console to install the development version of the `moderndive` package off of GitHub.com, specifically the `geom_parallel_slopes` branch:  
+`devtools::install_github("moderndive/moderndive", ref = "geom_parallel_slopes")`
+3. Run `library(moderndive)` to reload the package.
+3. Run `?gg_parallel_slopes` and see if the help file pops up. If it does, your installation worked!
+4. Run example code at the bottom of the help file to see it in action! You should get the following plot:
+
+<center>
+![](static/images/parallel_slopes.png){ width=600px }
+</center>
+
+
+
+
+
+
+
+
+***
+
+
+
 # Lec 21: Mon 10/29 {#Lec21}
 
 ## Announcements

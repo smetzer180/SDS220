@@ -89,7 +89,7 @@ Causal Inference
 
 ### 3. Install development version of moderndive package
 
-We're going to install the development AKA [beta-version](https://en.wiktionary.org/wiki/beta_version){target="_blank"} of the `moderndive` package, which as of this morning includes a new function `gg_parallel_slopes()` allowing you to create a ggplot of the **parallel slopes model**. Note, this function is an inelegant hack but it goes the job done (source code on [GitHub](https://github.com/moderndive/moderndive/blob/geom_parallel_slopes/R/ggplot_parallel_slopes.R){target="_blank"}).
+We're going to install the development AKA [beta-version](https://en.wiktionary.org/wiki/beta_version){target="_blank"} of the `moderndive` package, which as of this morning includes a new function `gg_parallel_slopes()` allowing you to create a ggplot of the **parallel slopes model**. Note, this function is an inelegant hack but it gets the job done (source code on [GitHub](https://github.com/moderndive/moderndive/blob/geom_parallel_slopes/R/ggplot_parallel_slopes.R){target="_blank"}).
 
 1. Install the `devtools` package as you normally would install a package. Say yes to any prompts.
 2. Run the following line in your console to install the development version of the `moderndive` package off of GitHub.com, specifically the `geom_parallel_slopes` branch:  

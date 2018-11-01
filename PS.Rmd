@@ -16,7 +16,7 @@ h1{font-weight: 400;}
 ***
 
 
-
+<!--
 # Problem set 9 {#PS09}
 
 **Note that I am posting this PS ahead of schedule. PS08 posted below is due Wed 11/7**
@@ -41,7 +41,7 @@ h1{font-weight: 400;}
 
 
 ***
-
+-->
 
 
 # Problem set 8 {#PS08}
@@ -206,7 +206,8 @@ None.
 
 ## 3. R Markdown solutions & (imperfect) rubric {#PS05_R_solutions}
 
-* Download <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a>.
+* <a href="static/PS/PS05_solutions.Rmd" download>`PS05_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS05_solutions.html`](static/PS/PS05_solutions.html){target="_blank"} output.
 * Link to all code from "Working with Data in the tidyverse" DataCamp course can be found at [http://bit.ly/modeling_tidyverse](http://bit.ly/modeling_tidyverse){target="_blank"}
 
 **(Imperfect) rubric**:

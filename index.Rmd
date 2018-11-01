@@ -67,7 +67,7 @@ Explain what Whole Foods is.
 
 
 ***
-
+<!--
 # Lec 23: Fri 11/2 {#Lec23}
 
 ## Announcements
@@ -100,6 +100,7 @@ Explain what Whole Foods is.
 
 
 
+-->
 # Lec 22: `r emo::ji("halloween")`Wed 10/31`r emo::ji("halloween")` {#Lec22}
 
 ## Announcements

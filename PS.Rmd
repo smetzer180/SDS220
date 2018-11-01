@@ -12,37 +12,47 @@ h1{font-weight: 400;}
 </style>
 
 
-<!--
-## 4. Quiz I
+
+***
+
+
+
+# Problem set 9 {#PS09}
+
+**Note that I am posting this PS ahead of schedule. PS08 posted below is due Wed 11/7**
+
+## 1. Quiz I
 
 <center>
 <img src="static/images/hang_the_dj.png" alt="Drawing" style="width: 400px;"/>
 </center>
-
 <br>
 
 * Watch Netflix -> Black Mirror -> Season 4 -> Episode 4 "Hang the DJ" (51 min). You will need access to Netflix:
     + If you do not have access to Netflix and you have access to a credit card, you can get a free 1-month trial. Be sure to cancel your account after you watch the episode.
-    + If you do not have access to Netflix and you don't have access to a credit card, please Slack me. 
+    + **If you do not have access to Netflix and you don't have access to a credit card, please Slack me ASAP.** 
 * If you are uncomfortable watching sexually explicit scenes and would rather skip them, they occur at:
     1. 15:10 - 16:32
     1. 22:02 - 22:29
     1. 24:46 - 24:53
     1. 42:19 - 43:09
-* At the end of lecture on Wednesday 10/24 you will be given a 2 question, 5 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch all 51 minutes and pay attention.
--->
+* At the end of lecture on Wednesday 11/14 you will be given a 2 question, 5 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch **all** 51 minutes and pay attention.
+
 
 
 ***
 
+
+
 # Problem set 8 {#PS08}
 
-*Assigned Wednesday 10/31, due Wednesday 11/07 at 1pm Eastern Time*
+*Assigned Wednesday 10/31, due Wednesday 11/7 at 1pm Eastern Time*
 
 ## 1. R component {#PS08_R}
 
 * Before starting PS08:
     + Re-read the `PS07_solutions.Rmd` solutions posted. 
+    + Make sure you've updated the `moderndive` package, but this time not from the R package app store that you normally install packages from, but from GitHub. See Lec22 for instructions on how to do so. If you get stuck, please speak to me or Jenny.
 * Download the following <a href="static/PS/PS08_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
 * R Markdown Knitting strategies:
     + Knit the `PS08_lastname_firstname.Rmd` file once and read all the questions.

@@ -73,6 +73,7 @@ Explain what Whole Foods is.
 ## Announcements
 
 * 1pt
+* Bring a calculator to exam.
 * Upcoming schedule:
     + **Fri 11/2 5pm thru Sun 11/4 11:55pm** - Midterm II
     + **Wed 11/7 1pm** - PS08 due: R Markdown

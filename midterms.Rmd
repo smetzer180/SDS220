@@ -28,7 +28,9 @@ h1{font-weight: 400;}
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Closed-book, no internet, and individually completed.
 * You must take it no more than 120 minutes (including transit time) to complete it and submit it by 11:55pm on Sunday. Timestamps will be verified and any exam with timestamps indicating more than 120 minutes will be docked 50%.
-* Please bring colored pens.
+* Please bring:
+    + Colored pens
+    + A calculator: TI-84 type calculators acceptable, mobile phone apps are not. 
 * Extra help:
     + Jenny office hours. Book  appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
     + Albert extra office hours Friday 11/2 2:30-4pm in McConnell 215.

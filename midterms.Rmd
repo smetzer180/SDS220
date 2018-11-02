@@ -34,7 +34,9 @@ h1{font-weight: 400;}
 * Extra help:
     + Jenny office hours. Book  appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
     + Albert extra office hours Friday 11/2 2:30-4pm in McConnell 215.
+* Read cover page (slightly different from last time):
 
+![](static/exams/midterm_II_cover_page.png){ width=600px }   
 
 ## Topics
 
@@ -83,7 +85,7 @@ h1{font-weight: 400;}
     + Albert extra office hours Thursday 2-4pm in McConnell 215.
 * Read cover page:
 
-![](static/images/midterm_cover_page.png){ width=600px }   
+![](static/exams/midterm_I_cover_page.png){ width=600px }   
 
 
 

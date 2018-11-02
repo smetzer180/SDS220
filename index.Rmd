@@ -67,33 +67,46 @@ Explain what Whole Foods is.
 
 
 ***
-<!--
+
+
+
 # Lec 23: Fri 11/2 {#Lec23}
 
 ## Announcements
 
-* 1pt
-* Bring a calculator to exam.
+* Updated Midterm II instructions:
+    + Bring a calculator! Scientific calculators ok, mobile phones not. 
+    + Cover page posted.
+* Project proposal feedback delivered. Many groups had a very right-skewed explanatory and/or outcome variable. In those cases, do a `log10()`-transformation as seen in the "Modeling with data in the tidyverse" course where we `mutate()` new `log10_price` and `log10_size` variables.
 * Upcoming schedule:
-    + **Fri 11/2 5pm thru Sun 11/4 11:55pm** - Midterm II
-    + **Wed 11/7 1pm** - PS08 due: R Markdown
-    + **Fri 11/9 5pm** - Project initial submission due
-    + **Wed 11/14 at the end of lecture** - PS09 (posted early): Quiz based on watching 51m episode of Netflix's "Black Mirror"
+    + **Fri 11/2 - Sun 11/4**: Midterm II
+    + **Wed 11/7**: PS08 due & class time to work on projects
+    + **Fri 11/9**:
+        1. Project initial submission due: ~~5pm~~ New due time: 9pm
+        1. Extra office hours 5-6pm by appointment on Slack.
+    + **Wed 11/14**: PS09 (posted early) is preparing for a quiz; no R Markdown component. 
 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
+Observational studies vs randomized experiments. In particular recall from PS04:
 
-### 2. In-class exercise
+```{r, echo=FALSE, eval=TRUE}
+africa_results <- read_csv("https://rudeboybert.github.io/SDS220/static/PS/africa_results.csv") 
+africa_results
+ggplot(africa_results, aes(x = priming_number, y = how_many_countries)) +
+  geom_boxplot() +
+  labs(x = "Priming number", y = "Number of countries in Africa guessed",
+       title = "Effects of priming number of number of countries guessed in Africa")
+```
 
 
-### 3. Tweet of the day
+### 2. Tweet of the day
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Excited about Berkeley’s new Division of Data Science and Information - with 1000 majors already! <a href="https://t.co/31WTxPD43l">https://t.co/31WTxPD43l</a></p>&mdash; Deborah Nolan (@DebAtStat) <a href="https://twitter.com/DebAtStat/status/1058037503037452289?ref_src=twsrc%5Etfw">November 1, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 
 
@@ -101,7 +114,6 @@ Explain what Whole Foods is.
 
 
 
--->
 # Lec 22: `r emo::ji("halloween")`Wed 10/31`r emo::ji("halloween")` {#Lec22}
 
 ## Announcements

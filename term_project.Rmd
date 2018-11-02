@@ -27,10 +27,11 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 
 
-# 3. Initial submission - Fri 11/9 5pm
+# 3. Initial submission - Fri 11/9 9pm
 
 **To do**:
 
+1. **Changed on 11/2** Due time changed from 5pm to 6pm. 
 1. Download the <a href="static/term_project/Term_Project.Rmd"
 download>`Term_Project.Rmd`</a> R Markdown template file. Recall the [past examples](#past_examples) you saw previously.
 1. Read the evaluation criteria [below](#evaluationcriteria) and then complete the following sections:

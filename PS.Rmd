@@ -16,10 +16,11 @@ h1{font-weight: 400;}
 ***
 
 
-<!--
 # Problem set 9 {#PS09}
 
-**Note that I am posting this PS ahead of schedule. PS08 posted below is due Wed 11/7**
+**Note that I am posting this PS ahead of schedule. PS08 is below and is due Wed 11/7 1pm.**
+
+*Assigned Wednesday 11/7, quiz at the end of lecture on Wednesday 11/7.*
 
 ## 1. Quiz I
 
@@ -37,11 +38,11 @@ h1{font-weight: 400;}
     1. 24:46 - 24:53
     1. 42:19 - 43:09
 * At the end of lecture on Wednesday 11/14 you will be given a 2 question, 5 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch **all** 51 minutes and pay attention.
-
+* No make-up quizzes without official permission Ex: Dean's note. 
 
 
 ***
--->
+
 
 
 # Problem set 8 {#PS08}

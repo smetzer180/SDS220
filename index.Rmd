@@ -70,6 +70,34 @@ Explain what Whole Foods is.
 
 
 
+# Lec 24: Mon 11/5 {#Lec24}
+
+## Announcements
+
+* Updated upcoming schedule:
+    + **New - Today**: Office hours from ~~3-6pm~~ 3-4:45pm.
+    + Tue 11/6: Regular office hours from 3-6pm.
+    + Wed 11/7: PS08 R Markdown due at 1pm & class time to work on projects.
+    + **New - Thu 11/8**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
+    + Fri 11/9:
+        1. Project initial submission due at ~~5pm~~ 9pm
+        1. Extra office hours 5-6pm by appointment; please Slack me.
+    + **New - Tue 11/13**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
+    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
+    + **New - Tue 11/20**: No lab.
+
+## Today's Topics/Activities
+
+
+
+
+
+
+***
+
+
+
+
 # Lec 23: Fri 11/2 {#Lec23}
 
 ## Announcements
@@ -78,13 +106,6 @@ Explain what Whole Foods is.
     + Bring a calculator! Scientific calculators ok, mobile phones not. 
     + Cover page posted.
 * Project proposal feedback delivered. Many groups had a very right-skewed explanatory and/or outcome variable. In those cases, do a `log10()`-transformation as seen in the "Modeling with data in the tidyverse" course where we `mutate()` new `log10_price` and `log10_size` variables.
-* Upcoming schedule:
-    + **Fri 11/2 - Sun 11/4**: Midterm II
-    + **Wed 11/7**: PS08 due & class time to work on projects
-    + **Fri 11/9**:
-        1. Project initial submission due: ~~5pm~~ New due time: 9pm
-        1. Extra office hours 5-6pm by appointment on Slack.
-    + **Wed 11/14**: PS09 (posted early) is preparing for a quiz; no R Markdown component. 
 
 
 ## Today's Topics/Activities

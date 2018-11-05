@@ -88,8 +88,11 @@ Explain what Whole Foods is.
 
 ## Today's Topics/Activities
 
+### 1. Sampling Exercise
 
-
+<center>
+![](static/images/CLT.png){ width=800px }
+</center>
 
 
 

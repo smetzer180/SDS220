@@ -91,11 +91,11 @@ house_prices <- house_prices %>%
 p1 <- ggplot(house_prices, aes(x = price)) +
   geom_histogram() +
   scale_x_log10() + 
-  labs(x = "House price (log10-scale)", title = "Seattle house prices") 
+  labs(x = "House price (log10-scale)", title = "Seattle house prices (log10-scale)") 
 
 p2 <- ggplot(house_prices, aes(x = log10_price)) +
   geom_histogram() +
-  labs(x = "log10(House price)", title = "Seattle house prices") 
+  labs(x = "log10(House price)", title = "Seattle house prices (log10 transformed)") 
 
 p1 + p2
 ```

@@ -77,7 +77,7 @@ bechdel <- bechdel %>%
 
 * Describe in words the components of your multiple regression model. It should
 be a single model involving at least one numerical and one categorical
-explanatory variable
+explanatory variable.
 * Fit the regression model
 * Compute the regression table
 

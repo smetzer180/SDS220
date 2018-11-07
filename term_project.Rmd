@@ -103,7 +103,7 @@ p1 + p2
 
 ### 2. Model selection
 
-Which model should I use? Parallel slopes or interaction model?
+Which model should I use? Parallel slopes or interaction model? 
 
 
 ### 3. Useful tips for R projects

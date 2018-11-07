@@ -12,9 +12,7 @@ output:
 h1{font-weight: 400;}
 </style>
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE, 
-                      fig.width=16/2, fig.height=9/2)
+```{r, message=FALSE, echo=FALSE, warning=FALSE}
 library(ggplot2)
 library(dplyr)
 library(moderndive)
@@ -81,7 +79,7 @@ ggplot(house_prices, aes(x = log10_price)) +
   geom_histogram() +
   labs(x = "log10(House price)", title = "Seattle house prices") 
 ```
-```{r, message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE}
+```{r, message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE, fig.height=8/2}
 # log10() transformations
 house_prices <- house_prices %>%
   mutate(

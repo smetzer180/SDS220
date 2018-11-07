@@ -69,15 +69,11 @@ Explain what Whole Foods is.
 ***
 
 
-
-# Lec 24: Mon 11/5 {#Lec24}
+# Lec 25: Mon 11/7 {#Lec25}
 
 ## Announcements
 
 * Updated upcoming schedule:
-    + **New - Today**: Office hours from ~~3-6pm~~ 3-4:45pm.
-    + Tue 11/6: Regular office hours from 3-6pm.
-    + Wed 11/7: PS08 R Markdown due at 1pm & class time to work on projects.
     + **New - Thu 11/8**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
     + Fri 11/9:
         1. Project initial submission due at ~~5pm~~ 9pm
@@ -85,6 +81,24 @@ Explain what Whole Foods is.
     + **New - Tue 11/13**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
     + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
     + **New - Tue 11/20**: No lab.
+
+
+## Today's Topics/Activities
+
+* Added [tips](term_project.html#initialtips) to consider for initial submission.
+* Class time to work on projects.
+
+
+
+***
+
+
+
+
+
+
+# Lec 24: Mon 11/5 {#Lec24}
+
 
 ## Today's Topics/Activities
 

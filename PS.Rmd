@@ -104,7 +104,6 @@ No DataCamp nor written component.
 
 * <a href="static/PS/PS07_solutions.Rmd" download>`PS07_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS07_solutions.html`](static/PS/PS07_solutions.html){target="_blank"} output.
-* [Written solutions](static/PS/PS07_solutions.png){target="_blank"}
 
 **(Imperfect) rubric**: 
 

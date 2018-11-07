@@ -12,6 +12,16 @@ output:
 h1{font-weight: 400;}
 </style>
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE, 
+                      cache=TRUE, fig.width=16/2, fig.height=9/2)
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+library(patchwork)
+set.seed(76)
+```
+
 Everything in this course builds up to the term group project, where there is
 only one learning goal: *Engage in the data/science research pipeline in as
 faithful a manner as possible while maintaining a level suitable for novices.*
@@ -40,6 +50,75 @@ download>`Term_Project.Rmd`</a> R Markdown template file. Recall the [past examp
     3. Multiple regression
     6. Citations. Be sure to replace the Rpubs link with a link to a published Rpubs webpage of your term project.
 1. Group leader: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}.
+
+
+## Tips {#initialtips}
+
+### 1. log10 transformations
+
+If you have skewed explanatory and/or outcome variables, you should be `log10()`-transforming them and using the transformed variables in your regression and not just visually displaying them with transformed axes. See below:
+
+```{r, message=FALSE, warning=FALSE, eval=FALSE, fig.height=8/2}
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+
+# log10() transform the skewed variables
+house_prices <- house_prices %>%
+  mutate(
+    log10_price = log10(price),
+    log10_size = log10(sqft_living)
+  )
+
+# Plot price with re-scaled axes:
+ggplot(house_prices, aes(x = price)) +
+  geom_histogram() +
+  scale_x_log10() + 
+  labs(x = "House price (log10-scale)", title = "Seattle house prices") 
+
+# Plot log10-transformed price
+ggplot(house_prices, aes(x = log10_price)) +
+  geom_histogram() +
+  labs(x = "log10(House price)", title = "Seattle house prices") 
+```
+```{r, message=FALSE, warning=FALSE, eval=TRUE, echo=FALSE}
+# log10() transformations
+house_prices <- house_prices %>%
+  mutate(
+    log10_price = log10(price),
+    log10_size = log10(sqft_living)
+  )
+
+p1 <- ggplot(house_prices, aes(x = price)) +
+  geom_histogram() +
+  scale_x_log10() + 
+  labs(x = "House price (log10-scale)", title = "Seattle house prices") 
+
+p2 <- ggplot(house_prices, aes(x = log10_price)) +
+  geom_histogram() +
+  labs(x = "log10(House price)", title = "Seattle house prices") 
+
+p1 + p2
+```
+
+
+### 2. Model selection
+
+Which model should I use? Parallel slopes or interaction model?
+
+
+### 3. Useful tips for R projects
+
+Jenny wrote up a document of useful tips for R projects for another class. Give it a quick scan for lots of useful tips!
+
+* [HTML document](static/project_tips/project_tips.html){target="_blank"}
+* <a href="static/project_tips/project_tips.Rmd" download>`project_tips.Rmd`</a> R Markdown source code
+
+Become an R Ninja!
+
+<center>
+![](static/project_tips/data_ninja1.png){ width=200px }
+</center>
 
 <!--
 TODO: Some of the groups don’t know whether or not to include interaction

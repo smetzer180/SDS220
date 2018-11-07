@@ -85,8 +85,8 @@ Explain what Whole Foods is.
 
 ## Today's Topics/Activities
 
-* Added [tips](term_project.html#initialtips) to consider for initial submission.
-* Class time to work on projects.
+* Added [tips](term_project.html#initialtips) to consider for initial submission
+* Class time to work on projects
 
 
 

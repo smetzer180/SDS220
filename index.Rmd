@@ -58,30 +58,42 @@ h1{font-weight: 400;}
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
 
-<!--
-Explain what Whole Foods is.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A thread on <a href="https://twitter.com/WholeFoods?ref_src=twsrc%5Etfw">@WholeFoods</a> and elections: <a href="https://twitter.com/Redistrict?ref_src=twsrc%5Etfw">@Redistrict</a> recently wrote that Dems will perform the best in areas that are geographically close to Whole Foods (WF). I decided to map/calculate the # of Whole Foods by congressional district to test his theory on WF and elections (1/9) <a href="https://t.co/9fw6qTjOZZ">pic.twitter.com/9fw6qTjOZZ</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044407912194049?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
+***
+
+
+
+# Lec 26: Fri 11/9 {#Lec26}
+
+## Announcements
+
+* Upcoming schedule:
+    + Today:
+        1. Project initial submission due at ~~5pm~~ 9pm
+        1. Extra office hours 5-6pm by appointment; please Slack me.
+    + Tue 11/13: No lab given that PS09 involves no R. However Jenny will still be in SR301 to answer questions.
+    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
+    + Tue 11/20: No lab.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+### 2. Tweet of the day
+
+Question: Does living near a Whole Foods **cause** increases in the likelihood of voting Democrat?
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So first, the basics. There are 470 WF across the U.S., and 233/435 CD&#39;s have at least 1 WF in them. WF districts did tend to prefer Clinton over Trump, as they had an average 2016 pres. margin of +13 Clinton, while non-WF districts preferred Donald Trump by +8 points. (2/9) <a href="https://t.co/Kv11asuuAc">pic.twitter.com/Kv11asuuAc</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044413104660485?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
--->
+
 
 
 ***
 
 
+
 # Lec 25: Wed 11/7 {#Lec25}
-
-## Announcements
-
-* Updated upcoming schedule:
-    + **New - Thu 11/8**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
-    + Fri 11/9:
-        1. Project initial submission due at ~~5pm~~ 9pm
-        1. Extra office hours 5-6pm by appointment; please Slack me.
-    + **New - Tue 11/13**: No lab given that PS09 involves no R. However Jenny will still be in SR 301 to answer questions.
-    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
-    + **New - Tue 11/20**: No lab.
-
 
 ## Today's Topics/Activities
 
@@ -94,11 +106,7 @@ Explain what Whole Foods is.
 
 
 
-
-
-
 # Lec 24: Mon 11/5 {#Lec24}
-
 
 ## Today's Topics/Activities
 
@@ -111,7 +119,6 @@ Explain what Whole Foods is.
 
 
 ***
-
 
 
 
@@ -139,7 +146,6 @@ ggplot(africa_results, aes(x = priming_number, y = how_many_countries)) +
   labs(x = "Priming number", y = "Number of countries in Africa guessed",
        title = "Effects of priming number of number of countries guessed in Africa")
 ```
-
 
 ### 2. Tweet of the day
 
@@ -188,11 +194,6 @@ We're going to install the development AKA [beta-version](https://en.wiktionary.
 
 
 
-
-
-
-
-
 ***
 
 
@@ -225,6 +226,7 @@ Read ModernDive Chapter 7.2.3 - 7.2.5.
 ***
 
 
+
 # Lec 20: Fri 10/26 {#Lec20}
 
 ## Announcements
@@ -249,7 +251,6 @@ Read ModernDive Chapter 7.2.3 - 7.2.5.
 ### 2. In-class exercise
 
 Read ModernDive Chapter 7.2.1 & 7.2.2. 
-
 
 ### 3. Tweet of the day
 

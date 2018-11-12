@@ -62,24 +62,42 @@ h1{font-weight: 400;}
 ***
 
 
-<!--
-# Monday
-and "Virtual sampling simulation" (using computer)
--->
+
+# Lec 27: Mon 11/12 {#Lec26}
+
+## Announcements
+
+* Upcoming schedule:
+    + **New** Office hours this week:
+        1. Mon 11/12: ~~3-6pm~~ 5-6:30pm
+        1. Tue 11/13: ~~3-6pm~~ 5:30-6:30pm
+    + Tue 11/13: No lab given that PS09 involves no R. However Jenny will still be in SR301 to answer questions.
+    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
+    + Mon 11/19: Lecture starts at 1:20pm to accommodate for the SDS talk from 12:10-1:10pm in Ford Hall 240. 
+    + Tue 11/20: No lab.
+    + **New** Mon 11/26 (after break): No lecture
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* "Virtual sampling simulation" (by computer)
+* In real-life sampling: polls
+
+### 2. In-class exercise
+
+Read ModernDive 8.3 on "Virtual sampling simulation" and 8.4 with an example on polls.
+
+
+
+***
+
 
 
 # Lec 26: Fri 11/9 {#Lec26}
 
 ## Announcements
 
-* Upcoming schedule:
-    + Today:
-        1. Project initial submission due at ~~5pm~~ 9pm
-        1. Extra office hours 5-6pm by appointment; please Slack me.
-    + Tue 11/13: No lab given that PS09 involves no R. However Jenny will still be in SR301 to answer questions.
-    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
-    + **New**: Mon 11/19: Lecture starts at 1:20pm to accommodate for the SDS talk below from 12:10-1:10 pm Ford Hall 240! 
-    + Tue 11/20: No lab.
 * **Are you?**
     + Interested in how to use statistical methods to make causal conclusions about observational data? In other words, when you data was NOT collected through a randomized experiement like a clinical trial or an A/B-test? `r emo::ji("100")`  
     + Interested in public health and/or HIV/AIDS?`r emo::ji("100")`  
@@ -103,7 +121,6 @@ and "Virtual sampling simulation" (using computer)
 ### 2. In-class exercise
 
 Read ModernDive 8.1 & 8.2 on sampling terminology and "Tactile sampling simulation"
-
 
 ### 3. Tweet of the day
 

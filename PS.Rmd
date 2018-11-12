@@ -65,6 +65,9 @@ h1{font-weight: 400;}
 
 ## 2. R solutions & (imperfect) rubric {#PS08_R_solutions}
 
+* <a href="static/PS/PS08_solutions.Rmd" download>`PS08_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS08_solutions.html`](static/PS/PS08_solutions.html){target="_blank"} output.
+
 **(Imperfect) rubric**: 
 
 11 pts total

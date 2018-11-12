@@ -76,6 +76,8 @@ h1{font-weight: 400;}
     + Mon 11/19: Lecture starts at 1:20pm to accommodate for the SDS talk from 12:10-1:10pm in Ford Hall 240. 
     + Tue 11/20: No lab.
     + **New** Mon 11/26 (after break): No lecture
+* Term project: No more poster presentations at the end of semester. 
+
     
 ## Today's Topics/Activities
 

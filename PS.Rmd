@@ -23,9 +23,9 @@ h1{font-weight: 400;}
 
 ## 1. R component {#PS10_R}
 
-* Before starting PS10: Re-read your notes from Lec24 and ModernDive 8.1 to make sure you understand all the definitions and notation. In particular:
-    + We want to know the population proportion $p$ of some study population that is defined by researchers. We don't know this value and wish we did.
-    + However, since a typical study population is very large, doing a full census to compute $p$ *exactly* is very expensive. So instead, we resort to random sampling to generate a random sample of $n$ observations which we use to compute a sample proportion $\widehat{p}$ that *estimates* $p$.
+* Before starting PS10:
+    + Re-read your notes from Lec24 and ModernDive 8.1 to make sure you understand all the definitions and notation. In particular:
+    + Note you don't need the "bootstrap resampling with replacement" topic we started with our tactile exercise on the mean height of the class in Lec28. 
 * Download the following <a href="static/PS/PS10_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
 * R Markdown Knitting strategies:
     + Knit the `PS10_lastname_firstname.Rmd` file once and read all the questions.

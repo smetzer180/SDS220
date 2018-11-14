@@ -62,20 +62,32 @@ h1{font-weight: 400;}
 ***
 
 
-
-# Lec 27: Mon 11/12 {#Lec26}
+# Lec 28: Wed 11/14 {#Lec28}
 
 ## Announcements
 
 * Upcoming schedule:
-    + **New** Office hours this week:
-        1. Mon 11/12: ~~3-6pm~~ 5-6:30pm
-        1. Tue 11/13: ~~3-6pm~~ 5:30-6:30pm
-    + Tue 11/13: No lab given that PS09 involves no R. However Jenny will still be in SR301 to answer questions.
-    + Wed 11/14: Quiz at end of lecture posted under PS09; no R Markdown component. 
     + Mon 11/19: Lecture starts at 1:20pm to accommodate for the SDS talk from 12:10-1:10pm in Ford Hall 240. 
     + Tue 11/20: No lab.
-    + **New** Mon 11/26 (after break): No lecture
+    + Mon 11/26 (after break): No lecture
+* Quiz today
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+### 2. In-class exercise
+
+
+
+***
+
+
+
+# Lec 27: Mon 11/12 {#Lec27}
+
+## Announcements
+
 * Term project: No more poster presentations at the end of semester. 
 
     

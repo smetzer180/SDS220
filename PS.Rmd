@@ -16,6 +16,45 @@ h1{font-weight: 400;}
 ***
 
 
+# Problem set 10 {#PS10}
+
+*Assigned Wednesday 11/14, due Wednesday 11/28 at 1pm Eastern Time*
+
+## 1. R component {#PS10_R}
+
+<!--
+* Before starting PS10:
+    + Re-read ModernDive 8.3
+* Download the following <a href="static/PS/PS10_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
+* R Markdown Knitting strategies:
+    + Knit the `PS10_lastname_firstname.Rmd` file once and read all the questions.
+    + Knit early, knit often! This will help pinpoint errors as they happen.
+    + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+* See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
+-->
+
+## 2. R solutions & (imperfect) rubric {#PS10_R_solutions}
+
+<!--
+* <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS08_solutions.html`](static/PS/PS08_solutions.html){target="_blank"} output.
+
+
+**(Imperfect) rubric**: 
+
+11 pts total
+
+* Question 1: 9 pts = 1 + 1 + 2 + 3 + 2 (extra credit question is worth 1 extra pt)
+* Putting informative axes labels and titles for all plots: 1 pt
+* Extra-credit: 1 pt
+-->
+
+
+
+***
+
+
 
 # Problem set 9 {#PS09}
 

@@ -76,7 +76,13 @@ h1{font-weight: 400;}
 
 ### 1. Chalk Talk
 
-### 2. In-class exercise
+* Recap of ModernDive Figure 8.14 below
+* Resampling tactile exercise
+
+<center>
+![](static/images/sampling_distributions.png){ width=600px }
+</center>
+
 
 
 

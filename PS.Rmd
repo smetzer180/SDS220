@@ -16,15 +16,16 @@ h1{font-weight: 400;}
 ***
 
 
+
 # Problem set 10 {#PS10}
 
 *Assigned Wednesday 11/14, due Wednesday 11/28 at 1pm Eastern Time*
 
 ## 1. R component {#PS10_R}
 
-<!--
-* Before starting PS10:
-    + Re-read ModernDive 8.3
+* Before starting PS10: Re-read your notes from Lec24 and ModernDive 8.1 to make sure you understand all the definitions and notation. In particular:
+    + We want to know the population proportion $p$ of some study population that is defined by researchers. We don't know this value and wish we did.
+    + However, since a typical study population is very large, doing a full census to compute $p$ *exactly* is very expensive. So instead, we resort to random sampling to generate a random sample of $n$ observations which we use to compute a sample proportion $\widehat{p}$ that *estimates* $p$.
 * Download the following <a href="static/PS/PS10_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
 * R Markdown Knitting strategies:
     + Knit the `PS10_lastname_firstname.Rmd` file once and read all the questions.
@@ -32,23 +33,24 @@ h1{font-weight: 400;}
     + If you get stuck, **go through these [6 R Markdown Fixes](https://docs.google.com/document/d/1P7IyZ4On9OlrCOhygFxjC7XhQqyw8OludwChz-uFd_o/){target="_blank"} first**, then seek assistance. These 6 fixes resolve 85% of issues in my experience.
 * Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
--->
+
 
 ## 2. R solutions & (imperfect) rubric {#PS10_R_solutions}
 
 <!--
 * <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS08_solutions.html`](static/PS/PS08_solutions.html){target="_blank"} output.
+-->
 
 
 **(Imperfect) rubric**: 
 
-11 pts total
+16 pts total
 
-* Question 1: 9 pts = 1 + 1 + 2 + 3 + 2 (extra credit question is worth 1 extra pt)
-* Putting informative axes labels and titles for all plots: 1 pt
-* Extra-credit: 1 pt
--->
+* Question 1: 1 + 1 + 2 + 2 pts
+* Question 2: 1 + 1 + 2 + 2 pts
+* Question 3: 2 pts
+* Question 4: 2 pts
 
 
 
@@ -81,6 +83,7 @@ h1{font-weight: 400;}
 * No make-up quizzes without official permission Ex: Dean's note. 
 
 
+
 ***
 
 
@@ -109,17 +112,15 @@ h1{font-weight: 400;}
 
 **(Imperfect) rubric**: 
 
-11 pts total
+10 pts total
 
-* Question 1: 9 pts = 1 + 1 + 2 + 3 + 2 (extra credit question is worth 1 extra pt)
+* Question 1: 9 pts = 1 + 1 + 2 + 3 + 2
 * Putting informative axes labels and titles for all plots: 1 pt
 * Extra-credit: 1 pt
 
 
 
 ***
-
-
 
 
 

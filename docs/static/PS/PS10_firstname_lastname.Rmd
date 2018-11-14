@@ -1,0 +1,336 @@
+
+---
+title: "Problem Set 10"
+author: "WRITE YOUR NAME HERE"
+date: "2018-11-28"
+output:
+  html_document:
+    highlight: tango
+    theme: cosmo
+    toc: yes
+    toc_depth: 1
+    toc_float:
+      collapsed: false
+    df_print: kable
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2)
+```
+
+# Collaboration {-}
+
+Please indicate who you collaborated with on this problem set: 
+
+
+
+# Background {-}
+
+For this exercise, we will mimic the tactile sampling you did in class with virtual sampling. We will use some data from the [general social survey](http://gss.norc.org/), an annual personal-interview survey conducted in the United States. The survey is designed to monitor changes in both social characteristics and attitudes. 
+
+For this exercise, the "study population" will not be the US population, but rather 2538 individuals living in a single neighborhood whose information are saved in the `gss_cat` data frame in the `forcats` package. As an analogy to the tactile sampling you did in class, the neighborhood is the "bowl" and the 2,538 people are the little balls. We will use sampling to estimate a certain *population proportion* $p$ of interest:
+
+> The proportion of the study population who are divorced
+
+Now you might ask yourself, if we have all 2538 individual's saved in `gss_cat` then why are we sampling to estimate these population proportions $p$? Can't we just compute both population proportions exactly? You are correct! We are only sampling from `gss_cat` as an exercise to study *sampling variation*. In a real life sampling study with a realistic study population, we won't have access to everyone's data!
+
+## Setup
+
+First load the necessary packages:
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(forcats)
+library(moderndive)
+```
+
+Next let's explore the `gss_cat` data set in the `forcats` package using the `glimpse()` function (note that the `forcats` package was loaded automatically with tidyverse). 
+
+```{r}
+glimpse(gss_cat)
+```
+
+Use the `View()` function **in the console** to take a look at the data in the viewer. And type `?gss_cat` into the console to see a description of the variables in this data set. 
+
+## Exploratory data wrangling
+
+This data set includes many of years of data, and many variables. We will restrict our analysis to only the most recent year (2014), and to only the variable `marital`. 
+
+```{r}
+gss_14 <- gss_cat %>% 
+  filter(year == 2014) %>% 
+  select(marital)
+```
+
+You can use the following to see what the different responses were for the marital status question:
+
+```{r}
+gss_14  %>% 
+  distinct(marital) 
+```
+
+
+# Demo
+
+We are going to use random sampling to estimate the population proportion $p$ of the neighborhood that are divorced. We will start by taking a single virtual random sample of fifty human respondents. Be sure to `View()` the results to get a sense of what our random sample `single_sample_50` looks like.
+
+```{r}
+single_sample_50 <- gss_14 %>% 
+  rep_sample_n(size = 50, reps = 1)
+```
+
+Next, let's calculate the *sample proportion* $\widehat{p}$ of people who identified themselves as `Divorced` in our single replicate. Recall that the sample proportion $\widehat{p}$ is an "estimate" of the population proportion $p$ who are divorced. This estimate is based on our sample of size n = 50.
+
+```{r}
+p_hat <- single_sample_50 %>% 
+  summarize(divorced = sum(marital == "Divorced")) %>% 
+  mutate(prop_divorced = divorced / 50)
+p_hat
+```
+
+## a) Sampling a thousand replicates at n = 50
+
+However, we are interested in studying how sampling variation affects our estimates. In other words we want to see how much `p_hat` will vary based on different random samples of size n = 50. In order to study this variation in $\widehat{p}$, we need more than one value of $\widehat{p}$, and hence more than one sample of size n = 50. 
+
+Let's take not 1, but 1000 samples of size n = 50. In other words, 1000 "replicates":
+
+```{r}
+sample_n_50_1000_rep <- gss_14 %>% 
+  rep_sample_n(size = 50, reps = 1000)
+```
+
+Be sure to `View()` the results `sample_n_50_1000_rep` and scroll down to get a sense of these 1000 replicates look like and how the different replicates are differentiated. Note our sample size is still n = 50 i.e. how many humans are sampled in each replicate; we're just simulating the act of taking many samples of size n = 50:
+
+## b) Calculate sample proportion $\widehat{p}$ for each replicate
+
+We will again calculate the sample proportion $\widehat{p}$ of people who reported they were divorced *for each of the 1000 replicates*:
+
+```{r}
+p_hat_n_50_1000_rep <- sample_n_50_1000_rep %>% 
+  group_by(replicate) %>% 
+  summarize(divorced = sum(marital == "Divorced")) %>% 
+  mutate(prop_divorced = divorced / 50)
+```
+
+Take a look at the first five rows of the results:
+
+```{r}
+p_hat_n_50_1000_rep %>%
+  slice(1:5)
+```
+
+## c) Visualize the sampling distribution of $\widehat{p}$
+
+We plot the *sampling distribution* of these 1000 simulated values of the sample proportion $\widehat{p}$ of divorced respondents with a histogram
+
+```{r}
+ggplot(p_hat_n_50_1000_rep, aes(x = prop_divorced)) +
+  geom_histogram(binwidth = 0.05, color = "white", fill = "darkgreen") +
+  labs(x = "Sample proportion divorced", title = "Sampling distribution of p-hat based on n = 50") 
+```
+
+## d) Standard error
+
+Finally we can calculate the standard error, which is the standard deviation of the sampling distribution. 
+
+```{r}
+p_hat_n_50_1000_rep %>% 
+  summarize(SE = sd(prop_divorced))
+```
+
+## e) Compare sampling distribution to true population parameter $p$
+
+Let's now calculate the true population proportion $p$ of `Divorced` respondents for the full `gss_14` data set like so. In other words, this would be like doing a *census* and asking everyone in the neighborhood if they are divorced or not.  
+
+```{r}
+gss_14 %>% 
+  summarize(divorced = sum(marital == "Divorced")) %>% 
+  mutate(p_divorced = divorced / nrow(gss_14))
+```
+
+**Questions:**
+
+1.  Does it look like our sampling distribution as displayed in the histogram is centered at the true population proportion of `Divorced` respondents for all n=2538 people surveyed? 
+1.  Is this what you expected?
+
+**Answers:** 
+
+1.  Yes, the histogram is centered on ~ 0.16.  
+1.  I did expect this, since we collected a decently sized sample and ran 1000 reps, and since there is no reason to think that our R sampling is biased. 
+
+
+
+
+# Question 1
+
+## a) Sampling a thousand replicates at n = 15
+
+Now use the `rep_sample_n` function to collect 1000 virtual samples of size n = 15. 
+
+**Note: BE SURE TO NAME YOUR DATAFRAME WITH 1000 SAMPLES SOMETHING NEW, TO ENSURE YOU CAN DISTINGUISH IT FROM THE n = 50 SAMPLE ABOVE!**
+
+```{r}
+
+```
+
+
+## b) Calculate sample proportion $\widehat{p}$ for each replicate
+
+Calculate the sample proportion $\widehat{p}$ of people who reported they were divorced for each of the 1000 replicates: 
+
+```{r}
+
+```
+
+## c) Visualize the sampling distribution of $\widehat{p}$
+
+Plot the sampling distribution of these 1000 simulated values of the sample proportion $\widehat{p}$ of divorced respondents with a histogram:
+
+```{r}
+
+```
+
+**Question:**
+
+1.  How does this sampling distribution compare to the one you made earlier with a sample size *n* of 50?
+
+**Answer**: 
+
+1.  
+
+
+## d) Standard error
+
+Calculate the standard error, which is the standard deviation of the sampling distribution. 
+
+```{r}
+
+```
+
+**Question:**
+
+1.  How does this standard error compare to the one you made earlier with a sample size *n* of 50?
+
+**Answer**: 
+
+1. 
+
+
+
+
+
+# Question 2
+
+## a) Sampling a thousand replicates at n = 400
+
+Now use the `rep_sample_n` function to collect 1000 virtual samples of size n = 400. 
+
+**Note: BE SURE TO NAME YOUR DATAFRAME WITH 1000 SAMPLES SOMETHING NEW, TO ENSURE YOU CAN DISTINGUISH IT FROM THE n = 50 and n = 15 SAMPLES ABOVE!**
+
+```{r}
+
+```
+
+
+## b) Calculate sample proportion $\widehat{p}$ for each replicate
+
+Calculate the proportion of people who reported they were divorced for each replicate. 
+
+```{r}
+
+```
+
+
+## c) Visualize the sampling distribution of $\widehat{p}$
+
+Plot the sampling distribution of these 1000 simulated values of the sample proportion of divorced respondents with a histogram. 
+
+```{r}
+
+```
+
+**Question:**
+
+1.  How does this sampling distribution compare to the one you made earlier with a sample size *n* of 50?
+
+**Answer**: 
+
+1. 
+
+
+## d) Standard error
+
+Calculate the standard error, which is the standard deviation of the sampling distribution. 
+
+```{r}
+
+```
+
+**Question:**
+
+1.  How does this standard error compare to the one you made earlier with a sample size *n* of 50?
+
+**Answer**: 
+
+1.  
+
+
+
+
+
+# Question 3
+
+**Questions:**
+
+1. Which sampling distribution looked more normally distributed (bell shaped and symmetrical); the one built on n = 15, 50 or 400? Why?
+1. Let's pretend the GSS organizers can no longer afford to do a **full census** of this neighborhood in the future due to budget cuts. As their stats adviser, what sample size would you recommend they use?
+
+
+**Answers**:
+
+1. 
+1. 
+
+
+
+# Question 4
+
+Note that in reality, when we are sampling in the real world, we typically only take a **single** sample from the population, due to time or $ constraints. So what do we do to calculate a standard error when we only have a single sample, and not 1000 repeated samples? One method is to use the formula as listed in the Open Intro textbook (Equation from page 124 in OpenIntro 3.1.1):
+
+$SE = \sqrt{p(1-p)/n}$. 
+
+Let's think back to our first `single_sample_50` that we gathered! 
+
+```{r}
+single_sample_50 %>%
+  slice(1:10)
+```
+
+Recall we calculated the population proportion $p$ like so:
+
+```{r}
+gss_14 %>% 
+  summarize(divorced = sum(marital == "Divorced")) %>% 
+  mutate(p_divorced = divorced / nrow(gss_14))
+```
+
+Using the equation above, we can calculate a standard error for this **single** sample like so 
+
+```{r}
+sqrt(0.16/(1-0.16)/50)
+```
+
+This is quite close to the estimate we made earlier from our sampling distribution! Note that when you must calculate a standard error for only a single sample, the formula **contains the sample size, n**. The larger the sample size n, the larger the number in the denominator of this formula. 
+
+
+**Questions:**
+
+1. How does a larger number in the denominator, i.e. a larger sample size *n* impact the standard error you calculate mathematically?
+1. Does this result match what you learned in this exercise from calculating standard errors using the virtual sampling distributions with different sample sizes *n*? Explain.
+
+**Answers:**
+
+1. 
+1. 

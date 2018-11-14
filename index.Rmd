@@ -112,7 +112,7 @@ From this past Monday Nov 12:
 Handout: Recap of ModernDive Figure 8.14 below
 
 <center>
-![](static/images/sampling_distributions.png){ width=600px }
+![](static/images/sampling_distributions.png){ width=800px }
 </center>
 
 ### 2. In-class exercise

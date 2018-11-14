@@ -58,8 +58,41 @@ h1{font-weight: 400;}
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
 
 
+<!--
+{target="_blank"}
+-->
 
 ***
+
+
+# Lec 29: Fri 11/16 {#Lec29}
+
+## Announcements
+
+* 
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Connecting sampling distributions and [Hang the DJ](https://www.youtube.com/watch?v=wMykYSQaG_c){target="_blank"}
+* Analyzing our tactile resampling simulation from Lec28
+
+### 2. In-class exercise
+
+*
+
+### 3. Tweet of the day
+
+From this past Monday Nov 12:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Huge congratulations to Professor Brad Efron, who wins the statistical equivalent of the Nobel Prize for creating the &#39;bootstrap&#39; method, the &#39;best statistical pain reliever ever produced&#39; <a href="https://t.co/tHAHS09Cqv">https://t.co/tHAHS09Cqv</a> <a href="https://t.co/Qei54av5sN">https://t.co/Qei54av5sN</a></p>&mdash; Royal Statistical Society (@RoyalStatSoc) <a href="https://twitter.com/RoyalStatSoc/status/1061918061794676736?ref_src=twsrc%5Etfw">November 12, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
+
 
 
 # Lec 28: Wed 11/14 {#Lec28}
@@ -76,13 +109,16 @@ h1{font-weight: 400;}
 
 ### 1. Chalk Talk
 
-* Recap of ModernDive Figure 8.14 below
-* Resampling tactile exercise
+Handout: Recap of ModernDive Figure 8.14 below
 
 <center>
 ![](static/images/sampling_distributions.png){ width=600px }
 </center>
 
+### 2. In-class exercise
+
+Bootstrap tactile resampling simulation based on slips of paper with your
+name/height written on them. Recall we took a sample of size $n=10$ students.
 
 
 

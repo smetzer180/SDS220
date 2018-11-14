@@ -180,6 +180,6 @@ it is OK to make predictions just slightly outside of the range of percent HS
 education values used in our original model)
 
 ```{r}
-get_regression_points(med_income_model) 
+get_regression_points(med_income_model, newdata = budget_cuts) 
 ```
 

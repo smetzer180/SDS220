@@ -74,7 +74,7 @@ h1{font-weight: 400;}
 
 * Question 1: 9 pts = 1 + 1 + 2 + 3 + 2 (extra credit question is worth 1 extra pt)
 * Putting informative axes labels and titles for all plots: 1 pt
-* Something extra or exceptional: 1 pt
+* Extra-credit: 1 pt
 
 
 

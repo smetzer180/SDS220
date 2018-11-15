@@ -75,7 +75,7 @@ h1{font-weight: 400;}
 
 ### 1. Chalk Talk
 
-* Connecting sampling distributions and [Hang the DJ](https://www.youtube.com/watch?v=wMykYSQaG_c){target="_blank"}
+* Connecting sampling distributions and "Hang the DJ" episode
 * Analyzing our tactile resampling simulation from Lec28
 
 ### 2. In-class exercise

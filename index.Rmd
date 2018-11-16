@@ -64,6 +64,23 @@ h1{font-weight: 400;}
 
 ***
 
+# Lec 30: Mon 11/19 {#Lec30}
+
+## Announcements
+
+<center>
+![](static/images/infer_oregon.png){ width=200px }
+</center>
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+
+***
+
 
 # Lec 29: Fri 11/16 {#Lec29}
 
@@ -101,7 +118,10 @@ ggplot(data, aes(x = resample_mean)) +
 
 ### 2. In-class exercise
 
-* 
+* ModernDive 9.1
+* Install `infer` package
+* Do PS10
+
 
 ### 3. Tweet of the day
 

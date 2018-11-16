@@ -68,14 +68,20 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-<center>
-![](static/images/infer_oregon.png){ width=200px }
-</center>
+* Midterm III review today
+* No office hours today or tomorrow (11/20)
+* No lecture on Monday 11/26 after break
 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
+
+Now swithing from tactile to virtual resampling using `infer` package!
+
+<center>
+![](static/images/infer_oregon.png){ width=200px }
+</center>
 
 
 

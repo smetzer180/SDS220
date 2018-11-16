@@ -69,18 +69,33 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-* 
+* Upcoming schedule:
+    + Mon 11/19: Midterm III review.
+    + Mon 11/26 (after break): No lecture
     
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
 * Connecting sampling distributions and "Hang the DJ" episode
-* Analyzing our tactile resampling simulation from Lec28
+* Analyzing the 19 tactile "resampling **with** replacement" simulation from Lec28
+
+```{r, echo=FALSE, eval=TRUE}
+data <- data_frame(
+  resample_mean = c(63, 65.1, 63.9, 63.2, 64, 65.4, 63.3,
+                    63.2, 64.2, 64.2, 63.7, 64.4, 63.3, 64.4,
+                    64, 63.9, 62.9, 64.7, 63.7)
+)
+
+ggplot(data, aes(x = resample_mean)) +
+  geom_histogram(binwidth = 2) +
+  labs(x = "resample mean height (inches)", title = "bootstrap distribution")
+```
+
 
 ### 2. In-class exercise
 
-*
+* 
 
 ### 3. Tweet of the day
 
@@ -99,10 +114,6 @@ From this past Monday Nov 12:
 
 ## Announcements
 
-* Upcoming schedule:
-    + Mon 11/19: Lecture starts at 1:20pm to accommodate for the SDS talk from 12:10-1:10pm in Ford Hall 240. 
-    + Tue 11/20: No lab.
-    + Mon 11/26 (after break): No lecture
 * Quiz today
     
 ## Today's Topics/Activities

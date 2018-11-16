@@ -78,7 +78,7 @@ h1{font-weight: 400;}
 ### 1. Chalk Talk
 
 * Connecting sampling distributions and "Hang the DJ" episode
-* Analyzing the 19 tactile "resampling **with** replacement" simulation from Lec28 based on a **single** sample of size $n=10$
+* Analyzing the tactile "resampling **with** replacement" simulation from Lec28 based on a **single** sample of size $n=10$
 
 <center>
 ![](static/images/sample_n_10.png){ width=200px }

@@ -68,10 +68,10 @@ h1{font-weight: 400;}
 
 ## Announcements
 
+* Lecture today starts at 1:20pm.
 * Midterm III review today
 * No office hours today or tomorrow (11/20)
 * No lecture on Monday 11/26 after break
-
 
 ## Today's Topics/Activities
 

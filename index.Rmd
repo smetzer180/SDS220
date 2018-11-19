@@ -68,10 +68,14 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-* Lecture today starts at 1:20pm.
-* Midterm III review today
-* No office hours today or tomorrow (11/20)
-* No lecture on Monday 11/26 after break
+* Lecture today starts at 1:20pm
+* Midterm III details posted; we'll go over practice midterm on Wednesday after the break.
+* Upcoming schedule.
+    + Today and tomorrow: No office hours
+    + Mon 11/26: No lecture and no office hours
+    + Tue 11/27: Regular office hours 3-6pm
+    + I am out of town from this afternoon Mon 11/19 until the morning of Tue 11/27 and won't be on Slack.
+
 
 ## Today's Topics/Activities
 

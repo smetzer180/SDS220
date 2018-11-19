@@ -17,13 +17,12 @@ h1{font-weight: 400;}
 ***
 
 
-
-# Midterm II {#midtermII}
+# Midterm III {#midtermIII}
 
 ## Administrative
 
-* **Friday 11/2 5pm through Sunday 11/4 11:55pm**. 
-* Self-scheduled exam [instructions](https://drive.google.com/file/d/10mkwAnJVTbOiz_g-bUDrrUL_S-6j-8ul/view){target="_blank"}. In particular:
+* **Friday 11/30 5pm through Sunday 12/2 11:55pm**. 
+* Self-scheduled exam [instructions](https://drive.google.com/file/d/1MXlZEf9UrQfFjUX6d9iglwDCZbn02cbj/view){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Closed-book, no internet, and individually completed.
@@ -32,7 +31,51 @@ h1{font-weight: 400;}
     + Colored pens
     + A calculator: TI-84 type calculators acceptable, mobile phone apps are not. 
 * Extra help:
-    + Jenny office hours. Book  appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
+    + Jenny office hours. Book appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
+    + Albert extra office hours TBD.
+* Read cover page (slightly different from last time):
+
+<!--
+![](static/exams/midterm_II_cover_page.png){ width=600px }   
+-->
+
+
+## Topics
+
+* Topics:
+    1. Lectures 1-28 but not the "tacticle resampling simulation". Yes it is cummulative in that topics build on top of each other, but focus is on Lec 19-28 on multiple regression and sampling.
+    1. The corresponding "chalk talk" notes and ModernDive readings in Chapter 1 through 8.
+* Types of questions:
+    + Before Wednesday, do the practice midterm questions [PDF](static/exams/Midterm-III_practice.pdf){target="_blank"}. I **do not** have a PDF of solutions, we'll cover these in class on Wednesday. Note this is a compilation of a few midterms, so its length is not reflective of what you can expect on the midterm. Do the following questions:
+        1. Question 1 - Obama polling: Parts a), b), c), d), e), 
+        1. Question 2 - Teaching evaluations: All parts. Note this question was also included in practice midterm II.
+        1. Question 2 - Sampling: Parts a), b), c), d), e), f), g), h)
+        1. Question 4 - Pennies: Parts a), c), e), f).
+    + Data Modeling: Go over [Modeling with Data in the Tidyverse](https://www.datacamp.com/teach/repositories/1575/branches/master){target="_blank"} Chapters 3 and 4.
+    + Go over all problem sets and solutions. Note PS10 solutions will be posted right after lecture on Wed 11/28.
+    
+
+
+
+***
+
+
+
+# Midterm II {#midtermII}
+
+## Administrative
+
+* **Friday 11/2 5pm through Sunday 11/4 11:55pm**. 
+* Self-scheduled exam [instructions](https://drive.google.com/file/d/1MXlZEf9UrQfFjUX6d9iglwDCZbn02cbj/view){target="_blank"}. In particular:
+    + Only print from macOS computers.
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Closed-book, no internet, and individually completed.
+* You must take it no more than 120 minutes (including transit time) to complete it and submit it by 11:55pm on Sunday. Timestamps will be verified and any exam with timestamps indicating more than 120 minutes will be docked 50%.
+* Please bring:
+    + Colored pens
+    + A calculator: TI-84 type calculators acceptable, mobile phone apps are not. 
+* Extra help:
+    + Jenny office hours. Book appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
     + Albert extra office hours Friday 11/2 2:30-4pm in McConnell 215.
 * Read cover page (slightly different from last time):
 
@@ -55,11 +98,10 @@ h1{font-weight: 400;}
     + Data Modeling: Go over [Modeling with Data in the Tidyverse](https://www.datacamp.com/teach/repositories/1575/branches/master){target="_blank"} Chapters 1 and 2.
 
 
-
 <!--
-## Practice questions discussion {#midtermIdiscussion}
+## Midterm II Distribution
 
-## Midterm I Distribution
+![](static/exams/midterm_II_distribution.png){ width=600px } 
 -->
 
 

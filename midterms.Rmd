@@ -98,11 +98,10 @@ h1{font-weight: 400;}
     + Data Modeling: Go over [Modeling with Data in the Tidyverse](https://www.datacamp.com/teach/repositories/1575/branches/master){target="_blank"} Chapters 1 and 2.
 
 
-<!--
 ## Midterm II Distribution
 
 ![](static/exams/midterm_II_distribution.png){ width=600px } 
--->
+
 
 
 ***

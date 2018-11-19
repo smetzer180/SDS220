@@ -62,7 +62,11 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 
+
+
 ***
+
+
 
 # Lec 30: Mon 11/19 {#Lec30}
 
@@ -75,6 +79,7 @@ h1{font-weight: 400;}
     + Mon 11/26: No lecture and no office hours
     + Tue 11/27: Regular office hours 3-6pm
     + I am out of town from this afternoon Mon 11/19 until the morning of Tue 11/27 and won't be on Slack.
+    + Project feedback after break
 
 
 ## Today's Topics/Activities

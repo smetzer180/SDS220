@@ -67,6 +67,92 @@ h1{font-weight: 400;}
 ***
 
 
+# Lec 31: Wed 11/28 {#Lec31}
+
+## Announcements
+
+* Initial project submission feedback session: Book a session for next week on [youcanbookme](https://rudeboybert.youcanbook.me/service/jsps/cal.jsp?cal=4e3d341c-d9d3-480f-b0ca-2dbc2dc4ec56&ini=1543416671567&jumpDate=2018-12-03){target="_blank"} where if possible all group members can attend.
+* Instructions for resubmission due Fri 12/21 5pm now posted on [Term Project](term_project.html) page.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Go over practice Midterm III
+
+
+### 2. In-class exercise
+
+Copy this to a scratchpad:
+
+```{r, eval=FALSE}
+library(tidyverse)
+library(infer)
+
+# Population:
+population_heights <- read_csv("https://goo.gl/BNmtVx")
+View(population_heights)
+population_heights %>% 
+  summarize(sample_mean = mean(height))
+
+# Painstakingly taken single sample of size n = 10
+sampled_heights <- data_frame(
+  name = c("Truc", "Isabel", "Roshni", "Jessie", "Caitlin", "Hannah", "Ojaswi", "Marcela", "Seri", "Nancy"),
+  height = c(62, 62, 60, 68, 65, 63, 66, 67, 64, 64)
+)
+View(sampled_heights)
+
+# Step 1: Specify variable of interest. Only changes meta-data, not actual data
+sampled_heights %>% 
+  specify(response = height)
+
+# Step 2: Generate 1000 replicates of resamples with replacment of size n = 10
+sampled_heights %>% 
+  specify(response = height) %>% 
+  generate(reps = 1000)
+
+# Step 3.a): For the original sample, calculate the sample mean and save as x_bar
+x_bar <- sampled_heights %>% 
+  specify(response = height) %>% 
+  calculate(stat = "mean")
+x_bar
+
+# Step 3.b): For each replicate, calculate the sample mean
+sampled_heights %>% 
+  specify(response = height) %>% 
+  generate(reps = 1000) %>% 
+  calculate(stat = "mean")
+
+# Step 4.a): Visualize the boostrap distribution
+sampled_heights %>% 
+  specify(response = height) %>% 
+  generate(reps = 1000) %>% 
+  calculate(stat = "mean") %>% 
+  visualize()
+
+# Step 4.b): Visualize the boostrap distribution + observed x_bar
+sampled_heights %>% 
+  specify(response = height) %>% 
+  generate(reps = 1000) %>% 
+  calculate(stat = "mean") %>% 
+  visualize(obs_stat = x_bar)
+```
+
+
+### 3. Tweet of the day
+
+`infer` package makes statistical inference tidy and transparent!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/Reed_College_?ref_src=twsrc%5Etfw">@Reed_College_</a>&#39;s Andrew Bray on the {infer} <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package to make statistical inference tidy &amp; transparent <a href="https://t.co/bCfK7Wnn0M">https://t.co/bCfK7Wnn0M</a> <a href="https://twitter.com/hashtag/JSM2018?src=hash&amp;ref_src=twsrc%5Etfw">#JSM2018</a> <a href="https://t.co/VGOyeHaIVU">pic.twitter.com/VGOyeHaIVU</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1024054836277342208?ref_src=twsrc%5Etfw">July 30, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+***
+
+
 
 # Lec 30: Mon 11/19 {#Lec30}
 

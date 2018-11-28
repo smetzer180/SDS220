@@ -16,6 +16,39 @@ h1{font-weight: 400;}
 ***
 
 
+# Problem set 11 {#PS11}
+
+*Assigned Wednesday 11/28, due Wednesday 12/5 at 1pm Eastern Time*
+
+## 1. R component {#PS11_R}
+
+* Before starting PS11:
+    + Read the solutions to PS10
+* Download the following <a href="static/PS/PS11_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
+* Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
+
+
+
+## 2. R solutions & (imperfect) rubric {#PS11_R_solutions}
+
+<!--
+* <a href="static/PS/PS11_solutions.Rmd" download>`PS11_solutions.Rmd`</a> "source code" to create html report output. 
+* Resulting [`PS11_solutions.html`](static/PS/PS11_solutions.html){target="_blank"} output.
+-->
+
+
+**(Imperfect) rubric**: 
+
+ pts total
+
+* 
+
+
+
+***
+
+
+
 
 # Problem set 10 {#PS10}
 
@@ -34,13 +67,11 @@ h1{font-weight: 400;}
 * Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 * See [syllabus](syllabus.html#evaluation-expectations) for expectations on R component submissions.
 
-
 ## 2. R solutions & (imperfect) rubric {#PS10_R_solutions}
 
-<!--
 * <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a> "source code" to create html report output. 
-* Resulting [`PS08_solutions.html`](static/PS/PS08_solutions.html){target="_blank"} output.
--->
+* Resulting [`PS10_solutions.html`](static/PS/PS10_solutions.html){target="_blank"} output.
+
 
 
 **(Imperfect) rubric**: 

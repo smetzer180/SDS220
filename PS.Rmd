@@ -39,14 +39,14 @@ h1{font-weight: 400;}
 
 **(Imperfect) rubric**: 
 
- pts total
+13 pts total
 
-* 
+* Question 1: 2 pts
+* Question 2: 2 + 3 + 6 pts
 
 
 
 ***
-
 
 
 
@@ -71,8 +71,6 @@ h1{font-weight: 400;}
 
 * <a href="static/PS/PS10_solutions.Rmd" download>`PS10_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS10_solutions.html`](static/PS/PS10_solutions.html){target="_blank"} output.
-
-
 
 **(Imperfect) rubric**: 
 

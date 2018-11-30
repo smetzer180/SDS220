@@ -24,6 +24,7 @@ h1{font-weight: 400;}
 
 * Before starting PS11:
     + Read the solutions to PS10
+    + Read ModernDive 9.2-9.4.
 * Download the following <a href="static/PS/PS11_lastname_firstname.Rmd" download>Rmd template</a> file and rename the file appropriately.
 * Submission: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}. 
 

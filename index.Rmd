@@ -66,6 +66,34 @@ h1{font-weight: 400;}
 
 ***
 
+# Lec 32: Fri 11/30 {#Lec32}
+
+## Announcements
+
+* Midterm starts at 6pm
+* What is the [`tidyverse`](https://www.tidyverse.org/packages/){target="_blank"}?
+
+<center>
+<img src="static/images/tidyverse_diagram.png" alt="Drawing" style="width: 600px;" border="10"/>
+</center>
+<br>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Based on the following code; copy this into a scratchpad. Make sure you have the `tidyverse` package installed.
+
+<script src="https://gist.github.com/rudeboybert/4b3591ac7f4e81b73cd61b042cf1d37a.js"></script>
+
+### 2. In-class exercise
+
+Read ModernDive 9.2-9.4
+
+
+***
+
+
 
 # Lec 31: Wed 11/28 {#Lec31}
 
@@ -80,67 +108,9 @@ h1{font-weight: 400;}
 ### 1. Chalk Talk
 
 * Go over practice Midterm III
+* Introduced `infer` thinking.
 
-
-### 2. In-class exercise
-
-Copy this to a scratchpad:
-
-```{r, eval=FALSE}
-library(tidyverse)
-library(infer)
-
-# Population:
-population_heights <- read_csv("https://goo.gl/BNmtVx")
-View(population_heights)
-population_heights %>% 
-  summarize(sample_mean = mean(height))
-
-# Painstakingly taken single sample of size n = 10
-sampled_heights <- data_frame(
-  name = c("Truc", "Isabel", "Roshni", "Jessie", "Caitlin", "Hannah", "Ojaswi", "Marcela", "Seri", "Nancy"),
-  height = c(62, 62, 60, 68, 65, 63, 66, 67, 64, 64)
-)
-View(sampled_heights)
-
-# Step 1: Specify variable of interest. Only changes meta-data, not actual data
-sampled_heights %>% 
-  specify(response = height)
-
-# Step 2: Generate 1000 replicates of resamples with replacment of size n = 10
-sampled_heights %>% 
-  specify(response = height) %>% 
-  generate(reps = 1000)
-
-# Step 3.a): For the original sample, calculate the sample mean and save as x_bar
-x_bar <- sampled_heights %>% 
-  specify(response = height) %>% 
-  calculate(stat = "mean")
-x_bar
-
-# Step 3.b): For each replicate, calculate the sample mean
-sampled_heights %>% 
-  specify(response = height) %>% 
-  generate(reps = 1000) %>% 
-  calculate(stat = "mean")
-
-# Step 4.a): Visualize the boostrap distribution
-sampled_heights %>% 
-  specify(response = height) %>% 
-  generate(reps = 1000) %>% 
-  calculate(stat = "mean") %>% 
-  visualize()
-
-# Step 4.b): Visualize the boostrap distribution + observed x_bar
-sampled_heights %>% 
-  specify(response = height) %>% 
-  generate(reps = 1000) %>% 
-  calculate(stat = "mean") %>% 
-  visualize(obs_stat = x_bar)
-```
-
-
-### 3. Tweet of the day
+### 2. Tweet of the day
 
 `infer` package makes statistical inference tidy and transparent!
 

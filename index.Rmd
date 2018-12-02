@@ -66,6 +66,28 @@ h1{font-weight: 400;}
 
 ***
 
+
+# Lec 33: Mon 12/3 {#Lec33}
+
+## Announcements
+
+* 
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
+
+
+***
+
+
+
+
 # Lec 32: Fri 11/30 {#Lec32}
 
 ## Announcements
@@ -89,6 +111,7 @@ Based on the following code; copy this into a scratchpad. Make sure you have the
 ### 2. In-class exercise
 
 Read ModernDive 9.2-9.4
+
 
 
 ***

@@ -17,7 +17,10 @@ h1{font-weight: 400;}
 
 # Problem set 12 {#PS12}
 
+<!--
+
 *Final problem set of the year! Assigned Wednesday 12/5, due Wednesday 12/12 at 1pm Eastern Time. Quiz at the end of lecture on Wednesday 12/12.*
+
 
 ## 1. R component {#PS12_R}
 
@@ -37,7 +40,7 @@ h1{font-weight: 400;}
 
 ## 3. R solutions & (imperfect) rubric
 
-<!--
+
 * <a href="static/PS/PS12_solutions.Rmd" download>`PS12_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS12_solutions.html`](static/PS/PS12_solutions.html){target="_blank"} output.
 

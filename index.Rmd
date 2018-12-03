@@ -74,15 +74,26 @@ h1{font-weight: 400;}
 
 ## Announcements
 
-* 
+* Office hours: Today ~~3-6pm~~ 3-4:45pm, tomorrow: 3-6pm.
+
 
 ## Today's Topics/Activities
 
 ### 1. Chalk Talk
 
+* Confidence interval terminology
+* Interpreting confidence intervals
 
 ### 2. In-class exercise
 
+Read ModernDive 9.5-9.6
+
+### 3. Tweet of the day
+
+Statistical inference as a `%>%` chain of verbs! Click the tweet to see a GIF:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">ICYMI, dig this visual intro to the infer 📦 verbs…<br>🌲 &quot;Statistical Inference: A Tidy Approach&quot; by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> <a href="https://t.co/vEtDotrWcf">https://t.co/vEtDotrWcf</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> ht <a href="https://twitter.com/LVaudor?ref_src=twsrc%5Etfw">@LVaudor</a> <a href="https://t.co/4JJHSclz2i">pic.twitter.com/4JJHSclz2i</a></p>&mdash; Mara Averick (@dataandme) <a href="https://twitter.com/dataandme/status/1069290620274073600?ref_src=twsrc%5Etfw">December 2, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 

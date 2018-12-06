@@ -33,7 +33,7 @@ h1{font-weight: 400;}
 * Watch the
     + 3m38s Video 1 below (also in ModernDive 8.5) on bunny rabbits, dragons, and the Central Limit Theorem.
     + 4m41s Video 2 below on permutation hypothesis tests.
-* At the end of lecture on Wednesday 12/12 you will be given a 10-15 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch both videos.
+* At the end of lecture on Wednesday 12/12 you will be given a 10-15 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch and understand both videos.
 * No make-up quizzes without official permission Ex: Dean's note. 
 
 ### Video 1

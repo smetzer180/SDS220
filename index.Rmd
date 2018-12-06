@@ -69,6 +69,29 @@ h1{font-weight: 400;}
 
 ***
 
+
+# Lec 35: Fri 12/7 {#Lec35}
+
+## Announcements
+
+* Extra office hours during reading/exam week:
+    + Jenny: Drop-in on Tue 12/18 between 9:40am-11:40am and between 1:20pm-4:00pm. Please be organized! Don't have two team members drop in to ask the same thing twice!
+    + Albert: TBD
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
+
+
+***
+
+
+
 # Lec 34: Wed 12/5 {#Lec34}
 
 ## Announcements
@@ -94,10 +117,7 @@ Based on this code:
 
 
 
-
-
 ***
-
 
 
 

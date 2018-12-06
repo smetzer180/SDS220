@@ -17,8 +17,6 @@ h1{font-weight: 400;}
 
 # Problem set 12 {#PS12}
 
-<!--
-
 *Final problem set of the year! Assigned Wednesday 12/5, due Wednesday 12/12 at 1pm Eastern Time. Quiz at the end of lecture on Wednesday 12/12.*
 
 
@@ -32,17 +30,26 @@ h1{font-weight: 400;}
 
 ## 2. Quiz II
 
+* Watch the
+    + 3m38s Video 1 below (also in ModernDive 8.5) on bunny rabbits, dragons, and the Central Limit Theorem.
+    + 4m41s Video 2 below on permutation hypothesis tests.
+* At the end of lecture on Wednesday 12/12 you will be given a 10-15 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch both videos.
+* No make-up quizzes without official permission Ex: Dean's note. 
+
+### Video 1
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jvoxEYmQHNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-* Watch the above 3m38s video (also in ModernDive 8.5) on bunny rabbits, dragons, and the Central Limit Theorem.
-* At the end of lecture on Wednesday 12/12 you will be given a 5 minute quiz. This quiz is not meant to be difficult; it is meant simply to ensure that you watch the video.
-* No make-up quizzes without official permission Ex: Dean's note. 
+### Video 2
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2pHhjx9hyM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 3. R solutions & (imperfect) rubric
 
-
+<!--
 * <a href="static/PS/PS12_solutions.Rmd" download>`PS12_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS12_solutions.html`](static/PS/PS12_solutions.html){target="_blank"} output.
+-->
 
 **(Imperfect) rubric**: 
 
@@ -50,7 +57,7 @@ h1{font-weight: 400;}
 
 * Question 1: 2 pts
 * Question 2: 2 + 3 + 6 pts
--->
+
 
 
 ***
@@ -74,10 +81,8 @@ h1{font-weight: 400;}
 
 ## 2. R solutions & (imperfect) rubric {#PS11_R_solutions}
 
-<!--
 * <a href="static/PS/PS11_solutions.Rmd" download>`PS11_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS11_solutions.html`](static/PS/PS11_solutions.html){target="_blank"} output.
--->
 
 
 **(Imperfect) rubric**: 

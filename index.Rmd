@@ -69,6 +69,37 @@ h1{font-weight: 400;}
 
 ***
 
+# Lec 34: Wed 12/5 {#Lec34}
+
+## Announcements
+
+None
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Finishing confidence intervals
+* Started hypothesis testing, in particular the idea of "permutations"
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2pHhjx9hyM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+### 2. In-class exercise
+
+Based on this code:
+
+<script src="https://gist.github.com/rudeboybert/b5dde565a50df08571dabb6ec53ab58e.js"></script>
+
+
+
+
+
+***
+
+
+
 
 # Lec 33: Mon 12/3 {#Lec33}
 

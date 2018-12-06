@@ -1,4 +1,3 @@
-
 ---
 title: "Problem Set 12"
 author: "WRITE YOUR NAME HERE"
@@ -103,7 +102,7 @@ Here's how we use infer to run this hypothesis test:
 
 ### Step 1: Calculate the observed difference 
 
-Note that the order we choose does not matter here (female them male)...but since we used `order = c("Female", "Male")` here, we should do the same in subsequent calculations!
+Note that the order we choose does not matter here (female then male)...but since we used `order = c("Female", "Male")` here, we should do the same in subsequent calculations!
 
 ```{r}
 obs_diff_gpa_sex <- sat_gpa %>% 
@@ -187,7 +186,7 @@ gpa_diff_under_null %>%
   get_pvalue(obs_stat = obs_diff_gpa_sex, direction = "both") 
 ```
 
-This result indicates that there is a 0.01% chance that we would see a difference of 0.15 in GPA scores between males and females (or a bigger difference) if in fact there was truly no difference between the sexes in GPA scores at the population level.
+This result indicates that there is a 0.1% chance (very low) chance that we would see a difference of 0.15 in GPA scores between males and females (or a bigger difference) if in fact there was truly no difference between the sexes in GPA scores at the population level.
 
 #### Q1.e) 
 
@@ -220,7 +219,7 @@ t.test(gpa_fy ~ sex, var.equal = TRUE, data = sat_gpa)
 
 
 
-# Question 2: Relationship between high-school & first-year GPA?
+# Question 2: Relationship between Total SAT Score & High School GPA?
 
 For this analysis `sat_total` is the outcome variable, and `gpa_hs` is the predictor variable, with two levels "low" and "high". 
 

@@ -76,7 +76,8 @@ h1{font-weight: 400;}
 * Quiz during lecture on Wednesday as well as time for project work.
 * Extra office hours reading/exam week:
     + Mon 12/17 12pm-2:30pm
-    + Wed 12/19 1pm-3pm
+    + Tue 12/18 1:30-3:30pm
+    + ~~Wed 12/19 1pm-3pm~~
     + Fri 12/21 11am-1pm
 * Added two notes on 12/10  about term project [resubmission](term_project.html#resubmission) instructions.
 

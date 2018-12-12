@@ -59,6 +59,14 @@ h1{font-weight: 400;}
 
 ![](static/exams/midterm_III_distribution.png){ width=600px } 
 
+Note about Question 3.b) from the Wikipedia page for the [Kinsey Reports](https://en.wikipedia.org/wiki/Kinsey_Reports){target="_blank"}:
+
+In 1948, the same year as the original publication, a committee of the American Statistical Association, including notable statisticians such as John Tukey, condemned the sampling procedure. Tukey was perhaps the most vocal critic, saying, 
+
+> "A random selection of three people would have been better than a group of 300 chosen by Mr. Kinsey."
+
+Psychologist Abraham Maslow asserted that Kinsey did not consider "volunteer bias".
+
 
 ***
 

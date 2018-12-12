@@ -35,13 +35,15 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 
 
-# 4. Resubmission - Fri 12/21 5pm
+# 4. Resubmission - Fri 12/21 5pm {#resubmission}
 
 1. Revise your work based on delivered feedback. 
 1. Complete remaining sections.
 1. Complete "Inference for multiple regression" and "Conclusion" sections.
-    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.  
-    + Also perform a residual analysis.
+    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
+    + Perform a residual analysis.
+    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
+    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
 1. Group leader: Once the resubmission is complete
     + Knit `Term_Project.Rmd` one final time.
     + Republish to Rpubs.com

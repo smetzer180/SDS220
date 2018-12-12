@@ -69,6 +69,22 @@ h1{font-weight: 400;}
 
 ***
 
+# Lec 36: Mon 12/10 {#Lec36}
+
+## Announcements
+
+* Quiz during lecture on Wednesday as well as time for project work.
+* Extra office hours reading/exam week:
+    + Mon 12/17 12pm-2:30pm
+    + Tue 12/18 1:30-3:30pm
+    + ~~Wed 12/19 1pm-3pm~~
+    + Fri 12/21 11am-1pm
+* Added two notes on 12/10  about term project [resubmission](term_project.html#resubmission) instructions.
+
+
+
+***
+
 
 # Lec 35: Fri 12/7 {#Lec35}
 
@@ -77,6 +93,11 @@ h1{font-weight: 400;}
 * Extra office hours during reading/exam week:
     + Jenny: Drop-in on Tue 12/18 between 9:40am-11:40am and between 1:20pm-4:00pm. Please be organized! Don't have two team members drop in to ask the same thing twice!
     + Albert: TBD
+* **Favor to ask**: Help out RStudio's efforts to make data science accessible to more individuals and more demographic groups by filling out this 5 minute survey on how you learn R!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Please take our 5 minute survey so we (<a href="https://twitter.com/rstudio?ref_src=twsrc%5Etfw">@rstudio</a>) can learn more about how people learn <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>: <a href="https://t.co/KUH0NPnK3x">https://t.co/KUH0NPnK3x</a>. Findings will be presented at rstudio::conf 2019 (and online)</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/1070726165764194304?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+
 
 ## Today's Topics/Activities
 

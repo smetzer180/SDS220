@@ -55,6 +55,9 @@ h1{font-weight: 400;}
     + Go over all problem sets and solutions. Note PS10 solutions will be posted right after lecture on Wed 11/28.
     
 
+## Midterm III Distribution
+
+![](static/exams/midterm_III_distribution.png){ width=600px } 
 
 
 ***

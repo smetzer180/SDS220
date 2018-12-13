@@ -47,6 +47,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 1. Group leader: Once the resubmission is complete
     + Knit `Term_Project.Rmd` one final time.
     + Republish to Rpubs.com
+    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
 1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
 
 

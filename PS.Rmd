@@ -46,10 +46,8 @@ h1{font-weight: 400;}
 
 ## 3. R solutions & (imperfect) rubric
 
-<!--
 * <a href="static/PS/PS12_solutions.Rmd" download>`PS12_solutions.Rmd`</a> "source code" to create html report output. 
 * Resulting [`PS12_solutions.html`](static/PS/PS12_solutions.html){target="_blank"} output.
--->
 
 **(Imperfect) rubric**: 
 
